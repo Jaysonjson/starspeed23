@@ -1,6 +1,8 @@
 # ninja log v5
-27	87	0	H:/starspeed23/out/build/x64-Debug/CMakeFiles/cmake.verify_globs	b3a9803675aeac0f
+3	52	0	H:/starspeed23/out/build/x64-Debug/CMakeFiles/cmake.verify_globs	b3a9803675aeac0f
 90	9316	7120789259714645	CMakeFiles/StarSpeed23.dir/src/main.cpp.obj	2160eb5fc2c42c2f
 9317	10533	7120789264717334	StarSpeed23.exe	64895b1958b6ca33
-85	424	7120791190187462	build.ninja	2299733798d8f2ee
+85	424	7120794416712032	build.ninja	2299733798d8f2ee
 64	80	0	clean	1d3f730e43a6806f
+13	64	0	H:/starspeed23/out/build/x64-Debug/CMakeFiles/cmake.verify_globs	b3a9803675aeac0f
+67	1915	7120794447826790	StarSpeed23.exe	64895b1958b6ca33
