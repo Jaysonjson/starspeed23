@@ -2,17 +2,40 @@
 #include "motor/object/scene.hpp"
 #include "motor/components/sprite.hpp"
 #include "motor/object/gameobject.hpp"
+#include "motor/content/resourcelocation.hpp"
+#include "starspeed/resourcepack.hpp"
+#include "titlescreen.hpp"
+#include "starspeed/textures.hpp"
 
 namespace StarSpeed {
+
+	class SWDLogo : public Motor::GameObject {
+	public:
+
+		void onCreate() {
+			Tex::SWD_LOGO->load();
+			addComponent<Motor::SpriteComponent>(Tex::SWD_LOGO);
+			getComponent<Motor::SpriteComponent>()->blendMode_ = SDL_BLENDMODE_BLEND;
+			getComponent<Motor::TransformComponent>()->position.set(1920 / 2, 1080 / 2);
+			getComponent<Motor::TransformComponent>()->scale.set(449 * 3, 82 * 3);
+		}
+
+		int alpha = 0;
+		void fixedUpdate() override {
+			Motor::GameObject::fixedUpdate();
+			alpha += 2;
+			getComponent<Motor::TransformComponent>()->color.setAlpha(alpha);
+			if (alpha > 255) {
+				getriebe.getGame()->switchScene(new TitleScreen());
+			}
+		}
+	};
+
 	class SplashScene : public Motor::Scene {
 		void init(Motor::Game* game) {
 			Motor::Scene::init(game);
-			Motor::GameObject* SWD_LOGO = new Motor::GameObject();
-			SWD_LOGO->addComponent<Motor::SpriteComponent>("assets/sprites/splash/swd_logo.png");
-			SWD_LOGO->getComponent<Motor::SpriteComponent>()->blendMode_ = SDL_BLENDMODE_BLEND;
-			SWD_LOGO->getComponent<Motor::TransformComponent>()->position.set(1000, 500);
-			SWD_LOGO->getComponent<Motor::TransformComponent>()->scale.set(449 * 3, 82 * 3);
-			SWD_LOGO->addToCurrentScene();
+			SWDLogo* swdLogo = new SWDLogo();
+			swdLogo->addToCurrentScene();
 		}
 	};
 }

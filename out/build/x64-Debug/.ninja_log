@@ -1,8 +1,16 @@
 # ninja log v5
-3	52	0	H:/starspeed23/out/build/x64-Debug/CMakeFiles/cmake.verify_globs	b3a9803675aeac0f
-90	9316	7120789259714645	CMakeFiles/StarSpeed23.dir/src/main.cpp.obj	2160eb5fc2c42c2f
-9317	10533	7120789264717334	StarSpeed23.exe	64895b1958b6ca33
-85	424	7120794416712032	build.ninja	2299733798d8f2ee
+28	85	0	H:/starspeed23/out/build/x64-Debug/CMakeFiles/cmake.verify_globs	b3a9803675aeac0f
+89	10182	7122036897728518	CMakeFiles/StarSpeed23.dir/src/main.cpp.obj	2160eb5fc2c42c2f
+84	456	7122010896576967	build.ninja	2299733798d8f2ee
+10183	11136	7122036901797640	StarSpeed23.exe	cd0b4828501340f
 64	80	0	clean	1d3f730e43a6806f
-13	64	0	H:/starspeed23/out/build/x64-Debug/CMakeFiles/cmake.verify_globs	b3a9803675aeac0f
-67	1915	7120794447826790	StarSpeed23.exe	64895b1958b6ca33
+96	2215	7121679808781869	CMakeFiles/StarSpeed23.dir/src/resourcepack.cpp.obj	b84db071a6eed72
+110	2095	7121679449071623	CMakeFiles/StarSpeed23.dir/src/tinyfiledialogs.cpp.obj	630761404a1305f9
+105	906	7122000416217887	CMakeFiles/StarSpeed23.dir/app.rc.res	ec54aae269ecae4
+91	9425	7122014034330924	CMakeFiles/StarSpeed23.dir/src/textures.cpp.obj	6126e64dcb3244c7
+31	84	0	H:/starspeed23/out/build/x64-Debug/CMakeFiles/cmake.verify_globs	b3a9803675aeac0f
+93	11216	7122038588974973	CMakeFiles/StarSpeed23.dir/src/main.cpp.obj	2160eb5fc2c42c2f
+11216	13014	7122038598668952	StarSpeed23.exe	cd0b4828501340f
+36	110	0	H:/starspeed23/out/build/x64-Debug/CMakeFiles/cmake.verify_globs	b3a9803675aeac0f
+115	11768	7122039003215883	CMakeFiles/StarSpeed23.dir/src/main.cpp.obj	2160eb5fc2c42c2f
+11769	13114	7122039010746740	StarSpeed23.exe	cd0b4828501340f

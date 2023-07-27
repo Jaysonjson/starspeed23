@@ -29,8 +29,10 @@ set(OLD_GLOB
   "H:/starspeed23/libs/windows/SDL2_image.lib"
   "H:/starspeed23/libs/windows/SDL2_ttf.lib"
   "H:/starspeed23/libs/windows/discord_game_sdk.dll.lib"
+  "H:/starspeed23/libs/windows/libcrypto.lib"
   "H:/starspeed23/libs/windows/libcurl-d_imp.lib"
   "H:/starspeed23/libs/windows/libcurl_a.lib"
+  "H:/starspeed23/libs/windows/libssl.lib"
   "H:/starspeed23/libs/windows/zlib.lib"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
@@ -51,6 +53,9 @@ endif()
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "H:/starspeed23/src/*.cpp")
 set(OLD_GLOB
   "H:/starspeed23/src/main.cpp"
+  "H:/starspeed23/src/resourcepack.cpp"
+  "H:/starspeed23/src/textures.cpp"
+  "H:/starspeed23/src/tinyfiledialogs.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
@@ -60,7 +65,13 @@ endif()
 # SOURCES_CPP at CMakeLists.txt:25 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "H:/starspeed23/src/*.hpp")
 set(OLD_GLOB
+  "H:/starspeed23/src/starspeed/objects/swdavatar.hpp"
+  "H:/starspeed23/src/starspeed/resourcepack.hpp"
+  "H:/starspeed23/src/starspeed/scenes/login.hpp"
   "H:/starspeed23/src/starspeed/scenes/splash.hpp"
+  "H:/starspeed23/src/starspeed/scenes/titlescreen.hpp"
+  "H:/starspeed23/src/starspeed/textures.hpp"
+  "H:/starspeed23/src/tinyfiledialogs.hpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
