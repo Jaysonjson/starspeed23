@@ -4,7 +4,7 @@
 #include "motor/object/gameobject.hpp"
 #include "motor/content/resourcelocation.hpp"
 #include "starspeed/resourcepack.hpp"
-#include "titlescreen.hpp"
+#include "login.hpp"
 #include "starspeed/textures.hpp"
 
 namespace StarSpeed {
@@ -26,7 +26,7 @@ namespace StarSpeed {
 			alpha += 2;
 			transform()->color.setAlpha(alpha);
 			if (alpha > 255) {
-				getriebe.getGame()->switchScene(new TitleScreen());
+				getriebe.getGame()->switchScene(new LoginScreen());
 			}
 		}
 	};

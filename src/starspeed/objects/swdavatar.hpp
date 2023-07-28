@@ -142,12 +142,11 @@ namespace StarSpeed {
 	
 	class SWDAvatar : public Motor::GameObject {
 	public:
-		std::string username = "Jayson_json";
-		std::string password = md5("4477xdrt");
+
 		SWD_DATA swdData{};
 
 		void onCreate() {
-			swdData.get(username, password);
+			swdData.get(SWD_USERNAME, md5(SWD_PASSWORD));
 			swdData.downloadImage();
 			transform()->position.set(1920 - 200 / 2, 200 / 2);
 			transform()->scale.set(175, 175);

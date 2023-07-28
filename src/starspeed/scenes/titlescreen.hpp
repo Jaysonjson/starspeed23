@@ -78,7 +78,6 @@ namespace StarSpeed {
 
 			SWDAvatar* SWD_AVATAR = new SWDAvatar();
 			SWD_AVATAR->addToCurrentScene();
-			getriebe.getGame()->getCurrentScene()->sortObjects();
 		}
 	};
 }

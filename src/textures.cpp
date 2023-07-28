@@ -1,6 +1,9 @@
 #include "starspeed/textures.hpp"
 #include "starspeed/resourcepack.hpp"
 
+std::string SWD_USERNAME = "";
+std::string SWD_PASSWORD = "";
+
 namespace StarSpeed::Tex {
 	Motor::Texture* SWD_LOGO = nullptr;
 	Motor::Font* GAME_FONT = nullptr;
