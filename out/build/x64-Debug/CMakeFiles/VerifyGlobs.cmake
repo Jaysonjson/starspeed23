@@ -30,7 +30,6 @@ set(OLD_GLOB
   "H:/starspeed23/libs/windows/SDL2_ttf.lib"
   "H:/starspeed23/libs/windows/discord_game_sdk.dll.lib"
   "H:/starspeed23/libs/windows/libcrypto.lib"
-  "H:/starspeed23/libs/windows/libcurl-d_imp.lib"
   "H:/starspeed23/libs/windows/libcurl_a.lib"
   "H:/starspeed23/libs/windows/libssl.lib"
   "H:/starspeed23/libs/windows/zlib.lib"

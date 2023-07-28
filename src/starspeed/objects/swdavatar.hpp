@@ -9,6 +9,11 @@
 #include "motor/object/gameobject.hpp"
 #include <regex>
 #include <algorithm>
+#include "motor/paths.hpp"
+#include "motor/components/sprite.hpp"
+#include "motor/components/text.hpp"
+#include "starspeed/resourcepack.hpp"
+#include "starspeed/textures.hpp"
 
 namespace StarSpeed {
 
@@ -28,6 +33,13 @@ namespace StarSpeed {
 	inline size_t writeFunction(void* ptr, size_t size, size_t nmemb, std::string* data) {
 		data->append((char*)ptr, size * nmemb);
 		return size * nmemb;
+	}
+
+	inline size_t callbackfunction(void* ptr, size_t size, size_t nmemb, void* userdata) {
+		FILE* stream = (FILE*)userdata;
+		if (!stream) return 0;
+		size_t written = fwrite((FILE*)ptr, size, nmemb, stream);
+		return written;
 	}
 
 	static nlohmann::json getAPIData(const std::string& apiUrl) {
@@ -80,10 +92,50 @@ namespace StarSpeed {
 		std::string imageURL = "";
 		void get(std::string username, std::string password) {
 			rawData = getAPIData(std::string{"http://api.swdteam.com/script/login.php?u=" + username + "&p=" + password + "&a=StarSpeed23"});
-			if (rawData.contains(SWD_JSON::USERNAME)) this->username = rawData[SWD_JSON::USERNAME];
+			if (rawData.contains(SWD_JSON::USERNAME)) {
+				this->username = rawData[SWD_JSON::USERNAME];
+				this->imageURL = "https://swdteam.com/img/uploads/" + this->username + ".png";
+			}
 			if (rawData.contains(SWD_JSON::OWNS_BETA)) this->hasBeta = rawData[SWD_JSON::OWNS_BETA];
 			if (rawData.contains(SWD_JSON::RANK)) this->rank = rawData[SWD_JSON::RANK];
-			if (rawData.contains(SWD_JSON::IMAGE)) this->imageURL = rawData[SWD_JSON::IMAGE];
+		}
+
+		bool downloadImage() {
+			FILE* fp = fopen(std::string{Motor::Path::docs + "swd_avatar.png"}.c_str(), "wb");
+			if (!fp) {
+				MOTOR_LOG("NO FILE");
+				return false;
+			}
+			if (imageURL.empty()) {
+				MOTOR_LOG("EMPTY IMAGE URL");
+				return false;
+			}
+			const char* url = imageURL.c_str();
+			auto curl = curl_easy_init();
+			if (curl) {
+				curl_easy_setopt(curl, CURLOPT_URL, "http://swdteam.com/img/uploads/Jayson_json.png");
+				curl_easy_setopt(curl, CURLOPT_WRITEDATA, fp);
+				curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, callbackfunction);
+				curl_easy_setopt(curl, CURLOPT_FOLLOWLOCATION, 1);
+
+				CURLcode rc = curl_easy_perform(curl);
+				if (rc) {
+					MOTOR_LOG(std::to_string(rc));
+					MOTOR_LOG("FALSE RC");
+					return false;
+				}
+
+				long res_code = 0;
+				curl_easy_getinfo(curl, CURLINFO_RESPONSE_CODE, &res_code);
+				if (!((res_code == 200 || res_code == 201) && rc != CURLE_ABORTED_BY_CALLBACK)) {
+					MOTOR_LOG(std::to_string(res_code));
+					return false;
+				}
+				curl_easy_cleanup(curl);
+			}
+			fflush(fp);
+			fclose(fp);
+			return true;
 		}
 	};
 
@@ -96,6 +148,25 @@ namespace StarSpeed {
 
 		void onCreate() {
 			swdData.get(username, password);
+			swdData.downloadImage();
+			transform()->position.set(1920 - 200 / 2, 200 / 2);
+			transform()->scale.set(175, 175);
+			addComponent<Motor::TextComponentBlended>(Tex::GAME_FONT);
+			getComponent<Motor::TextComponentBlended>()->setContent(swdData.username);
+			getComponent<Motor::TextComponentBlended>()->alignment_ = Motor::TextAlignment::RIGHT;
+			getComponent<Motor::TextComponentBlended>()->customScale_.set(24, 24);
+			getComponent<Motor::TextComponentBlended>()->translate_.set(-100, -75);
+
+			addComponent<Motor::TextComponentBlended>(Tex::GAME_FONT);
+			getComponent<Motor::TextComponentBlended>(1)->setContent(swdData.rank);
+			getComponent<Motor::TextComponentBlended>(1)->alignment_ = Motor::TextAlignment::RIGHT;
+			getComponent<Motor::TextComponentBlended>(1)->customScale_.set(24, 24);
+			getComponent<Motor::TextComponentBlended>(1)->translate_.set(-100, -30);
+
+			std::ifstream f(Motor::Path::docs + "swd_avatar.png");
+			if (f.good()) {
+				addComponent<Motor::SpriteComponent>(Motor::Path::docs + "swd_avatar.png");
+			}
 		}
 	};
 }

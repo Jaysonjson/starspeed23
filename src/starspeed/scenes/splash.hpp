@@ -16,15 +16,15 @@ namespace StarSpeed {
 			Tex::SWD_LOGO->load();
 			addComponent<Motor::SpriteComponent>(Tex::SWD_LOGO);
 			getComponent<Motor::SpriteComponent>()->blendMode_ = SDL_BLENDMODE_BLEND;
-			getComponent<Motor::TransformComponent>()->position.set(1920 / 2, 1080 / 2);
-			getComponent<Motor::TransformComponent>()->scale.set(449 * 3, 82 * 3);
+			transform()->position.set(1920 / 2, 1080 / 2);
+			transform()->scale.set(449 * 3, 82 * 3);
 		}
 
 		int alpha = 0;
 		void fixedUpdate() override {
 			Motor::GameObject::fixedUpdate();
 			alpha += 2;
-			getComponent<Motor::TransformComponent>()->color.setAlpha(alpha);
+			transform()->color.setAlpha(alpha);
 			if (alpha > 255) {
 				getriebe.getGame()->switchScene(new TitleScreen());
 			}
