@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "algorithm": "cpp",
+        "execution": "cpp",
+        "locale": "cpp",
+        "optional": "cpp",
+        "regex": "cpp",
+        "xstring": "cpp"
+    }
+}

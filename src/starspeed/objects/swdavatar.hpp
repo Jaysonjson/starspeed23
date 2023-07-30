@@ -113,7 +113,7 @@ namespace StarSpeed {
 			const char* url = imageURL.c_str();
 			auto curl = curl_easy_init();
 			if (curl) {
-				curl_easy_setopt(curl, CURLOPT_URL, "http://swdteam.com/img/uploads/Jayson_json.png");
+				curl_easy_setopt(curl, CURLOPT_URL, url);
 				curl_easy_setopt(curl, CURLOPT_WRITEDATA, fp);
 				curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, callbackfunction);
 				curl_easy_setopt(curl, CURLOPT_FOLLOWLOCATION, 1);
@@ -165,6 +165,9 @@ namespace StarSpeed {
 			std::ifstream f(Motor::Path::docs + "swd_avatar.png");
 			if (f.good()) {
 				addComponent<Motor::SpriteComponent>(Motor::Path::docs + "swd_avatar.png");
+			}
+			else {
+				addComponent<Motor::SpriteComponent>(Motor::ResourceLocation(resourcePackMod, "app/icon.png"));
 			}
 		}
 	};

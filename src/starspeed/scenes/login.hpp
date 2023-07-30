@@ -6,6 +6,7 @@
 #include "motor/components/collider.hpp"
 #include "starspeed/resourcepack.hpp"
 #include "titlescreen.hpp"
+#include "starspeed/objects/swdavatar.hpp"
 //WIP
 namespace StarSpeed {
 
@@ -18,15 +19,15 @@ namespace StarSpeed {
 		bool activatedField = false;
 
 		void onCreate() override {
-			addComponent<Motor::SpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/login/textfield.png"));
+			addComponent<Motor::SpriteComponent>(Tex::TEXTFIELD);
 			addComponent<Motor::SpriteColliderComponent>();
 			getComponent<Motor::SpriteColliderComponent>()->registerMouseClickEvent();
 			getComponent<Motor::SpriteColliderComponent>()->registerMouseHoverEvent();
-			addComponent<Motor::TextComponentBlended>(Tex::GAME_FONT);
+			addComponent<Motor::TextComponentBlended>(Tex::DEBUG_FONT);
 			getComponent<Motor::TextComponentBlended>()->setContent(placeholder);
 			getComponent<Motor::TextComponentBlended>()->alignment_ = Motor::TextAlignment::LEFT;
-			getComponent<Motor::TextComponentBlended>()->customScale_.set(64, 64);
-			getComponent<Motor::TextComponentBlended>()->translate_.set(-250, 0);
+			getComponent<Motor::TextComponentBlended>()->customScale_.set(40, 48);
+			getComponent<Motor::TextComponentBlended>()->translate_.set(-230, 0);
 
 			transform()->position.set(1920 / 2, 1080 / 1.75);
 			transform()->scale.set(500, 64);
@@ -121,16 +122,17 @@ namespace StarSpeed {
 		bool activatedField = false;
 
 		void onCreate() override {
-			addComponent<Motor::SpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/login/textfield.png"));
+			addComponent<Motor::SpriteComponent>(Tex::TEXTFIELD);
 			addComponent<Motor::SpriteColliderComponent>();
 			getComponent<Motor::SpriteColliderComponent>()->registerMouseClickEvent();
 			getComponent<Motor::SpriteColliderComponent>()->registerMouseHoverEvent();
-			addComponent<Motor::TextComponentBlended>(Tex::GAME_FONT);
+			addComponent<Motor::TextComponentBlended>(Tex::DEBUG_FONT);
 			getComponent<Motor::TextComponentBlended>()->setContent(placeholder);
 			getComponent<Motor::TextComponentBlended>()->alignment_ = Motor::TextAlignment::LEFT;
-			getComponent<Motor::TextComponentBlended>()->customScale_.set(64, 64);
-			getComponent<Motor::TextComponentBlended>()->translate_.set(-250, 0);
-
+			getComponent<Motor::TextComponentBlended>()->customScale_.set(40, 48);
+			getComponent<Motor::TextComponentBlended>()->translate_.set(-230, 0);
+			getComponent<Motor::TextComponentBlended>()->color_.set(87, 86, 85, 15);
+			getComponent<Motor::TextComponentBlended>()->useTransformColor_ = false;
 			transform()->position.set(1920 / 2, 1080 / 2);
 			transform()->scale.set(500, 64);
 		}
@@ -187,9 +189,11 @@ namespace StarSpeed {
 			}
 			if (!input.empty()) {
 				getComponent<Motor::TextComponentBlended>()->setContent(input);
+				getComponent<Motor::TextComponentBlended>()->useTransformColor_ = true;
 			}
 			else {
 				getComponent<Motor::TextComponentBlended>()->setContent(placeholder);
+				getComponent<Motor::TextComponentBlended>()->useTransformColor_ = false;
 			}
 		};
 
@@ -198,9 +202,11 @@ namespace StarSpeed {
 				input += event.text.text;
 				if (!input.empty()) {
 					getComponent<Motor::TextComponentBlended>()->setContent(input);
+					getComponent<Motor::TextComponentBlended>()->useTransformColor_ = true;
 				}
 				else {
 					getComponent<Motor::TextComponentBlended>()->setContent(placeholder);
+					getComponent<Motor::TextComponentBlended>()->useTransformColor_ = false;
 				}
 			}
 		};
@@ -209,15 +215,15 @@ namespace StarSpeed {
 	class SkipButton : public Motor::GameObject {
 	public:
 		void onCreate() override {
-			addComponent<Motor::SpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/login/textfield.png"));
+			addComponent<Motor::SpriteComponent>(Tex::TEXTFIELD);
 			addComponent<Motor::SpriteColliderComponent>();
 			getComponent<Motor::SpriteColliderComponent>()->registerMouseClickEvent();
 			getComponent<Motor::SpriteColliderComponent>()->registerMouseHoverEvent();
-			addComponent<Motor::TextComponentBlended>(Tex::GAME_FONT);
+			addComponent<Motor::TextComponentBlended>(Tex::DEBUG_FONT);
 			getComponent<Motor::TextComponentBlended>()->setContent("Skip");
-			getComponent<Motor::TextComponentBlended>()->alignment_ = Motor::TextAlignment::LEFT;
-			getComponent<Motor::TextComponentBlended>()->customScale_.set(64, 64);
-			getComponent<Motor::TextComponentBlended>()->translate_.set(-250, 0);
+			getComponent<Motor::TextComponentBlended>()->alignment_ = Motor::TextAlignment::MID;
+			getComponent<Motor::TextComponentBlended>()->customScale_.set(40, 48);
+			//getComponent<Motor::TextComponentBlended>()->translate_.set(-250, 0);
 
 			transform()->position.set(1920 / 2, 1080 / 1.2);
 			transform()->scale.set(500, 64);
@@ -231,6 +237,14 @@ namespace StarSpeed {
 						getriebe.getGame()->switchScene(new TitleScreen());
 					}
 				}
+				if (colliderEvent->type == Motor::HOVER) {
+					if (colliderEvent->onObject) {
+						transform()->color.set(125, 125, 90, 255);
+					}
+					else {
+						transform()->color.set(255, 255, 255, 255);
+					}
+				}
 			}
 		};
 	};
@@ -240,15 +254,15 @@ namespace StarSpeed {
 		TextField* user;
 		PasswordTextField* password;
 		void onCreate() override {
-			addComponent<Motor::SpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/login/textfield.png"));
+			addComponent<Motor::SpriteComponent>(Tex::TEXTFIELD);
 			addComponent<Motor::SpriteColliderComponent>();
 			getComponent<Motor::SpriteColliderComponent>()->registerMouseClickEvent();
 			getComponent<Motor::SpriteColliderComponent>()->registerMouseHoverEvent();
-			addComponent<Motor::TextComponentBlended>(Tex::GAME_FONT);
+			addComponent<Motor::TextComponentBlended>(Tex::DEBUG_FONT);
 			getComponent<Motor::TextComponentBlended>()->setContent("Login");
-			getComponent<Motor::TextComponentBlended>()->alignment_ = Motor::TextAlignment::LEFT;
-			getComponent<Motor::TextComponentBlended>()->customScale_.set(64, 64);
-			getComponent<Motor::TextComponentBlended>()->translate_.set(-250, 0);
+			getComponent<Motor::TextComponentBlended>()->alignment_ = Motor::TextAlignment::MID;
+			getComponent<Motor::TextComponentBlended>()->customScale_.set(40, 48);
+			//getComponent<Motor::TextComponentBlended>()->translate_.set(-240, 0);
 
 			transform()->position.set(1920 / 2, 1080 / 1.3);
 			transform()->scale.set(500, 64);
@@ -262,6 +276,54 @@ namespace StarSpeed {
 						SWD_USERNAME = user->input;
 						SWD_PASSWORD = password->input;
 						getriebe.getGame()->switchScene(new TitleScreen());
+					}
+				}
+
+				if (colliderEvent->type == Motor::HOVER) {
+					if (colliderEvent->onObject) {
+						transform()->color.set(125, 125, 90, 255);
+					}
+					else {
+						transform()->color.set(255, 255, 255, 255);
+					}
+				}
+			}
+		};
+	};
+
+	class DiscordButton : public Motor::GameObject {
+	public:
+	
+		void onCreate() override {
+			addComponent<Motor::SpriteComponent>(Tex::TEXTFIELD);
+			addComponent<Motor::SpriteColliderComponent>();
+			getComponent<Motor::SpriteColliderComponent>()->registerMouseClickEvent();
+			getComponent<Motor::SpriteColliderComponent>()->registerMouseHoverEvent();
+			addComponent<Motor::TextComponentBlended>(Tex::DEBUG_FONT);
+			getComponent<Motor::TextComponentBlended>()->setContent("Use Discord instead");
+			getComponent<Motor::TextComponentBlended>()->alignment_ = Motor::TextAlignment::MID;
+			getComponent<Motor::TextComponentBlended>()->customScale_.set(40, 48);
+			//getComponent<Motor::TextComponentBlended>()->translate_.set(-240, 0);
+
+			transform()->position.set(1920 / 2, 1080 / 1.1);
+			transform()->scale.set(500, 64);
+		}
+
+		void onComponentEvent(Motor::IComponentEvent* eventData) override {
+			if (eventData->id() == "collider") {
+				Motor::ColliderEvent* colliderEvent = dynamic_cast<Motor::ColliderEvent*>(eventData);
+				if (colliderEvent->type == Motor::CLICK) {
+					if (colliderEvent->onObject) {
+						getriebe.getGame()->switchScene(new TitleScreen());
+					}
+				}
+
+				if (colliderEvent->type == Motor::HOVER) {
+					if (colliderEvent->onObject) {
+						transform()->color.set(125, 125, 90, 255);
+					}
+					else {
+						transform()->color.set(255, 255, 255, 255);
 					}
 				}
 			}
@@ -289,6 +351,9 @@ namespace StarSpeed {
 			LOGIN_BUTTON->user = USERNAME_FIELD;
 			LOGIN_BUTTON->password = PASSWORD_FIELD;
 			LOGIN_BUTTON->addToCurrentScene();
+
+			DiscordButton* DISCORD_BUTTON = new DiscordButton();
+			DISCORD_BUTTON->addToCurrentScene();
 
 			Motor::GameObject* SWD_LOGO = new Motor::GameObject();
 			SWD_LOGO->addComponent<Motor::SpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/login/swd.png"));

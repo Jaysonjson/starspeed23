@@ -8,7 +8,7 @@ set(OLD_GLOB
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
-  file(TOUCH_NOCREATE "H:/starspeed23/out/build/x64-Debug/CMakeFiles/cmake.verify_globs")
+  file(TOUCH_NOCREATE "H:/starspeed23/build/CMakeFiles/cmake.verify_globs")
 endif()
 
 # LIBRARIES at CMakeLists.txt:26 (file)
@@ -17,7 +17,7 @@ set(OLD_GLOB
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
-  file(TOUCH_NOCREATE "H:/starspeed23/out/build/x64-Debug/CMakeFiles/cmake.verify_globs")
+  file(TOUCH_NOCREATE "H:/starspeed23/build/CMakeFiles/cmake.verify_globs")
 endif()
 
 # LIBRARIES at CMakeLists.txt:26 (file)
@@ -36,7 +36,7 @@ set(OLD_GLOB
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
-  file(TOUCH_NOCREATE "H:/starspeed23/out/build/x64-Debug/CMakeFiles/cmake.verify_globs")
+  file(TOUCH_NOCREATE "H:/starspeed23/build/CMakeFiles/cmake.verify_globs")
 endif()
 
 # LIBRARIES at CMakeLists.txt:26 (file)
@@ -45,7 +45,7 @@ set(OLD_GLOB
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
-  file(TOUCH_NOCREATE "H:/starspeed23/out/build/x64-Debug/CMakeFiles/cmake.verify_globs")
+  file(TOUCH_NOCREATE "H:/starspeed23/build/CMakeFiles/cmake.verify_globs")
 endif()
 
 # SOURCES_CPP at CMakeLists.txt:25 (file)
@@ -58,7 +58,7 @@ set(OLD_GLOB
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
-  file(TOUCH_NOCREATE "H:/starspeed23/out/build/x64-Debug/CMakeFiles/cmake.verify_globs")
+  file(TOUCH_NOCREATE "H:/starspeed23/build/CMakeFiles/cmake.verify_globs")
 endif()
 
 # SOURCES_CPP at CMakeLists.txt:25 (file)
@@ -78,5 +78,5 @@ set(OLD_GLOB
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
-  file(TOUCH_NOCREATE "H:/starspeed23/out/build/x64-Debug/CMakeFiles/cmake.verify_globs")
+  file(TOUCH_NOCREATE "H:/starspeed23/build/CMakeFiles/cmake.verify_globs")
 endif()

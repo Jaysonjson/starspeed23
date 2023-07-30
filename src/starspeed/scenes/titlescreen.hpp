@@ -6,7 +6,7 @@
 #include "starspeed/textures.hpp"
 #include "motor/components/text.hpp"
 #include "starspeed/objects/swdavatar.hpp"
-
+#include "fight.hpp"
 
 namespace StarSpeed {
 
@@ -14,8 +14,8 @@ namespace StarSpeed {
 	public:
 
 		void onCreate() {
-			addComponent<Motor::SpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/title/buttons/play.png"));
-			getComponent<Motor::SpriteComponent>()->blendMode_ = SDL_BLENDMODE_BLEND;
+			addComponent<Motor::DynamicSpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/title/buttons/play.png"));
+			getComponent<Motor::DynamicSpriteComponent>()->blendMode_ = SDL_BLENDMODE_BLEND;
 			transform()->position.set(1920 / 8, 1080 / 1.7);
 			transform()->scale.set(128 * 1.5, 128 * 1.5);
 			addComponent<Motor::SpriteColliderComponent>();
@@ -34,6 +34,11 @@ namespace StarSpeed {
 						transform()->scale.set(128 * 1.55);
 					}
 				}
+				if(colliderEvent->type == Motor::CLICK) {
+					if(colliderEvent->onObject) {
+						getriebe.getGame()->switchScene(new FightScene());
+					}
+				}
 			}
 		};
 	};
@@ -44,8 +49,8 @@ namespace StarSpeed {
 		void init(Motor::Game* game) override {
 			Motor::Scene::init(game);
 			Motor::GameObject* STARSPEED_LOGO = new Motor::GameObject();
-			STARSPEED_LOGO->addComponent<Motor::SpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/title/starspeed.png"));
-			STARSPEED_LOGO->getComponent<Motor::SpriteComponent>()->blendMode_ = SDL_BLENDMODE_BLEND;
+			STARSPEED_LOGO->addComponent<Motor::DynamicSpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/title/starspeed.png"));
+			STARSPEED_LOGO->getComponent<Motor::DynamicSpriteComponent>()->blendMode_ = SDL_BLENDMODE_BLEND;
 			STARSPEED_LOGO->transform()->position.set(1920 / 2, 1080 / 5.2);
 			STARSPEED_LOGO->transform()->scale.set(1160, 517);
 			STARSPEED_LOGO->addToCurrentScene();
@@ -61,11 +66,11 @@ namespace StarSpeed {
 			SWD_LOGO->addToCurrentScene();
 
 			Motor::GameObject* STARSPEED_TEXT = new Motor::GameObject();
-			STARSPEED_TEXT->addComponent<Motor::TextComponentBlended>(Tex::GAME_FONT);
+			STARSPEED_TEXT->addComponent<Motor::TextComponentBlended>(Tex::DEBUG_FONT);
 			STARSPEED_TEXT->getComponent<Motor::TextComponentBlended>()->setContent("StarSpeed23 Version 0.1 ALPHA // F3 for DebugText");
 			STARSPEED_TEXT->getComponent<Motor::TextComponentBlended>()->alignment_ = Motor::TextAlignment::RIGHT;
 			STARSPEED_TEXT->transform()->position.set(1915, 1080 - 16);
-			STARSPEED_TEXT->transform()->scale.set(16, 16);
+			STARSPEED_TEXT->transform()->scale.set(16, 20);
 			STARSPEED_TEXT->addToCurrentScene();
 
 			Motor::GameObject* SPLASH_TEXT = new Motor::GameObject();
@@ -76,8 +81,10 @@ namespace StarSpeed {
 			SPLASH_TEXT->transform()->scale.set(32, 32);
 			SPLASH_TEXT->addToCurrentScene();
 
-			SWDAvatar* SWD_AVATAR = new SWDAvatar();
-			SWD_AVATAR->addToCurrentScene();
+			if (!SWD_USERNAME.empty()) {
+				SWDAvatar* SWD_AVATAR = new SWDAvatar();
+				SWD_AVATAR->addToCurrentScene();
+			}
 		}
 	};
 }
