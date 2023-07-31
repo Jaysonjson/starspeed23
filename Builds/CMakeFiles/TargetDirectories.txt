@@ -1,0 +1,3 @@
+H:/starspeed23/Builds/CMakeFiles/StarSpeed23.dir
+H:/starspeed23/Builds/CMakeFiles/ALL_BUILD.dir
+H:/starspeed23/Builds/CMakeFiles/ZERO_CHECK.dir

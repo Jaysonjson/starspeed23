@@ -7,6 +7,7 @@
 #include "starspeed/resourcepack.hpp"
 #include "titlescreen.hpp"
 #include "starspeed/objects/swdavatar.hpp"
+#include "starspeed/cursor.hpp"
 //WIP
 namespace StarSpeed {
 
@@ -50,9 +51,11 @@ namespace StarSpeed {
 				if (colliderEvent->type == Motor::HOVER) {
 					if (!colliderEvent->onObject) {
 						transform()->color.set(255, 255, 255, 255);
+						CURSOR->clickable(false);
 					}
 					else {
 						transform()->color.set(125, 50, 90, 255);
+						CURSOR->clickable(true);
 					}
 				}
 			}
@@ -154,9 +157,11 @@ namespace StarSpeed {
 				if (colliderEvent->type == Motor::HOVER) {
 					if (!colliderEvent->onObject) {
 						transform()->color.set(255, 255, 255, 255);
+						CURSOR->clickable(false);
 					}
 					else {
 						transform()->color.set(125, 50, 90, 255);
+						CURSOR->clickable(true);
 					}
 				}
 			}
@@ -240,9 +245,11 @@ namespace StarSpeed {
 				if (colliderEvent->type == Motor::HOVER) {
 					if (colliderEvent->onObject) {
 						transform()->color.set(125, 125, 90, 255);
+						CURSOR->clickable(true);
 					}
 					else {
 						transform()->color.set(255, 255, 255, 255);
+						CURSOR->clickable(false);
 					}
 				}
 			}
@@ -282,9 +289,11 @@ namespace StarSpeed {
 				if (colliderEvent->type == Motor::HOVER) {
 					if (colliderEvent->onObject) {
 						transform()->color.set(125, 125, 90, 255);
+						CURSOR->clickable(true);
 					}
 					else {
 						transform()->color.set(255, 255, 255, 255);
+						CURSOR->clickable(false);
 					}
 				}
 			}
@@ -321,9 +330,11 @@ namespace StarSpeed {
 				if (colliderEvent->type == Motor::HOVER) {
 					if (colliderEvent->onObject) {
 						transform()->color.set(125, 125, 90, 255);
+						CURSOR->clickable(true);
 					}
 					else {
 						transform()->color.set(255, 255, 255, 255);
+						CURSOR->clickable(false);
 					}
 				}
 			}

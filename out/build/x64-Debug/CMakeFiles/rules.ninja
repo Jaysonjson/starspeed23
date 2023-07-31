@@ -7,7 +7,7 @@
 
 # =============================================================================
 # Project: StarSpeed23
-# Configurations: Debug
+# Configurations: Release
 # =============================================================================
 # =============================================================================
 
@@ -20,27 +20,27 @@ msvc_deps_prefix = Note: including file:
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__StarSpeed23_unscanned_Debug
+rule CXX_COMPILER__StarSpeed23_unscanned_Release
   deps = msvc
-  command = D:\VS2022WIN10\VC\Tools\MSVC\14.34.31933\bin\Hostx64\x64\cl.exe  /nologo /TP $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
+  command = D:\VS2022WIN10\VC\Tools\MSVC\14.34.31933\bin\Hostx86\x64\cl.exe  /nologo /TP $DEFINES $INCLUDES $FLAGS /showIncludes /Fo$out /Fd$TARGET_COMPILE_PDB /FS -c $in
   description = Building CXX object $out
 
 
 #############################################
 # Rule for compiling RC files.
 
-rule RC_COMPILER__StarSpeed23_unscanned_Debug
+rule RC_COMPILER__StarSpeed23_unscanned_Release
   depfile = $DEP_FILE
   deps = gcc
-  command = D:/VS2022~1/Common7/IDE/COMMON~1/MICROS~1/CMake/CMake/bin/cmcldeps.exe RC $in $DEP_FILE $out "Note: including file: " "D:/VS2022WIN10/VC/Tools/MSVC/14.34.31933/bin/Hostx64/x64/cl.exe" C:\PROGRA~2\WI3CF2~1\10\bin\100226~1.0\x64\rc.exe $DEFINES $INCLUDES $FLAGS /fo $out $in
+  command = D:/VS2022~1/Common7/IDE/COMMON~1/MICROS~1/CMake/CMake/bin/cmcldeps.exe RC $in $DEP_FILE $out "Note: including file: " "D:/VS2022WIN10/VC/Tools/MSVC/14.34.31933/bin/Hostx86/x64/cl.exe" C:\PROGRA~2\WI3CF2~1\10\bin\100226~1.0\x86\rc.exe $DEFINES $INCLUDES $FLAGS /fo $out $in
   description = Building RC object $out
 
 
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__StarSpeed23_Debug
-  command = cmd.exe /C "$PRE_LINK && D:\VS2022WIN10\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E vs_link_exe --intdir=$OBJECT_DIR --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100226~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100226~1.0\x64\mt.exe --manifests $MANIFESTS -- D:\VS2022WIN10\VC\Tools\MSVC\14.34.31933\bin\Hostx64\x64\link.exe /nologo $in  /out:$TARGET_FILE /implib:$TARGET_IMPLIB /pdb:$TARGET_PDB /version:0.0 $LINK_FLAGS $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+rule CXX_EXECUTABLE_LINKER__StarSpeed23_Release
+  command = cmd.exe /C "$PRE_LINK && D:\VS2022WIN10\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -E vs_link_exe --intdir=$OBJECT_DIR --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100226~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100226~1.0\x86\mt.exe --manifests $MANIFESTS -- D:\VS2022WIN10\VC\Tools\MSVC\14.34.31933\bin\Hostx86\x64\link.exe /nologo $in  /out:$TARGET_FILE /implib:$TARGET_IMPLIB /pdb:$TARGET_PDB /version:0.0 $LINK_FLAGS $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
 

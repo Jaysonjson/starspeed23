@@ -2,12 +2,13 @@
 #include "ship.hpp"
 #include "motor/motor.hpp"
 #include "motor/components/sprite.hpp"
+#include "starspeed/objects/bullets/bullet.hpp"
 #include <random>
 namespace StarSpeed {
 
     class PlayerShip : public Ship {
     public:
-        float speed_ = 0.75;
+        float speed_ = 1.05;
         void onCreate() override {
             addComponent<Motor::SpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/ships/player/default/default.png"));
             getComponent<Motor::SpriteComponent>()->blendMode_ = SDL_BLENDMODE_BLEND;
@@ -16,12 +17,29 @@ namespace StarSpeed {
             getComponent<Motor::SpriteComponent>(1)->useCustomColor_ = true;
             getComponent<Motor::SpriteComponent>(1)->customColor_.set(234, 225, 125, 255);
             transform()->scale.set(64, 64);
-            transform()->position.set(1920 / 3, 950);
+            transform()->position.set(1920 / 3, 0);
+            getComponent<Motor::SpriteComponent>(0)->ignoreCamera_ = true;
+            getComponent<Motor::SpriteComponent>(1)->ignoreCamera_ = true;
+            getriebe.getGame()->getCurrentScene()->getCamera().translate.set(-120, 450);
         }
+
+        void registerEvents() override {
+		    registerEvent(Motor::Events::keyUp.attach(&onKeyUp));
+	    }
 
         void shoot() override {
-
+            PlayerBullet* BULLET = new PlayerBullet();
+            BULLET->transform()->position.set(transform()->position.getX(), transform()->position.getY() - 32);
+            BULLET->addToCurrentScene();
         }
+
+		std::function<void(SDL_Event&)> onKeyUp = [this](SDL_Event& event) {
+		    if (event.key.keysym.sym == SDL_KeyCode::SDLK_SPACE) {
+			    shoot();
+		    }
+	    };
+
+
         int hueTimer = 0;
         void update() override {
             GameObject::update();
@@ -49,6 +67,10 @@ namespace StarSpeed {
                     transform()->position.add({ -speed_ * delta, 0 });
                 }
             }
+
+            /* NO WHEN MOVING UP, ENEMY SHIPS SHOULD BE FASTER DOWN INSTEAD! */
+            if (key[SDL_Scancode::SDL_SCANCODE_W]) getComponent<Motor::TransformComponent>()->position.add({ 0, -speed_ * 0.75f * delta });
+            //if (key[SDL_Scancode::SDL_SCANCODE_S]) getComponent<Motor::TransformComponent>()->position.add({ 0, speed_ * 0.75f * delta });
         }
     };
 }

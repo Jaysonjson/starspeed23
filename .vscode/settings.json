@@ -5,6 +5,7 @@
         "locale": "cpp",
         "optional": "cpp",
         "regex": "cpp",
-        "xstring": "cpp"
+        "xstring": "cpp",
+        "vector": "cpp"
     }
 }

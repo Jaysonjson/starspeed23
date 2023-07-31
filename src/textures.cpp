@@ -7,6 +7,16 @@ std::string SWD_PASSWORD = "";
 namespace StarSpeed::Tex {
 	Motor::Texture* SWD_LOGO = nullptr;
 	Motor::Texture* TEXTFIELD = nullptr;
+	Motor::Texture* CIRCLE_GLOW = nullptr;
+	Motor::Texture* SAW_ENEMY = nullptr;
+	Motor::Texture* CENT_ENEMY = nullptr;
+	Motor::Texture* CINA_ENEMY = nullptr;
+	Motor::Texture* ESENT_ENEMY = nullptr;
+	Motor::Texture* FAIRE_ENEMY = nullptr;
+	Motor::Texture* PINE_ENEMY = nullptr;
+	Motor::Texture* SKRIP_ENEMY = nullptr;
+	Motor::Texture* ZENIN_ENEMY = nullptr;
+	Motor::Texture* DEFAULT_BULLET = nullptr;
 	Motor::Font* GAME_FONT = nullptr;
 	Motor::Font* GAME_FONT_OUTLINE = nullptr;
 
@@ -15,6 +25,16 @@ namespace StarSpeed::Tex {
 
 	void setTextures() {
 		SWD_LOGO = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/splash/swd_logo.png"));
+		CIRCLE_GLOW = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/circle_glow.png"));
+		SAW_ENEMY = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/ships/enemy/saw.png"));
+		CENT_ENEMY = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/ships/enemy/cent.png"));
+		CINA_ENEMY = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/ships/enemy/cina.png"));
+		ESENT_ENEMY = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/ships/enemy/esent.png"));
+		FAIRE_ENEMY = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/ships/enemy/faire.png"));
+		PINE_ENEMY = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/ships/enemy/pine.png"));
+		SKRIP_ENEMY = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/ships/enemy/skrip.png"));
+		ZENIN_ENEMY = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/ships/enemy/zenin.png"));
+		DEFAULT_BULLET = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/bullets/bullet.png"));
 		TEXTFIELD = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/login/textfield.png"));
 		GAME_FONT = new Motor::Font(Motor::ResourceLocation(resourcePackMod, "fonts/yoster.ttf"), 32);
 		GAME_FONT_OUTLINE = new Motor::Font(Motor::ResourceLocation(resourcePackMod, "fonts/yoster.ttf"), 32);
