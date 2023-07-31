@@ -23,7 +23,7 @@ CursorObject* CURSOR = new CursorObject();
 #undef main
 int main() {
 	Motor::Path::set_save_game_folder("StarSpeed23");
-	getriebe.init("StarSpeed2023", 1920 * 0.75, 1080 * 0.75, SDL_WINDOW_RESIZABLE, SDL_RENDERER_ACCELERATED);
+	getriebe.init("StarSpeed23", 1920 * 0.75, 1080 * 0.75, SDL_WINDOW_RESIZABLE, SDL_RENDERER_ACCELERATED);
 	SDL_Surface* icon = IMG_Load(Motor::ResourceLocation(resourcePackMod, "app/icon.png").getPath().c_str());
 	SDL_SetWindowIcon(getriebe.sdl_window(), icon);
 	StarSpeed::Tex::setTextures();
