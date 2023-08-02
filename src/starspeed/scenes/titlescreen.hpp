@@ -7,6 +7,7 @@
 #include "motor/components/text.hpp"
 #include "starspeed/objects/swdavatar.hpp"
 #include "fight.hpp"
+#include "starspeed/discord.hpp"
 
 namespace StarSpeed {
 
@@ -70,7 +71,7 @@ namespace StarSpeed {
 			STARSPEED_TEXT->getComponent<Motor::TextComponentBlended>()->setContent("StarSpeed23 Version 0.1 ALPHA // F3 for DebugText");
 			STARSPEED_TEXT->getComponent<Motor::TextComponentBlended>()->alignment_ = Motor::TextAlignment::RIGHT;
 			STARSPEED_TEXT->transform()->position.set(1915, 1080 - 16);
-			STARSPEED_TEXT->transform()->scale.set(16, 20);
+			STARSPEED_TEXT->getComponent<Motor::TextComponentBlended>()->customScale_.set(16, 20);
 			STARSPEED_TEXT->addToCurrentScene();
 
 			Motor::GameObject* SPLASH_TEXT = new Motor::GameObject();
@@ -81,10 +82,16 @@ namespace StarSpeed {
 			SPLASH_TEXT->transform()->scale.set(32, 32);
 			SPLASH_TEXT->addToCurrentScene();
 
-			if (!SWD_USERNAME.empty()) {
+			if (!SWD_USERNAME.empty() && !discordApi.isCreated()) {
 				SWDAvatar* SWD_AVATAR = new SWDAvatar();
 				SWD_AVATAR->addToCurrentScene();
 			}
+
+			if(discordApi.isCreated()) {
+				discordAvatar->addComponent<Motor::SpriteComponent>(avatarTexture);
+				discordAvatar->addToCurrentScene();
+			}
+			
 		}
 	};
 }

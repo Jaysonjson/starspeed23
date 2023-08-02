@@ -50,6 +50,15 @@ namespace StarSpeed {
 			BACK_GLOW->transform()->position.set(-750, -750);
 			BACK_GLOW->transform()->color.set(19, 37, 48, 175);
 			BACK_GLOW->addToCurrentScene();
+
+			Motor::GameObject* BACK2_GLOW = new Motor::GameObject();
+			BACK2_GLOW->addComponent<Motor::SpriteComponent>(Tex::CIRCLE_GLOW);
+			BACK2_GLOW->getComponent<Motor::SpriteComponent>()->blendMode_ = SDL_BLENDMODE_ADD;
+			BACK2_GLOW->getComponent<Motor::SpriteComponent>()->ignoreCamera_ = true;
+			BACK2_GLOW->transform()->scale.set(5000, 5000);
+			BACK2_GLOW->transform()->position.set(1920 / 2, 1080 / 2);
+			BACK2_GLOW->transform()->color.set(19, 37, 48, 50);
+			BACK2_GLOW->addToCurrentScene();
 		}
 	};
 }

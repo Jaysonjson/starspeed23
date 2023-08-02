@@ -8,8 +8,9 @@ set(VERSION "0.0.1" CACHE STRING "")
 set(MAKE_GENERATOR_PLATFORM x64)
 set(OUTPUT_TYPE RELEASE)
 set(CMAKE_BUILD_TYPE Release)
+add_compile_definitions(FUCHSLIB_BUILD_DISCORD)
 
-message( ${CMAKE_BUILD_TYPE} )
+message("Build: " ${CMAKE_BUILD_TYPE})
 
 IF(OUTPUT_TYPE MATCHES RELEASE)
     message("RELEASE")

@@ -11,11 +11,11 @@ namespace StarSpeed {
         float speed_ = 1.15;
         void onCreate() override {
             addComponent<Motor::SpriteComponent>(Tex::DEFAULT_BULLET);
-            getComponent<Motor::SpriteComponent>()->blendMode_ = SDL_BLENDMODE_BLEND;
+            getComponent<Motor::SpriteComponent>()->blendMode_ = SDL_BLENDMODE_ADD;
             addComponent<Motor::SpriteColliderComponent>();
             addComponent<Motor::SpriteComponent>(Tex::CIRCLE_GLOW);
             getComponent<Motor::SpriteComponent>(1)->blendMode_ = SDL_BLENDMODE_ADD;
-            transform()->scale.set(20, 20);
+            transform()->scale.set(14, 14);
         }
 
         virtual void handleMovement() {
@@ -37,7 +37,19 @@ namespace StarSpeed {
     };
 
     class EnemyBullet : public Bullet {
+        void onCreate() override {
+            Bullet::onCreate();
+            transform()->color.set(115, 30, 30, 255);
+        }
+    };
 
+    class CentBullet : public EnemyBullet {
+        void fixedUpdate() override {
+            EnemyBullet::fixedUpdate();
+            transform()->scale.set(transform()->scale.x + 0.65f, transform()->scale.y + 1.25f);
+            getComponent<Motor::SpriteComponent>(1)->useCustomColor_ = true;
+            getComponent<Motor::SpriteComponent>(1)->customColor_.set(115, 30, 30, 175);
+        }
     };
 
     class PlayerBullet : public Bullet {

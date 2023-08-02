@@ -8,6 +8,7 @@
 #include "titlescreen.hpp"
 #include "starspeed/objects/swdavatar.hpp"
 #include "starspeed/cursor.hpp"
+#include "starspeed/discord.hpp"
 //WIP
 namespace StarSpeed {
 
@@ -300,6 +301,49 @@ namespace StarSpeed {
 		};
 	};
 
+/*void discordThreadFunction() {
+	bool discordRunning = true;
+	if (!avatarTexture->exists()) avatarTexture->load();
+	discordAvatar->getComponent<Motor::SpriteComponent>()->setTexture(avatarTexture);
+	while (discordRunning) {
+		int tries = 0;
+
+		while (discordApi.getCurrentUser().GetId() == 0) {
+			std::this_thread::sleep_for(std::chrono::milliseconds(5000));
+			if (discordApi.getCurrentUser().GetId() != 0) {
+				json rawData = discordApi.getUserRawData(discordApi.getCurrentUser().GetId(), "OTAzNzA3NTE3MjM2OTYxMjkw.G1G1i1.KQp3ASBp1d04fy3UM_95e_wYFiaJY6fLDW611k");
+				string avatar = discordApi.getAvatarId(rawData);
+				auto avatarStream = ifstream{ "avatar.png" };
+				bool avatarExists = avatarStream.good();
+				avatarStream.close();
+				if (!avatarExists) {
+					if (discordApi.saveAvatar(rawData, "avatar.png", 512)) MOTOR_LOG("Got Avatar!");
+				}
+				if (!avatarTexture->exists()) avatarTexture->load();
+				MOTOR_LOG("Got Data! " + to_string(discordApi.getCurrentUser().GetId()));
+				discordRunning = false;
+
+				rawData = discordApi.getUserRawData(583352965427888134L, "OTAzNzA3NTE3MjM2OTYxMjkw.G1G1i1.KQp3ASBp1d04fy3UM_95e_wYFiaJY6fLDW611k");
+				avatar = discordApi.getAvatarId(rawData);
+				avatarStream = ifstream{ "avatar2.png" };
+				avatarExists = avatarStream.good();
+				avatarStream.close();
+				if (!avatarExists) {
+					if (discordApi.saveAvatar(rawData, "avatar2.png", 512)) MOTOR_LOG("Got Avatar!");
+				}
+				break;
+			}
+			++tries;
+			MOTOR_LOG("Trying to get Discord Data... [" + to_string(tries) + "/45]");
+			if (tries == 45) {
+				MOTOR_LOG("Could not get Discord Data!");
+				discordRunning = false;
+				break;
+			}
+		}
+	}
+}
+*/
 	class DiscordButton : public Motor::GameObject {
 	public:
 	
@@ -323,6 +367,8 @@ namespace StarSpeed {
 				Motor::ColliderEvent* colliderEvent = dynamic_cast<Motor::ColliderEvent*>(eventData);
 				if (colliderEvent->type == Motor::CLICK) {
 					if (colliderEvent->onObject) {
+						//discordApi.start(903707517236961290, EDiscordCreateFlags::DiscordCreateFlags_NoRequireDiscord);
+						//std::thread* discordThread = new std::thread(discordThreadFunction);
 						getriebe.getGame()->switchScene(new TitleScreen());
 					}
 				}
@@ -340,9 +386,6 @@ namespace StarSpeed {
 			}
 		};
 	};
-
-
-
 
 	class LoginScreen : public Motor::Scene {
 

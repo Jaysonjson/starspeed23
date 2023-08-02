@@ -6,7 +6,6 @@
 #pragma comment(lib, "Crypt32.lib")
 #pragma comment(lib, "advapi32.lib")
 
-
 #include "motor/motor.hpp"
 #include "motor/paths.hpp"
 #include "motor/content/resourcelocation.hpp"

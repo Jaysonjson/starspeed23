@@ -150,17 +150,17 @@ namespace StarSpeed {
 			swdData.downloadImage();
 			transform()->position.set(1920 - 200 / 2, 200 / 2);
 			transform()->scale.set(175, 175);
-			addComponent<Motor::TextComponentBlended>(Tex::GAME_FONT);
+			addComponent<Motor::TextComponentBlended>(Tex::DEBUG_FONT);
 			getComponent<Motor::TextComponentBlended>()->setContent(swdData.username);
 			getComponent<Motor::TextComponentBlended>()->alignment_ = Motor::TextAlignment::RIGHT;
 			getComponent<Motor::TextComponentBlended>()->customScale_.set(24, 24);
 			getComponent<Motor::TextComponentBlended>()->translate_.set(-100, -75);
 
-			addComponent<Motor::TextComponentBlended>(Tex::GAME_FONT);
+			addComponent<Motor::TextComponentBlended>(Tex::DEBUG_FONT);
 			getComponent<Motor::TextComponentBlended>(1)->setContent(swdData.rank);
 			getComponent<Motor::TextComponentBlended>(1)->alignment_ = Motor::TextAlignment::RIGHT;
 			getComponent<Motor::TextComponentBlended>(1)->customScale_.set(24, 24);
-			getComponent<Motor::TextComponentBlended>(1)->translate_.set(-100, -30);
+			getComponent<Motor::TextComponentBlended>(1)->translate_.set(-100, -20);
 
 			std::ifstream f(Motor::Path::docs + "swd_avatar.png");
 			if (f.good()) {

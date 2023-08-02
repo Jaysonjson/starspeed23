@@ -10,6 +10,7 @@ namespace StarSpeed::Tex {
 	Motor::Texture* CIRCLE_GLOW = nullptr;
 	Motor::Texture* SAW_ENEMY = nullptr;
 	Motor::Texture* CENT_ENEMY = nullptr;
+	Motor::Texture* CENT_EXPANDED_ENEMY = nullptr;
 	Motor::Texture* CINA_ENEMY = nullptr;
 	Motor::Texture* ESENT_ENEMY = nullptr;
 	Motor::Texture* FAIRE_ENEMY = nullptr;
@@ -28,6 +29,7 @@ namespace StarSpeed::Tex {
 		CIRCLE_GLOW = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/circle_glow.png"));
 		SAW_ENEMY = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/ships/enemy/saw.png"));
 		CENT_ENEMY = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/ships/enemy/cent.png"));
+		CENT_EXPANDED_ENEMY = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/ships/enemy/cent_expanded.png"));
 		CINA_ENEMY = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/ships/enemy/cina.png"));
 		ESENT_ENEMY = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/ships/enemy/esent.png"));
 		FAIRE_ENEMY = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/ships/enemy/faire.png"));

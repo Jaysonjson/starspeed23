@@ -29,9 +29,15 @@ namespace StarSpeed {
             std::vector<Motor::IColliderComponent*> colliders = getComponent<Motor::SpriteColliderComponent>()->collissionWithOther();
             if (colliders.size() > 0) {
                 for (Motor::IColliderComponent* collider : colliders) {
-                    PlayerBullet* PLAYER_BULLET = dynamic_cast<PlayerBullet*>(collider->getOwner());
-                    if (PLAYER_BULLET) {
-                        destroy();
+                    if(collider->getOwner()) {
+                        PlayerBullet* PLAYER_BULLET = dynamic_cast<PlayerBullet*>(collider->getOwner());
+                        if (PLAYER_BULLET && !PLAYER_BULLET->isHidden()) {
+                            //PLAYER_BULLET->onHit(this);
+                            //PLAYER_BULLET->removeComponent<Motor::SpriteColliderComponent>();
+                            PLAYER_BULLET->hide();
+                            destroy();
+                            //PLAYER_BULLET->onHit(this);
+                        }
                     }
                 }
             }
@@ -43,6 +49,16 @@ namespace StarSpeed {
             transform()->position.add({0, speed_  * delta });
             if(transform()->position.screen().getY() > 1080) {
                 destroy();
+            }
+        }
+
+        int shootCooldownTimer = 0;
+        int shootCooldown = 45;
+        void fixedUpdate() override {
+            ++shootCooldownTimer;
+            if(shootCooldown < shootCooldownTimer) {
+                shoot();
+                shootCooldownTimer = 0;
             }
         }
 

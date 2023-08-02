@@ -26,7 +26,7 @@ namespace StarSpeed {
             Motor::GameObject::fixedUpdate();
             float delta = getriebe.getGame()->getDelta().deltaTime;
             spawnCounter += 0.1f * delta;
-            if(50 < spawnCounter) {
+            if(70 < spawnCounter) {
                 spawnCounter = 0;
                 std::random_device rd;
                 std::mt19937 mt(rd());
@@ -44,21 +44,21 @@ namespace StarSpeed {
                     }
                 }*/
                 float rnd = dist(mt);
-                if (rnd < 0.1) {
+                if (rnd < 0.075) {
                     SawEnemy* ENEMY_SHIP = new SawEnemy();
                     ENEMY_SHIP->transform()->position.set(dist2(mt), PLAYER->transform()->position.getY() - dist3(mt));
                     ENEMY_SHIP->addToCurrentScene(false);
                     return;
                 }
 
-                if (rnd < 0.3) {
+                if (rnd < 0.2) {
                     CentEnemy* ENEMY_SHIP = new CentEnemy();
                     ENEMY_SHIP->transform()->position.set(dist2(mt), PLAYER->transform()->position.getY() - dist3(mt));
                     ENEMY_SHIP->addToCurrentScene(false);
                     return;
                 }
 
-                if (rnd < 0.7) {
+                if (rnd < 0.6) {
                     ZeninEnemy* ENEMY_SHIP = new ZeninEnemy();
                     ENEMY_SHIP->transform()->position.set(dist2(mt), PLAYER->transform()->position.getY() - dist3(mt));
                     ENEMY_SHIP->addToCurrentScene(false);

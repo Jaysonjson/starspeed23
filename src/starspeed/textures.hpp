@@ -14,6 +14,7 @@ namespace StarSpeed::Tex {
 
 	extern Motor::Texture* SAW_ENEMY;
 	extern Motor::Texture* CENT_ENEMY;
+	extern Motor::Texture* CENT_EXPANDED_ENEMY;
 	extern Motor::Texture* CINA_ENEMY;
 	extern Motor::Texture* ESENT_ENEMY;
 	extern Motor::Texture* FAIRE_ENEMY;
