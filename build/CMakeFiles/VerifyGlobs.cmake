@@ -51,6 +51,7 @@ endif()
 # SOURCES_CPP at CMakeLists.txt:36 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "H:/starspeed23/src/*.cpp")
 set(OLD_GLOB
+  "H:/starspeed23/src/achievements.cpp"
   "H:/starspeed23/src/discord.cpp"
   "H:/starspeed23/src/main.cpp"
   "H:/starspeed23/src/resourcepack.cpp"
@@ -65,6 +66,7 @@ endif()
 # SOURCES_CPP at CMakeLists.txt:36 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "H:/starspeed23/src/*.hpp")
 set(OLD_GLOB
+  "H:/starspeed23/src/starspeed/achievements.hpp"
   "H:/starspeed23/src/starspeed/cursor.hpp"
   "H:/starspeed23/src/starspeed/discord.hpp"
   "H:/starspeed23/src/starspeed/objects/bullets/bullet.hpp"

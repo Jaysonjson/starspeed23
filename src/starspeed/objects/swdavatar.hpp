@@ -14,6 +14,7 @@
 #include "motor/components/text.hpp"
 #include "starspeed/resourcepack.hpp"
 #include "starspeed/textures.hpp"
+#include "starspeed/achievements.hpp"
 
 namespace StarSpeed {
 
@@ -86,9 +87,9 @@ namespace StarSpeed {
 	struct SWD_DATA {
 	public:
 		nlohmann::json rawData;
-		std::string username = "NO USERNAME";
+		std::string username = "StarSpeedster";
 		bool hasBeta = false;
-		std::string rank = "NO RANK";
+		std::string rank = "Default User";
 		std::string imageURL = "";
 		void get(std::string username, std::string password) {
 			rawData = getAPIData(std::string{"http://api.swdteam.com/script/login.php?u=" + username + "&p=" + password + "&a=StarSpeed23"});
@@ -146,21 +147,23 @@ namespace StarSpeed {
 		SWD_DATA swdData{};
 
 		void onCreate() {
-			swdData.get(SWD_USERNAME, md5(SWD_PASSWORD));
-			swdData.downloadImage();
+			if(!SWD_USERNAME.empty()) {
+				swdData.get(SWD_USERNAME, md5(SWD_PASSWORD));
+				swdData.downloadImage();
+			}
 			transform()->position.set(1920 - 200 / 2, 200 / 2);
 			transform()->scale.set(175, 175);
 			addComponent<Motor::TextComponentBlended>(Tex::DEBUG_FONT);
 			getComponent<Motor::TextComponentBlended>()->setContent(swdData.username);
 			getComponent<Motor::TextComponentBlended>()->alignment_ = Motor::TextAlignment::RIGHT;
-			getComponent<Motor::TextComponentBlended>()->customScale_.set(24, 24);
+			getComponent<Motor::TextComponentBlended>()->customScale_.set(swdData.username.size() * 1.5, 24 * 1.25);
 			getComponent<Motor::TextComponentBlended>()->translate_.set(-100, -75);
 
 			addComponent<Motor::TextComponentBlended>(Tex::DEBUG_FONT);
 			getComponent<Motor::TextComponentBlended>(1)->setContent(swdData.rank);
 			getComponent<Motor::TextComponentBlended>(1)->alignment_ = Motor::TextAlignment::RIGHT;
-			getComponent<Motor::TextComponentBlended>(1)->customScale_.set(24, 24);
-			getComponent<Motor::TextComponentBlended>(1)->translate_.set(-100, -20);
+			getComponent<Motor::TextComponentBlended>(1)->customScale_.set(swdData.rank.size() * 1.5, 24 * 1.25);
+			getComponent<Motor::TextComponentBlended>(1)->translate_.set(-100, -75 + 24 * 1.25);
 
 			std::ifstream f(Motor::Path::docs + "swd_avatar.png");
 			if (f.good()) {
@@ -169,6 +172,53 @@ namespace StarSpeed {
 			else {
 				addComponent<Motor::SpriteComponent>(Motor::ResourceLocation(resourcePackMod, "app/icon.png"));
 			}
+			addComponent<Motor::SpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/title/trophy.png"));
+			getComponent<Motor::SpriteComponent>(1)->translate_.set(-100, -75 + (24 * 1.25) * 2);
+			getComponent<Motor::SpriteComponent>(1)->useCustomScale_ = true;
+			getComponent<Motor::SpriteComponent>(1)->customScale_.set(23, 23);
+			getComponent<Motor::SpriteComponent>(1)->blendMode_ = SDL_BLENDMODE_BLEND;
+
+			addComponent<Motor::SpriteComponent>(Tex::BAR_EMPTY);
+			getComponent<Motor::SpriteComponent>(2)->translate_.set(-100, -75 + (24 * 1.25) * 4);
+			getComponent<Motor::SpriteComponent>(2)->useCustomScale_ = true;
+			getComponent<Motor::SpriteComponent>(2)->customScale_.set(10, 75);
+			
+			addComponent<Motor::SpriteComponent>(Tex::BAR_FULL);
+			getComponent<Motor::SpriteComponent>(3)->translate_.set(-100, -75 + (24 * 1.25) * 4);
+			getComponent<Motor::SpriteComponent>(3)->useCustomScale_ = true;
+			getComponent<Motor::SpriteComponent>(3)->customScale_.set(10, 0);
+
+			if(achievements.size() > 0) {
+				float unlockedAchievements = 0;
+				for(Achievement* achievement : achievements) {
+            		if(achievement->isUnlocked()) {
+						++unlockedAchievements;
+            		}
+        		}
+				if(unlockedAchievements != 0) {
+					getComponent<Motor::SpriteComponent>(3)->customScale_.set(10, unlockedAchievements / (float)achievements.size() * 75);
+				}
+			}
+
+
+			addComponent<Motor::SpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/title/cell.png"));
+			getComponent<Motor::SpriteComponent>(4)->translate_.set(-125, -75 + (24 * 1.25) * 2);
+			getComponent<Motor::SpriteComponent>(4)->useCustomScale_ = true;
+			getComponent<Motor::SpriteComponent>(4)->customScale_.set(23, 23);
+			getComponent<Motor::SpriteComponent>(4)->blendMode_ = SDL_BLENDMODE_BLEND;
+
+			addComponent<Motor::SpriteComponent>(Tex::BAR_EMPTY);
+			getComponent<Motor::SpriteComponent>(5)->translate_.set(-125, -75 + (24 * 1.25) * 4);
+			getComponent<Motor::SpriteComponent>(5)->useCustomScale_ = true;
+			getComponent<Motor::SpriteComponent>(5)->customScale_.set(10, 75);
+			
+			addComponent<Motor::SpriteComponent>(Tex::BAR_FULL);
+			getComponent<Motor::SpriteComponent>(6)->translate_.set(-125, -75 + (24 * 1.25) * 4);
+			getComponent<Motor::SpriteComponent>(6)->useCustomScale_ = true;
+			getComponent<Motor::SpriteComponent>(6)->customScale_.set(10, 30);
+			
+			//getComponent<Motor::SpriteComponent>(2)->customAngle_ = 90;
+			//getComponent<Motor::SpriteComponent>(2)->center_ = SDL_Point{(int)(500 * 0.15f) / 2, 0};
 		}
 	};
 }

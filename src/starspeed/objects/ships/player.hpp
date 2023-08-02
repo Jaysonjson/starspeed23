@@ -26,9 +26,7 @@ namespace StarSpeed {
             getComponent<Motor::SpriteComponent>(2)->blendMode_ = SDL_BLENDMODE_ADD;
             getComponent<Motor::SpriteComponent>(2)->useCustomColor_ = true;
             getComponent<Motor::SpriteComponent>(2)->customColor_.set(0, 0, 255, 45);
-            getComponent<Motor::SpriteComponent>(2)->translatePosition_ = true;
             getComponent<Motor::SpriteComponent>(2)->translate_.set(0, -10);
-            getComponent<Motor::SpriteComponent>(2)->translateExtraPostion_ = true;
         }
 
         void registerEvents() override {

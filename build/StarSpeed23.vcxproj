@@ -317,9 +317,11 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="H:\starspeed23\src\achievements.cpp" />
     <ClCompile Include="H:\starspeed23\src\discord.cpp" />
     <ClCompile Include="H:\starspeed23\src\main.cpp" />
     <ClCompile Include="H:\starspeed23\src\resourcepack.cpp" />
+    <ClInclude Include="H:\starspeed23\src\starspeed\achievements.hpp" />
     <ClInclude Include="H:\starspeed23\src\starspeed\cursor.hpp" />
     <ClInclude Include="H:\starspeed23\src\starspeed\discord.hpp" />
     <ClInclude Include="H:\starspeed23\src\starspeed\objects\bullets\bullet.hpp" />

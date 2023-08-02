@@ -21,6 +21,7 @@ CursorObject* CURSOR = new CursorObject();
 
 #undef main
 int main() {
+	StarSpeed::addAchievements();
 	Motor::Path::set_save_game_folder("StarSpeed23");
 	getriebe.init("StarSpeed23", 1920 * 0.75, 1080 * 0.75, SDL_WINDOW_RESIZABLE, SDL_RENDERER_ACCELERATED);
 	SDL_Surface* icon = IMG_Load(Motor::ResourceLocation(resourcePackMod, "app/icon.png").getPath().c_str());
@@ -28,6 +29,7 @@ int main() {
 	StarSpeed::Tex::setTextures();
 	getriebe.getGame()->forceSetScene(new StarSpeed::SplashScene());
 	CURSOR->addToCurrentScene();
+	StarSpeed::ACHIEVEMENT_UNLOCK_HEADER->addToCurrentScene();
 	auto debugText = new DebugText(StarSpeed::Tex::DEBUG_FONT, StarSpeed::Tex::DEBUG_FONT_OUTLINE);
 	debugText->isPersistent();
 	debugText->coordinateObject = CURSOR;

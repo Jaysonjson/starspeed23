@@ -68,10 +68,10 @@ namespace StarSpeed {
 
 			Motor::GameObject* STARSPEED_TEXT = new Motor::GameObject();
 			STARSPEED_TEXT->addComponent<Motor::TextComponentBlended>(Tex::DEBUG_FONT);
-			STARSPEED_TEXT->getComponent<Motor::TextComponentBlended>()->setContent("StarSpeed23 Version 0.1 ALPHA // F3 for DebugText");
+			STARSPEED_TEXT->getComponent<Motor::TextComponentBlended>()->setContent("StarSpeed23 Version 0.0.3 ALPHA // F3 for DebugText");
 			STARSPEED_TEXT->getComponent<Motor::TextComponentBlended>()->alignment_ = Motor::TextAlignment::RIGHT;
 			STARSPEED_TEXT->transform()->position.set(1915, 1080 - 16);
-			STARSPEED_TEXT->getComponent<Motor::TextComponentBlended>()->customScale_.set(16, 20);
+			STARSPEED_TEXT->getComponent<Motor::TextComponentBlended>()->customScale_.set(18, 25);
 			STARSPEED_TEXT->addToCurrentScene();
 
 			Motor::GameObject* SPLASH_TEXT = new Motor::GameObject();
@@ -82,7 +82,7 @@ namespace StarSpeed {
 			SPLASH_TEXT->transform()->scale.set(32, 32);
 			SPLASH_TEXT->addToCurrentScene();
 
-			if (!SWD_USERNAME.empty() && !discordApi.isCreated()) {
+			if (!discordApi.isCreated()) {
 				SWDAvatar* SWD_AVATAR = new SWDAvatar();
 				SWD_AVATAR->addToCurrentScene();
 			}

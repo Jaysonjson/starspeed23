@@ -6,6 +6,7 @@
 #include "starspeed/resourcepack.hpp"
 #include "login.hpp"
 #include "starspeed/textures.hpp"
+#include "starspeed/achievements.hpp"
 
 namespace StarSpeed {
 
@@ -36,6 +37,7 @@ namespace StarSpeed {
 			Motor::Scene::init(game);
 			SWDLogo* swdLogo = new SWDLogo();
 			swdLogo->addToCurrentScene();
+			unlockAchievement(Achmts::START_GAME);
 		}
 	};
 }
