@@ -9,6 +9,8 @@
 #include "ships/enemies/faire.hpp"
 #include "ships/enemies/skrip.hpp"
 #include "ships/enemies/pine.hpp"
+#include "star.hpp"
+#include "starspeed/components/down_movement.hpp"
 #include <random>
 
 namespace StarSpeed {
@@ -22,10 +24,25 @@ namespace StarSpeed {
         
 
         float spawnCounter = 0;
+        float starCounter = 0;
         void fixedUpdate() override {
             Motor::GameObject::fixedUpdate();
             float delta = getriebe.getGame()->getDelta().deltaTime;
             spawnCounter += 0.1f * delta;
+            starCounter += 0.1f * delta;
+
+            if (12 < starCounter) {
+                starCounter = 0;
+                std::random_device rd;
+                std::mt19937 mt(rd());
+                std::uniform_real_distribution<double> dist2(32, 1400);
+                std::uniform_real_distribution<double> dist3(900, 1200);
+                Star* STAR = new Star();
+                STAR->addComponent<DownMovementComponent>();
+                STAR->transform()->position.set(dist2(mt), PLAYER->transform()->position.getY() - dist3(mt));
+                STAR->addToCurrentScene(false);
+            }
+
             if(70 < spawnCounter) {
                 spawnCounter = 0;
                 std::random_device rd;
@@ -48,23 +65,25 @@ namespace StarSpeed {
                     SawEnemy* ENEMY_SHIP = new SawEnemy();
                     ENEMY_SHIP->transform()->position.set(dist2(mt), PLAYER->transform()->position.getY() - dist3(mt));
                     ENEMY_SHIP->addToCurrentScene(false);
-                    return;
                 }
 
-                if (rnd < 0.2) {
+                if (rnd < 0.05) {
                     CentEnemy* ENEMY_SHIP = new CentEnemy();
                     ENEMY_SHIP->transform()->position.set(dist2(mt), PLAYER->transform()->position.getY() - dist3(mt));
                     ENEMY_SHIP->addToCurrentScene(false);
-                    return;
+                }
+
+                if (rnd < 0.2) {
+                    CinaEnemy* ENEMY_SHIP = new CinaEnemy();
+                    ENEMY_SHIP->transform()->position.set(dist2(mt), PLAYER->transform()->position.getY() - dist3(mt));
+                    ENEMY_SHIP->addToCurrentScene(false);
                 }
 
                 if (rnd < 0.6) {
                     ZeninEnemy* ENEMY_SHIP = new ZeninEnemy();
                     ENEMY_SHIP->transform()->position.set(dist2(mt), PLAYER->transform()->position.getY() - dist3(mt));
                     ENEMY_SHIP->addToCurrentScene(false);
-                    return;
                 }
-
             }
         }
     };

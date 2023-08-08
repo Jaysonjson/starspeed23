@@ -63,5 +63,8 @@ namespace StarSpeed {
             float delta = getriebe.getGame()->getDelta().deltaTime;
             transform()->position.setY(transform()->position.getY() - speed_ * delta);
         }
+        void update() override {
+            Bullet::update();
+        }
     };
 }

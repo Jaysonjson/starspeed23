@@ -49,12 +49,7 @@ namespace StarSpeed {
 	public:
 		void init(Motor::Game* game) override {
 			Motor::Scene::init(game);
-			Motor::GameObject* STARSPEED_LOGO = new Motor::GameObject();
-			STARSPEED_LOGO->addComponent<Motor::DynamicSpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/title/starspeed.png"));
-			STARSPEED_LOGO->getComponent<Motor::DynamicSpriteComponent>()->blendMode_ = SDL_BLENDMODE_BLEND;
-			STARSPEED_LOGO->transform()->position.set(1920 / 2, 1080 / 5.2);
-			STARSPEED_LOGO->transform()->scale.set(1160, 517);
-			STARSPEED_LOGO->addToCurrentScene();
+			SDL_SetRenderDrawColor(getriebe.sdl_renderer(), 0, 0, 0, 255);
 
 			PlayButton* playButton = new PlayButton();
 			playButton->addToCurrentScene();
@@ -81,6 +76,29 @@ namespace StarSpeed {
 			SPLASH_TEXT->transform()->position.set(1920 / 2, 1080 / 2.6);
 			SPLASH_TEXT->transform()->scale.set(32, 32);
 			SPLASH_TEXT->addToCurrentScene();
+
+			Motor::GameObject* STARSPEED_LOGO_FLARE = new Motor::GameObject();
+			STARSPEED_LOGO_FLARE->addComponent<Motor::DynamicSpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/title/starspeed_flare.png"));
+			STARSPEED_LOGO_FLARE->getComponent<Motor::DynamicSpriteComponent>()->blendMode_ = SDL_BLENDMODE_BLEND;
+			STARSPEED_LOGO_FLARE->transform()->position.set(1920 * 0.53, 1080 / 15);
+			STARSPEED_LOGO_FLARE->transform()->scale.set(320 * 7, 177 * 4);
+			STARSPEED_LOGO_FLARE->transform()->color.set(255, 255, 255, 145);
+			STARSPEED_LOGO_FLARE->addToCurrentScene();
+
+			Motor::GameObject* STARSPEED_LOGO_FLARE_1 = new Motor::GameObject();
+			STARSPEED_LOGO_FLARE_1->addComponent<Motor::DynamicSpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/title/starspeed_flare_1.png"));
+			STARSPEED_LOGO_FLARE_1->getComponent<Motor::DynamicSpriteComponent>()->blendMode_ = SDL_BLENDMODE_BLEND;
+			STARSPEED_LOGO_FLARE_1->transform()->position.set(1920 * 0.53, 1080 / 15);
+			STARSPEED_LOGO_FLARE_1->transform()->scale.set(480 * 2, 480 * 2);
+			STARSPEED_LOGO_FLARE_1->transform()->color.set(255, 255, 255, 25);
+			STARSPEED_LOGO_FLARE_1->addToCurrentScene();
+
+			Motor::GameObject* STARSPEED_LOGO = new Motor::GameObject();
+			STARSPEED_LOGO->addComponent<Motor::DynamicSpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/title/starspeed.png"));
+			STARSPEED_LOGO->getComponent<Motor::DynamicSpriteComponent>()->blendMode_ = SDL_BLENDMODE_ADD;
+			STARSPEED_LOGO->transform()->position.set(1920 / 2, 1080 / 5.2);
+			STARSPEED_LOGO->transform()->scale.set(76 * 9, 42 * 9);
+			STARSPEED_LOGO->addToCurrentScene();
 
 			if (!discordApi.isCreated()) {
 				SWDAvatar* SWD_AVATAR = new SWDAvatar();

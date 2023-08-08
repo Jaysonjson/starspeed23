@@ -1,5 +1,6 @@
 #include "starspeed/achievements.hpp"
 #include "motor/log.hpp"
+#include "starspeed/profile.hpp"
 
 namespace StarSpeed {
     std::vector<Achievement*> achievements{};
@@ -11,6 +12,7 @@ namespace StarSpeed {
                 achievement->setUnlocked(true);
                 ACHIEVEMENT_UNLOCK_HEADER->trigger = true;
                 ACHIEVEMENT_UNLOCK_HEADER->description_ = achievement->getDescription();
+                playerProfile->getAchievements().push_back(achievement->getID());
                 MOTOR_LOG("Unlocked Achievement: " + id);
                 return;
             }
@@ -27,6 +29,16 @@ namespace StarSpeed {
         achievements.emplace_back(Achmts::DIE);
         achievements.emplace_back(Achmts::KILL_ENEMY);
         achievements.emplace_back(Achmts::WIN_ROUND);
+
+        for (std::string& str : playerProfile->getAchievements()) {
+            MOTOR_LOG(str)
+            for (Achievement* achievement : achievements) {
+                if (achievement->getID() == str) {
+                    achievement->setUnlocked(true);
+                    return;
+                }
+            }
+        }
     }
 
 

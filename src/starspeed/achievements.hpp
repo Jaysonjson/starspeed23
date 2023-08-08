@@ -84,9 +84,9 @@ namespace StarSpeed {
             Motor::GameObject::fixedUpdate();
             if (!isHidden()) {
                 getComponent<Motor::TextComponentBlended>()->setContent(description_);
-                getComponent<Motor::TextComponentBlended>()->customScale_.set(description_.size() * 1.5, 36 * 1.25);
+                getComponent<Motor::TextComponentBlended>()->customScale_.set(description_.size() * 1.2, 36 * 1.25);
                 ++fadeCounter;
-                if (fadeCounter > 125) {
+                if (fadeCounter > 175) {
                     fadeCounter = 0;
                     //hide();
                     trigger = false;

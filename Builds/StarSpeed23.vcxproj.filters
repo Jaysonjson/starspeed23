@@ -10,6 +10,9 @@
     <ClCompile Include="H:\starspeed23\src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="H:\starspeed23\src\mine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="H:\starspeed23\src\resourcepack.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -21,7 +24,13 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="H:\starspeed23\src\mine.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="H:\starspeed23\src\starspeed\achievements.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\starspeed23\src\starspeed\components\down_movement.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="H:\starspeed23\src\starspeed\cursor.hpp">
@@ -69,7 +78,13 @@
     <ClInclude Include="H:\starspeed23\src\starspeed\objects\ships\ship.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="H:\starspeed23\src\starspeed\objects\star.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="H:\starspeed23\src\starspeed\objects\swdavatar.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\starspeed23\src\starspeed\profile.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="H:\starspeed23\src\starspeed\resourcepack.hpp">
@@ -91,6 +106,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="H:\starspeed23\src\tinyfiledialogs.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\starspeed23\src\zconf.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\starspeed23\src\zlib.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

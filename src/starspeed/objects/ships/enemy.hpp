@@ -12,20 +12,33 @@ namespace StarSpeed {
 
     class EnemyShip : public Ship {
     public:
-        float speed_ = 0.45;
+        float speed_ = 0.25;
+        float health_ = 10;
+        float maxHealth_ = 10;
         Motor::Texture* TEX = nullptr;
-
+        Motor::SpriteComponent* HEALTH_BAR = nullptr;
         EnemyShip(Motor::Texture* texture): TEX(texture) {}
 
         void onCreate() override {
             addComponent<Motor::SpriteComponent>(TEX);
             getComponent<Motor::SpriteComponent>()->blendMode_ = SDL_BLENDMODE_BLEND;
             addComponent<Motor::SpriteColliderComponent>();
+            HEALTH_BAR = addComponent<Motor::SpriteComponent>(Tex::BAR_FULL);
+            HEALTH_BAR->useCustomScale_ = true;
+            HEALTH_BAR->customScale_.set(55, 7);
+            HEALTH_BAR->useCustomColor_ = true;
+            HEALTH_BAR->customColor_.set(255, 0, 0, 175);
+            HEALTH_BAR->translate_.set(0, -48);
             transform()->scale.set(93, 93);
+            addComponent<Motor::SpriteComponent>(Tex::CIRCLE_GLOW);
+            getComponent<Motor::SpriteComponent>(2)->blendMode_ = SDL_BLENDMODE_ADD;
+            getComponent<Motor::SpriteComponent>(2)->useCustomColor_ = true;
+            getComponent<Motor::SpriteComponent>(2)->customColor_.set(255, 0, 0, 45);
         }
 
         void update() override {
             Motor::GameObject::update();
+            HEALTH_BAR->customScale_.set((health_ / maxHealth_) * 55, 7);
             std::vector<Motor::IColliderComponent*> colliders = getComponent<Motor::SpriteColliderComponent>()->collissionWithOther();
             if (colliders.size() > 0) {
                 for (Motor::IColliderComponent* collider : colliders) {
@@ -35,11 +48,15 @@ namespace StarSpeed {
                             //PLAYER_BULLET->onHit(this);
                             //PLAYER_BULLET->removeComponent<Motor::SpriteColliderComponent>();
                             PLAYER_BULLET->hide();
-                            destroy();
+                            //destroy();
+                            health_ -= 10;
                             //PLAYER_BULLET->onHit(this);
                         }
                     }
                 }
+            }
+            if(health_ < 1) {
+                destroy();
             }
         }
         
@@ -53,8 +70,9 @@ namespace StarSpeed {
         }
 
         int shootCooldownTimer = 0;
-        int shootCooldown = 45;
+        int shootCooldown = 65;
         void fixedUpdate() override {
+            Motor::GameObject::fixedUpdate();
             ++shootCooldownTimer;
             if(shootCooldown < shootCooldownTimer) {
                 shoot();

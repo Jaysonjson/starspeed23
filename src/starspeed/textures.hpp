@@ -22,6 +22,7 @@ namespace StarSpeed::Tex {
 	extern Motor::Texture* ZENIN_ENEMY;
 	extern Motor::Texture* SKRIP_ENEMY;
 	extern Motor::Texture* DEFAULT_BULLET;
+	extern Motor::Texture* STAR;
 
 	extern Motor::Texture* BAR_EMPTY;
 	extern Motor::Texture* BAR_FULL;

@@ -1,9 +1,6 @@
 #pragma once
 
 #include <iostream>
-#include <iomanip>
-#include <sstream>
-#include <openssl/md5.h>
 #include <curl/curl.h>
 #include "json.hpp"
 #include "motor/object/gameobject.hpp"
@@ -17,19 +14,6 @@
 #include "starspeed/achievements.hpp"
 
 namespace StarSpeed {
-
-	std::string md5(const std::string& str) {
-		unsigned char hash[MD5_DIGEST_LENGTH];
-		MD5_CTX md5;
-		MD5_Init(&md5);
-		MD5_Update(&md5, str.c_str(), str.size());
-		MD5_Final(hash, &md5);
-		std::stringstream ss;
-		for (int i = 0; i < MD5_DIGEST_LENGTH; i++) {
-			ss << std::hex << std::setw(2) << std::setfill('0') << static_cast<int>(hash[i]);
-		}
-		return ss.str();
-	}
 
 	inline size_t writeFunction(void* ptr, size_t size, size_t nmemb, std::string* data) {
 		data->append((char*)ptr, size * nmemb);
@@ -148,7 +132,7 @@ namespace StarSpeed {
 
 		void onCreate() {
 			if(!SWD_USERNAME.empty()) {
-				swdData.get(SWD_USERNAME, md5(SWD_PASSWORD));
+				swdData.get(SWD_USERNAME, SWD_PASSWORD);
 				swdData.downloadImage();
 			}
 			transform()->position.set(1920 - 200 / 2, 200 / 2);
@@ -159,6 +143,12 @@ namespace StarSpeed {
 			getComponent<Motor::TextComponentBlended>()->customScale_.set(swdData.username.size() * 1.5, 24 * 1.25);
 			getComponent<Motor::TextComponentBlended>()->translate_.set(-100, -75);
 
+			if(swdData.username == "RedDash16") {
+				//Change Name Color to = 284, 71, 206
+				getComponent<Motor::TextComponentBlended>()->color_.set(255, 102, 102, 255);
+				getComponent<Motor::TextComponentBlended>()->useTransformColor_ = false;
+			}
+			
 			addComponent<Motor::TextComponentBlended>(Tex::DEBUG_FONT);
 			getComponent<Motor::TextComponentBlended>(1)->setContent(swdData.rank);
 			getComponent<Motor::TextComponentBlended>(1)->alignment_ = Motor::TextAlignment::RIGHT;

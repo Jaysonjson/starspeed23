@@ -54,6 +54,7 @@ set(OLD_GLOB
   "H:/starspeed23/src/achievements.cpp"
   "H:/starspeed23/src/discord.cpp"
   "H:/starspeed23/src/main.cpp"
+  "H:/starspeed23/src/mine.cpp"
   "H:/starspeed23/src/resourcepack.cpp"
   "H:/starspeed23/src/textures.cpp"
   "H:/starspeed23/src/tinyfiledialogs.cpp"
@@ -66,7 +67,9 @@ endif()
 # SOURCES_CPP at CMakeLists.txt:36 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "H:/starspeed23/src/*.hpp")
 set(OLD_GLOB
+  "H:/starspeed23/src/mine.hpp"
   "H:/starspeed23/src/starspeed/achievements.hpp"
+  "H:/starspeed23/src/starspeed/components/down_movement.hpp"
   "H:/starspeed23/src/starspeed/cursor.hpp"
   "H:/starspeed23/src/starspeed/discord.hpp"
   "H:/starspeed23/src/starspeed/objects/bullets/bullet.hpp"
@@ -82,7 +85,9 @@ set(OLD_GLOB
   "H:/starspeed23/src/starspeed/objects/ships/enemy.hpp"
   "H:/starspeed23/src/starspeed/objects/ships/player.hpp"
   "H:/starspeed23/src/starspeed/objects/ships/ship.hpp"
+  "H:/starspeed23/src/starspeed/objects/star.hpp"
   "H:/starspeed23/src/starspeed/objects/swdavatar.hpp"
+  "H:/starspeed23/src/starspeed/profile.hpp"
   "H:/starspeed23/src/starspeed/resourcepack.hpp"
   "H:/starspeed23/src/starspeed/scenes/fight.hpp"
   "H:/starspeed23/src/starspeed/scenes/login.hpp"
@@ -90,6 +95,8 @@ set(OLD_GLOB
   "H:/starspeed23/src/starspeed/scenes/titlescreen.hpp"
   "H:/starspeed23/src/starspeed/textures.hpp"
   "H:/starspeed23/src/tinyfiledialogs.hpp"
+  "H:/starspeed23/src/zconf.hpp"
+  "H:/starspeed23/src/zlib.hpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

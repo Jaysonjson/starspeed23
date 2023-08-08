@@ -9,6 +9,7 @@
 #include "starspeed/objects/swdavatar.hpp"
 #include "starspeed/cursor.hpp"
 #include "starspeed/discord.hpp"
+#include "starspeed/profile.hpp"
 //WIP
 namespace StarSpeed {
 
@@ -282,8 +283,12 @@ namespace StarSpeed {
 				if (colliderEvent->type == Motor::CLICK) {
 					if (colliderEvent->onObject) {
 						SWD_USERNAME = user->input;
-						SWD_PASSWORD = password->input;
+						SWD_PASSWORD = md5(password->input);
+						unlockAchievement(Achmts::LOGIN_SWD);
 						getriebe.getGame()->switchScene(new TitleScreen());
+						playerProfile->swd_username = SWD_USERNAME;
+						playerProfile->swd_password = SWD_PASSWORD;
+						playerProfile->save();
 					}
 				}
 
@@ -360,6 +365,11 @@ namespace StarSpeed {
 
 			transform()->position.set(1920 / 2, 1080 / 1.1);
 			transform()->scale.set(500, 64);
+			if (!playerProfile->swd_username.empty()) {
+				SWD_USERNAME = playerProfile->swd_username;
+				SWD_PASSWORD = playerProfile->swd_password;
+				getriebe.getGame()->switchScene(new TitleScreen());
+			}
 		}
 
 		void onComponentEvent(Motor::IComponentEvent* eventData) override {
@@ -391,7 +401,9 @@ namespace StarSpeed {
 
 	public:
 		void init(Motor::Game* game) override {
+			ACHIEVEMENT_UNLOCK_HEADER->trigger = false;
 			Motor::Scene::init(game);
+
 			TextField* USERNAME_FIELD = new TextField();
 			USERNAME_FIELD->addToCurrentScene();
 

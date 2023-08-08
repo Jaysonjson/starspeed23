@@ -320,8 +320,11 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="H:\starspeed23\src\achievements.cpp" />
     <ClCompile Include="H:\starspeed23\src\discord.cpp" />
     <ClCompile Include="H:\starspeed23\src\main.cpp" />
+    <ClCompile Include="H:\starspeed23\src\mine.cpp" />
+    <ClInclude Include="H:\starspeed23\src\mine.hpp" />
     <ClCompile Include="H:\starspeed23\src\resourcepack.cpp" />
     <ClInclude Include="H:\starspeed23\src\starspeed\achievements.hpp" />
+    <ClInclude Include="H:\starspeed23\src\starspeed\components\down_movement.hpp" />
     <ClInclude Include="H:\starspeed23\src\starspeed\cursor.hpp" />
     <ClInclude Include="H:\starspeed23\src\starspeed\discord.hpp" />
     <ClInclude Include="H:\starspeed23\src\starspeed\objects\bullets\bullet.hpp" />
@@ -337,7 +340,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="H:\starspeed23\src\starspeed\objects\ships\enemy.hpp" />
     <ClInclude Include="H:\starspeed23\src\starspeed\objects\ships\player.hpp" />
     <ClInclude Include="H:\starspeed23\src\starspeed\objects\ships\ship.hpp" />
+    <ClInclude Include="H:\starspeed23\src\starspeed\objects\star.hpp" />
     <ClInclude Include="H:\starspeed23\src\starspeed\objects\swdavatar.hpp" />
+    <ClInclude Include="H:\starspeed23\src\starspeed\profile.hpp" />
     <ClInclude Include="H:\starspeed23\src\starspeed\resourcepack.hpp" />
     <ClInclude Include="H:\starspeed23\src\starspeed\scenes\fight.hpp" />
     <ClInclude Include="H:\starspeed23\src\starspeed\scenes\login.hpp" />
@@ -347,6 +352,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="H:\starspeed23\src\textures.cpp" />
     <ClCompile Include="H:\starspeed23\src\tinyfiledialogs.cpp" />
     <ClInclude Include="H:\starspeed23\src\tinyfiledialogs.hpp" />
+    <ClInclude Include="H:\starspeed23\src\zconf.hpp" />
+    <ClInclude Include="H:\starspeed23\src\zlib.hpp" />
     <ResourceCompile Include="H:\starspeed23\app.rc" />
   </ItemGroup>
   <ItemGroup>

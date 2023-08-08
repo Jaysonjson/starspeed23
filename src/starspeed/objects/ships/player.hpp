@@ -9,6 +9,7 @@ namespace StarSpeed {
     class PlayerShip : public Ship {
     public:
         float speed_ = 1.05;
+        int* progress_ = nullptr;
         void onCreate() override {
             addComponent<Motor::SpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/ships/player/default/default.png"));
             getComponent<Motor::SpriteComponent>()->blendMode_ = SDL_BLENDMODE_BLEND;
@@ -47,6 +48,8 @@ namespace StarSpeed {
 
 
         int hueTimer = 0;
+        int progressTimer = 0;
+        bool accelerating = false;
         void update() override {
             GameObject::update();
             std::random_device rd;
@@ -56,6 +59,17 @@ namespace StarSpeed {
             if(hueTimer == 16) {
                 getComponent<Motor::SpriteComponent>(1)->customColor_.set((int)dist(mt), (int)dist(mt), (int)dist(mt), 255);
                 hueTimer = 0;
+            }
+            ++progressTimer;
+
+            if(progressTimer == 35 && accelerating) {
+                ++*progress_;
+                progressTimer = 0;
+            }
+
+            if (progressTimer == 50) {
+                ++*progress_;
+                progressTimer = 0;
             }
         }
 
@@ -84,8 +98,11 @@ namespace StarSpeed {
                 }
             }
 
-            /* NO WHEN MOVING UP, ENEMY SHIPS SHOULD BE FASTER DOWN INSTEAD! */
-            if (key[SDL_Scancode::SDL_SCANCODE_W]) getComponent<Motor::TransformComponent>()->position.add({ 0, -speed_ * 0.45f * delta });
+            accelerating = false;
+            if (key[SDL_Scancode::SDL_SCANCODE_W]) {
+                getComponent<Motor::TransformComponent>()->position.add({ 0, -speed_ * 0.45f * delta });
+                accelerating = true;
+            }
             //if (key[SDL_Scancode::SDL_SCANCODE_S]) getComponent<Motor::TransformComponent>()->position.add({ 0, speed_ * 0.75f * delta });
         }
     };

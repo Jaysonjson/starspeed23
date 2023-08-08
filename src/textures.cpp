@@ -20,6 +20,7 @@ namespace StarSpeed::Tex {
 	Motor::Texture* DEFAULT_BULLET = nullptr;
 	Motor::Texture* BAR_EMPTY = nullptr;
 	Motor::Texture* BAR_FULL = nullptr;
+	Motor::Texture* STAR = nullptr;
 	Motor::Font* GAME_FONT = nullptr;
 	Motor::Font* GAME_FONT_OUTLINE = nullptr;
 
@@ -42,6 +43,8 @@ namespace StarSpeed::Tex {
 		TEXTFIELD = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/login/textfield.png"));
 		BAR_EMPTY = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/bar/empty.png"));
 		BAR_FULL = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/bar/full.png"));
+		STAR = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/stars/star_0.png"));
+
 		GAME_FONT = new Motor::Font(Motor::ResourceLocation(resourcePackMod, "fonts/yoster.ttf"), 32);
 		GAME_FONT_OUTLINE = new Motor::Font(Motor::ResourceLocation(resourcePackMod, "fonts/yoster.ttf"), 32);
 		GAME_FONT_OUTLINE->load();

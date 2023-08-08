@@ -10,12 +10,10 @@ namespace StarSpeed {
 
         void onCreate() override {
             EnemyShip::onCreate();
-            speed_ = 0.05f;
-            addComponent<Motor::SpriteComponent>(Tex::CIRCLE_GLOW);
-            getComponent<Motor::SpriteComponent>(1)->blendMode_ = SDL_BLENDMODE_ADD;
-            getComponent<Motor::SpriteComponent>(1)->useCustomColor_ = true;
-            getComponent<Motor::SpriteComponent>(1)->customColor_.set(255, 0, 0, 45);
-             shootCooldown = 85;
+            speed_ = 0.02f;
+            shootCooldown = 85;
+            health_ = 35;
+            maxHealth_ = 35;
         }
 
         void shoot() override {

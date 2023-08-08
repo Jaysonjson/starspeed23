@@ -14,16 +14,22 @@
 #include "starspeed/textures.hpp"
 #include "motor/gameobjects/debugtext.hpp"
 #include "starspeed/cursor.hpp"
+#include "starspeed/profile.hpp"
 
 Motor::Mod* fallbackMod = new Motor::Mod("starspeed");
 
 CursorObject* CURSOR = new CursorObject();
 
+namespace StarSpeed {
+	PlayerProfile* playerProfile = new PlayerProfile{};
+}
+
 #undef main
 int main() {
-	StarSpeed::addAchievements();
 	Motor::Path::set_save_game_folder("StarSpeed23");
 	getriebe.init("StarSpeed23", 1920 * 0.75, 1080 * 0.75, SDL_WINDOW_RESIZABLE, SDL_RENDERER_ACCELERATED);
+	StarSpeed::playerProfile->load();
+	StarSpeed::addAchievements();
 	SDL_Surface* icon = IMG_Load(Motor::ResourceLocation(resourcePackMod, "app/icon.png").getPath().c_str());
 	SDL_SetWindowIcon(getriebe.sdl_window(), icon);
 	StarSpeed::Tex::setTextures();
@@ -39,5 +45,6 @@ int main() {
 	while (getriebe.getGame()->running_) {
 		getriebe.getGame()->loop();
 	}
+	StarSpeed::playerProfile->save();
 	getriebe.stop();
 }
