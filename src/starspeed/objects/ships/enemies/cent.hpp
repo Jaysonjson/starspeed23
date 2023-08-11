@@ -27,7 +27,7 @@ namespace StarSpeed {
         void fixedUpdate() override {
             EnemyShip::fixedUpdate();
             ++expandCounter;
-            if(expandCounter == 120) {
+            if(expandCounter == 175) {
                 getComponent<Motor::SpriteComponent>()->setTexture(Tex::CENT_EXPANDED_ENEMY);
                 if(!getComponent<Motor::SpriteComponent>()->getTexture()->exists()) getComponent<Motor::SpriteComponent>()->getTexture()->load();
                 expanded = true;     

@@ -36,12 +36,12 @@ namespace StarSpeed {
 			Motor::Scene::init(game);
 
 			Motor::GameObject* CLOUD_BACKGROUND = new Motor::GameObject();
-			CLOUD_BACKGROUND->addComponent<Motor::SpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/cloud.png"));
-			CLOUD_BACKGROUND->getComponent<Motor::SpriteComponent>()->blendMode_ = SDL_BLENDMODE_ADD;
-			CLOUD_BACKGROUND->getComponent<Motor::SpriteComponent>()->ignoreCamera_ = true;
+			CLOUD_BACKGROUND->addComponent<Motor::DynamicSpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/cloud.png"));
+			CLOUD_BACKGROUND->getComponent<Motor::DynamicSpriteComponent>()->blendMode_ = SDL_BLENDMODE_ADD;
+			CLOUD_BACKGROUND->getComponent<Motor::DynamicSpriteComponent>()->ignoreCamera_ = true;
 			CLOUD_BACKGROUND->transform()->scale.set(5000, 9000);
 			CLOUD_BACKGROUND->transform()->position.set(1920 / 2, -1750);
-			CLOUD_BACKGROUND->transform()->color.setAlpha(8);
+			CLOUD_BACKGROUND->transform()->color.setAlpha(9);
 			CLOUD_BACKGROUND->addComponent<DownMovementComponent>()->speed_ = 0.04f;
 			CLOUD_BACKGROUND->addToCurrentScene();
 
@@ -73,6 +73,7 @@ namespace StarSpeed {
 
 			EnemySpawner* ENEMY_SPAWNER = new EnemySpawner();
 			ENEMY_SPAWNER->PLAYER = PLAYER_SHIP;
+			ENEMY_SPAWNER->progress = &progress_;
 			ENEMY_SPAWNER->addToCurrentScene();
 
 			Motor::GameObject* SUN_GLOW = new Motor::GameObject();

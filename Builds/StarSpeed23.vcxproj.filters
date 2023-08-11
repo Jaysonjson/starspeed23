@@ -16,6 +16,9 @@
     <ClCompile Include="H:\starspeed23\src\resourcepack.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="H:\starspeed23\src\splashs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="H:\starspeed23\src\textures.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -93,6 +96,9 @@
     <ClInclude Include="H:\starspeed23\src\starspeed\scenes\fight.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="H:\starspeed23\src\starspeed\scenes\fight_end.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="H:\starspeed23\src\starspeed\scenes\login.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -100,6 +106,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="H:\starspeed23\src\starspeed\scenes\titlescreen.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\starspeed23\src\starspeed\splashs.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="H:\starspeed23\src\starspeed\textures.hpp">

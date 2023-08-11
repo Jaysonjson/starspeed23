@@ -124,6 +124,13 @@ namespace StarSpeed {
 		}
 	};
 
+	struct CustomNameRole {
+		std::string nameToOverride = "";
+		std::string role_ = "";
+		Motor::Color32 roleColor_{};
+		Motor::Color32 nameColor_{};
+	};
+
 	
 	class SWDAvatar : public Motor::GameObject {
 	public:
@@ -131,36 +138,50 @@ namespace StarSpeed {
 		SWD_DATA swdData{};
 
 		void onCreate() {
+			std::vector<CustomNameRole> CUSTOM_ROLES{
+				{"Joee3", "pissing and shitting and cumming", {}, { 0, 128, 128, 255 }},
+				{"Jayson_json", "StarSpeed Dev", {}, {0, 128, 128, 255}},
+				{ "RedDash16", "StarSpeed Dev", {}, {255, 102, 102, 255}}
+			};
+
+
 			if(!SWD_USERNAME.empty()) {
 				swdData.get(SWD_USERNAME, SWD_PASSWORD);
 				swdData.downloadImage();
 			}
 			transform()->position.set(1920 - 200 / 2, 200 / 2);
 			transform()->scale.set(175, 175);
+			transform()->depth = 50;
 			addComponent<Motor::TextComponentBlended>(Tex::DEBUG_FONT);
 			getComponent<Motor::TextComponentBlended>()->setContent(swdData.username);
 			getComponent<Motor::TextComponentBlended>()->alignment_ = Motor::TextAlignment::RIGHT;
-			getComponent<Motor::TextComponentBlended>()->customScale_.set(swdData.username.size() * 1.5, 24 * 1.25);
+			getComponent<Motor::TextComponentBlended>()->customScale_.set(24, 24 * 1.25);
 			getComponent<Motor::TextComponentBlended>()->translate_.set(-100, -75);
 
-			if(swdData.username == "RedDash16") {
-				//Change Name Color to = 284, 71, 206
-				getComponent<Motor::TextComponentBlended>()->color_.set(255, 102, 102, 255);
-				getComponent<Motor::TextComponentBlended>()->useTransformColor_ = false;
+			for (CustomNameRole& customRole : CUSTOM_ROLES) {
+				if (swdData.username == customRole.nameToOverride) {
+					getComponent<Motor::TextComponentBlended>()->color_ = customRole.nameColor_;
+					getComponent<Motor::TextComponentBlended>()->useTransformColor_ = false;
+					if (!customRole.role_.empty()) {
+						swdData.rank = customRole.role_;
+					}
+					break;
+				}
 			}
-			
+
 			addComponent<Motor::TextComponentBlended>(Tex::DEBUG_FONT);
 			getComponent<Motor::TextComponentBlended>(1)->setContent(swdData.rank);
 			getComponent<Motor::TextComponentBlended>(1)->alignment_ = Motor::TextAlignment::RIGHT;
-			getComponent<Motor::TextComponentBlended>(1)->customScale_.set(swdData.rank.size() * 1.5, 24 * 1.25);
+			getComponent<Motor::TextComponentBlended>(1)->customScale_.set(24, 24 * 1.25);
 			getComponent<Motor::TextComponentBlended>(1)->translate_.set(-100, -75 + 24 * 1.25);
 
 			std::ifstream f(Motor::Path::docs + "swd_avatar.png");
 			if (f.good()) {
-				addComponent<Motor::SpriteComponent>(Motor::Path::docs + "swd_avatar.png");
+				addComponent<Motor::DynamicSpriteComponent>(Motor::Path::docs + "swd_avatar.png");
+				getComponent<Motor::DynamicSpriteComponent>()->blendMode_ = SDL_BLENDMODE_BLEND;
 			}
 			else {
-				addComponent<Motor::SpriteComponent>(Motor::ResourceLocation(resourcePackMod, "app/icon.png"));
+				addComponent<Motor::DynamicSpriteComponent>(Motor::ResourceLocation(resourcePackMod, "app/icon.png"));
 			}
 			addComponent<Motor::SpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/title/trophy.png"));
 			getComponent<Motor::SpriteComponent>(1)->translate_.set(-100, -75 + (24 * 1.25) * 2);

@@ -15,13 +15,17 @@ namespace StarSpeed {
 			std::mt19937 mt(rd());
 			std::uniform_real_distribution<double> dist(25, 80);
 			std::uniform_real_distribution<double> alph(0, 225);
+			std::uniform_real_distribution<double> siz(6, 20);
 			sizeCounter = (int)dist(mt);
 			transform()->color.set(255, 255, 255, (uint8) alph(mt));
-			transform()->scale.set(16);
+			int size = (int)siz(mt);
+			transform()->scale.set(size);
 			addComponent<Motor::SpriteComponent>(Tex::STAR);
 			getComponent<Motor::SpriteComponent>()->blendMode_ = SDL_BLENDMODE_BLEND;
 			addComponent<Motor::SpriteComponent>(Tex::CIRCLE_GLOW);
 			getComponent<Motor::SpriteComponent>(1)->blendMode_ = SDL_BLENDMODE_ADD;
+			getComponent<Motor::SpriteComponent>(1)->useCustomScale_ = true;
+			getComponent<Motor::SpriteComponent>(1)->customScale_.set(size + 4);
 		}
 
 		void fixedUpdate() override {

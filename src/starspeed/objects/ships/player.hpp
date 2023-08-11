@@ -3,6 +3,8 @@
 #include "motor/motor.hpp"
 #include "motor/components/sprite.hpp"
 #include "starspeed/objects/bullets/bullet.hpp"
+#include "starspeed/scenes/titlescreen.hpp"
+#include "starspeed/scenes/fight_end.hpp"
 #include <random>
 namespace StarSpeed {
 
@@ -62,14 +64,26 @@ namespace StarSpeed {
             }
             ++progressTimer;
 
-            if(progressTimer == 35 && accelerating) {
+            if(progressTimer == 45 && accelerating) {
                 ++*progress_;
                 progressTimer = 0;
             }
 
-            if (progressTimer == 50) {
+            if (progressTimer == 65) {
                 ++*progress_;
                 progressTimer = 0;
+            }
+            if (*progress_ == 100) {
+                //getriebe.getGame()->switchScene(new TitleScreen());
+                float delta = getriebe.getGame()->getDelta().deltaTime;
+                getComponent<Motor::TransformComponent>()->position.add({ 0, -speed_ * 1.25f * delta });
+                getriebe.getGame()->getCurrentScene()->getCamera().target = nullptr;
+                getComponent<Motor::SpriteComponent>(0)->ignoreCamera_ = false;
+                getComponent<Motor::SpriteComponent>(1)->ignoreCamera_ = false;
+                progressTimer = 500;
+            }
+            if (transform()->position.screen().getY() < -64) {
+                getriebe.getGame()->switchScene(new FightEnd());
             }
         }
 

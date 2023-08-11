@@ -25,13 +25,14 @@ namespace StarSpeed {
 
         float spawnCounter = 0;
         float starCounter = 0;
+        int* progress;
         void fixedUpdate() override {
             Motor::GameObject::fixedUpdate();
             float delta = getriebe.getGame()->getDelta().deltaTime;
             spawnCounter += 0.1f * delta;
             starCounter += 0.1f * delta;
 
-            if (12 < starCounter) {
+            if (8 < starCounter) {
                 starCounter = 0;
                 std::random_device rd;
                 std::mt19937 mt(rd());
@@ -43,7 +44,7 @@ namespace StarSpeed {
                 STAR->addToCurrentScene(false);
             }
 
-            if(70 < spawnCounter) {
+            if(70 < spawnCounter && *progress < 96) {
                 spawnCounter = 0;
                 std::random_device rd;
                 std::mt19937 mt(rd());

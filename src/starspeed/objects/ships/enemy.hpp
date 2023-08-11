@@ -25,9 +25,9 @@ namespace StarSpeed {
             addComponent<Motor::SpriteColliderComponent>();
             HEALTH_BAR = addComponent<Motor::SpriteComponent>(Tex::BAR_FULL);
             HEALTH_BAR->useCustomScale_ = true;
-            HEALTH_BAR->customScale_.set(55, 7);
+            HEALTH_BAR->customScale_.set(55, 0);
             HEALTH_BAR->useCustomColor_ = true;
-            HEALTH_BAR->customColor_.set(255, 0, 0, 175);
+            HEALTH_BAR->customColor_.set(255, 102, 102, 125);
             HEALTH_BAR->translate_.set(0, -48);
             transform()->scale.set(93, 93);
             addComponent<Motor::SpriteComponent>(Tex::CIRCLE_GLOW);
@@ -38,7 +38,7 @@ namespace StarSpeed {
 
         void update() override {
             Motor::GameObject::update();
-            HEALTH_BAR->customScale_.set((health_ / maxHealth_) * 55, 7);
+            HEALTH_BAR->customScale_.set((health_ / maxHealth_) * 55, HEALTH_BAR->customScale_.y);
             std::vector<Motor::IColliderComponent*> colliders = getComponent<Motor::SpriteColliderComponent>()->collissionWithOther();
             if (colliders.size() > 0) {
                 for (Motor::IColliderComponent* collider : colliders) {
@@ -50,6 +50,8 @@ namespace StarSpeed {
                             PLAYER_BULLET->hide();
                             //destroy();
                             health_ -= 10;
+                            HEALTH_BAR->customColor_.setAlpha(125);
+                            HEALTH_BAR->customScale_.set(HEALTH_BAR->customScale_.x, 7);
                             //PLAYER_BULLET->onHit(this);
                         }
                     }

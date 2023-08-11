@@ -65,6 +65,7 @@ namespace StarSpeed {
             nlohmann::json js{{"achievements", achievements_}, { "destroyed_ships", shipsDestroyed_ }, { "usr", usernameCache }, {"usrp", passwordCache }};
             std::ofstream out(Motor::Path::docs + "profile.json");
             out << js;
+            MOTOR_LOG("Saved Player Profile");
         }
     };
 
