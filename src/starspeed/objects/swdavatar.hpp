@@ -141,7 +141,10 @@ namespace StarSpeed {
 			std::vector<CustomNameRole> CUSTOM_ROLES{
 				{"Joee3", "pissing and shitting and cumming", {}, { 0, 128, 128, 255 }},
 				{"Jayson_json", "StarSpeed Dev", {}, {0, 128, 128, 255}},
-				{ "RedDash16", "StarSpeed Dev", {}, {255, 102, 102, 255}}
+				{ "RedDash16", "SWD", {}, {255, 102, 102, 255}},
+				{ "Bug1312", "", {}, {73, 199, 56, 255} },
+				{ "Lucifer", "Torchwood", {}, {0, 0, 128, 255 }}
+
 			};
 
 

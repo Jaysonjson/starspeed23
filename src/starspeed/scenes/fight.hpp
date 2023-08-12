@@ -29,6 +29,34 @@ namespace StarSpeed {
 		}
 	};
 
+	class FuelBar : public Motor::GameObject {
+	public:
+		float fuel = 300.0;
+		float maxFuel = 300.0;
+		void onCreate() override {
+			transform()->position.set(1680, 1080 - 80);
+			addComponent<Motor::SpriteComponent>(Tex::BAR_EMPTY);
+			getComponent<Motor::SpriteComponent>()->useCustomScale_ = true;
+			getComponent<Motor::SpriteComponent>()->customScale_.set(400, 30);
+			getComponent<Motor::SpriteComponent>()->ignoreCamera_ = true;
+
+			addComponent<Motor::SpriteComponent>(Tex::BAR_FULL);
+			getComponent<Motor::SpriteComponent>(1)->useCustomScale_ = true;
+			getComponent<Motor::SpriteComponent>(1)->customScale_.set(400, 30);
+			getComponent<Motor::SpriteComponent>(1)->ignoreCamera_ = true;
+			
+			addComponent<Motor::TextComponentBlended>(Tex::GAME_FONT);
+            getComponent<Motor::TextComponentBlended>()->translate_.set(0, -35);
+            getComponent<Motor::TextComponentBlended>()->setContent("Acceleration Fuel");
+			getComponent<Motor::TextComponentBlended>()->ignoreCamera_ = true;
+		}
+
+		void update() override {
+			Motor::GameObject::update();
+			getComponent<Motor::SpriteComponent>(1)->customScale_.set(fuel / maxFuel * 400, 30);
+		}
+	};
+
 
 	class FightScene : public Motor::Scene {
 		int progress_ = 0;
@@ -45,10 +73,6 @@ namespace StarSpeed {
 			CLOUD_BACKGROUND->addComponent<DownMovementComponent>()->speed_ = 0.04f;
 			CLOUD_BACKGROUND->addToCurrentScene();
 
-			PlayerShip* PLAYER_SHIP = new PlayerShip();
-			PLAYER_SHIP->progress_ = &progress_;
-			PLAYER_SHIP->addToCurrentScene();
-			
 			Motor::GameObject* BACKGROUND = new Motor::GameObject();
 			BACKGROUND->addComponent<Motor::SpriteComponent>(Motor::ResourceLocation(resourcePackMod, "fall.png"));
             BACKGROUND->getComponent<Motor::SpriteComponent>()->blendMode_ = SDL_BLENDMODE_BLEND;
@@ -67,6 +91,16 @@ namespace StarSpeed {
             BACKGROUND->transform()->position.set(1680, 1080 / 2);
 			BACKGROUND->transform()->color.set(6, 6, 28, 200);
 			BACKGROUND->addToCurrentScene();
+
+			FuelBar* FUEL_BAR = new FuelBar();
+			FUEL_BAR->addToCurrentScene();
+
+
+			PlayerShip* PLAYER_SHIP = new PlayerShip();
+			PLAYER_SHIP->progress_ = &progress_;
+			PLAYER_SHIP->fuel_ = &FUEL_BAR->fuel;
+			PLAYER_SHIP->addToCurrentScene();
+	
 
 			getCamera().setTarget(PLAYER_SHIP);
 			getCamera().enableX = false;

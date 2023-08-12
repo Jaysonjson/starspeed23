@@ -115,7 +115,7 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>H:\starspeed23\libs\windows\FuchsLib.lib;H:\starspeed23\libs\windows\Motor.lib;H:\starspeed23\libs\windows\SDL2.lib;H:\starspeed23\libs\windows\SDL2_image.lib;H:\starspeed23\libs\windows\SDL2_ttf.lib;H:\starspeed23\libs\windows\libcrypto.lib;H:\starspeed23\libs\windows\libcurl_a.lib;H:\starspeed23\libs\windows\libcurl_d.lib;H:\starspeed23\libs\windows\libssl.lib;H:\starspeed23\libs\windows\zlib.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>H:\starspeed23\libs\windows_release\FuchsLib.lib;H:\starspeed23\libs\windows_release\Motor.lib;H:\starspeed23\libs\windows_release\SDL2.lib;H:\starspeed23\libs\windows_release\SDL2_image.lib;H:\starspeed23\libs\windows_release\SDL2_ttf.lib;H:\starspeed23\libs\windows_release\libcrypto.lib;H:\starspeed23\libs\windows_release\libcurl_a.lib;H:\starspeed23\libs\windows_release\libssl.lib;H:\starspeed23\libs\windows_release\zlib.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -139,7 +139,7 @@
       <LanguageStandard>stdcpplatest</LanguageStandard>
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <UseFullPaths>false</UseFullPaths>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);NDEBUG;FUCHSLIB_BUILD_DISCORD;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
@@ -159,7 +159,7 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>H:\starspeed23\libs\windows\FuchsLib.lib;H:\starspeed23\libs\windows\Motor.lib;H:\starspeed23\libs\windows\SDL2.lib;H:\starspeed23\libs\windows\SDL2_image.lib;H:\starspeed23\libs\windows\SDL2_ttf.lib;H:\starspeed23\libs\windows\libcrypto.lib;H:\starspeed23\libs\windows\libcurl_a.lib;H:\starspeed23\libs\windows\libcurl_d.lib;H:\starspeed23\libs\windows\libssl.lib;H:\starspeed23\libs\windows\zlib.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>H:\starspeed23\libs\windows_release\FuchsLib.lib;H:\starspeed23\libs\windows_release\Motor.lib;H:\starspeed23\libs\windows_release\SDL2.lib;H:\starspeed23\libs\windows_release\SDL2_image.lib;H:\starspeed23\libs\windows_release\SDL2_ttf.lib;H:\starspeed23\libs\windows_release\libcrypto.lib;H:\starspeed23\libs\windows_release\libcurl_a.lib;H:\starspeed23\libs\windows_release\libssl.lib;H:\starspeed23\libs\windows_release\zlib.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
@@ -203,7 +203,7 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>H:\starspeed23\libs\windows\FuchsLib.lib;H:\starspeed23\libs\windows\Motor.lib;H:\starspeed23\libs\windows\SDL2.lib;H:\starspeed23\libs\windows\SDL2_image.lib;H:\starspeed23\libs\windows\SDL2_ttf.lib;H:\starspeed23\libs\windows\libcrypto.lib;H:\starspeed23\libs\windows\libcurl_a.lib;H:\starspeed23\libs\windows\libcurl_d.lib;H:\starspeed23\libs\windows\libssl.lib;H:\starspeed23\libs\windows\zlib.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>H:\starspeed23\libs\windows_release\FuchsLib.lib;H:\starspeed23\libs\windows_release\Motor.lib;H:\starspeed23\libs\windows_release\SDL2.lib;H:\starspeed23\libs\windows_release\SDL2_image.lib;H:\starspeed23\libs\windows_release\SDL2_ttf.lib;H:\starspeed23\libs\windows_release\libcrypto.lib;H:\starspeed23\libs\windows_release\libcurl_a.lib;H:\starspeed23\libs\windows_release\libssl.lib;H:\starspeed23\libs\windows_release\zlib.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
@@ -246,7 +246,7 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>H:\starspeed23\libs\windows\FuchsLib.lib;H:\starspeed23\libs\windows\Motor.lib;H:\starspeed23\libs\windows\SDL2.lib;H:\starspeed23\libs\windows\SDL2_image.lib;H:\starspeed23\libs\windows\SDL2_ttf.lib;H:\starspeed23\libs\windows\libcrypto.lib;H:\starspeed23\libs\windows\libcurl_a.lib;H:\starspeed23\libs\windows\libcurl_d.lib;H:\starspeed23\libs\windows\libssl.lib;H:\starspeed23\libs\windows\zlib.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>H:\starspeed23\libs\windows_release\FuchsLib.lib;H:\starspeed23\libs\windows_release\Motor.lib;H:\starspeed23\libs\windows_release\SDL2.lib;H:\starspeed23\libs\windows_release\SDL2_image.lib;H:\starspeed23\libs\windows_release\SDL2_ttf.lib;H:\starspeed23\libs\windows_release\libcrypto.lib;H:\starspeed23\libs\windows_release\libcurl_a.lib;H:\starspeed23\libs\windows_release\libssl.lib;H:\starspeed23\libs\windows_release\zlib.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -323,6 +323,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="H:\starspeed23\src\mine.cpp" />
     <ClInclude Include="H:\starspeed23\src\mine.hpp" />
     <ClCompile Include="H:\starspeed23\src\resourcepack.cpp" />
+    <ClCompile Include="H:\starspeed23\src\sceneswitcher.cpp" />
     <ClCompile Include="H:\starspeed23\src\splashs.cpp" />
     <ClInclude Include="H:\starspeed23\src\starspeed\achievements.hpp" />
     <ClInclude Include="H:\starspeed23\src\starspeed\components\down_movement.hpp" />
@@ -350,6 +351,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="H:\starspeed23\src\starspeed\scenes\login.hpp" />
     <ClInclude Include="H:\starspeed23\src\starspeed\scenes\splash.hpp" />
     <ClInclude Include="H:\starspeed23\src\starspeed\scenes\titlescreen.hpp" />
+    <ClInclude Include="H:\starspeed23\src\starspeed\sceneswitcher.hpp" />
     <ClInclude Include="H:\starspeed23\src\starspeed\splashs.hpp" />
     <ClInclude Include="H:\starspeed23\src\starspeed\textures.hpp" />
     <ClCompile Include="H:\starspeed23\src\textures.cpp" />

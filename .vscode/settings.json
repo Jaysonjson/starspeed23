@@ -86,5 +86,6 @@
         "xutility": "cpp",
         "codecvt": "cpp",
         "unordered_set": "cpp"
-    }
+    },
+    "C_Cpp.default.configurationProvider": "go2sh.cmake-integration"
 }

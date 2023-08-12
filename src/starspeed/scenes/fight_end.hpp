@@ -2,8 +2,44 @@
 #include "motor/object/scene.hpp"
 #include "random"
 #include "starspeed/objects/star.hpp"
-
+#include "starspeed/sceneswitcher.hpp"
 namespace StarSpeed {
+
+	class BackButton : public Motor::GameObject {
+	public:
+		void onCreate() override {
+			addComponent<Motor::SpriteComponent>(Tex::TEXTFIELD);
+			addComponent<Motor::SpriteColliderComponent>();
+			getComponent<Motor::SpriteColliderComponent>()->registerMouseClickEvent();
+			getComponent<Motor::SpriteColliderComponent>()->registerMouseHoverEvent();
+			addComponent<Motor::TextComponentBlended>(Tex::DEBUG_FONT);
+			getComponent<Motor::TextComponentBlended>()->setContent("Back to Titlescreen");
+			getComponent<Motor::TextComponentBlended>()->alignment_ = Motor::TextAlignment::MID;
+			getComponent<Motor::TextComponentBlended>()->customScale_.set(40, 48);
+			transform()->position.set(1920 / 2, 1080 / 1.1);
+			transform()->scale.set(500, 64);
+		}
+
+		void onComponentEvent(Motor::IComponentEvent* eventData) override {
+			if (eventData->id() == "collider") {
+				Motor::ColliderEvent* colliderEvent = dynamic_cast<Motor::ColliderEvent*>(eventData);
+				if (colliderEvent->type == Motor::CLICK) {
+					if (colliderEvent->onObject) {
+						switchToTitleScreen();
+					}
+				}
+
+				if (colliderEvent->type == Motor::HOVER) {
+					if (colliderEvent->onObject) {
+						transform()->color.set(125, 125, 90, 255);
+					}
+					else {
+						transform()->color.set(255, 255, 255, 255);
+					}
+				}
+			}
+		};
+	};
 
     class FightEnd : public Motor::Scene {
     public:
@@ -19,6 +55,9 @@ namespace StarSpeed {
 				STAR->transform()->position.set(dist_x(mt), dist_y(mt));
 				STAR->addToCurrentScene(false);
 			}
+
+			BackButton* BACK_BUTTON = new BackButton();
+			BACK_BUTTON->addToCurrentScene();
 
             Motor::GameObject* SUN_GLOW = new Motor::GameObject();
 			SUN_GLOW->addComponent<Motor::SpriteComponent>(Tex::CIRCLE_GLOW);

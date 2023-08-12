@@ -46,8 +46,8 @@ namespace StarSpeed {
 						triggerCursor = true;
 					}
 				}
-				if(colliderEvent->type == Motor::CLICK) {
-					if(colliderEvent->onObject) {
+				if (colliderEvent->type == Motor::CLICK) {
+					if (colliderEvent->onObject) {
 						CURSOR->resetTooltip();
 						CURSOR->clickable(false);
 						getriebe.getGame()->switchScene(new FightScene());
@@ -99,6 +99,17 @@ namespace StarSpeed {
 				}
 			}
 		};
+	};
+
+	class StarSpeedLogoTS : public Motor::GameObject {
+	public:
+		Motor::GameObject* SPLASH = nullptr;
+		void onCreate() {
+			addComponent<Motor::DynamicSpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/title/starspeed.png"));
+			getComponent<Motor::DynamicSpriteComponent>()->blendMode_ = SDL_BLENDMODE_BLEND;
+			transform()->position.set(1920 / 2, 1080 / 5.2);
+			transform()->scale.set(76 * 9, 42 * 9);
+		}
 	};
 
 	class DiscordJoinButton : public Motor::GameObject {
@@ -170,7 +181,7 @@ namespace StarSpeed {
 			CLOUD_BACKGROUND->transform()->color.setAlpha(12);
 			CLOUD_BACKGROUND->addComponent<DownMovementComponent>()->speed_ = 0.04f;
 			CLOUD_BACKGROUND->addToCurrentScene();
-	
+
 
 			PlayButton* playButton = new PlayButton();
 			playButton->addToCurrentScene();
@@ -211,7 +222,7 @@ namespace StarSpeed {
 			SPLASH_TEXT->transform()->position.set(1920 / 2, 1080 / 2.6);
 			SPLASH_TEXT->transform()->scale.set(32, 32);
 			SPLASH_TEXT->addToCurrentScene();
- 
+
 			Motor::GameObject* STARSPEED_LOGO_FLARE = new Motor::GameObject();
 			STARSPEED_LOGO_FLARE->addComponent<Motor::DynamicSpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/title/starspeed_flare.png"));
 			STARSPEED_LOGO_FLARE->getComponent<Motor::DynamicSpriteComponent>()->blendMode_ = SDL_BLENDMODE_BLEND;
@@ -228,12 +239,10 @@ namespace StarSpeed {
 			STARSPEED_LOGO_FLARE_1->transform()->color.set(255, 255, 255, 25);
 			STARSPEED_LOGO_FLARE_1->addToCurrentScene();
 
-			Motor::GameObject* STARSPEED_LOGO = new Motor::GameObject();
-			STARSPEED_LOGO->addComponent<Motor::DynamicSpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/title/starspeed.png"));
-			STARSPEED_LOGO->getComponent<Motor::DynamicSpriteComponent>()->blendMode_ = SDL_BLENDMODE_BLEND;
-			STARSPEED_LOGO->transform()->position.set(1920 / 2, 1080 / 5.2);
-			STARSPEED_LOGO->transform()->scale.set(76 * 9, 42 * 9);
+			StarSpeedLogoTS* STARSPEED_LOGO = new StarSpeedLogoTS();
+			STARSPEED_LOGO->SPLASH = SPLASH_TEXT;
 			STARSPEED_LOGO->addToCurrentScene();
+
 
 			Motor::GameObject* SUN_GLOW = new Motor::GameObject();
 			SUN_GLOW->addComponent<Motor::SpriteComponent>(Tex::CIRCLE_GLOW);
@@ -275,7 +284,7 @@ namespace StarSpeed {
 			BACK2_GLOW->transform()->position.set(1920 / 2, 1080 / 2);
 			BACK2_GLOW->transform()->color.set(19, 37, 48, 95);
 			BACK2_GLOW->addToCurrentScene();
-			
+
 			if (!discordApi.isCreated()) {
 				SWDAvatar* SWD_AVATAR = new SWDAvatar();
 				SWD_AVATAR->addToCurrentScene();

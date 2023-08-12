@@ -1,0 +1,3 @@
+/media/jay/New Volume1/starspeed23/linux/CMakeFiles/StarSpeed23.dir
+/media/jay/New Volume1/starspeed23/linux/CMakeFiles/edit_cache.dir
+/media/jay/New Volume1/starspeed23/linux/CMakeFiles/rebuild_cache.dir

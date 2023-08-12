@@ -3,7 +3,7 @@
 cmake_policy(SET CMP0009 NEW)
 
 # LIBRARIES at CMakeLists.txt:37 (file)
-file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "H:/starspeed23/libs/windows/*.a")
+file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "H:/starspeed23/libs/windows_release/*.a")
 set(OLD_GLOB
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
@@ -12,7 +12,7 @@ if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
 endif()
 
 # LIBRARIES at CMakeLists.txt:37 (file)
-file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "H:/starspeed23/libs/windows/*.dylib")
+file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "H:/starspeed23/libs/windows_release/*.dylib")
 set(OLD_GLOB
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
@@ -21,19 +21,18 @@ if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
 endif()
 
 # LIBRARIES at CMakeLists.txt:37 (file)
-file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "H:/starspeed23/libs/windows/*.lib")
+file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "H:/starspeed23/libs/windows_release/*.lib")
 set(OLD_GLOB
-  "H:/starspeed23/libs/windows/FuchsLib.lib"
-  "H:/starspeed23/libs/windows/Motor.lib"
-  "H:/starspeed23/libs/windows/SDL2.lib"
-  "H:/starspeed23/libs/windows/SDL2_image.lib"
-  "H:/starspeed23/libs/windows/SDL2_ttf.lib"
-  "H:/starspeed23/libs/windows/discord_game_sdk.dll.lib"
-  "H:/starspeed23/libs/windows/libcrypto.lib"
-  "H:/starspeed23/libs/windows/libcurl_a.lib"
-  "H:/starspeed23/libs/windows/libcurl_d.lib"
-  "H:/starspeed23/libs/windows/libssl.lib"
-  "H:/starspeed23/libs/windows/zlib.lib"
+  "H:/starspeed23/libs/windows_release/FuchsLib.lib"
+  "H:/starspeed23/libs/windows_release/Motor.lib"
+  "H:/starspeed23/libs/windows_release/SDL2.lib"
+  "H:/starspeed23/libs/windows_release/SDL2_image.lib"
+  "H:/starspeed23/libs/windows_release/SDL2_ttf.lib"
+  "H:/starspeed23/libs/windows_release/discord_game_sdk.dll.lib"
+  "H:/starspeed23/libs/windows_release/libcrypto.lib"
+  "H:/starspeed23/libs/windows_release/libcurl_a.lib"
+  "H:/starspeed23/libs/windows_release/libssl.lib"
+  "H:/starspeed23/libs/windows_release/zlib.lib"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
@@ -41,7 +40,7 @@ if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
 endif()
 
 # LIBRARIES at CMakeLists.txt:37 (file)
-file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "H:/starspeed23/libs/windows/*.so")
+file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "H:/starspeed23/libs/windows_release/*.so")
 set(OLD_GLOB
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
@@ -57,6 +56,7 @@ set(OLD_GLOB
   "H:/starspeed23/src/main.cpp"
   "H:/starspeed23/src/mine.cpp"
   "H:/starspeed23/src/resourcepack.cpp"
+  "H:/starspeed23/src/sceneswitcher.cpp"
   "H:/starspeed23/src/splashs.cpp"
   "H:/starspeed23/src/textures.cpp"
   "H:/starspeed23/src/tinyfiledialogs.cpp"
@@ -96,6 +96,7 @@ set(OLD_GLOB
   "H:/starspeed23/src/starspeed/scenes/login.hpp"
   "H:/starspeed23/src/starspeed/scenes/splash.hpp"
   "H:/starspeed23/src/starspeed/scenes/titlescreen.hpp"
+  "H:/starspeed23/src/starspeed/sceneswitcher.hpp"
   "H:/starspeed23/src/starspeed/splashs.hpp"
   "H:/starspeed23/src/starspeed/textures.hpp"
   "H:/starspeed23/src/tinyfiledialogs.hpp"

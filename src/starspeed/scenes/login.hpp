@@ -10,6 +10,7 @@
 #include "starspeed/cursor.hpp"
 #include "starspeed/discord.hpp"
 #include "starspeed/profile.hpp"
+#include "starspeed/sceneswitcher.hpp"
 //WIP
 namespace StarSpeed {
 
@@ -241,7 +242,7 @@ namespace StarSpeed {
 				Motor::ColliderEvent* colliderEvent = dynamic_cast<Motor::ColliderEvent*>(eventData);
 				if (colliderEvent->type == Motor::CLICK) {
 					if (colliderEvent->onObject) {
-						getriebe.getGame()->switchScene(new TitleScreen());
+						switchToTitleScreen();
 					}
 				}
 				if (colliderEvent->type == Motor::HOVER) {
@@ -285,7 +286,7 @@ namespace StarSpeed {
 						SWD_USERNAME = user->input;
 						SWD_PASSWORD = md5(password->input);
 						unlockAchievement(Achmts::LOGIN_SWD);
-						getriebe.getGame()->switchScene(new TitleScreen());
+						switchToTitleScreen();
 						playerProfile->swd_username = SWD_USERNAME;
 						playerProfile->swd_password = SWD_PASSWORD;
 						playerProfile->save();
@@ -368,7 +369,7 @@ namespace StarSpeed {
 			if (!playerProfile->swd_username.empty()) {
 				SWD_USERNAME = playerProfile->swd_username;
 				SWD_PASSWORD = playerProfile->swd_password;
-				getriebe.getGame()->switchScene(new TitleScreen());
+				switchToTitleScreen();
 			}
 		}
 
@@ -379,7 +380,7 @@ namespace StarSpeed {
 					if (colliderEvent->onObject) {
 						//discordApi.start(903707517236961290, EDiscordCreateFlags::DiscordCreateFlags_NoRequireDiscord);
 						//std::thread* discordThread = new std::thread(discordThreadFunction);
-						getriebe.getGame()->switchScene(new TitleScreen());
+						switchToTitleScreen();
 					}
 				}
 

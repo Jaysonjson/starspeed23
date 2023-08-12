@@ -16,6 +16,9 @@
     <ClCompile Include="H:\starspeed23\src\resourcepack.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="H:\starspeed23\src\sceneswitcher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="H:\starspeed23\src\splashs.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -106,6 +109,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="H:\starspeed23\src\starspeed\scenes\titlescreen.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\starspeed23\src\starspeed\sceneswitcher.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="H:\starspeed23\src\starspeed\splashs.hpp">

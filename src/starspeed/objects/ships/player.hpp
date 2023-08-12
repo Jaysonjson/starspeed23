@@ -12,6 +12,7 @@ namespace StarSpeed {
     public:
         float speed_ = 1.05;
         int* progress_ = nullptr;
+        float* fuel_ = nullptr;
         void onCreate() override {
             addComponent<Motor::SpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/ships/player/default/default.png"));
             getComponent<Motor::SpriteComponent>()->blendMode_ = SDL_BLENDMODE_BLEND;
@@ -30,6 +31,12 @@ namespace StarSpeed {
             getComponent<Motor::SpriteComponent>(2)->useCustomColor_ = true;
             getComponent<Motor::SpriteComponent>(2)->customColor_.set(0, 0, 255, 45);
             getComponent<Motor::SpriteComponent>(2)->translate_.set(0, -10);
+            getComponent<Motor::SpriteComponent>(2)->ignoreCamera_ = true;
+
+            addComponent<Motor::TextComponentBlended>(Tex::GAME_FONT);
+            getComponent<Motor::TextComponentBlended>()->setContent("Hold SPACE to shoot; Hold W to accelerate; A/D to strife Left/Right");
+            getComponent<Motor::TextComponentBlended>()->ignoreCamera_ = true;
+            getComponent<Motor::TextComponentBlended>()->translate_.set(0, 100);
         }
 
         void registerEvents() override {
@@ -64,7 +71,7 @@ namespace StarSpeed {
             }
             ++progressTimer;
 
-            if(progressTimer == 45 && accelerating) {
+            if(progressTimer == 35 && accelerating) {
                 ++*progress_;
                 progressTimer = 0;
             }
@@ -94,6 +101,7 @@ namespace StarSpeed {
             if(key[SDL_Scancode::SDL_SCANCODE_SPACE] && 25 < shootCooldown) {
                 shoot();
                 shootCooldown = 0;
+                getComponent<Motor::TextComponentBlended>()->setContent("");
             }
         }
 
@@ -104,18 +112,22 @@ namespace StarSpeed {
             if (key[SDL_Scancode::SDL_SCANCODE_D]) {
                 if(transform()->position.getX() < 1390) {
                     transform()->position.add({ speed_ * delta, 0 });
+                    getComponent<Motor::TextComponentBlended>()->setContent("");
                 }
             }
             if (key[SDL_Scancode::SDL_SCANCODE_A]) {
                 if(40 < transform()->position.getX()) {
                     transform()->position.add({ -speed_ * delta, 0 });
+                    getComponent<Motor::TextComponentBlended>()->setContent("");
                 }
             }
 
             accelerating = false;
-            if (key[SDL_Scancode::SDL_SCANCODE_W]) {
-                getComponent<Motor::TransformComponent>()->position.add({ 0, -speed_ * 0.45f * delta });
+            if (key[SDL_Scancode::SDL_SCANCODE_W] && *fuel_ > 0.1f) {
+                getComponent<Motor::TransformComponent>()->position.add({ 0, -speed_ * 0.65f * delta });
+                getComponent<Motor::TextComponentBlended>()->setContent("");
                 accelerating = true;
+                *fuel_ -= 0.4f;
             }
             //if (key[SDL_Scancode::SDL_SCANCODE_S]) getComponent<Motor::TransformComponent>()->position.add({ 0, speed_ * 0.75f * delta });
         }
