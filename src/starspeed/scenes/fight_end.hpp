@@ -16,6 +16,7 @@ namespace StarSpeed {
 			getComponent<Motor::TextComponentBlended>()->setContent("Back to Titlescreen");
 			getComponent<Motor::TextComponentBlended>()->alignment_ = Motor::TextAlignment::MID;
 			getComponent<Motor::TextComponentBlended>()->customScale_.set(40, 48);
+			getComponent<Motor::TextComponentBlended>()->useCustomScale_ = true;
 			transform()->position.set(1920 / 2, 1080 / 1.1);
 			transform()->scale.set(500, 64);
 		}

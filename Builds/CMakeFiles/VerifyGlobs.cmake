@@ -91,6 +91,7 @@ set(OLD_GLOB
   "H:/starspeed23/src/starspeed/objects/swdavatar.hpp"
   "H:/starspeed23/src/starspeed/profile.hpp"
   "H:/starspeed23/src/starspeed/resourcepack.hpp"
+  "H:/starspeed23/src/starspeed/scenes/credits.hpp"
   "H:/starspeed23/src/starspeed/scenes/fight.hpp"
   "H:/starspeed23/src/starspeed/scenes/fight_end.hpp"
   "H:/starspeed23/src/starspeed/scenes/login.hpp"

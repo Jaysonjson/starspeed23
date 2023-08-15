@@ -13,13 +13,18 @@
 
 namespace StarSpeed {
 
+	constexpr int buttonStart = 1920 / 4.9;
+
 	class PlayButton : public Motor::GameObject {
 	public:
-
+		//Motor::DynamicTexture* SELECTED = new Motor::DynamicTexture(Motor::ResourceLocation(resourcePackMod, "sprites/title/buttons/play_selected.png"));
+		Motor::DynamicTexture* DEFAULT = new Motor::DynamicTexture(Motor::ResourceLocation(resourcePackMod, "sprites/title/buttons/play.png"));
 		void onCreate() {
-			addComponent<Motor::DynamicSpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/title/buttons/play.png"));
+			//SELECTED->load();
+			DEFAULT->load();
+			addComponent<Motor::DynamicSpriteComponent>(DEFAULT);
 			getComponent<Motor::DynamicSpriteComponent>()->blendMode_ = SDL_BLENDMODE_BLEND;
-			transform()->position.set(1920 / 8, 1080 / 1.7);
+			transform()->position.set(buttonStart, 1080 / 1.7);
 			transform()->scale.set(128 * 1.5, 128 * 1.5);
 			addComponent<Motor::SpriteColliderComponent>();
 			getComponent<Motor::SpriteColliderComponent>()->registerMouseHoverEvent();
@@ -37,6 +42,7 @@ namespace StarSpeed {
 							CURSOR->resetTooltip();
 							CURSOR->clickable(false);
 							triggerCursor = false;
+							//getComponent<Motor::DynamicSpriteComponent>()->setTexture(DEFAULT);
 						}
 					}
 					else {
@@ -44,6 +50,7 @@ namespace StarSpeed {
 						CURSOR->setTooltip("Play Game");
 						CURSOR->clickable(true);
 						triggerCursor = true;
+						//getComponent<Motor::DynamicSpriteComponent>()->setTexture(DEFAULT);
 					}
 				}
 				if (colliderEvent->type == Motor::CLICK) {
@@ -63,7 +70,7 @@ namespace StarSpeed {
 		void onCreate() {
 			addComponent<Motor::DynamicSpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/title/buttons/options.png"));
 			getComponent<Motor::DynamicSpriteComponent>()->blendMode_ = SDL_BLENDMODE_BLEND;
-			transform()->position.set(1920 / 8 + ((128 * 1.5) * 2), 1080 / 1.7);
+			transform()->position.set(buttonStart + ((128 * 1.75) * 2), 1080 / 1.7);
 			transform()->scale.set(128 * 1.5, 128 * 1.5);
 			addComponent<Motor::SpriteColliderComponent>();
 			getComponent<Motor::SpriteColliderComponent>()->registerMouseHoverEvent();
@@ -101,11 +108,137 @@ namespace StarSpeed {
 		};
 	};
 
+	class SaveFolder : public Motor::GameObject {
+	public:
+
+		void onCreate() {
+			addComponent<Motor::DynamicSpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/title/buttons/save_game.png"));
+			getComponent<Motor::DynamicSpriteComponent>()->blendMode_ = SDL_BLENDMODE_BLEND;
+			transform()->position.set(buttonStart + ((128 * 1.75) * 3), 1080 / 1.7);
+			transform()->scale.set(128 * 1.5, 128 * 1.5);
+			addComponent<Motor::SpriteColliderComponent>();
+			getComponent<Motor::SpriteColliderComponent>()->registerMouseHoverEvent();
+			getComponent<Motor::SpriteColliderComponent>()->registerMouseClickEvent();
+		}
+
+		bool triggerCursor = false;
+		void onComponentEvent(Motor::IComponentEvent* eventData) override {
+			if (eventData->id() == "collider") {
+				Motor::ColliderEvent* colliderEvent = dynamic_cast<Motor::ColliderEvent*>(eventData);
+				if (colliderEvent->type == Motor::HOVER) {
+					if (!colliderEvent->onObject) {
+						transform()->scale.set(128 * 1.5);
+						if (triggerCursor) {
+							CURSOR->resetTooltip();
+							CURSOR->clickable(false);
+							triggerCursor = false;
+						}
+					}
+					else {
+						transform()->scale.set(128 * 1.55);
+						CURSOR->setTooltip("Save Game Folder");
+						CURSOR->clickable(true);
+						triggerCursor = true;
+					}
+				}
+				if (colliderEvent->type == Motor::CLICK) {
+					if (colliderEvent->onObject) {
+						Fuchs::Utility::openDirectoryInFileManager(Motor::Path::docs);
+					}
+				}
+			}
+		};
+	};
+
+	class CreditsButton : public Motor::GameObject {
+	public:
+
+		void onCreate() {
+			addComponent<Motor::DynamicSpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/title/buttons/credits.png"));
+			getComponent<Motor::DynamicSpriteComponent>()->blendMode_ = SDL_BLENDMODE_BLEND;
+			transform()->position.set(buttonStart + ((128 * 1.75) * 4), 1080 / 1.7);
+			transform()->scale.set(128 * 1.5, 128 * 1.5);
+			addComponent<Motor::SpriteColliderComponent>();
+			getComponent<Motor::SpriteColliderComponent>()->registerMouseHoverEvent();
+			getComponent<Motor::SpriteColliderComponent>()->registerMouseClickEvent();
+		}
+
+		bool triggerCursor = false;
+		void onComponentEvent(Motor::IComponentEvent* eventData) override {
+			if (eventData->id() == "collider") {
+				Motor::ColliderEvent* colliderEvent = dynamic_cast<Motor::ColliderEvent*>(eventData);
+				if (colliderEvent->type == Motor::HOVER) {
+					if (!colliderEvent->onObject) {
+						transform()->scale.set(128 * 1.5);
+						if (triggerCursor) {
+							CURSOR->resetTooltip();
+							CURSOR->clickable(false);
+							triggerCursor = false;
+						}
+					}
+					else {
+						transform()->scale.set(128 * 1.55);
+						CURSOR->setTooltip("StarSpeed23 Credits");
+						CURSOR->clickable(true);
+						triggerCursor = true;
+					}
+				}
+				if (colliderEvent->type == Motor::CLICK) {
+					if (colliderEvent->onObject) {
+
+					}
+				}
+			}
+		};
+	};
+
+	class ExitButton : public Motor::GameObject {
+	public:
+
+		void onCreate() {
+			addComponent<Motor::DynamicSpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/title/buttons/exit.png"));
+			getComponent<Motor::DynamicSpriteComponent>()->blendMode_ = SDL_BLENDMODE_BLEND;
+			transform()->position.set(buttonStart + ((128 * 1.75) * 5), 1080 / 1.7);
+			transform()->scale.set(128 * 1.5, 128 * 1.5);
+			addComponent<Motor::SpriteColliderComponent>();
+			getComponent<Motor::SpriteColliderComponent>()->registerMouseHoverEvent();
+			getComponent<Motor::SpriteColliderComponent>()->registerMouseClickEvent();
+		}
+
+		bool triggerCursor = false;
+		void onComponentEvent(Motor::IComponentEvent* eventData) override {
+			if (eventData->id() == "collider") {
+				Motor::ColliderEvent* colliderEvent = dynamic_cast<Motor::ColliderEvent*>(eventData);
+				if (colliderEvent->type == Motor::HOVER) {
+					if (!colliderEvent->onObject) {
+						transform()->scale.set(128 * 1.5);
+						if (triggerCursor) {
+							CURSOR->resetTooltip();
+							CURSOR->clickable(false);
+							triggerCursor = false;
+						}
+					}
+					else {
+						transform()->scale.set(128 * 1.55);
+						CURSOR->setTooltip("Exit to Desktop");
+						CURSOR->clickable(true);
+						triggerCursor = true;
+					}
+				}
+				if (colliderEvent->type == Motor::CLICK) {
+					if (colliderEvent->onObject) {
+						getriebe.getGame()->running_ = false;
+					}
+				}
+			}
+		};
+	};
+
 	class StarSpeedLogoTS : public Motor::GameObject {
 	public:
 		Motor::GameObject* SPLASH = nullptr;
 		void onCreate() {
-			addComponent<Motor::DynamicSpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/title/starspeed.png"));
+			addComponent<Motor::DynamicSpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/title/starspeed_xr.png"));
 			getComponent<Motor::DynamicSpriteComponent>()->blendMode_ = SDL_BLENDMODE_BLEND;
 			transform()->position.set(1920 / 2, 1080 / 5.2);
 			transform()->scale.set(76 * 9, 42 * 9);
@@ -118,7 +251,7 @@ namespace StarSpeed {
 		void onCreate() {
 			addComponent<Motor::DynamicSpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/title/buttons/discord.png"));
 			getComponent<Motor::DynamicSpriteComponent>()->blendMode_ = SDL_BLENDMODE_BLEND;
-			transform()->position.set(1920 / 8 + 128 * 1.5, 1080 / 1.73);
+			transform()->position.set(buttonStart + 128 * 1.75, 1080 / 1.7);
 			transform()->scale.set(128 * 1.5, 128 * 1.5);
 			addComponent<Motor::SpriteColliderComponent>();
 			getComponent<Motor::SpriteColliderComponent>()->registerMouseHoverEvent();
@@ -159,7 +292,6 @@ namespace StarSpeed {
 	public:
 		void init(Motor::Game* game) override {
 			Motor::Scene::init(game);
-			SDL_SetRenderDrawColor(getriebe.sdl_renderer(), 0, 0, 0, 255);
 
 			std::random_device rd;
 			std::mt19937 mt(rd());
@@ -192,8 +324,17 @@ namespace StarSpeed {
 			OptionsButton* optionsButton = new OptionsButton();
 			optionsButton->addToCurrentScene();
 
+			SaveFolder* saveFolder = new SaveFolder();
+			saveFolder->addToCurrentScene();
+
+			CreditsButton* creditsButton = new CreditsButton();
+			creditsButton->addToCurrentScene();
+
+			ExitButton* exitButton = new ExitButton();
+			exitButton->addToCurrentScene();
+
 			Motor::GameObject* SWD_LOGO = new Motor::GameObject();
-			SWD_LOGO->addComponent<Motor::SpriteComponent>(Tex::SWD_LOGO);
+			SWD_LOGO->addComponent<Motor::SpriteComponent>(Tex::SWD_LOGO_WIDE);
 			SWD_LOGO->getComponent<Motor::SpriteComponent>()->blendMode_ = SDL_BLENDMODE_BLEND;
 			SWD_LOGO->transform()->position.set((449 / 3) / 1.8, 1080 - 82 / 3.5);
 			SWD_LOGO->transform()->scale.set(449 / 3, 82 / 3);
@@ -205,6 +346,7 @@ namespace StarSpeed {
 			STARSPEED_TEXT->getComponent<Motor::TextComponentBlended>()->alignment_ = Motor::TextAlignment::RIGHT;
 			STARSPEED_TEXT->transform()->position.set(1915, 1080 - 16);
 			STARSPEED_TEXT->getComponent<Motor::TextComponentBlended>()->customScale_.set(18, 25);
+			STARSPEED_TEXT->getComponent<Motor::TextComponentBlended>()->useCustomScale_ = true;
 			STARSPEED_TEXT->addToCurrentScene();
 
 			Motor::GameObject* SPLASH_TEXT = new Motor::GameObject();

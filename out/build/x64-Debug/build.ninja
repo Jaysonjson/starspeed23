@@ -49,7 +49,35 @@ cmake_ninja_workdir = H$:\starspeed23\out\build\x64-Debug\
 
 build cmake_object_order_depends_target_StarSpeed23: phony || CMakeFiles\StarSpeed23.dir
 
+build CMakeFiles\StarSpeed23.dir\src\achievements.cpp.obj: CXX_COMPILER__StarSpeed23_unscanned_Release H$:\starspeed23\src\achievements.cpp || cmake_object_order_depends_target_StarSpeed23
+  DEFINES = -DFUCHSLIB_BUILD_DISCORD
+  FLAGS = -std=c++2b /O2 /Ob2 /DNDEBUG -std:c++latest -MD
+  INCLUDES = -IH:\starspeed23\src -IH:\starspeed23\libs\includes -IH:\CPP_HEADERS\include
+  OBJECT_DIR = CMakeFiles\StarSpeed23.dir
+  OBJECT_FILE_DIR = CMakeFiles\StarSpeed23.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\StarSpeed23.dir\
+  TARGET_PDB = StarSpeed23.pdb
+
+build CMakeFiles\StarSpeed23.dir\src\discord.cpp.obj: CXX_COMPILER__StarSpeed23_unscanned_Release H$:\starspeed23\src\discord.cpp || cmake_object_order_depends_target_StarSpeed23
+  DEFINES = -DFUCHSLIB_BUILD_DISCORD
+  FLAGS = -std=c++2b /O2 /Ob2 /DNDEBUG -std:c++latest -MD
+  INCLUDES = -IH:\starspeed23\src -IH:\starspeed23\libs\includes -IH:\CPP_HEADERS\include
+  OBJECT_DIR = CMakeFiles\StarSpeed23.dir
+  OBJECT_FILE_DIR = CMakeFiles\StarSpeed23.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\StarSpeed23.dir\
+  TARGET_PDB = StarSpeed23.pdb
+
 build CMakeFiles\StarSpeed23.dir\src\main.cpp.obj: CXX_COMPILER__StarSpeed23_unscanned_Release H$:\starspeed23\src\main.cpp || cmake_object_order_depends_target_StarSpeed23
+  DEFINES = -DFUCHSLIB_BUILD_DISCORD
+  FLAGS = -std=c++2b /O2 /Ob2 /DNDEBUG -std:c++latest -MD
+  INCLUDES = -IH:\starspeed23\src -IH:\starspeed23\libs\includes -IH:\CPP_HEADERS\include
+  OBJECT_DIR = CMakeFiles\StarSpeed23.dir
+  OBJECT_FILE_DIR = CMakeFiles\StarSpeed23.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\StarSpeed23.dir\
+  TARGET_PDB = StarSpeed23.pdb
+
+build CMakeFiles\StarSpeed23.dir\src\mine.cpp.obj: CXX_COMPILER__StarSpeed23_unscanned_Release H$:\starspeed23\src\mine.cpp || cmake_object_order_depends_target_StarSpeed23
+  DEFINES = -DFUCHSLIB_BUILD_DISCORD
   FLAGS = -std=c++2b /O2 /Ob2 /DNDEBUG -std:c++latest -MD
   INCLUDES = -IH:\starspeed23\src -IH:\starspeed23\libs\includes -IH:\CPP_HEADERS\include
   OBJECT_DIR = CMakeFiles\StarSpeed23.dir
@@ -58,6 +86,25 @@ build CMakeFiles\StarSpeed23.dir\src\main.cpp.obj: CXX_COMPILER__StarSpeed23_uns
   TARGET_PDB = StarSpeed23.pdb
 
 build CMakeFiles\StarSpeed23.dir\src\resourcepack.cpp.obj: CXX_COMPILER__StarSpeed23_unscanned_Release H$:\starspeed23\src\resourcepack.cpp || cmake_object_order_depends_target_StarSpeed23
+  DEFINES = -DFUCHSLIB_BUILD_DISCORD
+  FLAGS = -std=c++2b /O2 /Ob2 /DNDEBUG -std:c++latest -MD
+  INCLUDES = -IH:\starspeed23\src -IH:\starspeed23\libs\includes -IH:\CPP_HEADERS\include
+  OBJECT_DIR = CMakeFiles\StarSpeed23.dir
+  OBJECT_FILE_DIR = CMakeFiles\StarSpeed23.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\StarSpeed23.dir\
+  TARGET_PDB = StarSpeed23.pdb
+
+build CMakeFiles\StarSpeed23.dir\src\sceneswitcher.cpp.obj: CXX_COMPILER__StarSpeed23_unscanned_Release H$:\starspeed23\src\sceneswitcher.cpp || cmake_object_order_depends_target_StarSpeed23
+  DEFINES = -DFUCHSLIB_BUILD_DISCORD
+  FLAGS = -std=c++2b /O2 /Ob2 /DNDEBUG -std:c++latest -MD
+  INCLUDES = -IH:\starspeed23\src -IH:\starspeed23\libs\includes -IH:\CPP_HEADERS\include
+  OBJECT_DIR = CMakeFiles\StarSpeed23.dir
+  OBJECT_FILE_DIR = CMakeFiles\StarSpeed23.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\StarSpeed23.dir\
+  TARGET_PDB = StarSpeed23.pdb
+
+build CMakeFiles\StarSpeed23.dir\src\splashs.cpp.obj: CXX_COMPILER__StarSpeed23_unscanned_Release H$:\starspeed23\src\splashs.cpp || cmake_object_order_depends_target_StarSpeed23
+  DEFINES = -DFUCHSLIB_BUILD_DISCORD
   FLAGS = -std=c++2b /O2 /Ob2 /DNDEBUG -std:c++latest -MD
   INCLUDES = -IH:\starspeed23\src -IH:\starspeed23\libs\includes -IH:\CPP_HEADERS\include
   OBJECT_DIR = CMakeFiles\StarSpeed23.dir
@@ -66,6 +113,7 @@ build CMakeFiles\StarSpeed23.dir\src\resourcepack.cpp.obj: CXX_COMPILER__StarSpe
   TARGET_PDB = StarSpeed23.pdb
 
 build CMakeFiles\StarSpeed23.dir\src\textures.cpp.obj: CXX_COMPILER__StarSpeed23_unscanned_Release H$:\starspeed23\src\textures.cpp || cmake_object_order_depends_target_StarSpeed23
+  DEFINES = -DFUCHSLIB_BUILD_DISCORD
   FLAGS = -std=c++2b /O2 /Ob2 /DNDEBUG -std:c++latest -MD
   INCLUDES = -IH:\starspeed23\src -IH:\starspeed23\libs\includes -IH:\CPP_HEADERS\include
   OBJECT_DIR = CMakeFiles\StarSpeed23.dir
@@ -74,19 +122,11 @@ build CMakeFiles\StarSpeed23.dir\src\textures.cpp.obj: CXX_COMPILER__StarSpeed23
   TARGET_PDB = StarSpeed23.pdb
 
 build CMakeFiles\StarSpeed23.dir\src\tinyfiledialogs.cpp.obj: CXX_COMPILER__StarSpeed23_unscanned_Release H$:\starspeed23\src\tinyfiledialogs.cpp || cmake_object_order_depends_target_StarSpeed23
+  DEFINES = -DFUCHSLIB_BUILD_DISCORD
   FLAGS = -std=c++2b /O2 /Ob2 /DNDEBUG -std:c++latest -MD
   INCLUDES = -IH:\starspeed23\src -IH:\starspeed23\libs\includes -IH:\CPP_HEADERS\include
   OBJECT_DIR = CMakeFiles\StarSpeed23.dir
   OBJECT_FILE_DIR = CMakeFiles\StarSpeed23.dir\src
-  TARGET_COMPILE_PDB = CMakeFiles\StarSpeed23.dir\
-  TARGET_PDB = StarSpeed23.pdb
-
-build CMakeFiles\StarSpeed23.dir\app.rc.res: RC_COMPILER__StarSpeed23_unscanned_Release H$:\starspeed23\app.rc || cmake_object_order_depends_target_StarSpeed23
-  DEP_FILE = CMakeFiles\StarSpeed23.dir\app.rc.res.d
-  FLAGS = -DWIN32
-  INCLUDES = -I H:\starspeed23\src -I H:\starspeed23\libs\includes -I H:\CPP_HEADERS\include
-  OBJECT_DIR = CMakeFiles\StarSpeed23.dir
-  OBJECT_FILE_DIR = CMakeFiles\StarSpeed23.dir
   TARGET_COMPILE_PDB = CMakeFiles\StarSpeed23.dir\
   TARGET_PDB = StarSpeed23.pdb
 
@@ -98,7 +138,7 @@ build CMakeFiles\StarSpeed23.dir\app.rc.res: RC_COMPILER__StarSpeed23_unscanned_
 #############################################
 # Link the executable StarSpeed23.exe
 
-build StarSpeed23.exe: CXX_EXECUTABLE_LINKER__StarSpeed23_Release CMakeFiles\StarSpeed23.dir\src\main.cpp.obj CMakeFiles\StarSpeed23.dir\src\resourcepack.cpp.obj CMakeFiles\StarSpeed23.dir\src\textures.cpp.obj CMakeFiles\StarSpeed23.dir\src\tinyfiledialogs.cpp.obj CMakeFiles\StarSpeed23.dir\app.rc.res | H$:\starspeed23\libs\windows_release\FuchsLib.lib H$:\starspeed23\libs\windows_release\Motor.lib H$:\starspeed23\libs\windows_release\SDL2.lib H$:\starspeed23\libs\windows_release\SDL2_image.lib H$:\starspeed23\libs\windows_release\SDL2_ttf.lib H$:\starspeed23\libs\windows_release\libcrypto.lib H$:\starspeed23\libs\windows_release\libcurl_a.lib H$:\starspeed23\libs\windows_release\libssl.lib H$:\starspeed23\libs\windows_release\zlib.lib
+build StarSpeed23.exe: CXX_EXECUTABLE_LINKER__StarSpeed23_Release CMakeFiles\StarSpeed23.dir\src\achievements.cpp.obj CMakeFiles\StarSpeed23.dir\src\discord.cpp.obj CMakeFiles\StarSpeed23.dir\src\main.cpp.obj CMakeFiles\StarSpeed23.dir\src\mine.cpp.obj CMakeFiles\StarSpeed23.dir\src\resourcepack.cpp.obj CMakeFiles\StarSpeed23.dir\src\sceneswitcher.cpp.obj CMakeFiles\StarSpeed23.dir\src\splashs.cpp.obj CMakeFiles\StarSpeed23.dir\src\textures.cpp.obj CMakeFiles\StarSpeed23.dir\src\tinyfiledialogs.cpp.obj | H$:\starspeed23\libs\windows_release\FuchsLib.lib H$:\starspeed23\libs\windows_release\Motor.lib H$:\starspeed23\libs\windows_release\SDL2.lib H$:\starspeed23\libs\windows_release\SDL2_image.lib H$:\starspeed23\libs\windows_release\SDL2_ttf.lib H$:\starspeed23\libs\windows_release\libcrypto.lib H$:\starspeed23\libs\windows_release\libcurl_a.lib H$:\starspeed23\libs\windows_release\libssl.lib H$:\starspeed23\libs\windows_release\zlib.lib
   FLAGS = -std=c++2b /O2 /Ob2 /DNDEBUG -MD
   LINK_FLAGS = /machine:x64 /INCREMENTAL:NO /subsystem:console
   LINK_LIBRARIES = H:\starspeed23\libs\windows_release\FuchsLib.lib  H:\starspeed23\libs\windows_release\Motor.lib  H:\starspeed23\libs\windows_release\SDL2.lib  H:\starspeed23\libs\windows_release\SDL2_image.lib  H:\starspeed23\libs\windows_release\SDL2_ttf.lib  H:\starspeed23\libs\windows_release\libcrypto.lib  H:\starspeed23\libs\windows_release\libcurl_a.lib  H:\starspeed23\libs\windows_release\libssl.lib  H:\starspeed23\libs\windows_release\zlib.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib

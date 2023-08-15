@@ -140,10 +140,11 @@ namespace StarSpeed {
 		void onCreate() {
 			std::vector<CustomNameRole> CUSTOM_ROLES{
 				{"Joee3", "pissing and shitting and cumming", {}, { 0, 128, 128, 255 }},
-				{"Jayson_json", "StarSpeed Dev", {}, {0, 128, 128, 255}},
-				{ "RedDash16", "SWD", {}, {255, 102, 102, 255}},
+				{"Jayson_json", "", {}, {0, 128, 128, 255}},
+				{ "RedDash16", "", {}, {255, 102, 102, 255}},
 				{ "Bug1312", "", {}, {73, 199, 56, 255} },
-				{ "Lucifer", "Torchwood", {}, {0, 0, 128, 255 }}
+				{ "Torchwood_one", "Torchwood", {}, {0, 0, 128, 255 }},
+				{ "wheezebob", "Weezer ", {}, {122, 73, 136, 255 } }
 
 			};
 
@@ -160,6 +161,7 @@ namespace StarSpeed {
 			getComponent<Motor::TextComponentBlended>()->alignment_ = Motor::TextAlignment::RIGHT;
 			getComponent<Motor::TextComponentBlended>()->customScale_.set(24, 24 * 1.25);
 			getComponent<Motor::TextComponentBlended>()->translate_.set(-100, -75);
+			getComponent<Motor::TextComponentBlended>()->useCustomScale_ = true;
 
 			for (CustomNameRole& customRole : CUSTOM_ROLES) {
 				if (swdData.username == customRole.nameToOverride) {
@@ -177,6 +179,7 @@ namespace StarSpeed {
 			getComponent<Motor::TextComponentBlended>(1)->alignment_ = Motor::TextAlignment::RIGHT;
 			getComponent<Motor::TextComponentBlended>(1)->customScale_.set(24, 24 * 1.25);
 			getComponent<Motor::TextComponentBlended>(1)->translate_.set(-100, -75 + 24 * 1.25);
+			getComponent<Motor::TextComponentBlended>(1)->useCustomScale_ = true;
 
 			std::ifstream f(Motor::Path::docs + "swd_avatar.png");
 			if (f.good()) {
@@ -208,7 +211,7 @@ namespace StarSpeed {
             		if(achievement->isUnlocked()) {
 						++unlockedAchievements;
             		}
-        		}
+        		} 
 				if(unlockedAchievements != 0) {
 					getComponent<Motor::SpriteComponent>(3)->customScale_.set(10, unlockedAchievements / (float)achievements.size() * 75);
 				}

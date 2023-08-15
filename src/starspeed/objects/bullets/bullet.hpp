@@ -10,12 +10,12 @@ namespace StarSpeed {
     public:
         float speed_ = 1.15;
         void onCreate() override {
-            addComponent<Motor::SpriteComponent>(Tex::DEFAULT_BULLET);
+            addComponent<Motor::SpriteComponent>(Tex::ENEMY_BULLET);
             getComponent<Motor::SpriteComponent>()->blendMode_ = SDL_BLENDMODE_ADD;
             addComponent<Motor::SpriteColliderComponent>();
-            addComponent<Motor::SpriteComponent>(Tex::CIRCLE_GLOW);
-            getComponent<Motor::SpriteComponent>(1)->blendMode_ = SDL_BLENDMODE_ADD;
-            transform()->scale.set(14, 14);
+            //addComponent<Motor::SpriteComponent>(Tex::CIRCLE_GLOW);
+            //getComponent<Motor::SpriteComponent>(1)->blendMode_ = SDL_BLENDMODE_ADD;
+            transform()->scale.set(64, 64);
         }
 
         virtual void handleMovement() {
@@ -39,7 +39,7 @@ namespace StarSpeed {
     class EnemyBullet : public Bullet {
         void onCreate() override {
             Bullet::onCreate();
-            transform()->color.set(115, 30, 30, 255);
+            //transform()->color.set(115, 30, 30, 255);
         }
     };
 
@@ -47,8 +47,9 @@ namespace StarSpeed {
         void fixedUpdate() override {
             EnemyBullet::fixedUpdate();
             transform()->scale.set(transform()->scale.x + 0.65f, transform()->scale.y + 1.25f);
-            getComponent<Motor::SpriteComponent>(1)->useCustomColor_ = true;
-            getComponent<Motor::SpriteComponent>(1)->customColor_.set(115, 30, 30, 175);
+            getComponent<Motor::SpriteComponent>()->setTexture(Tex::CENT_BULLET);
+            //getComponent<Motor::SpriteComponent>(1)->useCustomColor_ = true;
+            //getComponent<Motor::SpriteComponent>(1)->customColor_.set(115, 30, 30, 175);
         }
     };
 
@@ -56,7 +57,8 @@ namespace StarSpeed {
     public:
         void onCreate() override {
             Bullet::onCreate();
-            transform()->color.set(40, 122, 176, 255);
+            //transform()->color.set(40, 122, 176, 255);
+            getComponent<Motor::SpriteComponent>()->setTexture(Tex::PLAYER_BULLET);
         }
 
         void handleMovement() override {

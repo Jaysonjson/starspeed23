@@ -6,6 +6,9 @@ std::string SWD_PASSWORD = "";
 
 namespace StarSpeed::Tex {
 	Motor::Texture* SWD_LOGO = nullptr;
+	Motor::Texture* SWD_LOGO_SQUARE = nullptr;
+	Motor::Texture* SWD_LOGO_SQUARE_PIXEL = nullptr;
+	Motor::Texture* SWD_LOGO_WIDE = nullptr;
 	Motor::Texture* TEXTFIELD = nullptr;
 	Motor::Texture* CIRCLE_GLOW = nullptr;
 	Motor::Texture* SAW_ENEMY = nullptr;
@@ -18,9 +21,20 @@ namespace StarSpeed::Tex {
 	Motor::Texture* SKRIP_ENEMY = nullptr;
 	Motor::Texture* ZENIN_ENEMY = nullptr;
 	Motor::Texture* DEFAULT_BULLET = nullptr;
+	Motor::Texture* PLAYER_BULLET = nullptr;
+	Motor::Texture* ENEMY_BULLET = nullptr;
+	Motor::Texture* CENT_BULLET = nullptr;
 	Motor::Texture* BAR_EMPTY = nullptr;
 	Motor::Texture* BAR_FULL = nullptr;
 	Motor::Texture* STAR = nullptr;
+	Motor::Texture* BUTTON_LONG = nullptr;
+	Motor::Texture* BUTTON_LONG_SELECTED = nullptr;
+	Motor::Texture* CHECKBOX = nullptr;
+	Motor::Texture* CHECKBOX_MARKED = nullptr;
+	Motor::Texture* CHECKBOX_SELECTED = nullptr;
+	Motor::Texture* CHECKBOX_MARKED_SELECTED = nullptr;
+	Motor::Texture* SQUARE_ALERT = nullptr;
+
 	Motor::Font* GAME_FONT = nullptr;
 	Motor::Font* GAME_FONT_OUTLINE = nullptr;
 
@@ -29,6 +43,9 @@ namespace StarSpeed::Tex {
 
 	void setTextures() {
 		SWD_LOGO = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/splash/swd_logo.png"));
+		SWD_LOGO_WIDE = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/splash/swd_logo_wide.png"));
+		SWD_LOGO_SQUARE = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "app/icon.png"));
+		SWD_LOGO_SQUARE_PIXEL = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/login/swd.png"));
 		CIRCLE_GLOW = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/circle_glow.png"));
 		SAW_ENEMY = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/ships/enemy/saw.png"));
 		CENT_ENEMY = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/ships/enemy/cent.png"));
@@ -44,9 +61,20 @@ namespace StarSpeed::Tex {
 		BAR_EMPTY = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/bar/empty.png"));
 		BAR_FULL = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/bar/full.png"));
 		STAR = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/stars/star_0.png"));
+		SQUARE_ALERT = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/ui/alert.png"));
+		PLAYER_BULLET = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/bullets/player_blast.png"));
+		ENEMY_BULLET = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/bullets/enemy_blast.png"));
+		CENT_BULLET = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/bullets/cent_blast.png"));
 
-		GAME_FONT = new Motor::Font(Motor::ResourceLocation(resourcePackMod, "fonts/yoster.ttf"), 32);
-		GAME_FONT_OUTLINE = new Motor::Font(Motor::ResourceLocation(resourcePackMod, "fonts/yoster.ttf"), 32);
+		PLAYER_BULLET->load();
+		ENEMY_BULLET->load();
+		CENT_BULLET->load();
+
+		BUTTON_LONG = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/ui/button.png"));
+		BUTTON_LONG_SELECTED = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/ui/button_selected.png"));
+		BUTTON_LONG_SELECTED->load();
+		GAME_FONT = new Motor::Font(Motor::ResourceLocation(resourcePackMod, "fonts/xrfont.ttf"), 32);
+		GAME_FONT_OUTLINE = new Motor::Font(Motor::ResourceLocation(resourcePackMod, "fonts/xrfont.ttf"), 32);
 		GAME_FONT_OUTLINE->load();
 		GAME_FONT_OUTLINE->setOutline(12);
 

@@ -63,15 +63,18 @@ namespace StarSpeed {
             transform()->position.set(1920 * 0.35, 1080 * 0.85);
             getComponent<Motor::SpriteComponent>()->ignoreCamera_ = true;
             //hide();
-            addComponent<Motor::TextComponentBlended>(Tex::DEBUG_FONT);
+            addComponent<Motor::TextComponentBlended>(Tex::GAME_FONT);
             getComponent<Motor::TextComponentBlended>()->alignment_ = Motor::TextAlignment::LEFT;
             getComponent<Motor::TextComponentBlended>()->translate_.set(64, 8);
+            getComponent<Motor::TextComponentBlended>()->useCustomScale_ = true;
 
-            addComponent<Motor::TextComponentBlended>(Tex::DEBUG_FONT);
+            addComponent<Motor::TextComponentBlended>(Tex::GAME_FONT);
             getComponent<Motor::TextComponentBlended>(1)->setContent("ACHIEVEMENT UNLOCKED");
             getComponent<Motor::TextComponentBlended>(1)->alignment_ = Motor::TextAlignment::LEFT;
             getComponent<Motor::TextComponentBlended>(1)->translate_.set(64, -32);
             getComponent<Motor::TextComponentBlended>(1)->customScale_.set(std::string("ACHIEVEMENT UNLOCKED").size() * 2.5, 36 * 1.25);
+            getComponent<Motor::TextComponentBlended>(1)->useCustomScale_ = true;
+
         }
 
         void render() override {
@@ -80,15 +83,31 @@ namespace StarSpeed {
             }
         }
 
-        void fixedUpdate() override {
-            Motor::GameObject::fixedUpdate();
+        void textUpdate() override {
+            Motor::GameObject::textUpdate();
             if (!isHidden()) {
-                getComponent<Motor::TextComponentBlended>()->setContent(description_);
-                getComponent<Motor::TextComponentBlended>()->customScale_.set(description_.size() * 1.2, 36 * 1.25);
+                if (!description_.empty()) {
+                    getComponent<Motor::TextComponentBlended>()->setContent(description_);
+                    int minX = 0;
+                    int advance = 0;
+                    for (int i = 0; i < description_.size(); ++i) {
+                        if (i <= description_.length()) {
+                            char c = description_[i];
+                            int advanceStep = 0;
+                            TTF_GlyphMetrics(getComponent<Motor::TextComponentBlended>()->getFont()->get(), c, &minX, NULL, NULL, NULL, &advanceStep);
+                            advance += advanceStep;
+                        }
+                        else {
+                            break;
+                        }
+                    }
+                    getComponent<Motor::TextComponentBlended>()->customScale_.set((minX + advance) / (description_.size() / 2), 32);
+                }
                 ++fadeCounter;
                 if (fadeCounter > 175) {
                     fadeCounter = 0;
                     //hide();
+                    description_ = "";
                     trigger = false;
                 }
             }

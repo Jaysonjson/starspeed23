@@ -44,7 +44,7 @@ namespace StarSpeed {
                 STAR->addToCurrentScene(false);
             }
 
-            if(70 < spawnCounter && *progress < 96) {
+            if(90 < spawnCounter && *progress < 96) {
                 spawnCounter = 0;
                 std::random_device rd;
                 std::mt19937 mt(rd());
@@ -62,10 +62,14 @@ namespace StarSpeed {
                     }
                 }*/
                 float rnd = dist(mt);
-                if (rnd < 0.075) {
+                if (rnd < 0.1) {
                     SawEnemy* ENEMY_SHIP = new SawEnemy();
-                    ENEMY_SHIP->transform()->position.set(dist2(mt), PLAYER->transform()->position.getY() - dist3(mt));
+                    int x = dist2(mt);
+                    ENEMY_SHIP->transform()->position.set(x, PLAYER->transform()->position.getY() - dist3(mt) - 2000);
                     ENEMY_SHIP->addToCurrentScene(false);
+                    SawIncoming* SAW_INCOM = new SawIncoming();
+                    SAW_INCOM->transform()->position.set(x, 80);
+                    SAW_INCOM->addToCurrentScene();
                 }
 
                 if (rnd < 0.05) {

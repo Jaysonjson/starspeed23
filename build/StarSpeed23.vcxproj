@@ -359,7 +359,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="H:\starspeed23\src\tinyfiledialogs.hpp" />
     <ClInclude Include="H:\starspeed23\src\zconf.hpp" />
     <ClInclude Include="H:\starspeed23\src\zlib.hpp" />
-    <ResourceCompile Include="H:\starspeed23\app.rc" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="H:\starspeed23\build\ZERO_CHECK.vcxproj">

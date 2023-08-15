@@ -29,7 +29,7 @@ namespace StarSpeed {
             HEALTH_BAR->useCustomColor_ = true;
             HEALTH_BAR->customColor_.set(255, 102, 102, 125);
             HEALTH_BAR->translate_.set(0, -48);
-            transform()->scale.set(93, 93);
+            transform()->scale.set(120, 120);
             addComponent<Motor::SpriteComponent>(Tex::CIRCLE_GLOW);
             getComponent<Motor::SpriteComponent>(2)->blendMode_ = SDL_BLENDMODE_ADD;
             getComponent<Motor::SpriteComponent>(2)->useCustomColor_ = true;

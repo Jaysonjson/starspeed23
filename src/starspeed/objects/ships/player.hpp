@@ -20,7 +20,7 @@ namespace StarSpeed {
             getComponent<Motor::SpriteComponent>(1)->blendMode_ = SDL_BLENDMODE_BLEND;
             getComponent<Motor::SpriteComponent>(1)->useCustomColor_ = true;
             getComponent<Motor::SpriteComponent>(1)->customColor_.set(234, 225, 125, 255);
-            transform()->scale.set(64, 64);
+            transform()->scale.set(90, 90);
             transform()->position.set(1920 / 3, 0);
             getComponent<Motor::SpriteComponent>(0)->ignoreCamera_ = true;
             getComponent<Motor::SpriteComponent>(1)->ignoreCamera_ = true;
@@ -37,6 +37,7 @@ namespace StarSpeed {
             getComponent<Motor::TextComponentBlended>()->setContent("Hold SPACE to shoot; Hold W to accelerate; A/D to strife Left/Right");
             getComponent<Motor::TextComponentBlended>()->ignoreCamera_ = true;
             getComponent<Motor::TextComponentBlended>()->translate_.set(0, 100);
+            getComponent<Motor::TextComponentBlended>()->useCustomScale_ = true;
         }
 
         void registerEvents() override {
