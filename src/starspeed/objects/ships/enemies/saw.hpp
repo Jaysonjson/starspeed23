@@ -53,7 +53,7 @@ namespace StarSpeed {
 
         void fixedUpdate() {
             EnemyShip::fixedUpdate();
-            speed_ += 0.02f;
+            speed_ += 0.01f;
         }
     };
 }

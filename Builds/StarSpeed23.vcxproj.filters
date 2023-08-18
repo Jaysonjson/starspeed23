@@ -51,6 +51,9 @@
     <ClInclude Include="H:\starspeed23\src\starspeed\objects\enemy_spawner.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="H:\starspeed23\src\starspeed\objects\player_map.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="H:\starspeed23\src\starspeed\objects\ships\enemies\cent.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -106,6 +109,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="H:\starspeed23\src\starspeed\scenes\login.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\starspeed23\src\starspeed\scenes\options.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="H:\starspeed23\src\starspeed\scenes\splash.hpp">

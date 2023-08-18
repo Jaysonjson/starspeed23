@@ -11,6 +11,7 @@ namespace StarSpeed {
     class PlayerShip : public Ship {
     public:
         float speed_ = 1.05;
+
         int* progress_ = nullptr;
         float* fuel_ = nullptr;
         void onCreate() override {
@@ -38,6 +39,10 @@ namespace StarSpeed {
             getComponent<Motor::TextComponentBlended>()->ignoreCamera_ = true;
             getComponent<Motor::TextComponentBlended>()->translate_.set(0, 100);
             getComponent<Motor::TextComponentBlended>()->useCustomScale_ = true;
+
+
+            transform()->position.set(1920 / 3, 1040);
+
         }
 
         void registerEvents() override {
@@ -112,13 +117,14 @@ namespace StarSpeed {
             float delta = getriebe.getGame()->getDelta().deltaTime;
             if (key[SDL_Scancode::SDL_SCANCODE_D]) {
                 if(transform()->position.getX() < 1390) {
-                    transform()->position.add({ speed_ * delta, 0 });
+                    transform()->position.add({speed_ * delta, 0});
                     getComponent<Motor::TextComponentBlended>()->setContent("");
+
                 }
             }
             if (key[SDL_Scancode::SDL_SCANCODE_A]) {
                 if(40 < transform()->position.getX()) {
-                    transform()->position.add({ -speed_ * delta, 0 });
+                    transform()->position.add({-speed_ * delta, 0});
                     getComponent<Motor::TextComponentBlended>()->setContent("");
                 }
             }
@@ -126,10 +132,11 @@ namespace StarSpeed {
             accelerating = false;
             if (key[SDL_Scancode::SDL_SCANCODE_W] && *fuel_ > 0.1f) {
                 getComponent<Motor::TransformComponent>()->position.add({ 0, -speed_ * 0.65f * delta });
-                getComponent<Motor::TextComponentBlended>()->setContent("");
                 accelerating = true;
                 *fuel_ -= 0.4f;
+                getComponent<Motor::TextComponentBlended>()->setContent("");
             }
+
             //if (key[SDL_Scancode::SDL_SCANCODE_S]) getComponent<Motor::TransformComponent>()->position.add({ 0, speed_ * 0.75f * delta });
         }
     };

@@ -331,6 +331,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="H:\starspeed23\src\starspeed\discord.hpp" />
     <ClInclude Include="H:\starspeed23\src\starspeed\objects\bullets\bullet.hpp" />
     <ClInclude Include="H:\starspeed23\src\starspeed\objects\enemy_spawner.hpp" />
+    <ClInclude Include="H:\starspeed23\src\starspeed\objects\player_map.hpp" />
     <ClInclude Include="H:\starspeed23\src\starspeed\objects\ships\enemies\cent.hpp" />
     <ClInclude Include="H:\starspeed23\src\starspeed\objects\ships\enemies\cina.hpp" />
     <ClInclude Include="H:\starspeed23\src\starspeed\objects\ships\enemies\esent.hpp" />
@@ -350,6 +351,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="H:\starspeed23\src\starspeed\scenes\fight.hpp" />
     <ClInclude Include="H:\starspeed23\src\starspeed\scenes\fight_end.hpp" />
     <ClInclude Include="H:\starspeed23\src\starspeed\scenes\login.hpp" />
+    <ClInclude Include="H:\starspeed23\src\starspeed\scenes\options.hpp" />
     <ClInclude Include="H:\starspeed23\src\starspeed\scenes\splash.hpp" />
     <ClInclude Include="H:\starspeed23\src\starspeed\scenes\titlescreen.hpp" />
     <ClInclude Include="H:\starspeed23\src\starspeed\sceneswitcher.hpp" />
