@@ -102,6 +102,7 @@ set(OLD_GLOB
   "H:/starspeed23/src/starspeed/sceneswitcher.hpp"
   "H:/starspeed23/src/starspeed/splashs.hpp"
   "H:/starspeed23/src/starspeed/textures.hpp"
+  "H:/starspeed23/src/starspeed/utility.hpp"
   "H:/starspeed23/src/tinyfiledialogs.hpp"
   "H:/starspeed23/src/zconf.hpp"
   "H:/starspeed23/src/zlib.hpp"

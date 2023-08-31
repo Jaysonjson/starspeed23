@@ -129,6 +129,9 @@
     <ClInclude Include="H:\starspeed23\src\starspeed\textures.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="H:\starspeed23\src\starspeed\utility.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="H:\starspeed23\src\tinyfiledialogs.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>

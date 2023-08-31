@@ -45,14 +45,10 @@ namespace StarSpeed {
                     if(collider->getOwner()) {
                         PlayerBullet* PLAYER_BULLET = dynamic_cast<PlayerBullet*>(collider->getOwner());
                         if (PLAYER_BULLET && !PLAYER_BULLET->isHidden()) {
-                            //PLAYER_BULLET->onHit(this);
-                            //PLAYER_BULLET->removeComponent<Motor::SpriteColliderComponent>();
                             PLAYER_BULLET->hide();
-                            //destroy();
                             health_ -= 10;
                             HEALTH_BAR->customColor_.setAlpha(125);
                             HEALTH_BAR->customScale_.set(HEALTH_BAR->customScale_.x, 7);
-                            //PLAYER_BULLET->onHit(this);
                         }
                     }
                 }

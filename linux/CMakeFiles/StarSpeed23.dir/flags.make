@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DFUCHSLIB_BUILD_DISCORD
 
-CXX_INCLUDES = -I"/run/media/jay/New Volume/starspeed23/src" -I"/run/media/jay/New Volume/starspeed23/libs/includes" -I"/run/media/jay/New Volume/starspeed23/H:/CPP_HEADERS/include"
+CXX_INCLUDES = -I"/run/media/jay/New Volume1/starspeed23/src" -I"/run/media/jay/New Volume1/starspeed23/libs/includes" -I"/run/media/jay/New Volume1/starspeed23/H:/CPP_HEADERS/include"
 
 CXX_FLAGS = -std=c++2b -O3 -DNDEBUG -std=gnu++23
 

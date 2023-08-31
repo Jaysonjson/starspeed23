@@ -357,6 +357,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="H:\starspeed23\src\starspeed\sceneswitcher.hpp" />
     <ClInclude Include="H:\starspeed23\src\starspeed\splashs.hpp" />
     <ClInclude Include="H:\starspeed23\src\starspeed\textures.hpp" />
+    <ClInclude Include="H:\starspeed23\src\starspeed\utility.hpp" />
     <ClCompile Include="H:\starspeed23\src\textures.cpp" />
     <ClCompile Include="H:\starspeed23\src\tinyfiledialogs.cpp" />
     <ClInclude Include="H:\starspeed23\src\tinyfiledialogs.hpp" />
