@@ -34,6 +34,7 @@ namespace StarSpeed::Tex {
 	Motor::Texture* CHECKBOX_SELECTED = nullptr;
 	Motor::Texture* CHECKBOX_MARKED_SELECTED = nullptr;
 	Motor::Texture* SQUARE_ALERT = nullptr;
+	Motor::Texture* CELL = nullptr;
 
 	Motor::Font* GAME_FONT = nullptr;
 	Motor::Font* GAME_FONT_OUTLINE = nullptr;
@@ -65,6 +66,8 @@ namespace StarSpeed::Tex {
 		PLAYER_BULLET = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/bullets/player_blast.png"));
 		ENEMY_BULLET = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/bullets/enemy_blast.png"));
 		CENT_BULLET = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/bullets/cent_blast.png"));
+
+		CELL = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/map/cell.png"));
 
 		PLAYER_BULLET->load();
 		ENEMY_BULLET->load();

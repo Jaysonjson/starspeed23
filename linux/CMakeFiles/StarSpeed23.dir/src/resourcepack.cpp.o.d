@@ -1,8 +1,8 @@
 CMakeFiles/StarSpeed23.dir/src/resourcepack.cpp.o: \
- /run/media/jay/New\ Volume1/starspeed23/src/resourcepack.cpp \
+ /run/media/jay/New\ Volume/starspeed23/src/resourcepack.cpp \
  /usr/include/stdc-predef.h \
- /run/media/jay/New\ Volume1/starspeed23/src/starspeed/resourcepack.hpp \
- /run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/registry/mod.hpp \
+ /run/media/jay/New\ Volume/starspeed23/src/starspeed/resourcepack.hpp \
+ /run/media/jay/New\ Volume/starspeed23/libs/includes/motor/registry/mod.hpp \
  /usr/include/c++/13.2.1/string \
  /usr/include/c++/13.2.1/bits/requires_hosted.h \
  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
@@ -111,7 +111,7 @@ CMakeFiles/StarSpeed23.dir/src/resourcepack.cpp.o: \
  /usr/include/c++/13.2.1/bits/uses_allocator.h \
  /usr/include/c++/13.2.1/bits/uses_allocator_args.h \
  /usr/include/c++/13.2.1/tuple /usr/include/c++/13.2.1/bits/ranges_util.h \
- /run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/content/resourcelocation.hpp \
+ /run/media/jay/New\ Volume/starspeed23/libs/includes/motor/content/resourcelocation.hpp \
  /usr/include/c++/13.2.1/fstream /usr/include/c++/13.2.1/istream \
  /usr/include/c++/13.2.1/ios /usr/include/c++/13.2.1/exception \
  /usr/include/c++/13.2.1/bits/exception_ptr.h \

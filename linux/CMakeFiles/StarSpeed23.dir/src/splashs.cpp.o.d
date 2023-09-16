@@ -1,7 +1,7 @@
 CMakeFiles/StarSpeed23.dir/src/splashs.cpp.o: \
- /run/media/jay/New\ Volume1/starspeed23/src/splashs.cpp \
+ /run/media/jay/New\ Volume/starspeed23/src/splashs.cpp \
  /usr/include/stdc-predef.h \
- /run/media/jay/New\ Volume1/starspeed23/src/starspeed/splashs.hpp \
+ /run/media/jay/New\ Volume/starspeed23/src/starspeed/splashs.hpp \
  /usr/include/c++/13.2.1/vector \
  /usr/include/c++/13.2.1/bits/requires_hosted.h \
  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++config.h \

@@ -11,6 +11,7 @@
 #include "starspeed/splashs.hpp"
 #include "starspeed/cursor.hpp"
 #include "starspeed/utility.hpp"
+#include "starspeed/scenes/cell_map.hpp"
 
 namespace StarSpeed {
 
@@ -58,7 +59,7 @@ namespace StarSpeed {
 					if (colliderEvent->onObject) {
 						CURSOR->resetTooltip();
 						CURSOR->clickable(false);
-						getriebe.getGame()->switchScene(new FightScene());
+						getriebe.getGame()->switchScene(new CellmapScene());
 					}
 				}
 			}

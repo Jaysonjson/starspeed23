@@ -6,7 +6,7 @@
 
 class CursorToolTipObject : public Motor::GameObject {
 public:
-	void onCreate() {
+	void onCreate() override {
 		persistent_ = true;
 		transform()->depth = 50;
 		addComponent<Motor::SpriteComponent>(Motor::ResourceLocation(resourcePackMod, "fall.png"));

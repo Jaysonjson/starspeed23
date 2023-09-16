@@ -1,5 +1,5 @@
 CMakeFiles/StarSpeed23.dir/src/mine.cpp.o: \
- /run/media/jay/New\ Volume1/starspeed23/src/mine.cpp \
+ /run/media/jay/New\ Volume/starspeed23/src/mine.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/13.2.1/algorithm \
  /usr/include/c++/13.2.1/bits/stl_algobase.h \
  /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
@@ -203,8 +203,8 @@ CMakeFiles/StarSpeed23.dir/src/mine.cpp.o: \
  /usr/include/c++/13.2.1/bits/unordered_set.h \
  /usr/include/c++/13.2.1/cstring /usr/include/string.h \
  /usr/include/strings.h \
- /run/media/jay/New\ Volume1/starspeed23/src/zlib.hpp \
- /run/media/jay/New\ Volume1/starspeed23/src/zconf.hpp \
+ /run/media/jay/New\ Volume/starspeed23/src/zlib.hpp \
+ /run/media/jay/New\ Volume/starspeed23/src/zconf.hpp \
  /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/limits.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/syslimits.h \
  /usr/include/limits.h /usr/include/bits/posix1_lim.h \
@@ -215,7 +215,7 @@ CMakeFiles/StarSpeed23.dir/src/mine.cpp.o: \
  /usr/include/bits/confname.h /usr/include/bits/getopt_posix.h \
  /usr/include/bits/getopt_core.h /usr/include/bits/unistd_ext.h \
  /usr/include/linux/close_range.h \
- /run/media/jay/New\ Volume1/starspeed23/src/mine.hpp \
+ /run/media/jay/New\ Volume/starspeed23/src/mine.hpp \
  /usr/include/c++/13.2.1/array /usr/include/c++/13.2.1/map \
  /usr/include/c++/13.2.1/bits/stl_tree.h \
  /usr/include/c++/13.2.1/bits/stl_map.h \

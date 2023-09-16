@@ -1,5 +1,5 @@
 CMakeFiles/StarSpeed23.dir/src/tinyfiledialogs.cpp.o: \
- /run/media/jay/New\ Volume1/starspeed23/src/tinyfiledialogs.cpp \
+ /run/media/jay/New\ Volume/starspeed23/src/tinyfiledialogs.cpp \
  /usr/include/stdc-predef.h /usr/include/stdio.h \
  /usr/include/bits/libc-header-start.h /usr/include/features.h \
  /usr/include/features-time64.h /usr/include/bits/wordsize.h \
@@ -81,4 +81,4 @@ CMakeFiles/StarSpeed23.dir/src/tinyfiledialogs.cpp.o: \
  /usr/include/bits/sigstksz.h /usr/include/bits/ss_flags.h \
  /usr/include/bits/types/struct_sigstack.h /usr/include/bits/sigthread.h \
  /usr/include/bits/signal_ext.h \
- /run/media/jay/New\ Volume1/starspeed23/src/tinyfiledialogs.hpp
+ /run/media/jay/New\ Volume/starspeed23/src/tinyfiledialogs.hpp

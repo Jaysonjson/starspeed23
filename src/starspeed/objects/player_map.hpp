@@ -1,5 +1,5 @@
 #pragma once
-#include "ship.hpp"
+#include "ships/ship.hpp"
 #include "motor/motor.hpp"
 #include "motor/components/sprite.hpp"
 #include "starspeed/objects/bullets/bullet.hpp"

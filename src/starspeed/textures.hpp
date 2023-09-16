@@ -43,6 +43,8 @@ namespace StarSpeed::Tex {
 	extern Motor::Texture* BAR_EMPTY;
 	extern Motor::Texture* BAR_FULL;
 
+	extern Motor::Texture* CELL;
+
 
 	extern Motor::Font* DEBUG_FONT;
 	extern Motor::Font* DEBUG_FONT_OUTLINE;
