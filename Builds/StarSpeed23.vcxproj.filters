@@ -99,6 +99,9 @@
     <ClInclude Include="H:\starspeed23\src\starspeed\resourcepack.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="H:\starspeed23\src\starspeed\scenes\cell_map.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="H:\starspeed23\src\starspeed\scenes\credits.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>

@@ -347,6 +347,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="H:\starspeed23\src\starspeed\objects\swdavatar.hpp" />
     <ClInclude Include="H:\starspeed23\src\starspeed\profile.hpp" />
     <ClInclude Include="H:\starspeed23\src\starspeed\resourcepack.hpp" />
+    <ClInclude Include="H:\starspeed23\src\starspeed\scenes\cell_map.hpp" />
     <ClInclude Include="H:\starspeed23\src\starspeed\scenes\credits.hpp" />
     <ClInclude Include="H:\starspeed23\src\starspeed\scenes\fight.hpp" />
     <ClInclude Include="H:\starspeed23\src\starspeed\scenes\fight_end.hpp" />
