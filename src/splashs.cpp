@@ -10,6 +10,6 @@ namespace StarSpeed {
         "Star COLOR{\"color\":[4,144,4,255],\"text\":\"Weed\"}COLOR !",
         "Is this the Dalek Mod?",
         "Theres a bee inside me",
-        "Toppings in Burgers are COLOR{\"color\":[144,0,0,255],\"text\":\" MIDDLINGS \"}COLOR !"
+        "Toppings in Burgers are COLOR{\"color\":[144,36,75,255],\"text\":\" MIDDLINGS \"}COLOR !"
     };
 }
