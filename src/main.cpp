@@ -32,7 +32,10 @@ int main() {
 	//getriebe.getConsole()->backGround_ = new Motor::SpriteComponent(Motor::ResourceLocation(resourcePackMod, "fall.png"));
 	//getriebe.getConsole()->backGround_->transform_ = getriebe.getConsole()->backGroundTransform;
 	//getriebe.init("StarSpeed23", 1920 * 0.75, 1080 * 0.75, SDL_WINDOW_RESIZABLE, SDL_RENDERER_ACCELERATED);
-	getriebe.init("StarSpeed23", 1920 * 0.75, 1080 * 0.75, 0, SDL_RENDERER_ACCELERATED);
+	SDL_GL_SetAttribute(SDL_GL_MULTISAMPLEBUFFERS, 1);
+	SDL_GL_SetAttribute(SDL_GL_MULTISAMPLESAMPLES, 8);
+	SDL_GL_SetAttribute(SDL_GL_ACCELERATED_VISUAL, 1);
+	getriebe.init("StarSpeed23", 1920 * 0.75, 1080 * 0.75, 0, SDL_RENDERER_ACCELERATED | SDL_RENDERER_TARGETTEXTURE);
 	StarSpeed::Tex::setTextures();
 	StarSpeed::playerProfile->load();
 	StarSpeed::addAchievements();

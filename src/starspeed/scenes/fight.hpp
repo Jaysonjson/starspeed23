@@ -64,7 +64,9 @@ namespace StarSpeed {
 			Motor::Scene::init(game);
 
 			Motor::GameObject* CLOUD_BACKGROUND = new Motor::GameObject();
-			CLOUD_BACKGROUND->addComponent<Motor::DynamicSpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/cloud.png"));
+			Motor::DynamicTexture* CLOUD_BACKGROUND_TEX = new Motor::DynamicTexture(Motor::ResourceLocation(resourcePackMod, "sprites/cloud.png"));
+			CLOUD_BACKGROUND_TEX->interpolated_ = true;
+			CLOUD_BACKGROUND->addComponent<Motor::DynamicSpriteComponent>(CLOUD_BACKGROUND_TEX);
 			CLOUD_BACKGROUND->getComponent<Motor::DynamicSpriteComponent>()->blendMode_ = SDL_BLENDMODE_ADD;
 			CLOUD_BACKGROUND->getComponent<Motor::DynamicSpriteComponent>()->ignoreCamera_ = true;
 			CLOUD_BACKGROUND->transform()->scale.set(5000, 9000);
@@ -74,18 +76,20 @@ namespace StarSpeed {
 			CLOUD_BACKGROUND->addToCurrentScene();
 
 			Motor::GameObject* BACKGROUND = new Motor::GameObject();
-			BACKGROUND->addComponent<Motor::SpriteComponent>(Motor::ResourceLocation(resourcePackMod, "fall.png"));
-            BACKGROUND->getComponent<Motor::SpriteComponent>()->blendMode_ = SDL_BLENDMODE_BLEND;
-			BACKGROUND->getComponent<Motor::SpriteComponent>()->ignoreCamera_ = true;
-
-			BACKGROUND->addComponent<Motor::DynamicSpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/title/starspeed.png"));
+			Motor::DynamicTexture* BACKGROUND_TEX = new Motor::DynamicTexture(Motor::ResourceLocation(resourcePackMod, "fall.png"));
+			BACKGROUND_TEX->interpolated_ = true;
+			BACKGROUND->addComponent<Motor::DynamicSpriteComponent>(BACKGROUND_TEX);
             BACKGROUND->getComponent<Motor::DynamicSpriteComponent>()->blendMode_ = SDL_BLENDMODE_BLEND;
 			BACKGROUND->getComponent<Motor::DynamicSpriteComponent>()->ignoreCamera_ = true;
-			BACKGROUND->getComponent<Motor::DynamicSpriteComponent>()->translate_.set(0, -400);
-			BACKGROUND->getComponent<Motor::DynamicSpriteComponent>()->useCustomScale_ = true;
-			BACKGROUND->getComponent<Motor::DynamicSpriteComponent>()->customScale_.set(76 * 5, 42 * 5);
-			BACKGROUND->getComponent<Motor::DynamicSpriteComponent>()->useCustomColor_ = true;
-			BACKGROUND->getComponent<Motor::DynamicSpriteComponent>()->customColor_.set(255, 255, 255, 255);
+
+			BACKGROUND->addComponent<Motor::DynamicSpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/title/starspeed.png"));
+            BACKGROUND->getComponent<Motor::DynamicSpriteComponent>(1)->blendMode_ = SDL_BLENDMODE_BLEND;
+			BACKGROUND->getComponent<Motor::DynamicSpriteComponent>(1)->ignoreCamera_ = true;
+			BACKGROUND->getComponent<Motor::DynamicSpriteComponent>(1)->translate_.set(0, -400);
+			BACKGROUND->getComponent<Motor::DynamicSpriteComponent>(1)->useCustomScale_ = true;
+			BACKGROUND->getComponent<Motor::DynamicSpriteComponent>(1)->customScale_.set(76 * 5, 42 * 5);
+			BACKGROUND->getComponent<Motor::DynamicSpriteComponent>(1)->useCustomColor_ = true;
+			BACKGROUND->getComponent<Motor::DynamicSpriteComponent>(1)->customColor_.set(255, 255, 255, 255);
 
             BACKGROUND->transform()->scale.set(240 * 2, 1080);
             BACKGROUND->transform()->position.set(1680, 1080 / 2);

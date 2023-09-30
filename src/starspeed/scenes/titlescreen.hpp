@@ -138,7 +138,7 @@ namespace StarSpeed {
 					}
 					else {
 						transform()->scale.set(128 * 1.55);
-						CURSOR->setTooltip("Save Game Folder");
+						CURSOR->setTooltip("Open Save Game Folder");
 						CURSOR->clickable(true);
 						triggerCursor = true;
 					}
@@ -308,7 +308,9 @@ namespace StarSpeed {
 			}
 
 			Motor::GameObject* CLOUD_BACKGROUND = new Motor::GameObject();
-			CLOUD_BACKGROUND->addComponent<Motor::DynamicSpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/cloud.png"));
+			Motor::DynamicTexture* CLOUD_BACKGROUND_TEX = new Motor::DynamicTexture(Motor::ResourceLocation(resourcePackMod, "sprites/cloud.png"));
+			CLOUD_BACKGROUND_TEX->interpolated_ = true;
+			CLOUD_BACKGROUND->addComponent<Motor::DynamicSpriteComponent>(CLOUD_BACKGROUND_TEX);
 			CLOUD_BACKGROUND->getComponent<Motor::DynamicSpriteComponent>()->blendMode_ = SDL_BLENDMODE_ADD;
 			CLOUD_BACKGROUND->transform()->scale.set(6000, 10000);
 			CLOUD_BACKGROUND->transform()->position.set(1920 / 2, -2750);

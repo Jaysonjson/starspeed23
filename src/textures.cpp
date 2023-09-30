@@ -48,6 +48,7 @@ namespace StarSpeed::Tex {
 		SWD_LOGO_SQUARE = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "app/icon.png"));
 		SWD_LOGO_SQUARE_PIXEL = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/login/swd.png"));
 		CIRCLE_GLOW = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/circle_glow.png"));
+		CIRCLE_GLOW->interpolated_ = true;
 		SAW_ENEMY = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/ships/enemy/saw.png"));
 		CENT_ENEMY = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/ships/enemy/cent.png"));
 		CENT_EXPANDED_ENEMY = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/ships/enemy/cent_expanded.png"));
