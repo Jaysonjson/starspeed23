@@ -13,7 +13,7 @@ namespace StarSpeed {
         //float speed_ = 1.05;
 
         float thrust_ = 0.1f;
-        float decay_ = 0.97f;
+        float decay_ = 0.99f;
         float maxSpeed_ = 0.95f;
         float turningSpeed_ = 3.55f;
         float speed_ = 0;
@@ -31,7 +31,7 @@ namespace StarSpeed {
             getComponent<Motor::SpriteComponent>(1)->center_.y = 16;
             getComponent<Motor::SpriteComponent>(0)->center_.x = 16;
             getComponent<Motor::SpriteComponent>(0)->center_.y = 16;
-            transform()->scale.set(41, 40);
+            transform()->scale.set(51, 50);
             //transform()->position.set(1920 / 3, 0);
             getComponent<Motor::SpriteComponent>(0)->ignoreCamera_ = true;
             getComponent<Motor::SpriteComponent>(1)->ignoreCamera_ = true;
