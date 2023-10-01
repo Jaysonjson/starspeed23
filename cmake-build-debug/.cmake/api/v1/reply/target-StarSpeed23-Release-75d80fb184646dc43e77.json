@@ -14,6 +14,7 @@
 		"commands" : 
 		[
 			"add_executable",
+			"target_compile_options",
 			"add_compile_definitions",
 			"include_directories"
 		],
@@ -35,17 +36,23 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 11,
+				"line" : 82,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
+				"line" : 11,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
 				"line" : 39,
 				"parent" : 0
 			},
 			{
-				"command" : 2,
+				"command" : 3,
 				"file" : 0,
 				"line" : 40,
 				"parent" : 0
@@ -59,27 +66,31 @@
 			[
 				{
 					"fragment" : "-std=c++2b /O2 /Ob2 /DNDEBUG -std:c++latest -MD"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "/MT"
 				}
 			],
 			"defines" : 
 			[
 				{
-					"backtrace" : 2,
+					"backtrace" : 3,
 					"define" : "FUCHSLIB_BUILD_DISCORD"
 				}
 			],
 			"includes" : 
 			[
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
 					"path" : "H:/starspeed23/src"
 				},
 				{
-					"backtrace" : 4,
+					"backtrace" : 5,
 					"path" : "H:/starspeed23/libs/includes"
 				},
 				{
-					"backtrace" : 4,
+					"backtrace" : 5,
 					"path" : "H:/CPP_HEADERS/include"
 				}
 			],
@@ -116,22 +127,22 @@
 			"defines" : 
 			[
 				{
-					"backtrace" : 2,
+					"backtrace" : 3,
 					"define" : "FUCHSLIB_BUILD_DISCORD"
 				}
 			],
 			"includes" : 
 			[
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
 					"path" : "H:/starspeed23/src"
 				},
 				{
-					"backtrace" : 4,
+					"backtrace" : 5,
 					"path" : "H:/starspeed23/libs/includes"
 				},
 				{
-					"backtrace" : 4,
+					"backtrace" : 5,
 					"path" : "H:/CPP_HEADERS/include"
 				}
 			],

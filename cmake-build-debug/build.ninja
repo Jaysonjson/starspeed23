@@ -51,7 +51,7 @@ build cmake_object_order_depends_target_StarSpeed23: phony || CMakeFiles\StarSpe
 
 build CMakeFiles\StarSpeed23.dir\src\achievements.cpp.obj: CXX_COMPILER__StarSpeed23_unscanned_Release H$:\starspeed23\src\achievements.cpp || cmake_object_order_depends_target_StarSpeed23
   DEFINES = -DFUCHSLIB_BUILD_DISCORD
-  FLAGS = -std=c++2b /O2 /Ob2 /DNDEBUG -std:c++latest -MD
+  FLAGS = -std=c++2b /O2 /Ob2 /DNDEBUG -std:c++latest -MD /MT
   INCLUDES = -IH:\starspeed23\src -IH:\starspeed23\libs\includes -IH:\CPP_HEADERS\include
   OBJECT_DIR = CMakeFiles\StarSpeed23.dir
   OBJECT_FILE_DIR = CMakeFiles\StarSpeed23.dir\src
@@ -60,7 +60,7 @@ build CMakeFiles\StarSpeed23.dir\src\achievements.cpp.obj: CXX_COMPILER__StarSpe
 
 build CMakeFiles\StarSpeed23.dir\src\discord.cpp.obj: CXX_COMPILER__StarSpeed23_unscanned_Release H$:\starspeed23\src\discord.cpp || cmake_object_order_depends_target_StarSpeed23
   DEFINES = -DFUCHSLIB_BUILD_DISCORD
-  FLAGS = -std=c++2b /O2 /Ob2 /DNDEBUG -std:c++latest -MD
+  FLAGS = -std=c++2b /O2 /Ob2 /DNDEBUG -std:c++latest -MD /MT
   INCLUDES = -IH:\starspeed23\src -IH:\starspeed23\libs\includes -IH:\CPP_HEADERS\include
   OBJECT_DIR = CMakeFiles\StarSpeed23.dir
   OBJECT_FILE_DIR = CMakeFiles\StarSpeed23.dir\src
@@ -69,7 +69,7 @@ build CMakeFiles\StarSpeed23.dir\src\discord.cpp.obj: CXX_COMPILER__StarSpeed23_
 
 build CMakeFiles\StarSpeed23.dir\src\main.cpp.obj: CXX_COMPILER__StarSpeed23_unscanned_Release H$:\starspeed23\src\main.cpp || cmake_object_order_depends_target_StarSpeed23
   DEFINES = -DFUCHSLIB_BUILD_DISCORD
-  FLAGS = -std=c++2b /O2 /Ob2 /DNDEBUG -std:c++latest -MD
+  FLAGS = -std=c++2b /O2 /Ob2 /DNDEBUG -std:c++latest -MD /MT
   INCLUDES = -IH:\starspeed23\src -IH:\starspeed23\libs\includes -IH:\CPP_HEADERS\include
   OBJECT_DIR = CMakeFiles\StarSpeed23.dir
   OBJECT_FILE_DIR = CMakeFiles\StarSpeed23.dir\src
@@ -78,7 +78,7 @@ build CMakeFiles\StarSpeed23.dir\src\main.cpp.obj: CXX_COMPILER__StarSpeed23_uns
 
 build CMakeFiles\StarSpeed23.dir\src\mine.cpp.obj: CXX_COMPILER__StarSpeed23_unscanned_Release H$:\starspeed23\src\mine.cpp || cmake_object_order_depends_target_StarSpeed23
   DEFINES = -DFUCHSLIB_BUILD_DISCORD
-  FLAGS = -std=c++2b /O2 /Ob2 /DNDEBUG -std:c++latest -MD
+  FLAGS = -std=c++2b /O2 /Ob2 /DNDEBUG -std:c++latest -MD /MT
   INCLUDES = -IH:\starspeed23\src -IH:\starspeed23\libs\includes -IH:\CPP_HEADERS\include
   OBJECT_DIR = CMakeFiles\StarSpeed23.dir
   OBJECT_FILE_DIR = CMakeFiles\StarSpeed23.dir\src
@@ -87,7 +87,7 @@ build CMakeFiles\StarSpeed23.dir\src\mine.cpp.obj: CXX_COMPILER__StarSpeed23_uns
 
 build CMakeFiles\StarSpeed23.dir\src\objects.cpp.obj: CXX_COMPILER__StarSpeed23_unscanned_Release H$:\starspeed23\src\objects.cpp || cmake_object_order_depends_target_StarSpeed23
   DEFINES = -DFUCHSLIB_BUILD_DISCORD
-  FLAGS = -std=c++2b /O2 /Ob2 /DNDEBUG -std:c++latest -MD
+  FLAGS = -std=c++2b /O2 /Ob2 /DNDEBUG -std:c++latest -MD /MT
   INCLUDES = -IH:\starspeed23\src -IH:\starspeed23\libs\includes -IH:\CPP_HEADERS\include
   OBJECT_DIR = CMakeFiles\StarSpeed23.dir
   OBJECT_FILE_DIR = CMakeFiles\StarSpeed23.dir\src
@@ -96,7 +96,7 @@ build CMakeFiles\StarSpeed23.dir\src\objects.cpp.obj: CXX_COMPILER__StarSpeed23_
 
 build CMakeFiles\StarSpeed23.dir\src\resourcepack.cpp.obj: CXX_COMPILER__StarSpeed23_unscanned_Release H$:\starspeed23\src\resourcepack.cpp || cmake_object_order_depends_target_StarSpeed23
   DEFINES = -DFUCHSLIB_BUILD_DISCORD
-  FLAGS = -std=c++2b /O2 /Ob2 /DNDEBUG -std:c++latest -MD
+  FLAGS = -std=c++2b /O2 /Ob2 /DNDEBUG -std:c++latest -MD /MT
   INCLUDES = -IH:\starspeed23\src -IH:\starspeed23\libs\includes -IH:\CPP_HEADERS\include
   OBJECT_DIR = CMakeFiles\StarSpeed23.dir
   OBJECT_FILE_DIR = CMakeFiles\StarSpeed23.dir\src
@@ -105,7 +105,7 @@ build CMakeFiles\StarSpeed23.dir\src\resourcepack.cpp.obj: CXX_COMPILER__StarSpe
 
 build CMakeFiles\StarSpeed23.dir\src\sceneswitcher.cpp.obj: CXX_COMPILER__StarSpeed23_unscanned_Release H$:\starspeed23\src\sceneswitcher.cpp || cmake_object_order_depends_target_StarSpeed23
   DEFINES = -DFUCHSLIB_BUILD_DISCORD
-  FLAGS = -std=c++2b /O2 /Ob2 /DNDEBUG -std:c++latest -MD
+  FLAGS = -std=c++2b /O2 /Ob2 /DNDEBUG -std:c++latest -MD /MT
   INCLUDES = -IH:\starspeed23\src -IH:\starspeed23\libs\includes -IH:\CPP_HEADERS\include
   OBJECT_DIR = CMakeFiles\StarSpeed23.dir
   OBJECT_FILE_DIR = CMakeFiles\StarSpeed23.dir\src
@@ -114,7 +114,7 @@ build CMakeFiles\StarSpeed23.dir\src\sceneswitcher.cpp.obj: CXX_COMPILER__StarSp
 
 build CMakeFiles\StarSpeed23.dir\src\splashs.cpp.obj: CXX_COMPILER__StarSpeed23_unscanned_Release H$:\starspeed23\src\splashs.cpp || cmake_object_order_depends_target_StarSpeed23
   DEFINES = -DFUCHSLIB_BUILD_DISCORD
-  FLAGS = -std=c++2b /O2 /Ob2 /DNDEBUG -std:c++latest -MD
+  FLAGS = -std=c++2b /O2 /Ob2 /DNDEBUG -std:c++latest -MD /MT
   INCLUDES = -IH:\starspeed23\src -IH:\starspeed23\libs\includes -IH:\CPP_HEADERS\include
   OBJECT_DIR = CMakeFiles\StarSpeed23.dir
   OBJECT_FILE_DIR = CMakeFiles\StarSpeed23.dir\src
@@ -123,7 +123,7 @@ build CMakeFiles\StarSpeed23.dir\src\splashs.cpp.obj: CXX_COMPILER__StarSpeed23_
 
 build CMakeFiles\StarSpeed23.dir\src\textures.cpp.obj: CXX_COMPILER__StarSpeed23_unscanned_Release H$:\starspeed23\src\textures.cpp || cmake_object_order_depends_target_StarSpeed23
   DEFINES = -DFUCHSLIB_BUILD_DISCORD
-  FLAGS = -std=c++2b /O2 /Ob2 /DNDEBUG -std:c++latest -MD
+  FLAGS = -std=c++2b /O2 /Ob2 /DNDEBUG -std:c++latest -MD /MT
   INCLUDES = -IH:\starspeed23\src -IH:\starspeed23\libs\includes -IH:\CPP_HEADERS\include
   OBJECT_DIR = CMakeFiles\StarSpeed23.dir
   OBJECT_FILE_DIR = CMakeFiles\StarSpeed23.dir\src
@@ -132,7 +132,7 @@ build CMakeFiles\StarSpeed23.dir\src\textures.cpp.obj: CXX_COMPILER__StarSpeed23
 
 build CMakeFiles\StarSpeed23.dir\src\tinyfiledialogs.cpp.obj: CXX_COMPILER__StarSpeed23_unscanned_Release H$:\starspeed23\src\tinyfiledialogs.cpp || cmake_object_order_depends_target_StarSpeed23
   DEFINES = -DFUCHSLIB_BUILD_DISCORD
-  FLAGS = -std=c++2b /O2 /Ob2 /DNDEBUG -std:c++latest -MD
+  FLAGS = -std=c++2b /O2 /Ob2 /DNDEBUG -std:c++latest -MD /MT
   INCLUDES = -IH:\starspeed23\src -IH:\starspeed23\libs\includes -IH:\CPP_HEADERS\include
   OBJECT_DIR = CMakeFiles\StarSpeed23.dir
   OBJECT_FILE_DIR = CMakeFiles\StarSpeed23.dir\src

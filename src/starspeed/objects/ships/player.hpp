@@ -95,7 +95,7 @@ namespace StarSpeed {
                 getComponent<Motor::SpriteComponent>(1)->ignoreCamera_ = false;
                 progressTimer = 500;
             }
-            if (transform()->position.screen().getY() < -64) {
+            if (transform()->position.screen().getY() < -64 * getriebe.getGame()->getRenderer()->widthDifference_) {
                 getriebe.getGame()->switchScene(new FightEnd());
             }
         }

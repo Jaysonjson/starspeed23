@@ -26,21 +26,25 @@ public:
 		//transform()->position.set(transform()->position.getX() + toolTipX, transform()->position.getY());
 		if (getComponent<Motor::TextComponentBlended>()->getContent() != f) {
 			int minX = 0;
+            int maxX = 0;
+            int maxY = 0;
 			int advance = 0;
 			for (int i = 0; i < f.size(); ++i) {
 				if (i <= f.length()) {
 					char c = f[i];
 					int advanceStep = 0;
-					TTF_GlyphMetrics(getComponent<Motor::TextComponentBlended>()->getFont()->get(), c, &minX, NULL, NULL, NULL, &advanceStep);
+					TTF_GlyphMetrics(getComponent<Motor::TextComponentBlended>()->getFont()->get(), c, &minX, &maxX, NULL, &maxY, &advanceStep);
 					advance += advanceStep;
 				}
 				else {
 					break;
 				}
 			}
-			toolTipX = (minX + advance) / 2;
+			toolTipX = ((minX + advance)) / 2 ;
 			getComponent<Motor::TextComponentBlended>()->setContent(f);
-			getComponent<Motor::SpriteComponent>()->customScale_.set(minX + advance, 32);
+            getComponent<Motor::TextComponentBlended>()->useCustomScale_ = true;
+                getComponent<Motor::TextComponentBlended>()->customScale_.set(maxX * 1.5 * getriebe.getGame()->getRenderer()->widthDifference_, 45 * getriebe.getGame()->getRenderer()->heightDifference_);
+                getComponent<Motor::SpriteComponent>()->customScale_.set( toolTipX * 2, 45 * getriebe.getGame()->getRenderer()->heightDifference_);
 			//toolTipX *= getriebe.getGame()->getRenderer()->widthDifference_;
 		}
 	}
@@ -104,6 +108,13 @@ public:
 			getComponent<Motor::SpriteComponent>()->setTexture(CURSOR_TEX);
 		}
 	}
+
+    void update() override {
+        Motor::GameObject::update();
+        if(getriebe.getGame()->getWindow()->width_ > 1921) {
+            getriebe.getGame()->changeResolution(1920, 1080);
+        }
+    }
 
 	void registerEvents() override {
 		registerEvent(Motor::Events::mouseMotion.attach(&onMouse));

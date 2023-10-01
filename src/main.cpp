@@ -36,11 +36,12 @@ int main() {
 	SDL_GL_SetAttribute(SDL_GL_MULTISAMPLEBUFFERS, 1);
 	SDL_GL_SetAttribute(SDL_GL_MULTISAMPLESAMPLES, 8);
 	SDL_GL_SetAttribute(SDL_GL_ACCELERATED_VISUAL, 1);
-	getriebe.init("StarSpeed23", 1920 * 0.75, 1080 * 0.75, 0, SDL_RENDERER_ACCELERATED | SDL_RENDERER_TARGETTEXTURE);
+	getriebe.init("StarSpeed23", 1920 * 0.75, 1080 * 0.75, SDL_WINDOW_RESIZABLE, SDL_RENDERER_ACCELERATED | SDL_RENDERER_TARGETTEXTURE);
 	StarSpeed::Tex::setTextures();
 	StarSpeed::playerProfile->load();
 	StarSpeed::addAchievements();
-	SDL_Surface* icon = IMG_Load(Motor::ResourceLocation(resourcePackMod, "app/icon.png").getPath().c_str());
+    //SDL_Surface* icon = IMG_Load(Motor::ResourceLocation(resourcePackMod, "app/icon.png").getPath().c_str());
+    SDL_Surface* icon = IMG_Load(Motor::ResourceLocation(resourcePackMod, "/sprites/galaxy/galaxy.png").getPath().c_str());
 	SDL_SetWindowIcon(getriebe.sdl_window(), icon);
 	getriebe.getGame()->forceSetScene(new StarSpeed::SplashScene());
 	CURSOR->TOOLTIP->addToCurrentScene();
@@ -48,7 +49,7 @@ int main() {
 	StarSpeed::ACHIEVEMENT_UNLOCK_HEADER->addToCurrentScene();
 	auto debugText = new DebugText(StarSpeed::Tex::DEBUG_FONT, StarSpeed::Tex::DEBUG_FONT_OUTLINE);
 	debugText->coordinateObject = CURSOR;
-	debugText->transform()->depth = 50;
+	debugText->transform()->depth = 47;
 	debugText->addToCurrentScene();
 	debugText->transform()->scale.set(28 / 2, 48 / 2);
 	while (getriebe.getGame()->running_) {

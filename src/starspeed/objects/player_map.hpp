@@ -27,11 +27,11 @@ namespace StarSpeed {
             getComponent<Motor::SpriteComponent>(1)->blendMode_ = SDL_BLENDMODE_BLEND;
             getComponent<Motor::SpriteComponent>(1)->useCustomColor_ = true;
             getComponent<Motor::SpriteComponent>(1)->customColor_.set(234, 225, 125, 255);
-            getComponent<Motor::SpriteComponent>(1)->center_.x = 16;
-            getComponent<Motor::SpriteComponent>(1)->center_.y = 16;
-            getComponent<Motor::SpriteComponent>(0)->center_.x = 16;
-            getComponent<Motor::SpriteComponent>(0)->center_.y = 16;
-            transform()->scale.set(51, 50);
+            getComponent<Motor::SpriteComponent>(1)->center_.x = 25;
+            getComponent<Motor::SpriteComponent>(1)->center_.y = 25;
+            getComponent<Motor::SpriteComponent>(0)->center_.x = 25;
+            getComponent<Motor::SpriteComponent>(0)->center_.y = 25;
+            transform()->scale.set(50, 50);
             //transform()->position.set(1920 / 3, 0);
             getComponent<Motor::SpriteComponent>(0)->ignoreCamera_ = true;
             getComponent<Motor::SpriteComponent>(1)->ignoreCamera_ = true;
