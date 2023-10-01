@@ -6,6 +6,7 @@
 
 class CursorToolTipObject : public Motor::GameObject {
 public:
+	bool left = false;
 	void onCreate() override {
 		persistent_ = true;
 		transform()->depth = 50;
@@ -49,7 +50,18 @@ public:
 	}
 
 	std::function<void(SDL_Event&)> onMouse = [this](SDL_Event& event) {
-		transform()->position.set(event.button.x + toolTipX * getriebe.getGame()->getRenderer()->widthDifference_, event.button.y);
+		if (event.button.x + toolTipX * getriebe.getGame()->getRenderer()->widthDifference_ > getriebe.getGame()->getWindow()->width_) {
+			left = true;
+		}
+		else {
+			left = false;
+		}
+		if (!left) {
+			transform()->position.set(event.button.x + toolTipX * getriebe.getGame()->getRenderer()->widthDifference_, event.button.y);
+		}
+		else {
+			transform()->position.set(event.button.x - toolTipX * getriebe.getGame()->getRenderer()->widthDifference_, event.button.y);
+		}
 	};
 
 };

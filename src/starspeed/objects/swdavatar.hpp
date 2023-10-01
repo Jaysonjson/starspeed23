@@ -12,6 +12,7 @@
 #include "starspeed/resourcepack.hpp"
 #include "starspeed/textures.hpp"
 #include "starspeed/achievements.hpp"
+#include "starspeed/cursor.hpp"
 
 namespace StarSpeed {
 
@@ -155,7 +156,7 @@ namespace StarSpeed {
 			}
 			transform()->position.set(1920 - 200 / 2, 200 / 2);
 			transform()->scale.set(175, 175);
-			transform()->depth = 50;
+			transform()->depth = 30;
 			addComponent<Motor::TextComponentBlended>(Tex::DEBUG_FONT);
 			getComponent<Motor::TextComponentBlended>()->setContent(swdData.username);
 			getComponent<Motor::TextComponentBlended>()->alignment_ = Motor::TextAlignment::RIGHT;
@@ -236,6 +237,39 @@ namespace StarSpeed {
 			
 			//getComponent<Motor::SpriteComponent>(2)->customAngle_ = 90;
 			//getComponent<Motor::SpriteComponent>(2)->center_ = SDL_Point{(int)(500 * 0.15f) / 2, 0};
+			addComponent<Motor::SpriteColliderComponent>();
+			getComponent<Motor::SpriteColliderComponent>()->registerMouseHoverEvent();
+			getComponent<Motor::SpriteColliderComponent>()->registerMouseClickEvent();
 		}
+
+		bool triggerCursor = false;
+		void onComponentEvent(Motor::IComponentEvent* eventData) override {
+			if (eventData->id() == "collider") {
+				Motor::ColliderEvent* colliderEvent = dynamic_cast<Motor::ColliderEvent*>(eventData);
+				if (colliderEvent->type == Motor::HOVER) {
+					if (!colliderEvent->onObject) {
+						if (triggerCursor) {
+							CURSOR->resetTooltip();
+							CURSOR->clickable(false);
+							triggerCursor = false;
+							//getComponent<Motor::DynamicSpriteComponent>()->setTexture(DEFAULT);
+						}
+					}
+					else {
+						CURSOR->setTooltip("Open SWD Profile in Browser");
+						CURSOR->clickable(true);
+						triggerCursor = true;
+						//getComponent<Motor::DynamicSpriteComponent>()->setTexture(DEFAULT);
+					}
+				}
+				if (colliderEvent->type == Motor::CLICK) {
+					if (colliderEvent->onObject) {
+						CURSOR->resetTooltip();
+						CURSOR->clickable(false);
+						Fuchs::Utility::openURLInBrowser("https://swdteam.com/profile/" + swdData.username);
+					}
+				}
+			}
+		};
 	};
 }

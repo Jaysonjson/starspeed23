@@ -1,0 +1,15 @@
+# ninja log v5
+1	31	0	H:/starspeed23/cmake-build-debug/CMakeFiles/cmake.verify_globs	8c108c8bb41a6ed3
+60	376	7178675840724164	CMakeFiles/StarSpeed23.dir/app.rc.res	162c53f97850bdff
+54	657	7178675843474179	CMakeFiles/StarSpeed23.dir/src/splashs.cpp.obj	a09789b7d0ca515f
+48	716	7178675844084157	CMakeFiles/StarSpeed23.dir/src/tinyfiledialogs.cpp.obj	9d69d80cdddb3032
+36	1073	7178675847654157	CMakeFiles/StarSpeed23.dir/src/resourcepack.cpp.obj	e328e1377d5a81c4
+18	1703	7178675853934165	CMakeFiles/StarSpeed23.dir/src/mine.cpp.obj	e7d4bebbcf347d8a
+6	3536	7178675872254155	CMakeFiles/StarSpeed23.dir/src/discord.cpp.obj	c1e1a65f581db0aa
+42	3623	7178675873114156	CMakeFiles/StarSpeed23.dir/src/textures.cpp.obj	cba6d73cac0826e1
+0	4080	7178675877674148	CMakeFiles/StarSpeed23.dir/src/achievements.cpp.obj	290c6a8becc1002b
+12	5802	7178675894854164	CMakeFiles/StarSpeed23.dir/src/main.cpp.obj	aad1e1dafe7d9ff7
+25	5899	7178675895754158	CMakeFiles/StarSpeed23.dir/src/sceneswitcher.cpp.obj	faa8f225be6c1a59
+1	24	0	H:/starspeed23/cmake-build-debug/CMakeFiles/cmake.verify_globs	8c108c8bb41a6ed3
+6	3239	7178676346497448	CMakeFiles/StarSpeed23.dir/src/objects.cpp.obj	2ce7d9d60c257fad
+2	4841	7178676362477660	CMakeFiles/StarSpeed23.dir/src/main.cpp.obj	aad1e1dafe7d9ff7

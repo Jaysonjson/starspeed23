@@ -322,6 +322,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="H:\starspeed23\src\main.cpp" />
     <ClCompile Include="H:\starspeed23\src\mine.cpp" />
     <ClInclude Include="H:\starspeed23\src\mine.hpp" />
+    <ClCompile Include="H:\starspeed23\src\objects.cpp" />
     <ClCompile Include="H:\starspeed23\src\resourcepack.cpp" />
     <ClCompile Include="H:\starspeed23\src\sceneswitcher.cpp" />
     <ClCompile Include="H:\starspeed23\src\splashs.cpp" />
@@ -329,6 +330,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="H:\starspeed23\src\starspeed\components\down_movement.hpp" />
     <ClInclude Include="H:\starspeed23\src\starspeed\cursor.hpp" />
     <ClInclude Include="H:\starspeed23\src\starspeed\discord.hpp" />
+    <ClInclude Include="H:\starspeed23\src\starspeed\init\objects.hpp" />
     <ClInclude Include="H:\starspeed23\src\starspeed\objects\bullets\bullet.hpp" />
     <ClInclude Include="H:\starspeed23\src\starspeed\objects\enemy_spawner.hpp" />
     <ClInclude Include="H:\starspeed23\src\starspeed\objects\player_map.hpp" />

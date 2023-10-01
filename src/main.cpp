@@ -16,6 +16,7 @@
 #include "starspeed/cursor.hpp"
 #include "starspeed/profile.hpp"
 #include "motor/console/console.hpp"
+#include "fuchslib/key.hpp"
 
 Motor::Mod* fallbackMod = new Motor::Mod("starspeed");
 
