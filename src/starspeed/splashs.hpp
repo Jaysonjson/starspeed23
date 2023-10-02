@@ -3,5 +3,5 @@
 #include "string"
 
 namespace StarSpeed {
-    extern std::vector<std::string> SPLASHS;
+    extern std::vector<std::string> SPLASHES;
 }

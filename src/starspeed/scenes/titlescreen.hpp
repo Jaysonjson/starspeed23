@@ -299,7 +299,7 @@ namespace StarSpeed {
 			std::mt19937 mt(rd());
 			std::uniform_real_distribution<double> dist_x(0, 1920);
 			std::uniform_real_distribution<double> dist_y(0, 1080);
-			std::uniform_real_distribution<double> dist_splash(0, SPLASHS.size());
+			std::uniform_real_distribution<double> dist_splash(0, SPLASHES.size());
 
 			for (int i = 0; i < 150; i++) {
 				Star* STAR = new Star();
@@ -354,7 +354,7 @@ namespace StarSpeed {
 			STARSPEED_TEXT->addToCurrentScene();
 
 			Motor::GameObject* SPLASH_TEXT = new Motor::GameObject();
-			std::string splashText = SPLASHS[dist_splash(mt)];
+			std::string splashText = SPLASHES[dist_splash(mt)];
 			if (splashText.contains("COLOR{")) {
 				SPLASH_TEXT->addComponent<Motor::MultiColorText>(Tex::GAME_FONT);
 				SPLASH_TEXT->getComponent<Motor::MultiColorText>()->setContent(splashText);

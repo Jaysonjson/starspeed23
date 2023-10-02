@@ -67,7 +67,7 @@ public:
 		else {
 			transform()->position.set(event.button.x - toolTipX * 2 * getriebe.getGame()->getRenderer()->widthDifference_, event.button.y);
 		}
-        
+
 	};
 
 };
