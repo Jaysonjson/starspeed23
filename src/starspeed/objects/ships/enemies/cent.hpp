@@ -11,7 +11,7 @@ namespace StarSpeed {
         void onCreate() override {
             EnemyShip::onCreate();
             speed_ = 0.02f;
-            shootCooldown = 85;
+            shootCooldown = 95;
             health_ = 35;
             maxHealth_ = 35;
         }

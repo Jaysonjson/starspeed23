@@ -40,11 +40,12 @@ public:
 					break;
 				}
 			}
-			toolTipX = ((minX + advance)) / 2 ;
+			toolTipX = ((minX + advance)) / 4  + 8;
 			getComponent<Motor::TextComponentBlended>()->setContent(f);
             getComponent<Motor::TextComponentBlended>()->useCustomScale_ = true;
-                getComponent<Motor::TextComponentBlended>()->customScale_.set(maxX * 1.5 * getriebe.getGame()->getRenderer()->widthDifference_, 45 * getriebe.getGame()->getRenderer()->heightDifference_);
-                getComponent<Motor::SpriteComponent>()->customScale_.set( toolTipX * 2, 45 * getriebe.getGame()->getRenderer()->heightDifference_);
+                getComponent<Motor::TextComponentBlended>()->customScale_.set((maxX * getriebe.getGame()->getRenderer()->widthDifference_) * 1.8, 45 * getriebe.getGame()->getRenderer()->heightDifference_);
+                getComponent<Motor::SpriteComponent>()->customScale_.set( toolTipX * 4, 45 * getriebe.getGame()->getRenderer()->heightDifference_);
+                transform()->scale.set(toolTipX * 4, 45 * getriebe.getGame()->getRenderer()->heightDifference_);
 			//toolTipX *= getriebe.getGame()->getRenderer()->widthDifference_;
 		}
 	}
@@ -54,17 +55,17 @@ public:
 	}
 
 	std::function<void(SDL_Event&)> onMouse = [this](SDL_Event& event) {
-		if (event.button.x + toolTipX * getriebe.getGame()->getRenderer()->widthDifference_ > getriebe.getGame()->getWindow()->width_) {
+		if (event.button.x + toolTipX * getriebe.getGame()->getRenderer()->widthDifference_ * 4  > getriebe.getGame()->getWindow()->width_) {
 			left = true;
 		}
 		else {
 			left = false;
 		}
 		if (!left) {
-			transform()->position.set(event.button.x + toolTipX * getriebe.getGame()->getRenderer()->widthDifference_, event.button.y);
+			transform()->position.set(event.button.x + toolTipX * 2 * getriebe.getGame()->getRenderer()->widthDifference_, event.button.y);
 		}
 		else {
-			transform()->position.set(event.button.x - toolTipX * getriebe.getGame()->getRenderer()->widthDifference_, event.button.y);
+			transform()->position.set(event.button.x - toolTipX * 2 * getriebe.getGame()->getRenderer()->widthDifference_, event.button.y);
 		}
 	};
 

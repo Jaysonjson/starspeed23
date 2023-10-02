@@ -36,23 +36,6 @@ namespace StarSpeed {
 
     };
 
-    class EnemyBullet : public Bullet {
-        void onCreate() override {
-            Bullet::onCreate();
-            //transform()->color.set(115, 30, 30, 255);
-        }
-    };
-
-    class CentBullet : public EnemyBullet {
-        void fixedUpdate() override {
-            EnemyBullet::fixedUpdate();
-            transform()->scale.set(transform()->scale.x + 0.65f, transform()->scale.y + 1.25f);
-            getComponent<Motor::SpriteComponent>()->setTexture(Tex::CENT_BULLET);
-            //getComponent<Motor::SpriteComponent>(1)->useCustomColor_ = true;
-            //getComponent<Motor::SpriteComponent>(1)->customColor_.set(115, 30, 30, 175);
-        }
-    };
-
     class PlayerBullet : public Bullet {
     public:
         void onCreate() override {
@@ -67,6 +50,39 @@ namespace StarSpeed {
         }
         void update() override {
             Bullet::update();
+        }
+    };
+
+    class EnemyBullet : public Bullet {
+        void onCreate() override {
+            Bullet::onCreate();
+            //transform()->color.set(115, 30, 30, 255);
+        }
+
+        void update() override {
+            StarSpeed::Bullet::update();
+            std::vector<Motor::IColliderComponent*> colliders = getComponent<Motor::SpriteColliderComponent>()->collissionWithOther();
+            if (!colliders.empty()) {
+                for (Motor::IColliderComponent* collider : colliders) {
+                    if(collider->getOwner()) {
+                        auto* BUllET = dynamic_cast<PlayerBullet*>(collider->getOwner());
+                        if (BUllET) {
+                            destroy();
+                            BUllET->destroy();
+                        }
+                    }
+                }
+            }
+        }
+    };
+
+    class CentBullet : public EnemyBullet {
+        void fixedUpdate() override {
+            EnemyBullet::fixedUpdate();
+            transform()->scale.set(transform()->scale.x + 0.65f, transform()->scale.y + 1.25f);
+            getComponent<Motor::SpriteComponent>()->setTexture(Tex::CENT_BULLET);
+            //getComponent<Motor::SpriteComponent>(1)->useCustomColor_ = true;
+            //getComponent<Motor::SpriteComponent>(1)->customColor_.set(115, 30, 30, 175);
         }
     };
 }

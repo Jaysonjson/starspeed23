@@ -100,11 +100,11 @@ namespace StarSpeed {
             }
         }
 
-        int shootCooldown = 100;
+        int shootCooldown = 75;
         void fixedUpdate() override {
             const uint8* key = SDL_GetKeyboardState(NULL);
             ++shootCooldown;
-            if(key[SDL_Scancode::SDL_SCANCODE_SPACE] && 25 < shootCooldown) {
+            if(key[SDL_Scancode::SDL_SCANCODE_SPACE] && 15 < shootCooldown) {
                 shoot();
                 shootCooldown = 0;
                 getComponent<Motor::TextComponentBlended>()->setContent("");

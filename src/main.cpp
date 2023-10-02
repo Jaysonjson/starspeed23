@@ -17,6 +17,8 @@
 #include "starspeed/profile.hpp"
 #include "motor/console/console.hpp"
 #include "fuchslib/key.hpp"
+#include "starspeed/init/objects.hpp"
+#include "starspeed/splashs.hpp"
 
 Motor::Mod* fallbackMod = new Motor::Mod("starspeed");
 
@@ -36,22 +38,30 @@ int main() {
 	SDL_GL_SetAttribute(SDL_GL_MULTISAMPLEBUFFERS, 1);
 	SDL_GL_SetAttribute(SDL_GL_MULTISAMPLESAMPLES, 8);
 	SDL_GL_SetAttribute(SDL_GL_ACCELERATED_VISUAL, 1);
-	getriebe.init("StarSpeed23", 1920 * 0.75, 1080 * 0.75, SDL_WINDOW_RESIZABLE, SDL_RENDERER_ACCELERATED | SDL_RENDERER_TARGETTEXTURE);
+
+    std::random_device rd;
+    std::mt19937 mt(rd());
+    std::uniform_real_distribution<double> dist_splash(0, StarSpeed::SPLASHS.size());
+
+	getriebe.init("StarSpeed23 -/- " + StarSpeed::SPLASHS[dist_splash(mt)], 1920 * 0.75, 1080 * 0.75, SDL_WINDOW_RESIZABLE, SDL_RENDERER_ACCELERATED | SDL_RENDERER_TARGETTEXTURE);
 	StarSpeed::Tex::setTextures();
 	StarSpeed::playerProfile->load();
 	StarSpeed::addAchievements();
     //SDL_Surface* icon = IMG_Load(Motor::ResourceLocation(resourcePackMod, "app/icon.png").getPath().c_str());
     SDL_Surface* icon = IMG_Load(Motor::ResourceLocation(resourcePackMod, "/sprites/galaxy/galaxy.png").getPath().c_str());
 	SDL_SetWindowIcon(getriebe.sdl_window(), icon);
+
 	getriebe.getGame()->forceSetScene(new StarSpeed::SplashScene());
+
+    auto debugText = new DebugText(StarSpeed::Tex::DEBUG_FONT, StarSpeed::Tex::DEBUG_FONT_OUTLINE);
+    debugText->transform()->depth = 47;
+    debugText->addToCurrentScene();
+    debugText->transform()->scale.set(28 / 2, 48 / 2);
+
 	CURSOR->TOOLTIP->addToCurrentScene();
 	CURSOR->addToCurrentScene();
-	StarSpeed::ACHIEVEMENT_UNLOCK_HEADER->addToCurrentScene();
-	auto debugText = new DebugText(StarSpeed::Tex::DEBUG_FONT, StarSpeed::Tex::DEBUG_FONT_OUTLINE);
-	debugText->coordinateObject = CURSOR;
-	debugText->transform()->depth = 47;
-	debugText->addToCurrentScene();
-	debugText->transform()->scale.set(28 / 2, 48 / 2);
+    debugText->coordinateObject = CURSOR;
+    StarSpeed::ACHIEVEMENT_UNLOCK_HEADER->addToCurrentScene();
 	while (getriebe.getGame()->running_) {
 		debugText->transform()->scale.set(28, 48 / 2);
 		getriebe.getGame()->loop();

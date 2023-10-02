@@ -33,7 +33,7 @@ if(WIN32)
 	message("OS: Windows")
 endif(WIN32)
 
-file(GLOB_RECURSE SOURCES_CPP CONFIGURE_DEPENDS "src/*.cpp" "src/*.hpp")
+file(GLOB_RECURSE SOURCES_CPP CONFIGURE_DEPENDS "src/*.cpp" "src/*.hpp" "src/*.ixx" )
 file(GLOB_RECURSE LIBRARIES CONFIGURE_DEPENDS "${LIBRARY_PATH}*.lib" "${LIBRARY_PATH}*.dylib" "${LIBRARY_PATH}*.so" "${LIBRARY_PATH}*.a")
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/src/)

@@ -56,6 +56,7 @@ set(OLD_GLOB
   "H:/starspeed23/src/main.cpp"
   "H:/starspeed23/src/mine.cpp"
   "H:/starspeed23/src/objects.cpp"
+  "H:/starspeed23/src/registries.cpp"
   "H:/starspeed23/src/resourcepack.cpp"
   "H:/starspeed23/src/sceneswitcher.cpp"
   "H:/starspeed23/src/splashs.cpp"
@@ -76,6 +77,7 @@ set(OLD_GLOB
   "H:/starspeed23/src/starspeed/cursor.hpp"
   "H:/starspeed23/src/starspeed/discord.hpp"
   "H:/starspeed23/src/starspeed/init/objects.hpp"
+  "H:/starspeed23/src/starspeed/init/registries.hpp"
   "H:/starspeed23/src/starspeed/objects/bullets/bullet.hpp"
   "H:/starspeed23/src/starspeed/objects/enemy_spawner.hpp"
   "H:/starspeed23/src/starspeed/objects/player_map.hpp"
@@ -110,6 +112,16 @@ set(OLD_GLOB
   "H:/starspeed23/src/tinyfiledialogs.hpp"
   "H:/starspeed23/src/zconf.hpp"
   "H:/starspeed23/src/zlib.hpp"
+  )
+if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
+  message("-- GLOB mismatch!")
+  file(TOUCH_NOCREATE "H:/starspeed23/cmake-build-debug/CMakeFiles/cmake.verify_globs")
+endif()
+
+# SOURCES_CPP at CMakeLists.txt:36 (file)
+file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "H:/starspeed23/src/*.ixx")
+set(OLD_GLOB
+  "H:/starspeed23/src/objects.ixx"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

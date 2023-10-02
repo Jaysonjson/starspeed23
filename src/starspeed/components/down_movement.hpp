@@ -11,7 +11,7 @@ namespace StarSpeed {
             Motor::IComponent::update();
             float delta = getriebe.getGame()->getDelta().deltaTime;
             //transform()->position.add({ 0, speed_ * delta });
-            Motor::GameObject* owner = (Motor::GameObject*)getOwner();
+            auto* owner = (Motor::GameObject*)getOwner();
             if(owner) owner->transform()->position.add({ 0, speed_ * delta });
         }
     };

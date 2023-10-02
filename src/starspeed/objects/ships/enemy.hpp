@@ -40,7 +40,7 @@ namespace StarSpeed {
             Motor::GameObject::update();
             HEALTH_BAR->customScale_.set((health_ / maxHealth_) * 55, HEALTH_BAR->customScale_.y);
             std::vector<Motor::IColliderComponent*> colliders = getComponent<Motor::SpriteColliderComponent>()->collissionWithOther();
-            if (colliders.size() > 0) {
+            if (!colliders.empty()) {
                 for (Motor::IColliderComponent* collider : colliders) {
                     if(collider->getOwner()) {
                         PlayerBullet* PLAYER_BULLET = dynamic_cast<PlayerBullet*>(collider->getOwner());

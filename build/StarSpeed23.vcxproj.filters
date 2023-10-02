@@ -16,6 +16,12 @@
     <ClCompile Include="H:\starspeed23\src\objects.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="H:\starspeed23\src\objects.ixx">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="H:\starspeed23\src\registries.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="H:\starspeed23\src\resourcepack.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -49,6 +55,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="H:\starspeed23\src\starspeed\init\objects.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\starspeed23\src\starspeed\init\registries.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="H:\starspeed23\src\starspeed\objects\bullets\bullet.hpp">

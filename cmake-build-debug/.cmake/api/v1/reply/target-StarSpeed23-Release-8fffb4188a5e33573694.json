@@ -113,8 +113,10 @@
 				6,
 				7,
 				8,
-				45,
-				46
+				9,
+				10,
+				48,
+				49
 			]
 		},
 		{
@@ -149,7 +151,7 @@
 			"language" : "RC",
 			"sourceIndexes" : 
 			[
-				50
+				53
 			]
 		}
 	],
@@ -239,9 +241,11 @@
 				6,
 				7,
 				8,
-				45,
-				46,
-				50
+				9,
+				10,
+				48,
+				49,
+				53
 			]
 		},
 		{
@@ -249,8 +253,6 @@
 			"sourceIndexes" : 
 			[
 				4,
-				9,
-				10,
 				11,
 				12,
 				13,
@@ -285,9 +287,12 @@
 				42,
 				43,
 				44,
+				45,
+				46,
 				47,
-				48,
-				49
+				50,
+				51,
+				52
 			]
 		}
 	],
@@ -331,6 +336,18 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
+			"path" : "src/objects.ixx",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/registries.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
 			"path" : "src/resourcepack.cpp",
 			"sourceGroupIndex" : 0
 		},
@@ -369,6 +386,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "src/starspeed/init/objects.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/starspeed/init/registries.hpp",
 			"sourceGroupIndex" : 1
 		},
 		{

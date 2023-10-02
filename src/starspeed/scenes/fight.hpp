@@ -82,7 +82,7 @@ namespace StarSpeed {
             BACKGROUND->getComponent<Motor::DynamicSpriteComponent>()->blendMode_ = SDL_BLENDMODE_BLEND;
 			BACKGROUND->getComponent<Motor::DynamicSpriteComponent>()->ignoreCamera_ = true;
 
-			BACKGROUND->addComponent<Motor::DynamicSpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/title/starspeed.png"));
+			BACKGROUND->addComponent<Motor::DynamicSpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/title/starspeed_xr.png"));
             BACKGROUND->getComponent<Motor::DynamicSpriteComponent>(1)->blendMode_ = SDL_BLENDMODE_BLEND;
 			BACKGROUND->getComponent<Motor::DynamicSpriteComponent>(1)->ignoreCamera_ = true;
 			BACKGROUND->getComponent<Motor::DynamicSpriteComponent>(1)->translate_.set(0, -400);
