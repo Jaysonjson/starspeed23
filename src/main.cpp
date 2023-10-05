@@ -56,14 +56,14 @@ int main() {
     auto debugText = new DebugText(StarSpeed::Tex::DEBUG_FONT, StarSpeed::Tex::DEBUG_FONT_OUTLINE);
     debugText->transform()->depth = 47;
     debugText->addToCurrentScene();
-    debugText->transform()->scale.set(28 / 2, 48 / 2);
+    debugText->transform()->scale.set(28, 48 / 2);
 
 	CURSOR->TOOLTIP->addToCurrentScene();
 	CURSOR->addToCurrentScene();
     debugText->coordinateObject = CURSOR;
     StarSpeed::ACHIEVEMENT_UNLOCK_HEADER->addToCurrentScene();
 	while (getriebe.getGame()->running_) {
-		debugText->transform()->scale.set(28, 48 / 2);
+		//debugText->transform()->scale.set(28, 48 / 2);
 		getriebe.getGame()->loop();
 	}
 	StarSpeed::playerProfile->save();

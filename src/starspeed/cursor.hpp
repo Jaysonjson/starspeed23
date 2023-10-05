@@ -7,6 +7,7 @@
 class CursorToolTipObject : public Motor::GameObject {
 public:
 	bool left = false;
+    std::string textCache_ = "";
 	void onCreate() override {
 		persistent_ = true;
 		transform()->depth = 50;
@@ -41,6 +42,7 @@ public:
 				}
 			}
 			toolTipX = ((minX + advance)) / 4  + 8;
+            textCache_ = f;
 			getComponent<Motor::TextComponentBlended>()->setContent(f);
             getComponent<Motor::TextComponentBlended>()->useCustomScale_ = true;
                 getComponent<Motor::TextComponentBlended>()->customScale_.set((maxX * getriebe.getGame()->getRenderer()->widthDifference_) * 1.8, 45 * getriebe.getGame()->getRenderer()->heightDifference_);
@@ -53,6 +55,7 @@ public:
 	void registerEvents() override {
 		registerEvent(Motor::Events::mouseMotion.attach(&onMouse));
 	}
+
 
 	std::function<void(SDL_Event&)> onMouse = [this](SDL_Event& event) {
 		if (event.button.x + toolTipX * getriebe.getGame()->getRenderer()->widthDifference_ * 4  > getriebe.getGame()->getWindow()->width_) {
@@ -100,6 +103,7 @@ public:
 	void resetTooltip() {
 		TOOLTIP->getComponent<Motor::TextComponentBlended>()->setContent("");
 		TOOLTIP->getComponent<Motor::SpriteComponent>()->customScale_.set(0, 0);
+        TOOLTIP->textCache_ = "";
 	}
 
 	void clickable(bool click) {

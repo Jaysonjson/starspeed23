@@ -294,7 +294,6 @@ namespace StarSpeed {
 	public:
 		void init(Motor::Game* game) override {
 			Motor::Scene::init(game);
-
 			std::random_device rd;
 			std::mt19937 mt(rd());
 			std::uniform_real_distribution<double> dist_x(0, 1920);
