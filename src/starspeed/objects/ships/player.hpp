@@ -11,6 +11,7 @@ namespace StarSpeed {
     class PlayerShip : public Ship {
     public:
         float speed_ = 1.05;
+        int health_ = 5;
 
         int* progress_ = nullptr;
         float* fuel_ = nullptr;
@@ -21,6 +22,7 @@ namespace StarSpeed {
             getComponent<Motor::SpriteComponent>(1)->blendMode_ = SDL_BLENDMODE_BLEND;
             getComponent<Motor::SpriteComponent>(1)->useCustomColor_ = true;
             getComponent<Motor::SpriteComponent>(1)->customColor_.set(234, 225, 125, 255);
+            addComponent<Motor::SpriteColliderComponent>();
             transform()->scale.set(90, 90);
             transform()->position.set(1920 / 3, 0);
             getComponent<Motor::SpriteComponent>(0)->ignoreCamera_ = true;
@@ -60,6 +62,10 @@ namespace StarSpeed {
 			    shoot();
 		    }*/
 	    };
+
+        void damage() {
+            health_ -= 1;
+        }
 
 
         int hueTimer = 0;

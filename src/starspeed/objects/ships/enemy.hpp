@@ -50,6 +50,13 @@ namespace StarSpeed {
                             HEALTH_BAR->customColor_.setAlpha(125);
                             HEALTH_BAR->customScale_.set(HEALTH_BAR->customScale_.x, 7);
                         }
+
+                        PlayerShip* PLAYER_SHIP = dynamic_cast<PlayerShip*>(collider->getOwner());
+                        if(PLAYER_SHIP) {
+                            health_ = 0;
+                            PLAYER_SHIP->damage();
+                            MOTOR_LOG("Collision")
+                        }
                     }
                 }
             }

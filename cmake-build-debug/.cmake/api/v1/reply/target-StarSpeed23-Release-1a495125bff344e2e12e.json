@@ -115,8 +115,8 @@
 				8,
 				9,
 				10,
-				48,
-				49
+				50,
+				51
 			]
 		},
 		{
@@ -151,7 +151,7 @@
 			"language" : "RC",
 			"sourceIndexes" : 
 			[
-				53
+				55
 			]
 		}
 	],
@@ -243,9 +243,9 @@
 				8,
 				9,
 				10,
-				48,
-				49,
-				53
+				50,
+				51,
+				55
 			]
 		},
 		{
@@ -290,9 +290,11 @@
 				45,
 				46,
 				47,
-				50,
-				51,
-				52
+				48,
+				49,
+				52,
+				53,
+				54
 			]
 		}
 	],
@@ -476,6 +478,16 @@
 		{
 			"backtrace" : 1,
 			"path" : "src/starspeed/objects/swdavatar.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/starspeed/planet.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/starspeed/planetutil.hpp",
 			"sourceGroupIndex" : 1
 		},
 		{
