@@ -3,7 +3,7 @@ namespace StarSpeed {
     std::vector<std::string> SPLASHES = {
         "Here could be COLOR{\"color\":[144,0,0,255],\"text\":\" your \"}COLOR splash text!",
         "Also try StarSpeed18!",
-        "Alot of Cows were harmed for this Game",
+        "Alot of cows were harmed for this game",
         "Is this the place to post Ban Appeals?",
         "Can you sign my TARDIS?",
         "1.12.2",
@@ -11,6 +11,7 @@ namespace StarSpeed {
         "Is this the Dalek Mod?",
         "Theres a bee inside me",
         "Toppings in Burgers are COLOR{\"color\":[144,36,75,255],\"text\":\" MIDDLINGS \"}COLOR !",
-        "Blackadder likes men!"
+        "Blackadder likes men!",
+        "Make sure to bully COLOR{\"color\":[144,36,75,255],\"text\":\" Derpy \"}COLOR !"
     };
 }
