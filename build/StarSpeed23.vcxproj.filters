@@ -66,6 +66,9 @@
     <ClInclude Include="H:\starspeed23\src\starspeed\objects\enemy_spawner.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="H:\starspeed23\src\starspeed\objects\music_handler.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="H:\starspeed23\src\starspeed\objects\player_map.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>

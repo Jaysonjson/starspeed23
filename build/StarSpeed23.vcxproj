@@ -340,6 +340,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="H:\starspeed23\src\starspeed\init\registries.hpp" />
     <ClInclude Include="H:\starspeed23\src\starspeed\objects\bullets\bullet.hpp" />
     <ClInclude Include="H:\starspeed23\src\starspeed\objects\enemy_spawner.hpp" />
+    <ClInclude Include="H:\starspeed23\src\starspeed\objects\music_handler.hpp" />
     <ClInclude Include="H:\starspeed23\src\starspeed\objects\player_map.hpp" />
     <ClInclude Include="H:\starspeed23\src\starspeed\objects\powerups\powerup.hpp" />
     <ClInclude Include="H:\starspeed23\src\starspeed\objects\ships\enemies\cent.hpp" />
