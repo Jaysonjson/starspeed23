@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "StarSpeed23::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-StarSpeed23-Release-8fffb4188a5e33573694.json",
+					"jsonFile" : "target-StarSpeed23-Release-a0b47c9ce3e772fe0d2d.json",
 					"name" : "StarSpeed23",
 					"projectIndex" : 0
 				}
@@ -49,7 +49,7 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "H:/starspeed23/cmake-build-release",
+		"build" : "H:/starspeed23/cmake-build-debug",
 		"source" : "H:/starspeed23"
 	},
 	"version" : 

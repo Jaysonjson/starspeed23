@@ -95,6 +95,8 @@ set(OLD_GLOB
   "H:/starspeed23/src/starspeed/objects/ships/ship.hpp"
   "H:/starspeed23/src/starspeed/objects/star.hpp"
   "H:/starspeed23/src/starspeed/objects/swdavatar.hpp"
+  "H:/starspeed23/src/starspeed/planet.hpp"
+  "H:/starspeed23/src/starspeed/planetutil.hpp"
   "H:/starspeed23/src/starspeed/profile.hpp"
   "H:/starspeed23/src/starspeed/resourcepack.hpp"
   "H:/starspeed23/src/starspeed/scenes/cell_map.hpp"

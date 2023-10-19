@@ -111,6 +111,12 @@
     <ClInclude Include="H:\starspeed23\src\starspeed\objects\swdavatar.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="H:\starspeed23\src\starspeed\planet.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="H:\starspeed23\src\starspeed\planetutil.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="H:\starspeed23\src\starspeed\profile.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>

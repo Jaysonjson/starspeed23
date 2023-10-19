@@ -12,6 +12,8 @@
 #include "starspeed/cursor.hpp"
 #include "starspeed/utility.hpp"
 #include "starspeed/scenes/cell_map.hpp"
+#include "motor/sound/sound.hpp"
+#include "motor/content/music.hpp"
 
 namespace StarSpeed {
 
@@ -399,6 +401,14 @@ namespace StarSpeed {
 				discordAvatar->addComponent<Motor::SpriteComponent>(avatarTexture);
 				discordAvatar->addToCurrentScene();
 			}
+
+            auto* soundFile = new Motor::MusicFile(Motor::ResourceLocation(fallbackMod, "audio/music/amythical/its_space.mp3"));
+            auto* testSound = new Motor::Music();
+            soundFile->load();
+            testSound->file_ = soundFile;
+            Motor::Music::changeChannelVolume(64);
+            testSound->play();
+
 		}
 	};
 }

@@ -27,6 +27,7 @@ set(OLD_GLOB
   "H:/starspeed23/libs/windows_release/Motor.lib"
   "H:/starspeed23/libs/windows_release/SDL2.lib"
   "H:/starspeed23/libs/windows_release/SDL2_image.lib"
+  "H:/starspeed23/libs/windows_release/SDL2_mixer.lib"
   "H:/starspeed23/libs/windows_release/SDL2_ttf.lib"
   "H:/starspeed23/libs/windows_release/discord_game_sdk.dll.lib"
   "H:/starspeed23/libs/windows_release/libcrypto.lib"

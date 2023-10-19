@@ -49,7 +49,7 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "H:/starspeed23/cmake-build-debug",
+		"build" : "H:/starspeed23/cmake-build-release",
 		"source" : "H:/starspeed23"
 	},
 	"version" : 

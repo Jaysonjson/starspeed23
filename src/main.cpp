@@ -19,6 +19,7 @@
 #include "fuchslib/key.hpp"
 #include "starspeed/init/objects.hpp"
 #include "starspeed/splashs.hpp"
+#include "motor/sound/sound.hpp"
 
 Motor::Mod* fallbackMod = new Motor::Mod("starspeed");
 
@@ -62,7 +63,8 @@ int main() {
 	CURSOR->addToCurrentScene();
     debugText->coordinateObject = CURSOR;
     StarSpeed::ACHIEVEMENT_UNLOCK_HEADER->addToCurrentScene();
-	while (getriebe.getGame()->running_) {
+    Mix_OpenAudio(44100, MIX_DEFAULT_FORMAT, 2, 2048);
+    while (getriebe.getGame()->running_) {
 		//debugText->transform()->scale.set(28, 48 / 2);
 		getriebe.getGame()->loop();
 	}

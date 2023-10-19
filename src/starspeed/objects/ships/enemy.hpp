@@ -55,7 +55,6 @@ namespace StarSpeed {
                         if(PLAYER_SHIP) {
                             health_ = 0;
                             PLAYER_SHIP->damage();
-                            MOTOR_LOG("Collision")
                         }
                     }
                 }
