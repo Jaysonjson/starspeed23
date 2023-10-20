@@ -245,7 +245,7 @@ namespace StarSpeed {
 		void onCreate() {
 			addComponent<Motor::DynamicSpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/title/starspeed_xr.png"));
 			getComponent<Motor::DynamicSpriteComponent>()->blendMode_ = SDL_BLENDMODE_BLEND;
-			transform()->position.set(1920 / 2, 1080 / 5.2);
+			transform()->position.set(1920 / 2, 1080 / 4.65);
 			transform()->scale.set(76 * 9, 42 * 9);
 		}
 	};
@@ -367,14 +367,14 @@ namespace StarSpeed {
 				SPLASH_TEXT->getComponent<Motor::TextComponentBlended>()->setContent(splashText);
 				SPLASH_TEXT->getComponent<Motor::TextComponentBlended>()->alignment_ = Motor::TextAlignment::MID;
 			}
-			SPLASH_TEXT->transform()->position.set(1920 / 2, 1080 / 2.6);
-			SPLASH_TEXT->transform()->scale.set(32, 32);
+			SPLASH_TEXT->transform()->position.set(1920 / 2, 1080 / 2.3);
+			SPLASH_TEXT->transform()->scale.set(38, 38);
 			SPLASH_TEXT->addToCurrentScene();
 
 			Motor::GameObject* STARSPEED_LOGO_FLARE = new Motor::GameObject();
 			STARSPEED_LOGO_FLARE->addComponent<Motor::DynamicSpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/title/starspeed_flare.png"));
 			STARSPEED_LOGO_FLARE->getComponent<Motor::DynamicSpriteComponent>()->blendMode_ = SDL_BLENDMODE_BLEND;
-			STARSPEED_LOGO_FLARE->transform()->position.set(1920 * 0.53, 1080 / 15);
+			STARSPEED_LOGO_FLARE->transform()->position.set(1920 * 0.53, 1080 / 11);
 			STARSPEED_LOGO_FLARE->transform()->scale.set(320 * 7, 177 * 4);
 			STARSPEED_LOGO_FLARE->transform()->color.set(255, 255, 255, 145);
 			STARSPEED_LOGO_FLARE->addToCurrentScene();
@@ -382,7 +382,7 @@ namespace StarSpeed {
 			Motor::GameObject* STARSPEED_LOGO_FLARE_1 = new Motor::GameObject();
 			STARSPEED_LOGO_FLARE_1->addComponent<Motor::DynamicSpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/title/starspeed_flare_1.png"));
 			STARSPEED_LOGO_FLARE_1->getComponent<Motor::DynamicSpriteComponent>()->blendMode_ = SDL_BLENDMODE_BLEND;
-			STARSPEED_LOGO_FLARE_1->transform()->position.set(1920 * 0.53, 1080 / 15);
+			STARSPEED_LOGO_FLARE_1->transform()->position.set(1920 * 0.53, 1080 / 11);
 			STARSPEED_LOGO_FLARE_1->transform()->scale.set(480 * 2, 480 * 2);
 			STARSPEED_LOGO_FLARE_1->transform()->color.set(255, 255, 255, 25);
 			STARSPEED_LOGO_FLARE_1->addToCurrentScene();

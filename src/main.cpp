@@ -45,7 +45,8 @@ int main() {
     std::uniform_real_distribution<double> dist_splash(0, StarSpeed::SPLASHES.size());
 
 	getriebe.init("StarSpeed23 -/- " + StarSpeed::SPLASHES[dist_splash(mt)], 1920 * 0.75, 1080 * 0.75, SDL_WINDOW_RESIZABLE, SDL_RENDERER_ACCELERATED | SDL_RENDERER_TARGETTEXTURE);
-	StarSpeed::Tex::setTextures();
+	getriebe.getGame()->setTextFPS(12);
+    StarSpeed::Tex::setTextures();
 	StarSpeed::playerProfile->load();
 	StarSpeed::addAchievements();
     //SDL_Surface* icon = IMG_Load(Motor::ResourceLocation(resourcePackMod, "app/icon.png").getPath().c_str());
