@@ -16,6 +16,7 @@
 #include "motor/content/music.hpp"
 #include "starspeed/objects/music_handler.hpp"
 #include "motor/gameobjects/debugtext.hpp"
+#include "dm_titlescreen.hpp"
 
 namespace StarSpeed {
 
@@ -191,7 +192,6 @@ namespace StarSpeed {
 				}
 				if (colliderEvent->type == Motor::CLICK) {
 					if (colliderEvent->onObject) {
-
 					}
 				}
 			}
@@ -323,7 +323,7 @@ namespace StarSpeed {
                 }
                 if (colliderEvent->type == Motor::CLICK_UP) {
                     if (colliderEvent->onObject) {
-                        unlockAchievement(Achmts::DM_TITLESCREEN);
+                        getriebe.getGame()->switchScene(new DMTitleScreen());
                     }
                 }
             }

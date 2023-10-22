@@ -90,19 +90,20 @@ namespace StarSpeed {
                 if (!description_.empty()) {
                     getComponent<Motor::TextComponentBlended>()->setContent(description_);
                     int minX = 0;
+                    int maxX = 0;
                     int advance = 0;
                     for (int i = 0; i < description_.size(); ++i) {
                         if (i <= description_.length()) {
                             char c = description_[i];
                             int advanceStep = 0;
-                            TTF_GlyphMetrics(getComponent<Motor::TextComponentBlended>()->getFont()->get(), c, &minX, NULL, NULL, NULL, &advanceStep);
+                            TTF_GlyphMetrics(getComponent<Motor::TextComponentBlended>()->getFont()->get(), c, &minX, &maxX, NULL, NULL, &advanceStep);
                             advance += advanceStep;
                         }
                         else {
                             break;
                         }
                     }
-                    getComponent<Motor::TextComponentBlended>()->customScale_.set((minX + advance) / (description_.size() / 2), 32);
+                    getComponent<Motor::TextComponentBlended>()->customScale_.set((maxX * getriebe.getGame()->getRenderer()->widthDifference_) * 2, 32);
                 }
                 ++fadeCounter;
                 if (fadeCounter > 175) {
