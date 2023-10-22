@@ -21,32 +21,34 @@ namespace StarSpeed {
         Motor::Music* current = nullptr;
 
         void onCreate() override {
-            Motor::Music::changeChannelVolume(8);
+            Motor::Music::changeChannelVolume(1);
             for (const auto &item: MUSICS) {
                 item->file_->safeLoad();
             }
+            musicCheckThread = new std::thread(&MusicHandler::checkMusic, this);
+            musicCheckThread->detach();
         }
 
 
         void checkMusic() {
-            std::random_device rd;
-            std::mt19937 mt(rd());
-            std::uniform_real_distribution<double> dist(0, MUSICS.size());
-            if(!Mix_PlayingMusic()) {
-                current = MUSICS[dist(mt)];
-                current->playFade(4500);
-                //Mix_FadeOutMusic(1500);
-            }
-            if(current) {
-                if(current->duration() - 5 < current->position()) {
-                    Mix_FadeOutMusic(4500);
+           // for (const auto& item : MUSICS) {
+                //item->file_->safeLoad();
+           // }
+            while (true) {
+                std::random_device rd;
+                std::mt19937 mt(rd());
+                std::uniform_real_distribution<double> dist(0, MUSICS.size());
+                if (!Mix_PlayingMusic()) {
+                    current = MUSICS[dist(mt)];
+                    current->playFade(4500);
+                    //Mix_FadeOutMusic(1500);
                 }
-            }
-        }
-
-        void textUpdate() override {
-            if(SDL_GetTicks() % 10 == 0) {
-                checkMusic();
+                if (current) {
+                    if (current->duration() - 5 < current->position()) {
+                        Mix_FadeOutMusic(4500);
+                    }
+                }
+                std::this_thread::sleep_for(std::chrono::seconds(2));
             }
         }
     };

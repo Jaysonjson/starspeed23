@@ -103,6 +103,7 @@ set(OLD_GLOB
   "H:/starspeed23/src/starspeed/resourcepack.hpp"
   "H:/starspeed23/src/starspeed/scenes/cell_map.hpp"
   "H:/starspeed23/src/starspeed/scenes/credits.hpp"
+  "H:/starspeed23/src/starspeed/scenes/dm_titlescreen.hpp"
   "H:/starspeed23/src/starspeed/scenes/fight.hpp"
   "H:/starspeed23/src/starspeed/scenes/fight_end.hpp"
   "H:/starspeed23/src/starspeed/scenes/login.hpp"

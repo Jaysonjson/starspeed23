@@ -15,6 +15,7 @@
 #include "motor/sound/sound.hpp"
 #include "motor/content/music.hpp"
 #include "starspeed/objects/music_handler.hpp"
+#include "motor/gameobjects/debugtext.hpp"
 
 namespace StarSpeed {
 
@@ -292,6 +293,44 @@ namespace StarSpeed {
 		};
 	};
 
+    class SWDLogoTS : public Motor::GameObject {
+    public:
+
+        void onCreate() {
+            addComponent<Motor::SpriteComponent>(Tex::SWD_LOGO_WIDE);
+            getComponent<Motor::SpriteComponent>()->blendMode_ = SDL_BLENDMODE_BLEND;
+            transform()->position.set((235) / 1.8, 1080 - 45);
+            transform()->scale.set(235, 45);
+            addComponent<Motor::SpriteColliderComponent>();
+            getComponent<Motor::SpriteColliderComponent>()->registerMouseClickEvent();
+        }
+
+        bool triggerCursor = false;
+        void onComponentEvent(Motor::IComponentEvent* eventData) override {
+            if (eventData->id() == "collider") {
+                Motor::ColliderEvent* colliderEvent = dynamic_cast<Motor::ColliderEvent*>(eventData);
+                if (colliderEvent->type == Motor::HOVER) {
+                    if (!colliderEvent->onObject) {
+                        if (triggerCursor) {
+                            CURSOR->clickable(false);
+                            triggerCursor = false;
+                        }
+                    }
+                    else {
+                        CURSOR->clickable(true);
+                        triggerCursor = true;
+                    }
+                }
+                if (colliderEvent->type == Motor::CLICK_UP) {
+                    if (colliderEvent->onObject) {
+                        unlockAchievement(Achmts::DM_TITLESCREEN);
+                    }
+                }
+            }
+        };
+    };
+
+
 	class TitleScreen : public Motor::Scene {
 
 	public:
@@ -339,11 +378,7 @@ namespace StarSpeed {
 			ExitButton* exitButton = new ExitButton();
 			exitButton->addToCurrentScene();
 
-			Motor::GameObject* SWD_LOGO = new Motor::GameObject();
-			SWD_LOGO->addComponent<Motor::SpriteComponent>(Tex::SWD_LOGO_WIDE);
-			SWD_LOGO->getComponent<Motor::SpriteComponent>()->blendMode_ = SDL_BLENDMODE_BLEND;
-			SWD_LOGO->transform()->position.set((449 / 3) / 1.8, 1080 - 82 / 3.5);
-			SWD_LOGO->transform()->scale.set(449 / 3, 82 / 3);
+            SWDLogoTS* SWD_LOGO = new SWDLogoTS();
 			SWD_LOGO->addToCurrentScene();
 
 			Motor::GameObject* STARSPEED_TEXT = new Motor::GameObject();
@@ -405,6 +440,13 @@ namespace StarSpeed {
 
             auto* MUSIC_HANDLER = new MusicHandler();
             MUSIC_HANDLER->addToCurrentScene();
-		}
+
+            auto debugText = new DebugText(StarSpeed::Tex::DEBUG_FONT, StarSpeed::Tex::DEBUG_FONT_OUTLINE);
+            debugText->transform()->depth = 47;
+            debugText->addToCurrentScene();
+            debugText->transform()->scale.set(32, 48 / 2);
+            debugText->coordinateObject = CURSOR;
+
+        }
 	};
 }

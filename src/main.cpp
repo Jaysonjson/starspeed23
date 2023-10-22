@@ -55,16 +55,16 @@ int main() {
 
 	getriebe.getGame()->forceSetScene(new StarSpeed::SplashScene());
 
-    auto debugText = new DebugText(StarSpeed::Tex::DEBUG_FONT, StarSpeed::Tex::DEBUG_FONT_OUTLINE);
-    debugText->transform()->depth = 47;
-    debugText->addToCurrentScene();
-    debugText->transform()->scale.set(28, 48 / 2);
+    //auto debugText = new DebugText(StarSpeed::Tex::DEBUG_FONT, StarSpeed::Tex::DEBUG_FONT_OUTLINE);
+    ////debugText->transform()->depth = 47;
+    //debugText->addToCurrentScene();
+    //debugText->transform()->scale.set(28, 48 / 2);
 
 	CURSOR->TOOLTIP->addToCurrentScene();
 	CURSOR->addToCurrentScene();
-    debugText->coordinateObject = CURSOR;
+    //debugText->coordinateObject = CURSOR;
     StarSpeed::ACHIEVEMENT_UNLOCK_HEADER->addToCurrentScene();
-    Mix_OpenAudio(44100, MIX_DEFAULT_FORMAT, 2, 2048);
+    Mix_OpenAudio(44100, MIX_DEFAULT_FORMAT, 2, 16384);
     while (getriebe.getGame()->running_) {
 		//debugText->transform()->scale.set(28, 48 / 2);
 		getriebe.getGame()->loop();

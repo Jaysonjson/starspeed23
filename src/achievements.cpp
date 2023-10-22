@@ -29,7 +29,7 @@ namespace StarSpeed {
         achievements.emplace_back(Achmts::DIE);
         achievements.emplace_back(Achmts::KILL_ENEMY);
         achievements.emplace_back(Achmts::WIN_ROUND);
-
+        achievements.emplace_back(Achmts::DM_TITLESCREEN);
         for (std::string& str : playerProfile->getAchievements()) {
             MOTOR_LOG(str)
             for (Achievement* achievement : achievements) {
@@ -48,6 +48,7 @@ namespace StarSpeed {
         Achievement* DIE = new Achievement("die_fight", "You died in a Fight!");
         Achievement* KILL_ENEMY = new Achievement("kill_enemy", "You killed a Enemy!");
         Achievement* WIN_ROUND = new Achievement("win_round", "You won a Round!");
+        Achievement* DM_TITLESCREEN = new Achievement("dm_titlescreen", "Open the Dalek Mod 1.12.2 Titlescreen!");
     }
     AchievementUnlockHeader* ACHIEVEMENT_UNLOCK_HEADER = new AchievementUnlockHeader();
 }

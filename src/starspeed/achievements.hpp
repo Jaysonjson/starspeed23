@@ -44,6 +44,7 @@ namespace StarSpeed {
         extern Achievement* DIE;
         extern Achievement* KILL_ENEMY;
         extern Achievement* WIN_ROUND;
+        extern Achievement* DM_TITLESCREEN;
     }
 
     void addAchievements();
