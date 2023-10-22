@@ -35,10 +35,10 @@ namespace StarSpeed {
                 //item->file_->safeLoad();
            // }
             while (true) {
-                std::random_device rd;
-                std::mt19937 mt(rd());
-                std::uniform_real_distribution<double> dist(0, MUSICS.size());
                 if (!Mix_PlayingMusic()) {
+                    std::random_device rd;
+                    std::mt19937 mt(rd());
+                    std::uniform_real_distribution<double> dist(0, MUSICS.size());
                     current = MUSICS[dist(mt)];
                     current->playFade(4500);
                     //Mix_FadeOutMusic(1500);
