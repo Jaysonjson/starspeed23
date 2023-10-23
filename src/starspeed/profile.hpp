@@ -69,5 +69,34 @@ namespace StarSpeed {
         }
     };
 
+    class GameSettings {
+    public:
+        int volume_ = 10;
+    public:
+
+        void load() {
+            std::ifstream t(Motor::Path::docs + "settings.json");
+            if (t.good()) {
+                std::stringstream buffer;
+                buffer << t.rdbuf();
+                if (!nlohmann::json::accept(buffer.str())) return;
+                nlohmann::json js = nlohmann::json::parse(buffer.str());
+                EXTRACT(volume_, "music_volume", js);
+                MOTOR_LOG("Loaded Game Settings: " + buffer.str())
+            }
+            else {
+                save();
+            }
+        }
+
+        void save() {
+            nlohmann::json js{{"music_volume", volume_}};
+            std::ofstream out(Motor::Path::docs + "settings.json");
+            out << js;
+            MOTOR_LOG("Saved Game Settings");
+        }
+    };
+
     extern PlayerProfile* playerProfile;
+    extern GameSettings* gameSettings;
 }

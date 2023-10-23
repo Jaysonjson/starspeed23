@@ -244,10 +244,20 @@ namespace StarSpeed {
     public:
         Motor::GameObject* SPLASH = nullptr;
         void onCreate() {
-            addComponent<Motor::DynamicSpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/title/starspeed_xr.png"));
+
+            std::random_device rd;
+            std::mt19937 mt(rd());
+            std::uniform_real_distribution<double> dist_rnd(0, 4);
+            int rnd = dist_rnd(mt);
+            if(rnd == 1) {
+                addComponent<Motor::DynamicSpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/title/dm/starspeed_golden.png"));
+            } else {
+                addComponent<Motor::DynamicSpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/title/dm/starspeed_blue.png"));
+            }
+
             getComponent<Motor::DynamicSpriteComponent>()->blendMode_ = SDL_BLENDMODE_BLEND;
             transform()->position.set(1920 / 2, 1080 / 4.65);
-            transform()->scale.set(76 * 9, 42 * 9);
+            transform()->scale.set(200 * 7, 32 * 7);
         }
     };
 
@@ -391,7 +401,7 @@ namespace StarSpeed {
             Motor::GameObject* STARSPEED_LOGO_FLARE = new Motor::GameObject();
             STARSPEED_LOGO_FLARE->addComponent<Motor::DynamicSpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/title/starspeed_flare.png"));
             STARSPEED_LOGO_FLARE->getComponent<Motor::DynamicSpriteComponent>()->blendMode_ = SDL_BLENDMODE_BLEND;
-            STARSPEED_LOGO_FLARE->transform()->position.set(1920 * 0.53, 1080 / 11);
+            STARSPEED_LOGO_FLARE->transform()->position.set(1920 * 0.53, 1080 / 8);
             STARSPEED_LOGO_FLARE->transform()->scale.set(320 * 7, 177 * 4);
             STARSPEED_LOGO_FLARE->transform()->color.set(255, 255, 255, 145);
             STARSPEED_LOGO_FLARE->addToCurrentScene();
@@ -399,7 +409,7 @@ namespace StarSpeed {
             Motor::GameObject* STARSPEED_LOGO_FLARE_1 = new Motor::GameObject();
             STARSPEED_LOGO_FLARE_1->addComponent<Motor::DynamicSpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/title/starspeed_flare_1.png"));
             STARSPEED_LOGO_FLARE_1->getComponent<Motor::DynamicSpriteComponent>()->blendMode_ = SDL_BLENDMODE_BLEND;
-            STARSPEED_LOGO_FLARE_1->transform()->position.set(1920 * 0.53, 1080 / 11);
+            STARSPEED_LOGO_FLARE_1->transform()->position.set(1920 * 0.53, 1080 / 6);
             STARSPEED_LOGO_FLARE_1->transform()->scale.set(480 * 2, 480 * 2);
             STARSPEED_LOGO_FLARE_1->transform()->color.set(255, 255, 255, 25);
             STARSPEED_LOGO_FLARE_1->addToCurrentScene();
@@ -420,7 +430,7 @@ namespace StarSpeed {
                 discordAvatar->addToCurrentScene();
             }
 
-            auto* MUSIC_HANDLER = new MusicHandler();
+            auto* MUSIC_HANDLER = new DMTSMusicHandler();
             MUSIC_HANDLER->addToCurrentScene();
 
             auto debugText = new DebugText(StarSpeed::Tex::DEBUG_FONT, StarSpeed::Tex::DEBUG_FONT_OUTLINE);

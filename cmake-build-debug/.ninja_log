@@ -62,3 +62,8 @@
 2	5534	7197053447107812	CMakeFiles/StarSpeed23.dir/src/main.cpp.obj	30b0a531fd1ca6ee
 6	5904	7197053450788362	CMakeFiles/StarSpeed23.dir/src/sceneswitcher.cpp.obj	70698510b8fbd4f5
 5905	6139	7197053453258346	StarSpeed23.exe	8ee047cd324971c
+3	37	0	H:/starspeed23/cmake-build-debug/CMakeFiles/cmake.verify_globs	8c108c8bb41a6ed3
+2	3917	7197417084294799	CMakeFiles/StarSpeed23.dir/src/achievements.cpp.obj	62ecc09650c15c08
+8	5646	7197417101535733	CMakeFiles/StarSpeed23.dir/src/main.cpp.obj	30b0a531fd1ca6ee
+13	5784	7197417102895837	CMakeFiles/StarSpeed23.dir/src/sceneswitcher.cpp.obj	70698510b8fbd4f5
+5784	6060	7197417105812343	StarSpeed23.exe	8ee047cd324971c

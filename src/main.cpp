@@ -27,6 +27,7 @@ CursorObject* CURSOR = new CursorObject();
 
 namespace StarSpeed {
 	PlayerProfile* playerProfile = new PlayerProfile{};
+    GameSettings* gameSettings = new GameSettings{};
 }
 
 #undef main
@@ -48,9 +49,10 @@ int main() {
 	getriebe.getGame()->setTextFPS(12);
     StarSpeed::Tex::setTextures();
 	StarSpeed::playerProfile->load();
+    StarSpeed::gameSettings->load();
 	StarSpeed::addAchievements();
     //SDL_Surface* icon = IMG_Load(Motor::ResourceLocation(resourcePackMod, "app/icon.png").getPath().c_str());
-    SDL_Surface* icon = IMG_Load(Motor::ResourceLocation(resourcePackMod, "/sprites/galaxy/galaxy.png").getPath().c_str());
+    SDL_Surface* icon = IMG_Load(Motor::ResourceLocation(resourcePackMod, "/app/icon.png").getPath().c_str());
 	SDL_SetWindowIcon(getriebe.sdl_window(), icon);
 
 	getriebe.getGame()->forceSetScene(new StarSpeed::SplashScene());
@@ -70,5 +72,6 @@ int main() {
 		getriebe.getGame()->loop();
 	}
 	StarSpeed::playerProfile->save();
+    StarSpeed::gameSettings->save();
 	getriebe.stop();
 }

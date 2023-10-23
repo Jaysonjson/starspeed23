@@ -303,6 +303,7 @@ namespace StarSpeed {
             transform()->scale.set(235, 45);
             addComponent<Motor::SpriteColliderComponent>();
             getComponent<Motor::SpriteColliderComponent>()->registerMouseClickEvent();
+            getComponent<Motor::SpriteColliderComponent>()->registerMouseHoverEvent();
         }
 
         bool triggerCursor = false;

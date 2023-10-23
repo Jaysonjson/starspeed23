@@ -141,13 +141,15 @@ namespace StarSpeed {
 		void onCreate() {
 			std::vector<CustomNameRole> CUSTOM_ROLES{
 				{"Joee3", "pissing and shitting and cumming", {}, { 0, 128, 128, 255 }},
-				{"Jayson_json", "", {}, {0, 128, 128, 255}},
+				{"Jayson_json", "StarSpeed Developer", {0, 128, 128, 255 }, {0, 128, 128, 255}},
 				{ "RedDash16", "", {}, {255, 102, 102, 255}},
 				{ "Bug1312", "", {}, {73, 199, 56, 255} },
 				{ "Torchwood_one", "Torchwood", {}, {0, 0, 128, 255 }},
-				{ "wheezebob", "Weezer ", {}, {122, 73, 136, 255 } }
-
-			};
+				{ "wheezebob", "Weezer ", {}, {122, 73, 136, 255 } },
+                { "Amythical", "Music", {215, 71, 255, 255}, {255, 71, 169, 255 } },
+                { "Derpy", "Artist", {215, 71, 255, 255}, {255, 71, 169, 255 } },
+                { "Wullfo", "Artist", {215, 71, 255, 255}, {255, 176, 0, 255 } }
+            };
 
 
 			if(!SWD_USERNAME.empty()) {
@@ -181,6 +183,14 @@ namespace StarSpeed {
 			getComponent<Motor::TextComponentBlended>(1)->customScale_.set(24, 24 * 1.25);
 			getComponent<Motor::TextComponentBlended>(1)->translate_.set(-100, -75 + 24 * 1.25);
 			getComponent<Motor::TextComponentBlended>(1)->useCustomScale_ = true;
+
+            for (CustomNameRole& customRole : CUSTOM_ROLES) {
+                if (swdData.username == customRole.nameToOverride) {
+                    getComponent<Motor::TextComponentBlended>(1)->color_ = customRole.roleColor_;
+                    getComponent<Motor::TextComponentBlended>(1)->useTransformColor_ = false;
+                    break;
+                }
+            }
 
 			std::ifstream f(Motor::Path::docs + "swd_avatar.png");
 			if (f.good()) {
