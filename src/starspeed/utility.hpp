@@ -3,11 +3,27 @@
 #include "motor/object/gameobject.hpp"
 #include "motor/components/sprite.hpp"
 #include "textures.hpp"
+#include "starspeed/components/down_movement.hpp"
 
 namespace StarSpeed::Utility {
 	
 	inline void addBackGlow() {
-		Motor::GameObject* SUN_GLOW = new Motor::GameObject();
+
+        Motor::GameObject* CLOUD_BACKGROUND = new Motor::GameObject();
+        Motor::DynamicTexture* CLOUD_BACKGROUND_TEX = new Motor::DynamicTexture(Motor::ResourceLocation(resourcePackMod, "sprites/cloud.png"));
+        CLOUD_BACKGROUND_TEX->interpolated_ = true;
+        CLOUD_BACKGROUND->addComponent<Motor::DynamicSpriteComponent>(CLOUD_BACKGROUND_TEX);
+        CLOUD_BACKGROUND->getComponent<Motor::DynamicSpriteComponent>()->blendMode_ = SDL_BLENDMODE_ADD;
+        CLOUD_BACKGROUND->transform()->scale.set(4000, 4000);
+        CLOUD_BACKGROUND->transform()->position.set(1920 / 2, 0);
+        CLOUD_BACKGROUND->transform()->color.setAlpha(12);
+        CLOUD_BACKGROUND->addComponent<DownMovementComponent>()->speed_ = 0.04f;
+        CLOUD_BACKGROUND->getComponent<DownMovementComponent>()->resetY_ = 2000;
+        CLOUD_BACKGROUND->getComponent<DownMovementComponent>()->reset_ = true;
+        CLOUD_BACKGROUND->addToCurrentScene();
+
+
+        Motor::GameObject* SUN_GLOW = new Motor::GameObject();
 		SUN_GLOW->addComponent<Motor::SpriteComponent>(Tex::CIRCLE_GLOW);
 		SUN_GLOW->getComponent<Motor::SpriteComponent>()->blendMode_ = SDL_BLENDMODE_ADD;
 		SUN_GLOW->transform()->scale.set(5200, 5200);

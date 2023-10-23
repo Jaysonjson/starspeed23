@@ -348,18 +348,6 @@ namespace StarSpeed {
                 STAR->addToCurrentScene(false);
             }
 
-            Motor::GameObject* CLOUD_BACKGROUND = new Motor::GameObject();
-            Motor::DynamicTexture* CLOUD_BACKGROUND_TEX = new Motor::DynamicTexture(Motor::ResourceLocation(resourcePackMod, "sprites/cloud.png"));
-            CLOUD_BACKGROUND_TEX->interpolated_ = true;
-            CLOUD_BACKGROUND->addComponent<Motor::DynamicSpriteComponent>(CLOUD_BACKGROUND_TEX);
-            CLOUD_BACKGROUND->getComponent<Motor::DynamicSpriteComponent>()->blendMode_ = SDL_BLENDMODE_ADD;
-            CLOUD_BACKGROUND->transform()->scale.set(6000, 10000);
-            CLOUD_BACKGROUND->transform()->position.set(1920 / 2, -2750);
-            CLOUD_BACKGROUND->transform()->color.setAlpha(12);
-            CLOUD_BACKGROUND->addComponent<DownMovementComponent>()->speed_ = 0.04f;
-            CLOUD_BACKGROUND->addToCurrentScene();
-
-
             auto* playButton = new PlayButtonDM();
             playButton->addToCurrentScene();
 
