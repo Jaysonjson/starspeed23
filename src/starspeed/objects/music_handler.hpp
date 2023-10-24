@@ -15,7 +15,8 @@ namespace StarSpeed {
         std::vector<Motor::Music*> MUSICS = {};
 
         Motor::Music* current = nullptr;
-         
+        bool stop_ = false;
+        bool running_ = true;
         void onCreate() override {
             setMusic();
             Motor::Music::changeChannelVolume(gameSettings->volume_);
@@ -24,6 +25,7 @@ namespace StarSpeed {
             }
             musicCheckThread = new std::thread(&MusicHandler::checkMusic, this);
             musicCheckThread->detach();
+            persistent_ = true;
         }
 
         virtual void setMusic() {
@@ -39,8 +41,8 @@ namespace StarSpeed {
            // for (const auto& item : MUSICS) {
                 //item->file_->safeLoad();
            // }
-            while (!awaitingDestroy_) {
-                if (!Motor::Music::playing()) {
+            while (running_) {
+                if (!Motor::Music::playing() && !stop_) {
                     std::random_device rd;
                     std::mt19937 mt(rd());
                     std::uniform_real_distribution<double> dist(0, MUSICS.size());
@@ -52,13 +54,20 @@ namespace StarSpeed {
                         Motor::Music::fadeOut(4500);
                     }
                 }
-                std::this_thread::sleep_for(std::chrono::seconds(2));
+                if(stop_) {
+                    Mix_HaltMusic();
+                }
+                std::this_thread::sleep_for(std::chrono::seconds(1));
             }
             Mix_HaltMusic();
             for (const auto &item: MUSICS) {
                 item->file_->unload();
             }
             delete musicCheckThread;
+        }
+
+        void onSceneSwitch(Motor::Scene *currentScene, Motor::Scene *newScene, bool &shouldDelete) override {
+            stop_ = true;
         }
     };
 

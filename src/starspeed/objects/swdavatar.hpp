@@ -157,7 +157,7 @@ namespace StarSpeed {
 				swdData.downloadImage();
 			}
 			transform()->position.set(1920 - 200 / 2, 200 / 2);
-			transform()->scale.set(175, 175);
+			transform()->scale.set(155, 155);
 			transform()->depth = 30;
 			addComponent<Motor::TextComponentBlended>(Tex::DEBUG_FONT);
 			getComponent<Motor::TextComponentBlended>()->setContent(swdData.username);
@@ -244,7 +244,12 @@ namespace StarSpeed {
 			getComponent<Motor::SpriteComponent>(6)->translate_.set(-125, -75 + (24 * 1.25) * 4);
 			getComponent<Motor::SpriteComponent>(6)->useCustomScale_ = true;
 			getComponent<Motor::SpriteComponent>(6)->customScale_.set(10, 30);
-			
+
+            addComponent<Motor::SpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/border/border_0.png"));
+            getComponent<Motor::SpriteComponent>(7)->customScale_.set(190, 190);
+            getComponent<Motor::SpriteComponent>(7)->useCustomScale_ = true;
+            getComponent<Motor::SpriteComponent>(7)->blendMode_ = SDL_BLENDMODE_BLEND;
+
 			//getComponent<Motor::SpriteComponent>(2)->customAngle_ = 90;
 			//getComponent<Motor::SpriteComponent>(2)->center_ = SDL_Point{(int)(500 * 0.15f) / 2, 0};
 			addComponent<Motor::SpriteColliderComponent>();
