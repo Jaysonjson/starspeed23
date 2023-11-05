@@ -4,6 +4,6 @@ RELEASE
 OS: Windows
 Building for 64-Bit
 Using Libs: H:/starspeed23/libs/windows_release/FuchsLib.lib;H:/starspeed23/libs/windows_release/Motor.lib;H:/starspeed23/libs/windows_release/SDL2.lib;H:/starspeed23/libs/windows_release/SDL2_image.lib;H:/starspeed23/libs/windows_release/SDL2_mixer.lib;H:/starspeed23/libs/windows_release/SDL2_ttf.lib;H:/starspeed23/libs/windows_release/libcrypto.lib;H:/starspeed23/libs/windows_release/libcurl_a.lib;H:/starspeed23/libs/windows_release/libssl.lib;H:/starspeed23/libs/windows_release/zlib.lib
--- Configuring done (0.1s)
+-- Configuring done (0.0s)
 -- Generating done (0.0s)
 -- Build files have been written to: H:/starspeed23/cmake-build-release

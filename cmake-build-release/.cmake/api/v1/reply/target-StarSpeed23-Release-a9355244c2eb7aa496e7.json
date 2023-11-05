@@ -14,6 +14,7 @@
 		"commands" : 
 		[
 			"add_executable",
+			"add_compile_options",
 			"target_compile_options",
 			"add_compile_definitions",
 			"include_directories"
@@ -30,31 +31,37 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 66,
+				"line" : 67,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 82,
+				"line" : 15,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
+				"line" : 83,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
 				"line" : 11,
 				"parent" : 0
 			},
 			{
-				"command" : 3,
+				"command" : 4,
 				"file" : 0,
-				"line" : 39,
+				"line" : 40,
 				"parent" : 0
 			},
 			{
-				"command" : 3,
+				"command" : 4,
 				"file" : 0,
-				"line" : 40,
+				"line" : 41,
 				"parent" : 0
 			}
 		]
@@ -65,32 +72,36 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-std=c++2b /O2 /Ob2 /DNDEBUG -std:c++latest -MD"
+					"fragment" : "-std=c++2b /EHa /O2 /Ob2 /DNDEBUG -std:c++latest -MD"
 				},
 				{
 					"backtrace" : 2,
+					"fragment" : "/EHa"
+				},
+				{
+					"backtrace" : 3,
 					"fragment" : "/MT"
 				}
 			],
 			"defines" : 
 			[
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
 					"define" : "FUCHSLIB_BUILD_DISCORD"
 				}
 			],
 			"includes" : 
 			[
 				{
-					"backtrace" : 4,
+					"backtrace" : 5,
 					"path" : "H:/starspeed23/src"
 				},
 				{
-					"backtrace" : 5,
+					"backtrace" : 6,
 					"path" : "H:/starspeed23/libs/includes"
 				},
 				{
-					"backtrace" : 5,
+					"backtrace" : 6,
 					"path" : "H:/CPP_HEADERS/include"
 				}
 			],
@@ -115,8 +126,8 @@
 				8,
 				9,
 				10,
-				52,
-				53
+				53,
+				54
 			]
 		},
 		{
@@ -129,29 +140,29 @@
 			"defines" : 
 			[
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
 					"define" : "FUCHSLIB_BUILD_DISCORD"
 				}
 			],
 			"includes" : 
 			[
 				{
-					"backtrace" : 4,
+					"backtrace" : 5,
 					"path" : "H:/starspeed23/src"
 				},
 				{
-					"backtrace" : 5,
+					"backtrace" : 6,
 					"path" : "H:/starspeed23/libs/includes"
 				},
 				{
-					"backtrace" : 5,
+					"backtrace" : 6,
 					"path" : "H:/CPP_HEADERS/include"
 				}
 			],
 			"language" : "RC",
 			"sourceIndexes" : 
 			[
-				57
+				58
 			]
 		}
 	],
@@ -161,7 +172,7 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-std=c++2b /O2 /Ob2 /DNDEBUG -MD",
+				"fragment" : "-std=c++2b /EHa /O2 /Ob2 /DNDEBUG -MD",
 				"role" : "flags"
 			},
 			{
@@ -248,9 +259,9 @@
 				8,
 				9,
 				10,
-				52,
 				53,
-				57
+				54,
+				58
 			]
 		},
 		{
@@ -299,9 +310,10 @@
 				49,
 				50,
 				51,
-				54,
+				52,
 				55,
-				56
+				56,
+				57
 			]
 		}
 	],
@@ -535,6 +547,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "src/starspeed/scenes/fight_end.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/starspeed/scenes/loading_scene.hpp",
 			"sourceGroupIndex" : 1
 		},
 		{

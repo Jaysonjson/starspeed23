@@ -6,6 +6,7 @@
 #include "motor/object/gameobject.hpp"
 #include <regex>
 #include <algorithm>
+#include <random>
 #include "motor/paths.hpp"
 #include "motor/components/sprite.hpp"
 #include "motor/components/text.hpp"
@@ -137,6 +138,21 @@ namespace StarSpeed {
 	public:
 
 		SWD_DATA swdData{};
+
+
+        int hueTimer = 0;
+        void update() override {
+            Motor::GameObject::update();
+            std::random_device rd;
+            std::mt19937 mt(rd());
+            std::uniform_real_distribution<double> dist(0, 255);
+            ++hueTimer;
+            if(hueTimer == 16) {
+                getComponent<Motor::SpriteComponent>(7)->useCustomColor_ = true;
+                getComponent<Motor::SpriteComponent>(7)->customColor_.set((int)dist(mt), (int)dist(mt), (int)dist(mt), 255);
+                hueTimer = 0;
+            }
+        }
 
 		void onCreate() {
 			std::vector<CustomNameRole> CUSTOM_ROLES{

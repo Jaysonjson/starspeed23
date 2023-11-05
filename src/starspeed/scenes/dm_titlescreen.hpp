@@ -247,17 +247,17 @@ namespace StarSpeed {
 
             std::random_device rd;
             std::mt19937 mt(rd());
-            std::uniform_real_distribution<double> dist_rnd(0, 4);
+            std::uniform_real_distribution<double> dist_rnd(0, 8);
             int rnd = dist_rnd(mt);
             if(rnd == 1) {
-                addComponent<Motor::DynamicSpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/title/dm/starspeed_golden.png"));
-            } else {
                 addComponent<Motor::DynamicSpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/title/dm/starspeed_blue.png"));
+            } else {
+                addComponent<Motor::DynamicSpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/title/dm/starspeed_golden.png"));
             }
 
             getComponent<Motor::DynamicSpriteComponent>()->blendMode_ = SDL_BLENDMODE_BLEND;
-            transform()->position.set(1920 / 2, 1080 / 4.65);
-            transform()->scale.set(200 * 7, 32 * 7);
+            transform()->position.set(1920 / 2, 1080 / 3.45);
+            transform()->scale.set(200 * 5, 32 * 5);
         }
     };
 
@@ -309,8 +309,8 @@ namespace StarSpeed {
         void onCreate() {
             addComponent<Motor::SpriteComponent>(Tex::SWD_LOGO_WIDE);
             getComponent<Motor::SpriteComponent>()->blendMode_ = SDL_BLENDMODE_BLEND;
-            transform()->position.set((235) / 1.8, 1080 - 45);
-            transform()->scale.set(235, 45);
+            transform()->position.set((235 * 1.5) / 1.8, 1080 - 45 * 1.5);
+            transform()->scale.set(235 * 1.5, 45 * 1.5);
             addComponent<Motor::SpriteColliderComponent>();
             getComponent<Motor::SpriteColliderComponent>()->registerMouseClickEvent();
         }
@@ -381,12 +381,19 @@ namespace StarSpeed {
 
             Motor::GameObject* STARSPEED_TEXT = new Motor::GameObject();
             STARSPEED_TEXT->addComponent<Motor::TextComponentBlended>(Tex::DEBUG_FONT);
-            STARSPEED_TEXT->getComponent<Motor::TextComponentBlended>()->setContent("StarSpeed23 Version 1.12.2 ALPHA // F3 for DebugText");
-            STARSPEED_TEXT->getComponent<Motor::TextComponentBlended>()->alignment_ = Motor::TextAlignment::RIGHT;
-            STARSPEED_TEXT->transform()->position.set(1915, 1080 - 16);
-            STARSPEED_TEXT->getComponent<Motor::TextComponentBlended>()->customScale_.set(18, 25);
+            STARSPEED_TEXT->getComponent<Motor::TextComponentBlended>()->setContent("StarSpeed23 (Update 1.12.2)");
+            STARSPEED_TEXT->getComponent<Motor::TextComponentBlended>()->alignment_ = Motor::TextAlignment::LEFT;
+            STARSPEED_TEXT->transform()->position.set(48 + 16, 48);
+            STARSPEED_TEXT->getComponent<Motor::TextComponentBlended>()->customScale_.set(18 * 1.5, 25 * 1.5);
             STARSPEED_TEXT->getComponent<Motor::TextComponentBlended>()->useCustomScale_ = true;
             STARSPEED_TEXT->addToCurrentScene();
+
+            Motor::GameObject* STARSPEED_LOGO_DM = new Motor::GameObject();
+            STARSPEED_LOGO_DM->addComponent<Motor::SpriteComponent>(Motor::ResourceLocation(resourcePackMod, "app/icon.png"));
+            STARSPEED_LOGO_DM->getComponent<Motor::SpriteComponent>()->blendMode_ = SDL_BLENDMODE_BLEND;
+            STARSPEED_LOGO_DM->transform()->position.set(40,48);
+            STARSPEED_LOGO_DM->transform()->scale.set(48, 48);
+            STARSPEED_LOGO_DM->addToCurrentScene();
 
             Motor::GameObject* SPLASH_TEXT = new Motor::GameObject();
             std::string splashText = DM_SPLASHES[dist_splash(mt)];
@@ -397,22 +404,6 @@ namespace StarSpeed {
             SPLASH_TEXT->transform()->position.set(1920 / 2, 1080 / 2.3);
             SPLASH_TEXT->transform()->scale.set(38, 38);
             SPLASH_TEXT->addToCurrentScene();
-
-            Motor::GameObject* STARSPEED_LOGO_FLARE = new Motor::GameObject();
-            STARSPEED_LOGO_FLARE->addComponent<Motor::DynamicSpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/title/starspeed_flare.png"));
-            STARSPEED_LOGO_FLARE->getComponent<Motor::DynamicSpriteComponent>()->blendMode_ = SDL_BLENDMODE_BLEND;
-            STARSPEED_LOGO_FLARE->transform()->position.set(1920 * 0.53, 1080 / 8);
-            STARSPEED_LOGO_FLARE->transform()->scale.set(320 * 7, 177 * 4);
-            STARSPEED_LOGO_FLARE->transform()->color.set(255, 255, 255, 145);
-            STARSPEED_LOGO_FLARE->addToCurrentScene();
-
-            Motor::GameObject* STARSPEED_LOGO_FLARE_1 = new Motor::GameObject();
-            STARSPEED_LOGO_FLARE_1->addComponent<Motor::DynamicSpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/title/starspeed_flare_1.png"));
-            STARSPEED_LOGO_FLARE_1->getComponent<Motor::DynamicSpriteComponent>()->blendMode_ = SDL_BLENDMODE_BLEND;
-            STARSPEED_LOGO_FLARE_1->transform()->position.set(1920 * 0.53, 1080 / 6);
-            STARSPEED_LOGO_FLARE_1->transform()->scale.set(480 * 2, 480 * 2);
-            STARSPEED_LOGO_FLARE_1->transform()->color.set(255, 255, 255, 25);
-            STARSPEED_LOGO_FLARE_1->addToCurrentScene();
 
             StarSpeedLogoTSDM* STARSPEED_LOGO = new StarSpeedLogoTSDM();
             STARSPEED_LOGO->SPLASH = SPLASH_TEXT;
