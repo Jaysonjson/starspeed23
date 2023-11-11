@@ -28,8 +28,8 @@ namespace StarSpeed::Tex {
 	extern Motor::Texture* PLAYER_BULLET;
 	extern Motor::Texture* ENEMY_BULLET;
 	extern Motor::Texture* CENT_BULLET;
-	extern Motor::Texture* STAR;
-	extern Motor::Texture* SQUARE_ALERT;
+	extern Motor::Texture* STAR_SHEET;
+    extern Motor::Texture* SQUARE_ALERT;
 
 	extern Motor::Texture* BUTTON_LONG;
 	extern Motor::Texture* BUTTON_LONG_SELECTED;
@@ -45,8 +45,9 @@ namespace StarSpeed::Tex {
 
 	extern Motor::Texture* CELL;
 
+    extern Motor::Texture* EXPLOSION_SHEET;
 
-	extern Motor::Font* DEBUG_FONT;
+    extern Motor::Font* DEBUG_FONT;
 	extern Motor::Font* DEBUG_FONT_OUTLINE;
 	void setTextures();
 }

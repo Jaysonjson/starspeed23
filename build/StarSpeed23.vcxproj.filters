@@ -141,6 +141,9 @@
     <ClInclude Include="H:\starspeed23\src\starspeed\scenes\fight_end.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="H:\starspeed23\src\starspeed\scenes\loading_scene.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="H:\starspeed23\src\starspeed\scenes\login.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>

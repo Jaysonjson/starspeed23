@@ -126,8 +126,8 @@
 				8,
 				9,
 				10,
-				53,
-				54
+				54,
+				55
 			]
 		},
 		{
@@ -162,7 +162,7 @@
 			"language" : "RC",
 			"sourceIndexes" : 
 			[
-				58
+				59
 			]
 		}
 	],
@@ -259,9 +259,9 @@
 				8,
 				9,
 				10,
-				53,
 				54,
-				58
+				55,
+				59
 			]
 		},
 		{
@@ -311,9 +311,10 @@
 				50,
 				51,
 				52,
-				55,
+				53,
 				56,
-				57
+				57,
+				58
 			]
 		}
 	],
@@ -422,6 +423,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "src/starspeed/objects/enemy_spawner.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/starspeed/objects/explosion.hpp",
 			"sourceGroupIndex" : 1
 		},
 		{

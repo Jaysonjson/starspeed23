@@ -81,6 +81,7 @@ set(OLD_GLOB
   "H:/starspeed23/src/starspeed/init/registries.hpp"
   "H:/starspeed23/src/starspeed/objects/bullets/bullet.hpp"
   "H:/starspeed23/src/starspeed/objects/enemy_spawner.hpp"
+  "H:/starspeed23/src/starspeed/objects/explosion.hpp"
   "H:/starspeed23/src/starspeed/objects/music_handler.hpp"
   "H:/starspeed23/src/starspeed/objects/player_map.hpp"
   "H:/starspeed23/src/starspeed/objects/powerups/powerup.hpp"

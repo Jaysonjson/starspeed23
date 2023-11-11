@@ -106,6 +106,7 @@ set(OLD_GLOB
   "H:/starspeed23/src/starspeed/scenes/dm_titlescreen.hpp"
   "H:/starspeed23/src/starspeed/scenes/fight.hpp"
   "H:/starspeed23/src/starspeed/scenes/fight_end.hpp"
+  "H:/starspeed23/src/starspeed/scenes/loading_scene.hpp"
   "H:/starspeed23/src/starspeed/scenes/login.hpp"
   "H:/starspeed23/src/starspeed/scenes/options.hpp"
   "H:/starspeed23/src/starspeed/scenes/splash.hpp"

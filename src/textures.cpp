@@ -26,8 +26,8 @@ namespace StarSpeed::Tex {
 	Motor::Texture* CENT_BULLET = nullptr;
 	Motor::Texture* BAR_EMPTY = nullptr;
 	Motor::Texture* BAR_FULL = nullptr;
-	Motor::Texture* STAR = nullptr;
-	Motor::Texture* BUTTON_LONG = nullptr;
+    Motor::Texture* STAR_SHEET = nullptr;
+    Motor::Texture* BUTTON_LONG = nullptr;
 	Motor::Texture* BUTTON_LONG_SELECTED = nullptr;
 	Motor::Texture* CHECKBOX = nullptr;
 	Motor::Texture* CHECKBOX_MARKED = nullptr;
@@ -35,6 +35,7 @@ namespace StarSpeed::Tex {
 	Motor::Texture* CHECKBOX_MARKED_SELECTED = nullptr;
 	Motor::Texture* SQUARE_ALERT = nullptr;
 	Motor::Texture* CELL = nullptr;
+    Motor::Texture* EXPLOSION_SHEET = nullptr;
 
 	Motor::Font* GAME_FONT = nullptr;
 	Motor::Font* GAME_FONT_OUTLINE = nullptr;
@@ -62,12 +63,12 @@ namespace StarSpeed::Tex {
 		TEXTFIELD = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/login/textfield.png"));
 		BAR_EMPTY = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/bar/empty.png"));
 		BAR_FULL = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/bar/full.png"));
-		STAR = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/stars/star_0.png"));
-		SQUARE_ALERT = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/ui/alert.png"));
+		STAR_SHEET = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/stars/star_sheet.png"));
+        SQUARE_ALERT = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/ui/alert.png"));
 		PLAYER_BULLET = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/bullets/player_blast.png"));
 		ENEMY_BULLET = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/bullets/enemy_blast.png"));
 		CENT_BULLET = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/bullets/cent_blast.png"));
-
+        EXPLOSION_SHEET = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "/sprites/explosion_sheet.png"));
 		CELL = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/map/cell.png"));
 
 		PLAYER_BULLET->load();

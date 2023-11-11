@@ -361,6 +361,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="H:\starspeed23\src\starspeed\scenes\dm_titlescreen.hpp" />
     <ClInclude Include="H:\starspeed23\src\starspeed\scenes\fight.hpp" />
     <ClInclude Include="H:\starspeed23\src\starspeed\scenes\fight_end.hpp" />
+    <ClInclude Include="H:\starspeed23\src\starspeed\scenes\loading_scene.hpp" />
     <ClInclude Include="H:\starspeed23\src\starspeed\scenes\login.hpp" />
     <ClInclude Include="H:\starspeed23\src\starspeed\scenes\options.hpp" />
     <ClInclude Include="H:\starspeed23\src\starspeed\scenes\splash.hpp" />

@@ -7,6 +7,7 @@
 #include "starspeed/textures.hpp"
 #include "motor/components/collider.hpp"
 #include "starspeed/objects/bullets/bullet.hpp"
+#include "starspeed/objects/explosion.hpp"
 
 namespace StarSpeed {
 
@@ -60,6 +61,9 @@ namespace StarSpeed {
                 }
             }
             if(health_ < 1) {
+                auto* explosion = new Explosion();
+                explosion->transform()->position.set(transform()->position.getX(), transform()->position.getY());
+                explosion->addToCurrentScene(false);
                 destroy();
             }
         }
