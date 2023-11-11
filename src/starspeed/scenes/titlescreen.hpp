@@ -108,7 +108,7 @@ namespace StarSpeed {
 					if (colliderEvent->onObject) {
 						CURSOR->resetTooltip();
 						CURSOR->clickable(false);
-						getriebe.getGame()->switchScene(new FightScene());
+						//getriebe.getGame()->switchScene(new FightScene());
 					}
 				}
 			}
@@ -331,28 +331,6 @@ namespace StarSpeed {
         };
     };
 
-    class TestSheet : public Motor::GameObject {
-    public:
-
-        void onCreate() override {
-            Motor::GameObject::onCreate();
-            addComponent<Motor::SpriteAnimationComponent>(Motor::ResourceLocation(resourcePackMod, "/sprites/explosion_sheet.png"));
-            getComponent<Motor::SpriteAnimationComponent>()->setRowColumn(1, 4);
-            getComponent<Motor::SpriteAnimationComponent>()->setFrameTime(80);
-            transform()->scale.set(128, 128);
-            transform()->position.set(500, 500);
-        }
-
-        void onComponentEvent(Motor::IComponentEvent *eventData) override {
-            if(eventData->id() == Motor::SpriteAnimationFinishEvent::id_) {
-                MOTOR_LOG("Finished");
-                Motor::SpriteAnimationFinishEvent* evt = dynamic_cast<Motor::SpriteAnimationFinishEvent *>(eventData);
-                //*evt->run_ = false;
-            }
-        }
-
-    };
-
 	class TitleScreen : public Motor::Scene {
 
 	public:
@@ -468,9 +446,6 @@ namespace StarSpeed {
             debugText->addToCurrentScene();
             debugText->transform()->scale.set(32, 48 / 2);
             debugText->coordinateObject = CURSOR;
-
-            auto* TEST = new TestSheet();
-            TEST->addToCurrentScene();
         }
 	};
 }
