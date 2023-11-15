@@ -16,7 +16,9 @@ namespace StarSpeed {
         int* progress_ = nullptr;
         float* fuel_ = nullptr;
         void onCreate() override {
-            addComponent<Motor::SpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/ships/player/default/default.png"));
+            addComponent<Motor::SpriteAnimationComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/ships/player/default/default.png"));
+            getComponent<Motor::SpriteAnimationComponent>()->setRowColumn(1, 4);
+            getComponent<Motor::SpriteAnimationComponent>()->setFrameTime(85);
             getComponent<Motor::SpriteComponent>()->blendMode_ = SDL_BLENDMODE_BLEND;
             addComponent<Motor::SpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/ships/player/default/default_wing.png"));
             getComponent<Motor::SpriteComponent>(1)->blendMode_ = SDL_BLENDMODE_BLEND;

@@ -152,10 +152,8 @@ namespace StarSpeed {
             }
 
             Motor::GameObject* CLOUD_BACKGROUND = new Motor::GameObject();
-            Motor::DynamicTexture* CLOUD_BACKGROUND_TEX = new Motor::DynamicTexture(Motor::ResourceLocation(resourcePackMod, "sprites/cloud.png"));
-            CLOUD_BACKGROUND_TEX->interpolated_ = true;
-            CLOUD_BACKGROUND->addComponent<Motor::DynamicSpriteComponent>(CLOUD_BACKGROUND_TEX);
-            CLOUD_BACKGROUND->getComponent<Motor::DynamicSpriteComponent>()->blendMode_ = SDL_BLENDMODE_ADD;
+            CLOUD_BACKGROUND->addComponent<Motor::SpriteComponent>(Tex::CLOUD);
+            CLOUD_BACKGROUND->getComponent<Motor::SpriteComponent>()->blendMode_ = SDL_BLENDMODE_ADD;
             CLOUD_BACKGROUND->transform()->scale.set(2250, 2250);
             CLOUD_BACKGROUND->transform()->position.set(1920 / 2, -2750);
             CLOUD_BACKGROUND->transform()->color.setAlpha(18);

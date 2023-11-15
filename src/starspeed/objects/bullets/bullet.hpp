@@ -10,8 +10,10 @@ namespace StarSpeed {
     public:
         float speed_ = 1.15;
         void onCreate() override {
-            addComponent<Motor::SpriteComponent>(Tex::ENEMY_BULLET);
-            getComponent<Motor::SpriteComponent>()->blendMode_ = SDL_BLENDMODE_ADD;
+            addComponent<Motor::SpriteSheetComponent>(Tex::BULLETS);
+            getComponent<Motor::SpriteSheetComponent>()->setRowColumn(2,2);
+            getComponent<Motor::SpriteSheetComponent>()->selectSprite(1, 0);
+            getComponent<Motor::SpriteSheetComponent>()->blendMode_ = SDL_BLENDMODE_ADD;
             addComponent<Motor::SpriteColliderComponent>();
             //addComponent<Motor::SpriteComponent>(Tex::CIRCLE_GLOW);
             //getComponent<Motor::SpriteComponent>(1)->blendMode_ = SDL_BLENDMODE_ADD;
@@ -41,7 +43,7 @@ namespace StarSpeed {
         void onCreate() override {
             Bullet::onCreate();
             //transform()->color.set(40, 122, 176, 255);
-            getComponent<Motor::SpriteComponent>()->setTexture(Tex::PLAYER_BULLET);
+            getComponent<Motor::SpriteSheetComponent>()->selectSprite(0, 1);
         }
 
         void handleMovement() override {
@@ -80,7 +82,7 @@ namespace StarSpeed {
         void fixedUpdate() override {
             EnemyBullet::fixedUpdate();
             transform()->scale.set(transform()->scale.x + 0.65f, transform()->scale.y + 1.25f);
-            getComponent<Motor::SpriteComponent>()->setTexture(Tex::CENT_BULLET);
+            getComponent<Motor::SpriteSheetComponent>()->selectSprite(0, 0);
             //getComponent<Motor::SpriteComponent>(1)->useCustomColor_ = true;
             //getComponent<Motor::SpriteComponent>(1)->customColor_.set(115, 30, 30, 175);
         }

@@ -331,6 +331,33 @@ namespace StarSpeed {
         };
     };
 
+    class TestSheet : public Motor::GameObject {
+    public:
+
+        void onCreate() override {
+            Motor::GameObject::onCreate();
+            //addComponent<Motor::SpriteAnimationComponent>(Motor::ResourceLocation(resourcePackMod, "/sprites/ships/enemy/watchluck.png"));
+            //getComponent<Motor::SpriteAnimationComponent>()->setRowColumn(2, 20);
+            addComponent<Motor::SpriteAnimationComponent>(Motor::ResourceLocation(resourcePackMod, "/sprites/upgrades/acceleration_fuel.png"));
+            getComponent<Motor::SpriteAnimationComponent>()->setRowColumn(1, 4);
+            getComponent<Motor::SpriteAnimationComponent>()->setFrameTime(100);
+            getComponent<Motor::SpriteAnimationComponent>()->blendMode_ = SDL_BLENDMODE_BLEND;
+            transform()->scale.set(8 * 15, 14 * 15);
+            transform()->position.set(500, 500);
+        }
+
+        void onComponentEvent(Motor::IComponentEvent *eventData) override {
+            if(eventData->id() == Motor::SpriteAnimationFinishEvent::id_) {
+                //MOTOR_LOG("Finished");
+                Motor::SpriteAnimationFinishEvent* evt = dynamic_cast<Motor::SpriteAnimationFinishEvent *>(eventData);
+                //getComponent<Motor::SpriteAnimationComponent>()->setRowColumnSelection(1);
+                //*evt->run_ = false;
+            }
+        }
+
+    };
+
+
 	class TitleScreen : public Motor::Scene {
 
 	public:
@@ -349,10 +376,8 @@ namespace StarSpeed {
 			}
 
 			Motor::GameObject* CLOUD_BACKGROUND = new Motor::GameObject();
-			Motor::DynamicTexture* CLOUD_BACKGROUND_TEX = new Motor::DynamicTexture(Motor::ResourceLocation(resourcePackMod, "sprites/cloud.png"));
-			CLOUD_BACKGROUND_TEX->interpolated_ = true;
-			CLOUD_BACKGROUND->addComponent<Motor::DynamicSpriteComponent>(CLOUD_BACKGROUND_TEX);
-			CLOUD_BACKGROUND->getComponent<Motor::DynamicSpriteComponent>()->blendMode_ = SDL_BLENDMODE_ADD;
+			CLOUD_BACKGROUND->addComponent<Motor::SpriteComponent>(Tex::CLOUD);
+			CLOUD_BACKGROUND->getComponent<Motor::SpriteComponent>()->blendMode_ = SDL_BLENDMODE_ADD;
 			CLOUD_BACKGROUND->transform()->scale.set(6000, 10000);
 			CLOUD_BACKGROUND->transform()->position.set(1920 / 2, -2750);
 			CLOUD_BACKGROUND->transform()->color.setAlpha(12);
@@ -446,6 +471,9 @@ namespace StarSpeed {
             debugText->addToCurrentScene();
             debugText->transform()->scale.set(32, 48 / 2);
             debugText->coordinateObject = CURSOR;
+
+            auto* testSheet = new TestSheet();
+            testSheet->addToCurrentScene();
         }
 	};
 }

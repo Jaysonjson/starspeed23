@@ -10,6 +10,14 @@ namespace StarSpeed {
     public:
         void onCreate() override {
             Motor::GameObject::onCreate();
+
+            std::random_device rd;
+            std::mt19937 mt(rd());
+            std::uniform_real_distribution<float> rot(0, 360);
+            std::uniform_real_distribution<float> sizernd(120, 200);
+
+            float size = sizernd(mt);
+            transform()->scale.set(size, size);
             addComponent<Motor::SpriteAnimationComponent>(Tex::EXPLOSION_SHEET);
             getComponent<Motor::SpriteAnimationComponent>()->setRowColumn(1, 4);
             getComponent<Motor::SpriteAnimationComponent>()->setFrameTime(35);
@@ -38,19 +46,11 @@ namespace StarSpeed {
             getComponent<Motor::SpriteComponent>(3)->useCustomScale_ = true;
             getComponent<Motor::SpriteComponent>(3)->customScale_.set(1000, 1000);
 
-            getComponent<Motor::SpriteComponent>(0)->center_.x = 128 / 2;
-            getComponent<Motor::SpriteComponent>(0)->center_.y = 128 / 2;
-            getComponent<Motor::SpriteComponent>(1)->center_.x = 100;
-            getComponent<Motor::SpriteComponent>(1)->center_.y = 100;
-            getComponent<Motor::SpriteComponent>(2)->center_.x = 250;
-            getComponent<Motor::SpriteComponent>(2)->center_.y = 250;
-            getComponent<Motor::SpriteComponent>(3)->center_.x = 500;
-            getComponent<Motor::SpriteComponent>(3)->center_.y = 500;
-            transform()->scale.set(128, 128);
+            getComponent<Motor::SpriteComponent>(0)->useSizeCenter();
+            getComponent<Motor::SpriteComponent>(1)->useSizeCenter();
+            getComponent<Motor::SpriteComponent>(2)->useSizeCenter();
+            getComponent<Motor::SpriteComponent>(3)->useSizeCenter();
 
-            std::random_device rd;
-            std::mt19937 mt(rd());
-            std::uniform_real_distribution<float> rot(0, 360);
             transform()->rotation.setAngle(rot(mt));
         }
 

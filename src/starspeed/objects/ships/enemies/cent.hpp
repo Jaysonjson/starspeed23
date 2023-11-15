@@ -6,7 +6,7 @@ namespace StarSpeed {
     public:
         int expandCounter = 0;
         bool expanded = false;
-        CentEnemy(): EnemyShip(Tex::CENT_ENEMY) {}
+        CentEnemy(): EnemyShip(Tex::Sheet::CENT_ROW, Tex::Sheet::CENT_COLUMN) {}
 
         void onCreate() override {
             EnemyShip::onCreate();
@@ -28,7 +28,7 @@ namespace StarSpeed {
             EnemyShip::fixedUpdate();
             ++expandCounter;
             if(expandCounter == 175) {
-                getComponent<Motor::SpriteComponent>()->setTexture(Tex::CENT_EXPANDED_ENEMY);
+                getComponent<Motor::SpriteSheetComponent>()->selectSprite(Tex::Sheet::CENT_EXPANDED_COLUMN, Tex::Sheet::CENT_EXPANDED_ROW);
                 if(!getComponent<Motor::SpriteComponent>()->getTexture()->exists()) getComponent<Motor::SpriteComponent>()->getTexture()->load();
                 expanded = true;     
             }

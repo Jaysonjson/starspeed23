@@ -21,8 +21,10 @@ namespace StarSpeed {
         float ySpeed_ = 0;
 
         void onCreate() override {
-            addComponent<Motor::SpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/ships/player/default/default.png"));
-            getComponent<Motor::SpriteComponent>()->blendMode_ = SDL_BLENDMODE_BLEND;
+            addComponent<Motor::SpriteAnimationComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/ships/player/default/default.png"));
+            getComponent<Motor::SpriteAnimationComponent>()->blendMode_ = SDL_BLENDMODE_BLEND;
+            getComponent<Motor::SpriteAnimationComponent>()->setRowColumn(1, 4);
+            getComponent<Motor::SpriteAnimationComponent>()->setFrameTime(85);
             addComponent<Motor::SpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/ships/player/default/default_wing.png"));
             getComponent<Motor::SpriteComponent>(1)->blendMode_ = SDL_BLENDMODE_BLEND;
             getComponent<Motor::SpriteComponent>(1)->useCustomColor_ = true;

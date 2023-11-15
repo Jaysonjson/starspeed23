@@ -161,7 +161,7 @@ namespace StarSpeed {
 				{ "RedDash16", "", {}, {255, 102, 102, 255}},
 				{ "Bug1312", "", {}, {73, 199, 56, 255} },
 				{ "Torchwood_one", "Torchwood", {}, {0, 0, 128, 255 }},
-				{ "wheezebob", "Weezer ", {}, {122, 73, 136, 255 } },
+				{ "wheezebob", "Weezer ", {74, 26, 110, 255}, {122, 73, 136, 255 } },
                 { "Amythical", "Music", {215, 71, 255, 255}, {255, 71, 169, 255 } },
                 { "Derpy", "Artist", {215, 71, 255, 255}, {255, 71, 169, 255 } },
                 { "Wullfo", "Artist", {215, 71, 255, 255}, {255, 176, 0, 255 } }
@@ -261,7 +261,7 @@ namespace StarSpeed {
 			getComponent<Motor::SpriteComponent>(6)->useCustomScale_ = true;
 			getComponent<Motor::SpriteComponent>(6)->customScale_.set(10, 30);
 
-            addComponent<Motor::SpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/border/border_0.png"));
+            addComponent<Motor::SpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/ui/border/border_0.png"));
             getComponent<Motor::SpriteComponent>(7)->customScale_.set(190, 190);
             getComponent<Motor::SpriteComponent>(7)->useCustomScale_ = true;
             getComponent<Motor::SpriteComponent>(7)->blendMode_ = SDL_BLENDMODE_BLEND;

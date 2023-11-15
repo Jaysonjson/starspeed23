@@ -16,13 +16,17 @@ namespace StarSpeed {
         float speed_ = 0.25;
         float health_ = 10;
         float maxHealth_ = 10;
+        int sheetRow_ = 0;
+        int sheetColumn_ = 0;
         Motor::Texture* TEX = nullptr;
         Motor::SpriteComponent* HEALTH_BAR = nullptr;
-        EnemyShip(Motor::Texture* texture): TEX(texture) {}
+        EnemyShip(int sheetRow, int sheetColumn): TEX(Tex::ENEMY_SHIPS), sheetColumn_(sheetColumn), sheetRow_(sheetRow) {}
 
         void onCreate() override {
-            addComponent<Motor::SpriteComponent>(TEX);
-            getComponent<Motor::SpriteComponent>()->blendMode_ = SDL_BLENDMODE_BLEND;
+            addComponent<Motor::SpriteSheetComponent>(TEX);
+            getComponent<Motor::SpriteSheetComponent>()->blendMode_ = SDL_BLENDMODE_BLEND;
+            getComponent<Motor::SpriteSheetComponent>()->setRowColumn(Tex::Sheet::ENEMY_SHIPS_ROW, Tex::Sheet::ENEMY_SHIPS_COLUMN);
+            getComponent<Motor::SpriteSheetComponent>()->selectSprite(sheetColumn_, sheetRow_);
             addComponent<Motor::SpriteColliderComponent>();
             HEALTH_BAR = addComponent<Motor::SpriteComponent>(Tex::BAR_FULL);
             HEALTH_BAR->useCustomScale_ = true;

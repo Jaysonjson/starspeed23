@@ -82,8 +82,8 @@ public:
 	Motor::Texture* CURSOR_CLICKABLE_TEX;
 	CursorToolTipObject* TOOLTIP = new CursorToolTipObject();
 	void onCreate() {
-		CURSOR_TEX = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/cursor/cursor.png"));
-		CURSOR_CLICKABLE_TEX = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/cursor/cursor_clickable.png"));
+		CURSOR_TEX = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/ui/cursor/cursor.png"));
+		CURSOR_CLICKABLE_TEX = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/ui/cursor/cursor_clickable.png"));
 		CURSOR_TEX->load();
 		CURSOR_CLICKABLE_TEX->load();
 		addComponent<Motor::SpriteComponent>(CURSOR_TEX);

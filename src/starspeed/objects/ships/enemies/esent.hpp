@@ -4,7 +4,7 @@
 namespace StarSpeed {
     class EsentEnemy : public EnemyShip {
     public:
-        EsentEnemy(): EnemyShip(Tex::ESENT_ENEMY) {}
+        EsentEnemy(): EnemyShip(0,0) {}
         void shoot() override {
 
         }

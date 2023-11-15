@@ -41,11 +41,7 @@ int main() {
 	SDL_GL_SetAttribute(SDL_GL_MULTISAMPLESAMPLES, 8);
 	SDL_GL_SetAttribute(SDL_GL_ACCELERATED_VISUAL, 1);
 
-    std::random_device rd;
-    std::mt19937 mt(rd());
-    std::uniform_real_distribution<double> dist_splash(0, StarSpeed::SPLASHES.size());
-
-	getriebe.init("StarSpeed23 -/- " + StarSpeed::SPLASHES[dist_splash(mt)], 1920 * 0.75, 1080 * 0.75, SDL_WINDOW_RESIZABLE, SDL_RENDERER_ACCELERATED | SDL_RENDERER_TARGETTEXTURE);
+	getriebe.init("StarSpeed23", 1920 * 0.75, 1080 * 0.75, SDL_WINDOW_RESIZABLE, SDL_RENDERER_ACCELERATED | SDL_RENDERER_TARGETTEXTURE);
 	getriebe.getGame()->setTextFPS(12);
     StarSpeed::Tex::setTextures();
 	StarSpeed::playerProfile->load();

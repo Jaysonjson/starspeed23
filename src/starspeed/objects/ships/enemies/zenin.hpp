@@ -4,7 +4,7 @@
 namespace StarSpeed {
     class ZeninEnemy : public EnemyShip {
     public:
-        ZeninEnemy(): EnemyShip(Tex::ZENIN_ENEMY) {}
+        ZeninEnemy(): EnemyShip(Tex::Sheet::ZENIN_ROW, Tex::Sheet::ZENIN_COLUMN) {}
 
         void shoot() override {
             EnemyBullet* BULLET = new EnemyBullet();

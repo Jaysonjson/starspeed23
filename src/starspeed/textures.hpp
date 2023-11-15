@@ -15,19 +15,8 @@ namespace StarSpeed::Tex {
 	extern Motor::Font* GAME_FONT;
 	extern Motor::Font* GAME_FONT_OUTLINE;
 
-	extern Motor::Texture* SAW_ENEMY;
-	extern Motor::Texture* CENT_ENEMY;
-	extern Motor::Texture* CENT_EXPANDED_ENEMY;
-	extern Motor::Texture* CINA_ENEMY;
-	extern Motor::Texture* ESENT_ENEMY;
-	extern Motor::Texture* FAIRE_ENEMY;
-	extern Motor::Texture* PINE_ENEMY;
-	extern Motor::Texture* ZENIN_ENEMY;
-	extern Motor::Texture* SKRIP_ENEMY;
-	extern Motor::Texture* DEFAULT_BULLET;
-	extern Motor::Texture* PLAYER_BULLET;
-	extern Motor::Texture* ENEMY_BULLET;
-	extern Motor::Texture* CENT_BULLET;
+	extern Motor::Texture* ENEMY_SHIPS;
+	extern Motor::Texture* BULLETS;
 	extern Motor::Texture* STAR_SHEET;
     extern Motor::Texture* SQUARE_ALERT;
 
@@ -45,9 +34,33 @@ namespace StarSpeed::Tex {
 
 	extern Motor::Texture* CELL;
 
+    extern Motor::Texture* CLOUD;
+
+
     extern Motor::Texture* EXPLOSION_SHEET;
 
     extern Motor::Font* DEBUG_FONT;
 	extern Motor::Font* DEBUG_FONT_OUTLINE;
 	void setTextures();
+
+    namespace Sheet {
+
+        constexpr int ENEMY_SHIPS_ROW = 3;
+        constexpr int ENEMY_SHIPS_COLUMN = 4;
+
+        constexpr int CENT_ROW = 0;
+        constexpr int CENT_COLUMN = 0;
+
+        constexpr int CENT_EXPANDED_ROW = 0;
+        constexpr int CENT_EXPANDED_COLUMN = 1;
+
+        constexpr int CINA_ROW = 0;
+        constexpr int CINA_COLUMN = 2;
+
+        constexpr int ZENIN_ROW = 0;
+        constexpr int ZENIN_COLUMN = 3;
+
+        constexpr int SAW_ROW = 2;
+        constexpr int SAW_COLUMN = 0;
+    }
 }

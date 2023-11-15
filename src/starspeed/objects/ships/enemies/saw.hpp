@@ -40,7 +40,7 @@ namespace StarSpeed {
 
     class SawEnemy : public EnemyShip {
     public:
-        SawEnemy(): EnemyShip(Tex::SAW_ENEMY) {}
+        SawEnemy(): EnemyShip(Tex::Sheet::SAW_ROW, Tex::Sheet::SAW_COLUMN) {}
 
         void onCreate() override {
             EnemyShip::onCreate();

@@ -4,7 +4,7 @@
 namespace StarSpeed {
     class SkripEnemy : public EnemyShip {
     public:
-        SkripEnemy(): EnemyShip(Tex::SKRIP_ENEMY) {}
+        SkripEnemy(): EnemyShip(0, 0) {}
         void shoot() override {
 
         }

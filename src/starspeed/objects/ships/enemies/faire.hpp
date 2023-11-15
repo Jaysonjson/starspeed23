@@ -4,7 +4,7 @@
 namespace StarSpeed {
     class FaireEnemy : public EnemyShip {
     public:
-        FaireEnemy(): EnemyShip(Tex::FAIRE_ENEMY) {}
+        FaireEnemy(): EnemyShip(0,0) {}
         void shoot() override {
 
         }

@@ -4,7 +4,7 @@
 namespace StarSpeed {
     class CinaEnemy : public EnemyShip {
     public:
-        CinaEnemy(): EnemyShip(Tex::CINA_ENEMY) {}
+        CinaEnemy(): EnemyShip(Tex::Sheet::CINA_ROW, Tex::Sheet::CINA_COLUMN) {}
         void onCreate() override {
             EnemyShip::onCreate();
             speed_ = 0.35;
