@@ -66,7 +66,7 @@ namespace StarSpeed::Tex {
 		DEBUG_FONT_OUTLINE->load();
 		DEBUG_FONT_OUTLINE->setOutline(12);
 
-        CLOUD->load();
-        CIRCLE_GLOW->load();
+        CLOUD->loadAsThread();
+        CIRCLE_GLOW->loadAsThread();
 	}
 }

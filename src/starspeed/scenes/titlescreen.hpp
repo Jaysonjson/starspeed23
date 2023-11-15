@@ -331,33 +331,6 @@ namespace StarSpeed {
         };
     };
 
-    class TestSheet : public Motor::GameObject {
-    public:
-
-        void onCreate() override {
-            Motor::GameObject::onCreate();
-            //addComponent<Motor::SpriteAnimationComponent>(Motor::ResourceLocation(resourcePackMod, "/sprites/ships/enemy/watchluck.png"));
-            //getComponent<Motor::SpriteAnimationComponent>()->setRowColumn(2, 20);
-            addComponent<Motor::SpriteAnimationComponent>(Motor::ResourceLocation(resourcePackMod, "/sprites/upgrades/acceleration_fuel.png"));
-            getComponent<Motor::SpriteAnimationComponent>()->setRowColumn(1, 4);
-            getComponent<Motor::SpriteAnimationComponent>()->setFrameTime(100);
-            getComponent<Motor::SpriteAnimationComponent>()->blendMode_ = SDL_BLENDMODE_BLEND;
-            transform()->scale.set(8 * 15, 14 * 15);
-            transform()->position.set(500, 500);
-        }
-
-        void onComponentEvent(Motor::IComponentEvent *eventData) override {
-            if(eventData->id() == Motor::SpriteAnimationFinishEvent::id_) {
-                //MOTOR_LOG("Finished");
-                Motor::SpriteAnimationFinishEvent* evt = dynamic_cast<Motor::SpriteAnimationFinishEvent *>(eventData);
-                //getComponent<Motor::SpriteAnimationComponent>()->setRowColumnSelection(1);
-                //*evt->run_ = false;
-            }
-        }
-
-    };
-
-
 	class TitleScreen : public Motor::Scene {
 
 	public:
@@ -471,9 +444,6 @@ namespace StarSpeed {
             debugText->addToCurrentScene();
             debugText->transform()->scale.set(32, 48 / 2);
             debugText->coordinateObject = CURSOR;
-
-            auto* testSheet = new TestSheet();
-            testSheet->addToCurrentScene();
         }
 	};
 }
