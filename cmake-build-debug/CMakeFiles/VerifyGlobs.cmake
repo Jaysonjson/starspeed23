@@ -79,6 +79,7 @@ set(OLD_GLOB
   "H:/starspeed23/src/starspeed/discord.hpp"
   "H:/starspeed23/src/starspeed/init/objects.hpp"
   "H:/starspeed23/src/starspeed/init/registries.hpp"
+  "H:/starspeed23/src/starspeed/objects/background_spawner.json.hpp"
   "H:/starspeed23/src/starspeed/objects/bullets/bullet.hpp"
   "H:/starspeed23/src/starspeed/objects/enemy_spawner.hpp"
   "H:/starspeed23/src/starspeed/objects/explosion.hpp"

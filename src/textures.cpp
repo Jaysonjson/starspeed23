@@ -24,8 +24,13 @@ namespace StarSpeed::Tex {
 	Motor::Texture* CHECKBOX_MARKED_SELECTED = nullptr;
 	Motor::Texture* SQUARE_ALERT = nullptr;
 	Motor::Texture* CELL = nullptr;
+    Motor::Texture* STARSPEED_LOGO = nullptr;
 
+    Motor::Texture* STABLE_SUCC;
+    Motor::Texture* UNSTABLE_SUCC;
+    Motor::Texture* WHEEZERUS;
     Motor::Texture* CLOUD = nullptr;
+    Motor::Texture* MATHEW = nullptr;
 
 
     Motor::Texture* EXPLOSION_SHEET = nullptr;
@@ -56,17 +61,28 @@ namespace StarSpeed::Tex {
 		BUTTON_LONG_SELECTED = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/ui/button_selected.png"));
         CLOUD = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/background/cloud.png"));
         CLOUD->interpolated_ = true;
+
+        STABLE_SUCC = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/background/stable_succ.png"));
+        UNSTABLE_SUCC = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/background/unstable_succ.png"));
+        WHEEZERUS = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/background/wheezerus.png"));
+
+        MATHEW = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/mines/mathew.png"));
+
+
+        STARSPEED_LOGO = new Motor::Texture(Motor::ResourceLocation(resourcePackMod, "sprites/title/starspeed_xr.png"));
+
         BUTTON_LONG_SELECTED->load();
 		GAME_FONT = new Motor::Font(Motor::ResourceLocation(resourcePackMod, "fonts/xrfont.ttf"), 32);
 		GAME_FONT_OUTLINE = new Motor::Font(Motor::ResourceLocation(resourcePackMod, "fonts/xrfont.ttf"), 32);
-		GAME_FONT_OUTLINE->load();
+		GAME_FONT_OUTLINE->loadAsThread();
 		GAME_FONT_OUTLINE->setOutline(12);
 		DEBUG_FONT = new Motor::Font(Motor::ResourceLocation(resourcePackMod, "fonts/signika.ttf"), 32);
 		DEBUG_FONT_OUTLINE = new Motor::Font(Motor::ResourceLocation(resourcePackMod, "fonts/signika.ttf"), 32);
-		DEBUG_FONT_OUTLINE->load();
+		DEBUG_FONT_OUTLINE->loadAsThread();
 		DEBUG_FONT_OUTLINE->setOutline(12);
 
-        CLOUD->loadAsThread();
-        CIRCLE_GLOW->loadAsThread();
+        STARSPEED_LOGO->load();
+        CLOUD->load();
+        CIRCLE_GLOW->load();
 	}
 }

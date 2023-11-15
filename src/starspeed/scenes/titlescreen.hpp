@@ -17,6 +17,7 @@
 #include "starspeed/objects/music_handler.hpp"
 #include "motor/gameobjects/debugtext.hpp"
 #include "dm_titlescreen.hpp"
+#include "starspeed/objects/background_spawner.json.hpp"
 
 namespace StarSpeed {
 
@@ -36,7 +37,8 @@ namespace StarSpeed {
 			addComponent<Motor::SpriteColliderComponent>();
 			getComponent<Motor::SpriteColliderComponent>()->registerMouseHoverEvent();
 			getComponent<Motor::SpriteColliderComponent>()->registerMouseClickEvent();
-		}
+            transform()->depth = -1;
+        }
 
 		bool triggerCursor = false;
 		void onComponentEvent(Motor::IComponentEvent* eventData) override {
@@ -82,7 +84,8 @@ namespace StarSpeed {
 			addComponent<Motor::SpriteColliderComponent>();
 			getComponent<Motor::SpriteColliderComponent>()->registerMouseHoverEvent();
 			getComponent<Motor::SpriteColliderComponent>()->registerMouseClickEvent();
-		}
+            transform()->depth = -1;
+        }
 
 		bool triggerCursor = false;
 		void onComponentEvent(Motor::IComponentEvent* eventData) override {
@@ -126,7 +129,8 @@ namespace StarSpeed {
 			addComponent<Motor::SpriteColliderComponent>();
 			getComponent<Motor::SpriteColliderComponent>()->registerMouseHoverEvent();
 			getComponent<Motor::SpriteColliderComponent>()->registerMouseClickEvent();
-		}
+            transform()->depth = -1;
+        }
 
 		bool triggerCursor = false;
 		void onComponentEvent(Motor::IComponentEvent* eventData) override {
@@ -168,7 +172,8 @@ namespace StarSpeed {
 			addComponent<Motor::SpriteColliderComponent>();
 			getComponent<Motor::SpriteColliderComponent>()->registerMouseHoverEvent();
 			getComponent<Motor::SpriteColliderComponent>()->registerMouseClickEvent();
-		}
+            transform()->depth = -1;
+        }
 
 		bool triggerCursor = false;
 		void onComponentEvent(Motor::IComponentEvent* eventData) override {
@@ -209,7 +214,8 @@ namespace StarSpeed {
 			addComponent<Motor::SpriteColliderComponent>();
 			getComponent<Motor::SpriteColliderComponent>()->registerMouseHoverEvent();
 			getComponent<Motor::SpriteColliderComponent>()->registerMouseClickEvent();
-		}
+            transform()->depth = -1;
+        }
 
 		bool triggerCursor = false;
 		void onComponentEvent(Motor::IComponentEvent* eventData) override {
@@ -244,11 +250,12 @@ namespace StarSpeed {
 	public:
 		Motor::GameObject* SPLASH = nullptr;
 		void onCreate() {
-			addComponent<Motor::DynamicSpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/title/starspeed_xr.png"));
-			getComponent<Motor::DynamicSpriteComponent>()->blendMode_ = SDL_BLENDMODE_BLEND;
+			addComponent<Motor::SpriteComponent>(Tex::STARSPEED_LOGO);
+			getComponent<Motor::SpriteComponent>()->blendMode_ = SDL_BLENDMODE_BLEND;
 			transform()->position.set(1920 / 2, 1080 / 4.65);
 			transform()->scale.set(76 * 9, 42 * 9);
-		}
+            transform()->depth = -1;
+        }
 	};
 
 	class DiscordJoinButton : public Motor::GameObject {
@@ -259,7 +266,8 @@ namespace StarSpeed {
 			getComponent<Motor::DynamicSpriteComponent>()->blendMode_ = SDL_BLENDMODE_BLEND;
 			transform()->position.set(buttonStart + 128 * 1.75, 1080 / 1.7);
 			transform()->scale.set(128 * 1.5, 128 * 1.5);
-			addComponent<Motor::SpriteColliderComponent>();
+            transform()->depth = -1;
+            addComponent<Motor::SpriteColliderComponent>();
 			getComponent<Motor::SpriteColliderComponent>()->registerMouseHoverEvent();
 			getComponent<Motor::SpriteColliderComponent>()->registerMouseClickEvent();
 		}
@@ -301,6 +309,7 @@ namespace StarSpeed {
             getComponent<Motor::SpriteComponent>()->blendMode_ = SDL_BLENDMODE_BLEND;
             transform()->position.set((235) / 1.8, 1080 - 45);
             transform()->scale.set(235, 45);
+            transform()->depth = -1;
             addComponent<Motor::SpriteColliderComponent>();
             getComponent<Motor::SpriteColliderComponent>()->registerMouseClickEvent();
             getComponent<Motor::SpriteColliderComponent>()->registerMouseHoverEvent();
@@ -338,15 +347,20 @@ namespace StarSpeed {
 			Motor::Scene::init(game);
 			std::random_device rd;
 			std::mt19937 mt(rd());
-			std::uniform_real_distribution<double> dist_x(0, 1920);
-			std::uniform_real_distribution<double> dist_y(0, 1080);
 			std::uniform_real_distribution<double> dist_splash(0, SPLASHES.size());
+            std::uniform_real_distribution<double> dist_x(0, 1920);
+            std::uniform_real_distribution<double> dist_y(0, 1080);
+            std::uniform_real_distribution<double> dist_speed(0.025, 0.1);
+            for (int i = 0; i < 350; i++) {
+                Star* STAR = new Star();
+                STAR->transform()->depth = -5;
+                STAR->transform()->position.set(dist_x(mt), dist_y(mt));
+                STAR->addComponent<SideMovement>()->speed_ = dist_speed(mt);
+                STAR->addToCurrentScene(false);
+            }
 
-			for (int i = 0; i < 150; i++) {
-				Star* STAR = new Star();
-				STAR->transform()->position.set(dist_x(mt), dist_y(mt));
-				STAR->addToCurrentScene(false);
-			}
+			auto* BG_SPAWNER = new BackGroundSpawner();
+            BG_SPAWNER->addToCurrentScene();
 
 			Motor::GameObject* CLOUD_BACKGROUND = new Motor::GameObject();
 			CLOUD_BACKGROUND->addComponent<Motor::SpriteComponent>(Tex::CLOUD);
@@ -354,7 +368,8 @@ namespace StarSpeed {
 			CLOUD_BACKGROUND->transform()->scale.set(6000, 10000);
 			CLOUD_BACKGROUND->transform()->position.set(1920 / 2, -2750);
 			CLOUD_BACKGROUND->transform()->color.setAlpha(12);
-			CLOUD_BACKGROUND->addComponent<DownMovementComponent>()->speed_ = 0.04f;
+            CLOUD_BACKGROUND->transform()->depth = -2;
+            CLOUD_BACKGROUND->addComponent<DownMovementComponent>()->speed_ = 0.04f;
 			CLOUD_BACKGROUND->addToCurrentScene();
 
 
@@ -410,7 +425,9 @@ namespace StarSpeed {
 			STARSPEED_LOGO_FLARE->transform()->position.set(1920 * 0.53, 1080 / 11);
 			STARSPEED_LOGO_FLARE->transform()->scale.set(320 * 7, 177 * 4);
 			STARSPEED_LOGO_FLARE->transform()->color.set(255, 255, 255, 145);
-			STARSPEED_LOGO_FLARE->addToCurrentScene();
+            STARSPEED_LOGO_FLARE->transform()->depth = -2;
+
+            STARSPEED_LOGO_FLARE->addToCurrentScene();
 
 			Motor::GameObject* STARSPEED_LOGO_FLARE_1 = new Motor::GameObject();
 			STARSPEED_LOGO_FLARE_1->addComponent<Motor::DynamicSpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/title/starspeed_flare_1.png"));
@@ -418,7 +435,8 @@ namespace StarSpeed {
 			STARSPEED_LOGO_FLARE_1->transform()->position.set(1920 * 0.53, 1080 / 11);
 			STARSPEED_LOGO_FLARE_1->transform()->scale.set(480 * 2, 480 * 2);
 			STARSPEED_LOGO_FLARE_1->transform()->color.set(255, 255, 255, 25);
-			STARSPEED_LOGO_FLARE_1->addToCurrentScene();
+            STARSPEED_LOGO_FLARE_1->transform()->depth = -2;
+            STARSPEED_LOGO_FLARE_1->addToCurrentScene();
 
 			StarSpeedLogoTS* STARSPEED_LOGO = new StarSpeedLogoTS();
 			STARSPEED_LOGO->SPLASH = SPLASH_TEXT;

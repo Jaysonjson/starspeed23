@@ -70,14 +70,14 @@ namespace StarSpeed {
             BACKGROUND->getComponent<Motor::DynamicSpriteComponent>()->blendMode_ = SDL_BLENDMODE_BLEND;
 			BACKGROUND->getComponent<Motor::DynamicSpriteComponent>()->ignoreCamera_ = true;
 
-			BACKGROUND->addComponent<Motor::DynamicSpriteComponent>(Motor::ResourceLocation(resourcePackMod, "sprites/title/starspeed_xr.png"));
-            BACKGROUND->getComponent<Motor::DynamicSpriteComponent>(1)->blendMode_ = SDL_BLENDMODE_BLEND;
-			BACKGROUND->getComponent<Motor::DynamicSpriteComponent>(1)->ignoreCamera_ = true;
-			BACKGROUND->getComponent<Motor::DynamicSpriteComponent>(1)->translate_.set(0, -400);
-			BACKGROUND->getComponent<Motor::DynamicSpriteComponent>(1)->useCustomScale_ = true;
-			BACKGROUND->getComponent<Motor::DynamicSpriteComponent>(1)->customScale_.set(76 * 5, 42 * 5);
-			BACKGROUND->getComponent<Motor::DynamicSpriteComponent>(1)->useCustomColor_ = true;
-			BACKGROUND->getComponent<Motor::DynamicSpriteComponent>(1)->customColor_.set(255, 255, 255, 255);
+			BACKGROUND->addComponent<Motor::SpriteComponent>(Tex::STARSPEED_LOGO);
+            BACKGROUND->getComponent<Motor::SpriteComponent>(1)->blendMode_ = SDL_BLENDMODE_BLEND;
+			BACKGROUND->getComponent<Motor::SpriteComponent>(1)->ignoreCamera_ = true;
+			BACKGROUND->getComponent<Motor::SpriteComponent>(1)->translate_.set(0, -400);
+			BACKGROUND->getComponent<Motor::SpriteComponent>(1)->useCustomScale_ = true;
+			BACKGROUND->getComponent<Motor::SpriteComponent>(1)->customScale_.set(76 * 5, 42 * 5);
+			BACKGROUND->getComponent<Motor::SpriteComponent>(1)->useCustomColor_ = true;
+			BACKGROUND->getComponent<Motor::SpriteComponent>(1)->customColor_.set(255, 255, 255, 255);
 
             BACKGROUND->transform()->scale.set(240 * 2, 1080);
             BACKGROUND->transform()->position.set(1680, 1080 / 2);

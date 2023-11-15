@@ -62,9 +62,12 @@ namespace StarSpeed {
 		void render() override {
 			Motor::GameObject::render();
 			float delta = getriebe.getGame()->getDelta().deltaTime;
-			if (transform()->position.screen().getY() > 1080 * getriebe.getGame()->getRenderer()->widthDifference_) {
+			if (transform()->position.screen().getY() > 1080 * getriebe.getGame()->getRenderer()->heightDifference_) {
 				destroy();
 			}
+            if (transform()->position.screen().getX() > 1920 * getriebe.getGame()->getRenderer()->widthDifference_) {
+                destroy();
+            }
 		}
 
 	};

@@ -126,8 +126,8 @@
 				8,
 				9,
 				10,
-				54,
-				55
+				55,
+				56
 			]
 		},
 		{
@@ -162,7 +162,7 @@
 			"language" : "RC",
 			"sourceIndexes" : 
 			[
-				59
+				60
 			]
 		}
 	],
@@ -259,9 +259,9 @@
 				8,
 				9,
 				10,
-				54,
 				55,
-				59
+				56,
+				60
 			]
 		},
 		{
@@ -312,9 +312,10 @@
 				51,
 				52,
 				53,
-				56,
+				54,
 				57,
-				58
+				58,
+				59
 			]
 		}
 	],
@@ -413,6 +414,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "src/starspeed/init/registries.hpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/starspeed/objects/background_spawner.json.hpp",
 			"sourceGroupIndex" : 1
 		},
 		{

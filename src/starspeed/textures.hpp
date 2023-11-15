@@ -34,6 +34,15 @@ namespace StarSpeed::Tex {
 
 	extern Motor::Texture* CELL;
 
+    extern Motor::Texture* STABLE_SUCC;
+    extern Motor::Texture* UNSTABLE_SUCC;
+    extern Motor::Texture* WHEEZERUS;
+
+    extern Motor::Texture* MATHEW;
+
+
+    extern Motor::Texture* STARSPEED_LOGO;
+
     extern Motor::Texture* CLOUD;
 
 
