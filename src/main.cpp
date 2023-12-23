@@ -41,7 +41,7 @@ int main() {
 	SDL_GL_SetAttribute(SDL_GL_MULTISAMPLESAMPLES, 8);
 	SDL_GL_SetAttribute(SDL_GL_ACCELERATED_VISUAL, 1);
 
-	getriebe.init("StarSpeed23", 1920 * 0.75, 1080 * 0.75, SDL_WINDOW_RESIZABLE, SDL_RENDERER_ACCELERATED | SDL_RENDERER_TARGETTEXTURE);
+	getriebe.init("StarSpeed23", 1920 * 0.75, 1080 * 0.75, SDL_WINDOW_RESIZABLE, SDL_RENDERER_ACCELERATED);
 	getriebe.getGame()->setTextFPS(12);
     StarSpeed::Tex::setTextures();
 	StarSpeed::playerProfile->load();
@@ -62,12 +62,19 @@ int main() {
 	CURSOR->addToCurrentScene();
     //debugText->coordinateObject = CURSOR;
     StarSpeed::ACHIEVEMENT_UNLOCK_HEADER->addToCurrentScene();
-    Mix_OpenAudio(44100, MIX_DEFAULT_FORMAT, 2, 16384);
+	SDL_AudioSpec want;
+	SDL_memset(&want, 0, sizeof(want)); /* or SDL_zero(want) */
+	want.freq = 48000;
+	want.format = SDL_AUDIO_F32LE;
+	want.channels = 2;
+
+    Mix_OpenAudio(0, &want);
     while (getriebe.getGame()->running_) {
 		//debugText->transform()->scale.set(28, 48 / 2);
 		getriebe.getGame()->loop();
 	}
 	StarSpeed::playerProfile->save();
     StarSpeed::gameSettings->save();
+	Mix_CloseAudio();
 	getriebe.stop();
 }

@@ -46,56 +46,8 @@ CMakeFiles/StarSpeed23.dir/src/achievements.cpp.o: /run/media/jay/New\ Volume1/s
   /run/media/jay/New\ Volume1/starspeed23/libs/includes/openssl/opensslconf.h \
   /run/media/jay/New\ Volume1/starspeed23/libs/includes/openssl/opensslv.h \
   /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_assert.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_atomic.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_audio.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_blendmode.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_clipboard.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_config.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_cpuinfo.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_endian.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_error.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_events.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_filesystem.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_gamecontroller.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_gesture.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_haptic.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_hidapi.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_hints.h \
   /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_image.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_joystick.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_keyboard.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_keycode.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_loadso.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_locale.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_log.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_main.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_messagebox.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_metal.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_misc.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_mouse.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_mutex.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_pixels.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_platform.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_power.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_quit.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_rect.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_render.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_rwops.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_scancode.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_sensor.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_shape.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_stdinc.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_surface.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_system.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_thread.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_timer.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_touch.h \
   /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_ttf.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_version.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_video.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/begin_code.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/close_code.h \
   /run/media/jay/New\ Volume1/starspeed23/src/mine.hpp \
   /run/media/jay/New\ Volume1/starspeed23/src/starspeed/achievements.hpp \
   /run/media/jay/New\ Volume1/starspeed23/src/starspeed/profile.hpp \
@@ -633,7 +585,60 @@ CMakeFiles/StarSpeed23.dir/src/achievements.cpp.o: /run/media/jay/New\ Volume1/s
   /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/xsaveintrin.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/xsaveoptintrin.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/xsavesintrin.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/xtestintrin.h
+  /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/xtestintrin.h \
+  /usr/local/include/SDL3/SDL.h \
+  /usr/local/include/SDL3/SDL_assert.h \
+  /usr/local/include/SDL3/SDL_atomic.h \
+  /usr/local/include/SDL3/SDL_audio.h \
+  /usr/local/include/SDL3/SDL_begin_code.h \
+  /usr/local/include/SDL3/SDL_bits.h \
+  /usr/local/include/SDL3/SDL_blendmode.h \
+  /usr/local/include/SDL3/SDL_clipboard.h \
+  /usr/local/include/SDL3/SDL_close_code.h \
+  /usr/local/include/SDL3/SDL_cpuinfo.h \
+  /usr/local/include/SDL3/SDL_endian.h \
+  /usr/local/include/SDL3/SDL_error.h \
+  /usr/local/include/SDL3/SDL_events.h \
+  /usr/local/include/SDL3/SDL_filesystem.h \
+  /usr/local/include/SDL3/SDL_gamepad.h \
+  /usr/local/include/SDL3/SDL_guid.h \
+  /usr/local/include/SDL3/SDL_haptic.h \
+  /usr/local/include/SDL3/SDL_hidapi.h \
+  /usr/local/include/SDL3/SDL_hints.h \
+  /usr/local/include/SDL3/SDL_init.h \
+  /usr/local/include/SDL3/SDL_joystick.h \
+  /usr/local/include/SDL3/SDL_keyboard.h \
+  /usr/local/include/SDL3/SDL_keycode.h \
+  /usr/local/include/SDL3/SDL_loadso.h \
+  /usr/local/include/SDL3/SDL_locale.h \
+  /usr/local/include/SDL3/SDL_log.h \
+  /usr/local/include/SDL3/SDL_messagebox.h \
+  /usr/local/include/SDL3/SDL_metal.h \
+  /usr/local/include/SDL3/SDL_misc.h \
+  /usr/local/include/SDL3/SDL_mouse.h \
+  /usr/local/include/SDL3/SDL_mutex.h \
+  /usr/local/include/SDL3/SDL_oldnames.h \
+  /usr/local/include/SDL3/SDL_pen.h \
+  /usr/local/include/SDL3/SDL_pixels.h \
+  /usr/local/include/SDL3/SDL_platform.h \
+  /usr/local/include/SDL3/SDL_platform_defines.h \
+  /usr/local/include/SDL3/SDL_power.h \
+  /usr/local/include/SDL3/SDL_properties.h \
+  /usr/local/include/SDL3/SDL_quit.h \
+  /usr/local/include/SDL3/SDL_rect.h \
+  /usr/local/include/SDL3/SDL_render.h \
+  /usr/local/include/SDL3/SDL_rwops.h \
+  /usr/local/include/SDL3/SDL_scancode.h \
+  /usr/local/include/SDL3/SDL_sensor.h \
+  /usr/local/include/SDL3/SDL_stdinc.h \
+  /usr/local/include/SDL3/SDL_surface.h \
+  /usr/local/include/SDL3/SDL_system.h \
+  /usr/local/include/SDL3/SDL_thread.h \
+  /usr/local/include/SDL3/SDL_timer.h \
+  /usr/local/include/SDL3/SDL_touch.h \
+  /usr/local/include/SDL3/SDL_version.h \
+  /usr/local/include/SDL3/SDL_video.h \
+  /usr/local/include/SDL3/SDL_video_capture.h
 
 CMakeFiles/StarSpeed23.dir/src/discord.cpp.o: /run/media/jay/New\ Volume1/starspeed23/src/discord.cpp \
   /run/media/jay/New\ Volume1/starspeed23/libs/includes/curl/curl.h \
@@ -694,55 +699,7 @@ CMakeFiles/StarSpeed23.dir/src/discord.cpp.o: /run/media/jay/New\ Volume1/starsp
   /run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/types/scale.hpp \
   /run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/types/vector.hpp \
   /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_assert.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_atomic.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_audio.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_blendmode.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_clipboard.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_config.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_cpuinfo.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_endian.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_error.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_events.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_filesystem.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_gamecontroller.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_gesture.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_haptic.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_hidapi.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_hints.h \
   /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_image.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_joystick.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_keyboard.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_keycode.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_loadso.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_locale.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_log.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_main.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_messagebox.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_metal.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_misc.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_mouse.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_mutex.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_pixels.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_platform.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_power.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_quit.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_rect.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_render.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_rwops.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_scancode.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_sensor.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_shape.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_stdinc.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_surface.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_system.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_thread.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_timer.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_touch.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_version.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_video.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/begin_code.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/close_code.h \
   /run/media/jay/New\ Volume1/starspeed23/src/starspeed/discord.hpp \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
@@ -1315,7 +1272,60 @@ CMakeFiles/StarSpeed23.dir/src/discord.cpp.o: /run/media/jay/New\ Volume1/starsp
   /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/xsaveintrin.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/xsaveoptintrin.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/xsavesintrin.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/xtestintrin.h
+  /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/xtestintrin.h \
+  /usr/local/include/SDL3/SDL.h \
+  /usr/local/include/SDL3/SDL_assert.h \
+  /usr/local/include/SDL3/SDL_atomic.h \
+  /usr/local/include/SDL3/SDL_audio.h \
+  /usr/local/include/SDL3/SDL_begin_code.h \
+  /usr/local/include/SDL3/SDL_bits.h \
+  /usr/local/include/SDL3/SDL_blendmode.h \
+  /usr/local/include/SDL3/SDL_clipboard.h \
+  /usr/local/include/SDL3/SDL_close_code.h \
+  /usr/local/include/SDL3/SDL_cpuinfo.h \
+  /usr/local/include/SDL3/SDL_endian.h \
+  /usr/local/include/SDL3/SDL_error.h \
+  /usr/local/include/SDL3/SDL_events.h \
+  /usr/local/include/SDL3/SDL_filesystem.h \
+  /usr/local/include/SDL3/SDL_gamepad.h \
+  /usr/local/include/SDL3/SDL_guid.h \
+  /usr/local/include/SDL3/SDL_haptic.h \
+  /usr/local/include/SDL3/SDL_hidapi.h \
+  /usr/local/include/SDL3/SDL_hints.h \
+  /usr/local/include/SDL3/SDL_init.h \
+  /usr/local/include/SDL3/SDL_joystick.h \
+  /usr/local/include/SDL3/SDL_keyboard.h \
+  /usr/local/include/SDL3/SDL_keycode.h \
+  /usr/local/include/SDL3/SDL_loadso.h \
+  /usr/local/include/SDL3/SDL_locale.h \
+  /usr/local/include/SDL3/SDL_log.h \
+  /usr/local/include/SDL3/SDL_messagebox.h \
+  /usr/local/include/SDL3/SDL_metal.h \
+  /usr/local/include/SDL3/SDL_misc.h \
+  /usr/local/include/SDL3/SDL_mouse.h \
+  /usr/local/include/SDL3/SDL_mutex.h \
+  /usr/local/include/SDL3/SDL_oldnames.h \
+  /usr/local/include/SDL3/SDL_pen.h \
+  /usr/local/include/SDL3/SDL_pixels.h \
+  /usr/local/include/SDL3/SDL_platform.h \
+  /usr/local/include/SDL3/SDL_platform_defines.h \
+  /usr/local/include/SDL3/SDL_power.h \
+  /usr/local/include/SDL3/SDL_properties.h \
+  /usr/local/include/SDL3/SDL_quit.h \
+  /usr/local/include/SDL3/SDL_rect.h \
+  /usr/local/include/SDL3/SDL_render.h \
+  /usr/local/include/SDL3/SDL_rwops.h \
+  /usr/local/include/SDL3/SDL_scancode.h \
+  /usr/local/include/SDL3/SDL_sensor.h \
+  /usr/local/include/SDL3/SDL_stdinc.h \
+  /usr/local/include/SDL3/SDL_surface.h \
+  /usr/local/include/SDL3/SDL_system.h \
+  /usr/local/include/SDL3/SDL_thread.h \
+  /usr/local/include/SDL3/SDL_timer.h \
+  /usr/local/include/SDL3/SDL_touch.h \
+  /usr/local/include/SDL3/SDL_version.h \
+  /usr/local/include/SDL3/SDL_video.h \
+  /usr/local/include/SDL3/SDL_video_capture.h
 
 CMakeFiles/StarSpeed23.dir/src/main.cpp.o: /run/media/jay/New\ Volume1/starspeed23/src/main.cpp \
   /run/media/jay/New\ Volume1/starspeed23/libs/includes/curl/curl.h \
@@ -1402,57 +1412,9 @@ CMakeFiles/StarSpeed23.dir/src/main.cpp.o: /run/media/jay/New\ Volume1/starspeed
   /run/media/jay/New\ Volume1/starspeed23/libs/includes/openssl/opensslconf.h \
   /run/media/jay/New\ Volume1/starspeed23/libs/includes/openssl/opensslv.h \
   /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_assert.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_atomic.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_audio.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_blendmode.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_clipboard.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_config.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_cpuinfo.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_endian.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_error.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_events.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_filesystem.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_gamecontroller.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_gesture.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_haptic.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_hidapi.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_hints.h \
   /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_image.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_joystick.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_keyboard.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_keycode.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_loadso.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_locale.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_log.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_main.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_messagebox.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_metal.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_misc.h \
   /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_mixer.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_mouse.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_mutex.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_pixels.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_platform.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_power.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_quit.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_rect.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_render.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_rwops.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_scancode.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_sensor.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_shape.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_stdinc.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_surface.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_system.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_thread.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_timer.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_touch.h \
   /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_ttf.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_version.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_video.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/begin_code.h \
-  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/close_code.h \
   /run/media/jay/New\ Volume1/starspeed23/src/mine.hpp \
   /run/media/jay/New\ Volume1/starspeed23/src/starspeed/achievements.hpp \
   /run/media/jay/New\ Volume1/starspeed23/src/starspeed/components/down_movement.hpp \
@@ -2085,7 +2047,60 @@ CMakeFiles/StarSpeed23.dir/src/main.cpp.o: /run/media/jay/New\ Volume1/starspeed
   /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/xsaveintrin.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/xsaveoptintrin.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/xsavesintrin.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/xtestintrin.h
+  /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/xtestintrin.h \
+  /usr/local/include/SDL3/SDL.h \
+  /usr/local/include/SDL3/SDL_assert.h \
+  /usr/local/include/SDL3/SDL_atomic.h \
+  /usr/local/include/SDL3/SDL_audio.h \
+  /usr/local/include/SDL3/SDL_begin_code.h \
+  /usr/local/include/SDL3/SDL_bits.h \
+  /usr/local/include/SDL3/SDL_blendmode.h \
+  /usr/local/include/SDL3/SDL_clipboard.h \
+  /usr/local/include/SDL3/SDL_close_code.h \
+  /usr/local/include/SDL3/SDL_cpuinfo.h \
+  /usr/local/include/SDL3/SDL_endian.h \
+  /usr/local/include/SDL3/SDL_error.h \
+  /usr/local/include/SDL3/SDL_events.h \
+  /usr/local/include/SDL3/SDL_filesystem.h \
+  /usr/local/include/SDL3/SDL_gamepad.h \
+  /usr/local/include/SDL3/SDL_guid.h \
+  /usr/local/include/SDL3/SDL_haptic.h \
+  /usr/local/include/SDL3/SDL_hidapi.h \
+  /usr/local/include/SDL3/SDL_hints.h \
+  /usr/local/include/SDL3/SDL_init.h \
+  /usr/local/include/SDL3/SDL_joystick.h \
+  /usr/local/include/SDL3/SDL_keyboard.h \
+  /usr/local/include/SDL3/SDL_keycode.h \
+  /usr/local/include/SDL3/SDL_loadso.h \
+  /usr/local/include/SDL3/SDL_locale.h \
+  /usr/local/include/SDL3/SDL_log.h \
+  /usr/local/include/SDL3/SDL_messagebox.h \
+  /usr/local/include/SDL3/SDL_metal.h \
+  /usr/local/include/SDL3/SDL_misc.h \
+  /usr/local/include/SDL3/SDL_mouse.h \
+  /usr/local/include/SDL3/SDL_mutex.h \
+  /usr/local/include/SDL3/SDL_oldnames.h \
+  /usr/local/include/SDL3/SDL_pen.h \
+  /usr/local/include/SDL3/SDL_pixels.h \
+  /usr/local/include/SDL3/SDL_platform.h \
+  /usr/local/include/SDL3/SDL_platform_defines.h \
+  /usr/local/include/SDL3/SDL_power.h \
+  /usr/local/include/SDL3/SDL_properties.h \
+  /usr/local/include/SDL3/SDL_quit.h \
+  /usr/local/include/SDL3/SDL_rect.h \
+  /usr/local/include/SDL3/SDL_render.h \
+  /usr/local/include/SDL3/SDL_rwops.h \
+  /usr/local/include/SDL3/SDL_scancode.h \
+  /usr/local/include/SDL3/SDL_sensor.h \
+  /usr/local/include/SDL3/SDL_stdinc.h \
+  /usr/local/include/SDL3/SDL_surface.h \
+  /usr/local/include/SDL3/SDL_system.h \
+  /usr/local/include/SDL3/SDL_thread.h \
+  /usr/local/include/SDL3/SDL_timer.h \
+  /usr/local/include/SDL3/SDL_touch.h \
+  /usr/local/include/SDL3/SDL_version.h \
+  /usr/local/include/SDL3/SDL_video.h \
+  /usr/local/include/SDL3/SDL_video_capture.h
 
 CMakeFiles/StarSpeed23.dir/src/mine.cpp.o: /run/media/jay/New\ Volume1/starspeed23/src/mine.cpp \
   /run/media/jay/New\ Volume1/starspeed23/src/mine.hpp \
@@ -5594,15 +5609,75 @@ CMakeFiles/StarSpeed23.dir/src/tinyfiledialogs.cpp.o: /run/media/jay/New\ Volume
 
 /run/media/jay/New\ Volume1/starspeed23/src/tinyfiledialogs.cpp:
 
-/run/media/jay/New\ Volume1/starspeed23/src/textures.cpp:
-
 /run/media/jay/New\ Volume1/starspeed23/src/sceneswitcher.cpp:
 
 /run/media/jay/New\ Volume1/starspeed23/src/starspeed/init/registries.hpp:
 
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/close_code.h:
+
+/usr/include/bits/types/struct_statx_timestamp.h:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_surface.h:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_stdinc.h:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_sensor.h:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_rwops.h:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_rect.h:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_power.h:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_platform.h:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_pixels.h:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_mouse.h:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_misc.h:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_metal.h:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_locale.h:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_keycode.h:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_joystick.h:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_hidapi.h:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_haptic.h:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_gesture.h:
+
+/usr/include/bits/termios-c_oflag.h:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_gamecontroller.h:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_filesystem.h:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_events.h:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_error.h:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_cpuinfo.h:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_clipboard.h:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_blendmode.h:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_audio.h:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_assert.h:
+
 /run/media/jay/New\ Volume1/starspeed23/src/objects.cpp:
 
 /usr/include/c++/13.2.1/bits/unordered_set.h:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_loadso.h:
+
+/run/media/jay/New\ Volume1/starspeed23/src/zconf.hpp:
 
 /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/opt_random.h:
 
@@ -5664,8 +5739,6 @@ CMakeFiles/StarSpeed23.dir/src/tinyfiledialogs.cpp.o: /run/media/jay/New\ Volume
 
 /run/media/jay/New\ Volume1/starspeed23/src/starspeed/objects/enemy_spawner.hpp:
 
-/run/media/jay/New\ Volume1/starspeed23/src/starspeed/objects/bullets/bullet.hpp:
-
 /run/media/jay/New\ Volume1/starspeed23/src/starspeed/objects/background_spawner.json.hpp:
 
 /run/media/jay/New\ Volume1/starspeed23/src/starspeed/cursor.hpp:
@@ -5679,8 +5752,6 @@ CMakeFiles/StarSpeed23.dir/src/tinyfiledialogs.cpp.o: /run/media/jay/New\ Volume
 /run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/registry/registryobject.hpp:
 
 /run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/registry/registry.hpp:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/registry/keyable.hpp:
 
 /run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/gameobjects/debugtext.hpp:
 
@@ -5742,6 +5813,10 @@ CMakeFiles/StarSpeed23.dir/src/tinyfiledialogs.cpp.o: /run/media/jay/New\ Volume
 
 /usr/include/asm/sockios.h:
 
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_endian.h:
+
+/usr/include/asm-generic/sockios.h:
+
 /run/media/jay/New\ Volume1/starspeed23/libs/includes/discord/voice_manager.h:
 
 /run/media/jay/New\ Volume1/starspeed23/libs/includes/discord/types.h:
@@ -5769,6 +5844,78 @@ CMakeFiles/StarSpeed23.dir/src/tinyfiledialogs.cpp.o: /run/media/jay/New\ Volume
 /run/media/jay/New\ Volume1/starspeed23/libs/includes/curl/urlapi.h:
 
 /run/media/jay/New\ Volume1/starspeed23/libs/includes/curl/curlver.h:
+
+/usr/local/include/SDL3/SDL_video.h:
+
+/usr/local/include/SDL3/SDL_version.h:
+
+/usr/local/include/SDL3/SDL_touch.h:
+
+/usr/local/include/SDL3/SDL_timer.h:
+
+/usr/local/include/SDL3/SDL_thread.h:
+
+/usr/local/include/SDL3/SDL_system.h:
+
+/usr/local/include/SDL3/SDL_surface.h:
+
+/usr/local/include/SDL3/SDL_stdinc.h:
+
+/usr/local/include/SDL3/SDL_scancode.h:
+
+/usr/local/include/SDL3/SDL_rwops.h:
+
+/usr/local/include/SDL3/SDL_render.h:
+
+/usr/local/include/SDL3/SDL_rect.h:
+
+/run/media/jay/New\ Volume1/starspeed23/src/starspeed/objects/bullets/bullet.hpp:
+
+/usr/local/include/SDL3/SDL_quit.h:
+
+/usr/local/include/SDL3/SDL_sensor.h:
+
+/usr/local/include/SDL3/SDL_power.h:
+
+/usr/local/include/SDL3/SDL_platform_defines.h:
+
+/usr/local/include/SDL3/SDL_mutex.h:
+
+/usr/local/include/SDL3/SDL_mouse.h:
+
+/usr/local/include/SDL3/SDL_misc.h:
+
+/usr/local/include/SDL3/SDL_metal.h:
+
+/usr/local/include/SDL3/SDL_messagebox.h:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/registry/keyable.hpp:
+
+/usr/local/include/SDL3/SDL_log.h:
+
+/usr/local/include/SDL3/SDL_loadso.h:
+
+/usr/local/include/SDL3/SDL_keycode.h:
+
+/usr/local/include/SDL3/SDL_hints.h:
+
+/run/media/jay/New\ Volume1/starspeed23/src/textures.cpp:
+
+/usr/local/include/SDL3/SDL_gamepad.h:
+
+/usr/local/include/SDL3/SDL_filesystem.h:
+
+/usr/local/include/SDL3/SDL_error.h:
+
+/usr/local/include/SDL3/SDL_cpuinfo.h:
+
+/usr/local/include/SDL3/SDL_close_code.h:
+
+/usr/local/include/SDL3/SDL_clipboard.h:
+
+/usr/local/include/SDL3/SDL_bits.h:
+
+/usr/local/include/SDL3/SDL_atomic.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/xsaveoptintrin.h:
 
@@ -5810,83 +5957,77 @@ CMakeFiles/StarSpeed23.dir/src/tinyfiledialogs.cpp.o: /run/media/jay/New\ Volume
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/lwpintrin.h:
 
-/run/media/jay/New\ Volume1/starspeed23/src/starspeed/objects/music_handler.hpp:
+/usr/include/c++/13.2.1/bits/stl_construct.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/movdirintrin.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/syslimits.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/gfniintrin.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/rdseedintrin.h:
 
-/run/media/jay/New\ Volume1/starspeed23/src/starspeed/objects/ships/enemies/cina.hpp:
+/usr/include/c++/13.2.1/bits/stl_bvector.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/f16cintrin.h:
+/usr/include/bits/wordsize.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/enqcmdintrin.h:
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_video.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/emmintrin.h:
+/usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/error_constants.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/cmpccxaddintrin.h:
+/usr/include/stdio.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/clwbintrin.h:
+/usr/include/c++/13.2.1/bits/stl_algobase.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/cetintrin.h:
+/usr/include/bits/posix1_lim.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/bmi2intrin.h:
+/usr/include/bits/types/struct_osockaddr.h:
 
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/curl/easy.h:
+/usr/include/c++/13.2.1/memory_resource:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avxvnniintrin.h:
+/usr/include/c++/13.2.1/pstl/glue_memory_impl.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/stddef.h:
+/usr/include/wchar.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avxintrin.h:
+/usr/include/c++/13.2.1/bits/shared_ptr_base.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avx512vpopcntdqvlintrin.h:
+/usr/include/c++/13.2.1/bits/ranges_uninitialized.h:
 
-/usr/include/c++/13.2.1/bits/regex_automaton.tcc:
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/curl/options.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avx512vpopcntdqintrin.h:
+/usr/include/tbb/task_arena.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avx512vp2intersectvlintrin.h:
+/usr/local/include/SDL3/SDL_properties.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avx512vp2intersectintrin.h:
+/usr/include/c++/13.2.1/bits/ranges_algobase.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avx512vnnivlintrin.h:
+/usr/include/c++/13.2.1/mutex:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avx512vnniintrin.h:
+/usr/include/bits/libm-simd-decl-stubs.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avx512vbmivlintrin.h:
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/discord/activity_manager.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avx512vbmi2vlintrin.h:
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/content/content.hpp:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avx512vbmi2intrin.h:
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/object/gameobject.hpp:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avx512vlbwintrin.h:
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_atomic.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avx512pfintrin.h:
+/usr/include/c++/13.2.1/ios:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avx512ifmavlintrin.h:
+/usr/include/c++/13.2.1/bits/nested_exception.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avx512ifmaintrin.h:
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/components/collider.hpp:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avx512fintrin.h:
+/usr/include/c++/13.2.1/bits/move_only_function.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avx512dqintrin.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avx512bwintrin.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avx512bf16intrin.h:
-
-/run/media/jay/New\ Volume1/starspeed23/src/starspeed/scenes/fight_end.hpp:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avx5124vnniwintrin.h:
+/usr/include/endian.h:
 
 /usr/include/c++/13.2.1/bits/stl_pair.h:
+
+/usr/local/include/SDL3/SDL_hidapi.h:
+
+/usr/include/c++/13.2.1/bits/iterator_concepts.h:
 
 /usr/include/c++/13.2.1/bits/atomic_wait.h:
 
 /usr/include/c++/13.2.1/bits/gslice.h:
-
-/usr/include/bits/types/__fpos64_t.h:
 
 /run/media/jay/New\ Volume1/starspeed23/src/starspeed/objects/ships/enemies/cent.hpp:
 
@@ -5896,29 +6037,35 @@ CMakeFiles/StarSpeed23.dir/src/tinyfiledialogs.cpp.o: /run/media/jay/New\ Volume
 
 /usr/include/c++/13.2.1/bits/requires_hosted.h:
 
+/usr/include/bits/types/__fpos64_t.h:
+
 /run/media/jay/New\ Volume1/starspeed23/src/discord.cpp:
 
 /usr/include/c++/13.2.1/bits/forward_list.tcc:
 
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_platform.h:
-
 /usr/include/c++/13.2.1/bits/exception_defines.h:
+
+/usr/local/include/SDL3/SDL_video_capture.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/raointintrin.h:
 
 /usr/include/c++/13.2.1/bits/erase_if.h:
 
+/usr/include/c++/13.2.1/bits/cxxabi_init_exception.h:
+
+/usr/include/sys/sysinfo.h:
+
 /usr/include/c++/13.2.1/bits/cxxabi_forced.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avx512vbmiintrin.h:
-
-/usr/include/c++/13.2.1/bits/codecvt.h:
 
 /usr/include/bits/uintn-identity.h:
 
 /usr/include/c++/13.2.1/bits/basic_string.tcc:
 
 /usr/include/bits/posix2_lim.h:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_config.h:
+
+/usr/include/c++/13.2.1/bits/basic_string.h:
 
 /usr/include/c++/13.2.1/bits/basic_ios.tcc:
 
@@ -5934,7 +6081,21 @@ CMakeFiles/StarSpeed23.dir/src/tinyfiledialogs.cpp.o: /run/media/jay/New\ Volume
 
 /usr/include/c++/13.2.1/bits/cpp_type_traits.h:
 
+/usr/local/include/SDL3/SDL_haptic.h:
+
 /usr/include/sys/select.h:
+
+/usr/include/stdint.h:
+
+/usr/include/c++/13.2.1/bits/ptr_traits.h:
+
+/usr/include/c++/13.2.1/bits/algorithmfwd.h:
+
+/usr/include/oneapi/tbb/detail/_export.h:
+
+/usr/include/bits/types/struct_timespec.h:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/content/font.hpp:
 
 /usr/include/c++/13.2.1/bits/stl_multimap.h:
 
@@ -5952,41 +6113,37 @@ CMakeFiles/StarSpeed23.dir/src/tinyfiledialogs.cpp.o: /run/media/jay/New\ Volume
 
 /usr/include/c++/13.2.1/bits/unique_lock.h:
 
-/usr/include/bits/wordsize.h:
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_touch.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/syslimits.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/rdseedintrin.h:
-
-/usr/include/c++/13.2.1/bits/stl_bvector.h:
-
-/usr/include/stdio.h:
+/usr/include/c++/13.2.1/bits/locale_facets_nonio.tcc:
 
 /run/media/jay/New\ Volume1/starspeed23/libs/includes/discord/achievement_manager.h:
 
 /usr/include/bits/utsname.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/ia32intrin.h:
+/usr/include/bits/unistd_ext.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avx512fp16vlintrin.h:
+/usr/include/c++/13.2.1/bits/std_abs.h:
 
-/usr/include/bits/typesizes.h:
+/usr/include/c++/13.2.1/tr1/ell_integral.tcc:
 
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_joystick.h:
+/usr/include/c++/13.2.1/bits/memory_resource.h:
+
+/usr/include/bits/types/wint_t.h:
 
 /usr/include/bits/types/timer_t.h:
 
 /usr/include/bits/types/time_t.h:
 
+/usr/include/c++/13.2.1/bits/ranges_algo.h:
+
 /usr/include/bits/types/struct_timeval.h:
 
-/usr/include/oneapi/tbb/detail/_export.h:
+/usr/include/c++/13.2.1/bits/chrono.h:
 
-/usr/include/bits/types/struct_timespec.h:
+/usr/include/bits/types/struct_sched_param.h:
 
-/usr/include/c++/13.2.1/bits/algorithmfwd.h:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/content/font.hpp:
+/usr/local/include/SDL3/SDL_endian.h:
 
 /usr/include/c++/13.2.1/bits/alloc_traits.h:
 
@@ -5998,69 +6155,29 @@ CMakeFiles/StarSpeed23.dir/src/tinyfiledialogs.cpp.o: /run/media/jay/New\ Volume
 
 /usr/include/bits/environments.h:
 
+/usr/include/c++/13.2.1/bits/ostream.tcc:
+
+/usr/include/bits/types/sigset_t.h:
+
 /run/media/jay/New\ Volume1/starspeed23/libs/includes/fuchslib/key.hpp:
 
 /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h:
 
-/usr/include/bits/types/cookie_io_functions_t.h:
+/usr/include/oneapi/tbb/detail/_range_common.h:
 
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_metal.h:
+/usr/include/c++/13.2.1/bits/stl_iterator.h:
 
-/usr/include/bits/types/clockid_t.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avx512bf16vlintrin.h:
 
-/usr/include/c++/13.2.1/bits/hashtable.h:
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_ttf.h:
 
-/usr/include/c++/13.2.1/backward/auto_ptr.h:
+/usr/include/c++/13.2.1/backward/binders.h:
 
-/usr/include/bits/types/struct_statx_timestamp.h:
+/usr/include/bits/types/__sigset_t.h:
 
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_surface.h:
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/getriebe.hpp:
 
-/usr/include/c++/13.2.1/random:
-
-/usr/include/bits/types/__locale_t.h:
-
-/usr/include/c++/13.2.1/ostream:
-
-/usr/include/bits/types/__FILE.h:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_misc.h:
-
-/usr/include/features.h:
-
-/usr/include/bits/waitstatus.h:
-
-/usr/include/bits/wchar.h:
-
-/usr/include/bits/timesize.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/rtmintrin.h:
-
-/usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/messages_members.h:
-
-/usr/include/bits/types/struct_itimerspec.h:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_power.h:
-
-/usr/include/bits/sched.h:
-
-/usr/include/bits/struct_rwlock.h:
-
-/usr/include/c++/13.2.1/bits/fs_path.h:
-
-/usr/include/c++/13.2.1/bits/shared_ptr.h:
-
-/usr/include/bits/time64.h:
-
-/run/media/jay/New\ Volume1/starspeed23/src/starspeed/init/objects.hpp:
-
-/usr/include/bits/stdlib-bsearch.h:
-
-/usr/include/c++/13.2.1/bits/locale_facets.h:
-
-/usr/include/bits/stdio.h:
-
-/usr/include/bits/stdint-uintn.h:
+/usr/include/c++/13.2.1/bits/parse_numbers.h:
 
 /run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/registry/registries.hpp:
 
@@ -6068,119 +6185,47 @@ CMakeFiles/StarSpeed23.dir/src/tinyfiledialogs.cpp.o: /run/media/jay/New\ Volume
 
 /usr/include/asm/errno.h:
 
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/getriebe.hpp:
+/usr/include/bits/stdint-uintn.h:
 
-/usr/include/c++/13.2.1/bits/parse_numbers.h:
+/usr/local/include/SDL3/SDL_init.h:
 
 /usr/include/c++/13.2.1/condition_variable:
 
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/content/sound.hpp:
+/usr/include/bits/wchar.h:
 
-/usr/include/bits/setjmp.h:
+/usr/include/bits/waitstatus.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/wmmintrin.h:
+/usr/include/c++/13.2.1/bits/unique_ptr.h:
 
-/usr/include/bits/pthread_stack_min-dynamic.h:
+/usr/include/c++/13.2.1/stdlib.h:
 
-/usr/include/bits/posix1_lim.h:
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_main.h:
 
-/usr/include/bits/types/struct_osockaddr.h:
+/usr/include/bits/sigstksz.h:
 
-/usr/include/c++/13.2.1/memory_resource:
+/usr/include/alloca.h:
 
-/usr/include/c++/13.2.1/pstl/glue_memory_impl.h:
+/usr/include/c++/13.2.1/shared_mutex:
 
-/usr/include/wchar.h:
+/usr/include/c++/13.2.1/iostream:
 
-/usr/include/bits/types/clock_t.h:
+/usr/include/oneapi/tbb/info.h:
 
-/usr/include/bits/types/__fpos_t.h:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/close_code.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/amxfp16intrin.h:
-
-/usr/include/bits/mathcalls.h:
-
-/run/media/jay/New\ Volume1/starspeed23/src/zlib.hpp:
-
-/run/media/jay/New\ Volume1/starspeed23/src/starspeed/scenes/login.hpp:
-
-/usr/include/bits/mathcalls-narrow.h:
-
-/usr/include/math.h:
-
-/usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/gthr-default.h:
-
-/usr/include/oneapi/tbb/parallel_for.h:
-
-/usr/include/asm/socket.h:
-
-/usr/include/bits/mathcalls-helper-functions.h:
-
-/usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/error_constants.h:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_video.h:
-
-/usr/include/bits/locale.h:
-
-/usr/include/oneapi/tbb/detail/_string_resource.h:
-
-/usr/include/bits/local_lim.h:
+/usr/include/bits/semaphore.h:
 
 /usr/include/c++/13.2.1/bits/locale_facets_nonio.h:
 
 /usr/include/c++/13.2.1/bits/locale_classes.tcc:
 
-/usr/include/bits/semaphore.h:
-
 /usr/include/c++/13.2.1/cassert:
 
-/usr/include/c++/13.2.1/bits/ranges_algobase.h:
+/usr/include/c++/13.2.1/bits/new_allocator.h:
 
-/usr/include/bits/syscall.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/tmmintrin.h:
 
-/usr/include/bits/iscanonical.h:
+/usr/include/c++/13.2.1/pstl/algorithm_impl.h:
 
-/usr/include/bits/getopt_posix.h:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_gesture.h:
-
-/usr/include/c++/13.2.1/bits/fs_fwd.h:
-
-/usr/include/c++/13.2.1/bits/unordered_map.h:
-
-/usr/include/oneapi/tbb/detail/_range_common.h:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_clipboard.h:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_audio.h:
-
-/usr/include/c++/13.2.1/bits/gslice_array.h:
-
-/usr/include/c++/13.2.1/exception:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_error.h:
-
-/usr/include/c++/13.2.1/ctime:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_filesystem.h:
-
-/usr/include/oneapi/tbb/detail/_task_handle.h:
-
-/usr/include/bits/errno.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avx512erintrin.h:
-
-/usr/include/bits/pthreadtypes-arch.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/keylockerintrin.h:
-
-/run/media/jay/New\ Volume1/starspeed23/src/mine.hpp:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avxvnniint8intrin.h:
-
-/usr/include/c++/13.2.1/initializer_list:
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avx512vpopcntdqvlintrin.h:
 
 /run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/components/transform.hpp:
 
@@ -6192,191 +6237,49 @@ CMakeFiles/StarSpeed23.dir/src/tinyfiledialogs.cpp.o: /run/media/jay/New\ Volume
 
 /usr/include/oneapi/tbb/detail/_aligned_space.h:
 
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/fuchslib/ruid.hpp:
+/usr/include/c++/13.2.1/bits/stream_iterator.h:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/object/camera.hpp:
 
 /usr/include/c++/13.2.1/bits/stl_function.h:
 
-/run/media/jay/New\ Volume1/starspeed23/src/zconf.hpp:
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/fuchslib/ruid.hpp:
 
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_loadso.h:
+/usr/include/bits/statx.h:
 
-/usr/include/c++/13.2.1/bits/iterator_concepts.h:
+/usr/include/c++/13.2.1/bits/atomic_base.h:
 
-/usr/include/bits/thread-shared-types.h:
+/usr/include/bits/types/__FILE.h:
 
-/run/media/jay/New\ Volume1/starspeed23/src/starspeed/achievements.hpp:
+/usr/include/features.h:
+
+/usr/include/oneapi/tbb/tbb_allocator.h:
+
+/usr/include/c++/13.2.1/bits/align.h:
+
+/usr/include/asm/unistd.h:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/object/family.hpp:
 
 /run/media/jay/New\ Volume1/starspeed23/libs/includes/curl/curl.h:
 
+/usr/local/include/SDL3/SDL_guid.h:
+
 /usr/include/asm/types.h:
 
-/usr/include/c++/13.2.1/bits/ios_base.h:
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/content/music.hpp:
 
-/usr/include/c++/13.2.1/ext/concurrence.h:
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/discord/store_manager.h:
 
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/content/texture.hpp:
+/usr/include/c++/13.2.1/bits/sstream.tcc:
 
-/usr/include/c++/13.2.1/format:
+/usr/include/c++/13.2.1/bits/hashtable.h:
 
-/usr/include/bits/select.h:
+/usr/include/bits/types/clockid_t.h:
 
-/usr/include/c++/13.2.1/compare:
+/usr/include/c++/13.2.1/bits/ranges_base.h:
 
-/usr/include/c++/13.2.1/bits/fstream.tcc:
-
-/usr/include/c++/13.2.1/bits/exception.h:
-
-/usr/include/bits/time.h:
-
-/usr/include/asm/posix_types.h:
-
-/usr/include/bits/stdio_lim.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/xsavesintrin.h:
-
-/usr/include/linux/const.h:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/object/componentholder.hpp:
-
-/usr/include/bits/signum-generic.h:
-
-/usr/include/c++/13.2.1/tr1/beta_function.tcc:
-
-/usr/include/bits/types/struct_sched_param.h:
-
-/usr/include/c++/13.2.1/bits/chrono.h:
-
-/usr/include/asm-generic/errno-base.h:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_rect.h:
-
-/usr/include/bits/endian.h:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/openssl/opensslconf.h:
-
-/usr/include/c++/13.2.1/bits/char_traits.h:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL.h:
-
-/run/media/jay/New\ Volume1/starspeed23/src/registries.cpp:
-
-/usr/include/oneapi/tbb/detail/_assert.h:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_image.h:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/fuchslib/utility.hpp:
-
-/usr/include/bits/long-double.h:
-
-/usr/include/c++/13.2.1/unordered_set:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avx512cdintrin.h:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/event.hpp:
-
-/usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avx512bitalgintrin.h:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/types/scale.hpp:
-
-/usr/include/c++/13.2.1/bits/regex_compiler.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/lzcntintrin.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/clflushoptintrin.h:
-
-/run/media/jay/New\ Volume1/starspeed23/src/starspeed/resourcepack.hpp:
-
-/usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/basic_file.h:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_events.h:
-
-/run/media/jay/New\ Volume1/starspeed23/src/starspeed/objects/ships/enemies/skrip.hpp:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/content/resourcelocation.hpp:
-
-/usr/include/c++/13.2.1/debug/debug.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/tbmintrin.h:
-
-/usr/include/c++/13.2.1/bits/functional_hash.h:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_haptic.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/stdarg.h:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/types/rotation.hpp:
-
-/usr/include/c++/13.2.1/bits/cxxabi_init_exception.h:
-
-/usr/include/sys/sysinfo.h:
-
-/usr/include/c++/13.2.1/bit:
-
-/usr/include/oneapi/tbb/profiling.h:
-
-/usr/include/c++/13.2.1/bits/unique_ptr.h:
-
-/usr/include/c++/13.2.1/stdlib.h:
-
-/usr/include/c++/13.2.1/bits/basic_string.h:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_config.h:
-
-/usr/include/oneapi/tbb/detail/_task.h:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/fuchslib/data.hpp:
-
-/run/media/jay/New\ Volume1/starspeed23/src/achievements.cpp:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/discord/user_manager.h:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/fuchslib/shorter.hpp:
-
-/usr/include/c++/13.2.1/cctype:
-
-/usr/include/c++/13.2.1/bits/locale_facets.tcc:
-
-/usr/include/tbb/parallel_reduce.h:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/openssl/configuration.h:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_hints.h:
-
-/usr/include/bits/types.h:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/object/gameobject.hpp:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/discord/activity_manager.h:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/content/content.hpp:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/sound/sound.hpp:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_mutex.h:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/game.hpp:
-
-/usr/include/c++/13.2.1/bits/ostream_insert.h:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/openssl/md5.h:
-
-/usr/include/asm-generic/posix_types.h:
-
-/usr/include/c++/13.2.1/bits/valarray_before.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avxneconvertintrin.h:
-
-/usr/include/c++/13.2.1/concepts:
-
-/usr/include/c++/13.2.1/bits/locale_conv.h:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_cpuinfo.h:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_stdinc.h:
-
-/usr/include/c++/13.2.1/cstdio:
+/usr/include/c++/13.2.1/ext/numeric_traits.h:
 
 /usr/include/asm-generic/bitsperlong.h:
 
@@ -6390,37 +6293,239 @@ CMakeFiles/StarSpeed23.dir/src/tinyfiledialogs.cpp.o: /run/media/jay/New\ Volume
 
 /usr/include/c++/13.2.1/tr1/special_function_util.h:
 
-/usr/include/bits/struct_mutex.h:
+/usr/include/linux/close_range.h:
 
-/usr/include/c++/13.2.1/bits/forward_list.h:
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/fuchslib/encryption/basic.hpp:
 
-/usr/include/asm-generic/sockios.h:
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/openssl/opensslconf.h:
 
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_endian.h:
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_system.h:
 
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_log.h:
+/run/media/jay/New\ Volume1/starspeed23/src/starspeed/objects/explosion.hpp:
 
-/usr/include/c++/13.2.1/bits/max_size_type.h:
+/usr/local/include/SDL3/SDL_keyboard.h:
 
-/usr/include/bits/types/struct_FILE.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/prfchwintrin.h:
 
-/usr/include/c++/13.2.1/sstream:
+/usr/include/c++/13.2.1/pstl/execution_defs.h:
 
-/usr/include/time.h:
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_thread.h:
 
-/usr/include/bits/byteswap.h:
+/usr/include/c++/13.2.1/bits/shared_ptr_atomic.h:
 
-/usr/include/c++/13.2.1/bits/stl_uninitialized.h:
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_shape.h:
+
+/usr/include/asm-generic/int-ll64.h:
+
+/usr/include/c++/13.2.1/bits/ios_base.h:
+
+/usr/include/c++/13.2.1/ext/concurrence.h:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_timer.h:
+
+/usr/include/c++/13.2.1/bits/specfun.h:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/content/texture.hpp:
+
+/usr/include/c++/13.2.1/format:
+
+/usr/include/bits/select.h:
+
+/usr/include/c++/13.2.1/compare:
+
+/usr/include/bits/endian.h:
+
+/usr/include/asm/socket.h:
+
+/usr/include/bits/mathcalls-helper-functions.h:
+
+/usr/include/bits/types/struct_itimerspec.h:
+
+/usr/include/bits/sched.h:
+
+/usr/include/bits/struct_rwlock.h:
+
+/usr/include/c++/13.2.1/bits/char_traits.h:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL.h:
+
+/run/media/jay/New\ Volume1/starspeed23/src/registries.cpp:
+
+/usr/include/oneapi/tbb/detail/_assert.h:
+
+/usr/include/c++/13.2.1/bits/semaphore_base.h:
+
+/run/media/jay/New\ Volume1/starspeed23/src/starspeed/objects/star.hpp:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/object/dataObject.hpp:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_mutex.h:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/sound/sound.hpp:
+
+/usr/include/c++/13.2.1/bits/ostream_insert.h:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/game.hpp:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/content/sound.hpp:
+
+/usr/local/include/SDL3/SDL_pixels.h:
+
+/usr/include/bits/setjmp.h:
+
+/usr/include/c++/13.2.1/bits/shared_ptr.h:
+
+/usr/include/c++/13.2.1/bits/fs_path.h:
+
+/usr/include/c++/13.2.1/bits/ranges_cmp.h:
+
+/usr/include/linux/types.h:
+
+/usr/include/c++/13.2.1/bits/exception_ptr.h:
+
+/usr/include/asm/unistd_64.h:
+
+/usr/include/bits/types/__fpos_t.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/amxfp16intrin.h:
+
+/usr/include/bits/long-double.h:
+
+/usr/include/c++/13.2.1/bits/stl_heap.h:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/motor.hpp:
+
+/usr/include/c++/13.2.1/bits/regex_automaton.tcc:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avx512vpopcntdqintrin.h:
+
+/usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/cmpccxaddintrin.h:
+
+/usr/include/c++/13.2.1/bits/regex_compiler.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/lzcntintrin.h:
+
+/run/media/jay/New\ Volume1/starspeed23/src/starspeed/resourcepack.hpp:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/clflushoptintrin.h:
+
+/usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/basic_file.h:
+
+/run/media/jay/New\ Volume1/starspeed23/src/starspeed/objects/ships/enemies/skrip.hpp:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/content/resourcelocation.hpp:
+
+/usr/include/c++/13.2.1/debug/debug.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/tbmintrin.h:
+
+/usr/include/c++/13.2.1/bits/functional_hash.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/stdarg.h:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/types/rotation.hpp:
+
+/usr/include/c++/13.2.1/bit:
+
+/usr/include/oneapi/tbb/profiling.h:
+
+/usr/include/bits/sigevent-consts.h:
+
+/usr/include/c++/13.2.1/bits/stl_iterator_base_funcs.h:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/components/sprite.hpp:
+
+/usr/include/c++/13.2.1/unordered_map:
+
+/usr/include/bits/getopt_posix.h:
+
+/usr/include/c++/13.2.1/bits/predefined_ops.h:
+
+/usr/include/errno.h:
+
+/run/media/jay/New\ Volume1/starspeed23/src/splashs.cpp:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_version.h:
+
+/usr/include/c++/13.2.1/variant:
+
+/usr/include/bits/uio_lim.h:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_render.h:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/discord/core.h:
+
+/usr/include/bits/math-vector.h:
+
+/usr/include/bits/stdio.h:
+
+/run/media/jay/New\ Volume1/starspeed23/src/starspeed/objects/ships/enemies/cina.hpp:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/f16cintrin.h:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/fuchslib/data.hpp:
+
+/run/media/jay/New\ Volume1/starspeed23/src/achievements.cpp:
+
+/usr/include/c++/13.2.1/bits/quoted_string.h:
+
+/usr/include/c++/13.2.1/bits/valarray_array.tcc:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/discord/user_manager.h:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/fuchslib/shorter.hpp:
+
+/usr/include/c++/13.2.1/cctype:
+
+/usr/include/c++/13.2.1/bits/locale_facets.tcc:
+
+/run/media/jay/New\ Volume1/starspeed23/src/starspeed/init/objects.hpp:
+
+/usr/include/bits/stdlib-bsearch.h:
+
+/usr/include/c++/13.2.1/bits/locale_facets.h:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/fuchslib/utility.hpp:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_image.h:
+
+/usr/include/bits/locale.h:
+
+/usr/include/oneapi/tbb/detail/_string_resource.h:
+
+/usr/include/bits/waitflags.h:
+
+/usr/include/c++/13.2.1/bits/streambuf_iterator.h:
+
+/usr/include/asm-generic/errno-base.h:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/openssl/md5.h:
+
+/usr/include/asm-generic/posix_types.h:
+
+/usr/include/c++/13.2.1/bits/valarray_before.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avxneconvertintrin.h:
+
+/usr/include/c++/13.2.1/concepts:
+
+/usr/include/c++/13.2.1/bits/refwrap.h:
+
+/usr/include/semaphore.h:
+
+/usr/include/c++/13.2.1/bits/locale_conv.h:
+
+/run/media/jay/New\ Volume1/starspeed23/src/starspeed/profile.hpp:
+
+/usr/include/c++/13.2.1/bits/slice_array.h:
 
 /usr/include/bits/floatn-common.h:
 
-/usr/include/bits/statx.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/keylockerintrin.h:
 
-/usr/include/c++/13.2.1/bits/atomic_base.h:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/object/family.hpp:
-
-/usr/include/asm/unistd.h:
+/run/media/jay/New\ Volume1/starspeed23/src/mine.hpp:
 
 /run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/paths.hpp:
 
@@ -6432,183 +6537,61 @@ CMakeFiles/StarSpeed23.dir/src/tinyfiledialogs.cpp.o: /run/media/jay/New\ Volume
 
 /run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/classdef.hpp:
 
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/object/display.hpp:
-
 /usr/include/asm/bitsperlong.h:
 
-/run/media/jay/New\ Volume1/starspeed23/src/starspeed/objects/star.hpp:
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/object/display.hpp:
 
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/object/dataObject.hpp:
+/usr/include/c++/13.2.1/bits/localefwd.h:
 
-/usr/include/c++/13.2.1/bits/semaphore_base.h:
+/usr/include/bits/types/struct_tm.h:
 
-/usr/include/asm-generic/int-ll64.h:
+/usr/include/c++/13.2.1/type_traits:
 
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_shape.h:
+/usr/include/oneapi/tbb/detail/_namespace_injection.h:
 
-/usr/include/c++/13.2.1/bits/std_function.h:
+/usr/include/c++/13.2.1/bits/unordered_map.h:
 
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/openssl/opensslv.h:
-
-/usr/include/asm-generic/errno.h:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/openssl/e_os2.h:
-
-/usr/include/sys/single_threaded.h:
-
-/usr/include/asm/unistd_64.h:
-
-/usr/include/c++/13.2.1/bits/exception_ptr.h:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_hidapi.h:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_assert.h:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_ttf.h:
-
-/usr/include/bits/flt-eval-method.h:
+/usr/include/c++/13.2.1/bits/fs_fwd.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/amxtileintrin.h:
 
-/usr/include/bits/getopt_core.h:
+/usr/include/bits/flt-eval-method.h:
 
-/usr/include/sys/socket.h:
+/usr/include/bits/timesize.h:
 
-/usr/include/limits.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/rtmintrin.h:
 
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_blendmode.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/cldemoteintrin.h:
-
-/usr/include/bits/floatn.h:
-
-/usr/include/bits/waitflags.h:
-
-/usr/include/c++/13.2.1/bits/streambuf_iterator.h:
-
-/usr/include/bits/unistd_ext.h:
-
-/usr/include/bits/sigevent-consts.h:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/components/sprite.hpp:
-
-/usr/include/c++/13.2.1/bits/stl_iterator_base_funcs.h:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_locale.h:
-
-/usr/include/c++/13.2.1/tr1/poly_hermite.tcc:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_mouse.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avx512vlintrin.h:
-
-/usr/include/linux/sysinfo.h:
-
-/usr/include/c++/13.2.1/pstl/utils.h:
-
-/usr/include/c++/13.2.1/stop_token:
+/usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/messages_members.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avxifmaintrin.h:
 
 /run/media/jay/New\ Volume1/starspeed23/src/starspeed/textures.hpp:
 
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_keycode.h:
+/usr/include/asm/posix_types.h:
 
-/usr/include/c++/13.2.1/tr1/legendre_function.tcc:
+/usr/include/c++/13.2.1/bits/fstream.tcc:
+
+/usr/include/c++/13.2.1/bits/exception.h:
+
+/usr/include/bits/time.h:
 
 /usr/include/asm/posix_types_64.h:
 
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_pixels.h:
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_log.h:
 
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/discord/core.h:
+/usr/include/c++/13.2.1/bits/max_size_type.h:
 
-/usr/include/bits/math-vector.h:
+/usr/include/bits/types/struct_FILE.h:
 
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_render.h:
+/usr/include/c++/13.2.1/sstream:
 
-/usr/include/bits/sigstack.h:
-
-/usr/include/c++/13.2.1/pstl/memory_impl.h:
-
-/usr/include/c++/13.2.1/iostream:
-
-/usr/include/oneapi/tbb/info.h:
-
-/usr/include/bits/termios-c_oflag.h:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_gamecontroller.h:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_rwops.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/fxsrintrin.h:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_scancode.h:
-
-/usr/include/sys/syscall.h:
-
-/usr/include/c++/13.2.1/backward/binders.h:
-
-/usr/include/bits/types/__sigset_t.h:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_sensor.h:
-
-/run/media/jay/New\ Volume1/starspeed23/src/splashs.cpp:
-
-/usr/include/c++/13.2.1/variant:
-
-/usr/include/bits/uio_lim.h:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_version.h:
-
-/run/media/jay/New\ Volume1/starspeed23/src/starspeed/objects/explosion.hpp:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/prfchwintrin.h:
-
-/usr/include/c++/13.2.1/pstl/execution_defs.h:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_system.h:
-
-/usr/include/c++/13.2.1/cmath:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_mixer.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avx512vldqintrin.h:
-
-/usr/include/c++/13.2.1/thread:
-
-/usr/include/c++/13.2.1/unordered_map:
-
-/usr/include/bits/timex.h:
-
-/usr/include/oneapi/tbb/version.h:
-
-/usr/include/bits/sigstksz.h:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_main.h:
-
-/usr/include/alloca.h:
-
-/usr/include/c++/13.2.1/shared_mutex:
-
-/usr/include/bits/types/FILE.h:
-
-/usr/include/c++/13.2.1/bits/stl_tree.h:
-
-/usr/include/linux/posix_types.h:
+/usr/include/time.h:
 
 /usr/include/assert.h:
 
-/usr/include/bits/posix_opt.h:
+/usr/include/c++/13.2.1/bits/stl_uninitialized.h:
 
-/usr/include/signal.h:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/json.hpp:
-
-/usr/include/bits/atomic_wide_counter.h:
-
-/usr/include/bits/stdlib-float.h:
-
-/usr/include/tbb/parallel_for.h:
+/usr/include/bits/byteswap.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/limits.h:
 
@@ -6624,155 +6607,139 @@ CMakeFiles/StarSpeed23.dir/src/tinyfiledialogs.cpp.o: /run/media/jay/New\ Volume
 
 /usr/include/bits/fp-fast.h:
 
-/usr/include/c++/13.2.1/bits/istream.tcc:
+/usr/include/c++/13.2.1/bits/gslice_array.h:
 
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/types/vector.hpp:
+/usr/include/c++/13.2.1/exception:
+
+/usr/include/bits/getopt_core.h:
+
+/usr/include/c++/13.2.1/bits/codecvt.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avx512vbmiintrin.h:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_hints.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/bits/syscall.h:
+
+/usr/include/bits/iscanonical.h:
+
+/usr/include/c++/13.2.1/bits/istream.tcc:
 
 /usr/include/wctype.h:
 
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_touch.h:
-
-/usr/include/c++/13.2.1/bits/locale_facets_nonio.tcc:
-
-/usr/include/c++/13.2.1/bits/localefwd.h:
-
-/usr/include/bits/types/struct_tm.h:
-
-/usr/include/c++/13.2.1/type_traits:
-
-/usr/include/oneapi/tbb/detail/_namespace_injection.h:
-
-/usr/include/endian.h:
-
-/usr/include/bits/types/wint_t.h:
-
-/usr/include/c++/13.2.1/bits/memory_resource.h:
-
-/usr/include/c++/13.2.1/bits/stl_algobase.h:
-
-/usr/include/c++/13.2.1/bits/memoryfwd.h:
-
-/usr/include/c++/13.2.1/bits/regex_error.h:
-
-/usr/include/c++/13.2.1/utility:
-
-/usr/include/c++/13.2.1/bits/move.h:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/fuchslib/encryption/basic.hpp:
-
-/usr/include/linux/close_range.h:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/components/collider.hpp:
-
-/usr/include/c++/13.2.1/bits/move_only_function.h:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/object/camera.hpp:
-
-/usr/include/c++/13.2.1/bits/stream_iterator.h:
-
-/usr/include/c++/13.2.1/bits/nested_exception.h:
-
-/usr/include/c++/13.2.1/bits/new_allocator.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/tmmintrin.h:
-
-/usr/include/c++/13.2.1/pstl/algorithm_impl.h:
-
-/usr/include/c++/13.2.1/bits/node_handle.h:
-
-/usr/include/bits/types/sigset_t.h:
-
-/usr/include/c++/13.2.1/bits/ostream.tcc:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_atomic.h:
-
-/usr/include/c++/13.2.1/ios:
-
-/usr/include/errno.h:
-
-/usr/include/c++/13.2.1/bits/predefined_ops.h:
-
-/usr/include/stdint.h:
-
-/usr/include/c++/13.2.1/bits/ptr_traits.h:
-
-/usr/include/c++/13.2.1/bits/align.h:
-
-/usr/include/oneapi/tbb/tbb_allocator.h:
-
-/usr/include/c++/13.2.1/bits/quoted_string.h:
-
-/usr/include/c++/13.2.1/bits/valarray_array.tcc:
-
-/usr/include/c++/13.2.1/bits/range_access.h:
-
-/usr/include/c++/13.2.1/bits/ranges_algo.h:
-
-/usr/include/c++/13.2.1/ext/numeric_traits.h:
-
-/usr/include/c++/13.2.1/bits/ranges_base.h:
-
-/usr/include/c++/13.2.1/bits/ranges_cmp.h:
-
-/usr/include/linux/types.h:
-
-/usr/include/c++/13.2.1/bits/ranges_uninitialized.h:
-
-/usr/include/bits/libm-simd-decl-stubs.h:
-
-/usr/include/c++/13.2.1/mutex:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/curl/options.h:
-
-/usr/include/tbb/task_arena.h:
-
-/usr/include/semaphore.h:
-
-/usr/include/c++/13.2.1/bits/refwrap.h:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_thread.h:
-
-/usr/include/c++/13.2.1/bits/shared_ptr_atomic.h:
-
-/usr/include/c++/13.2.1/bits/shared_ptr_base.h:
-
-/run/media/jay/New\ Volume1/starspeed23/src/starspeed/profile.hpp:
-
-/usr/include/c++/13.2.1/bits/slice_array.h:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_timer.h:
-
-/usr/include/c++/13.2.1/bits/specfun.h:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/content/music.hpp:
-
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/discord/store_manager.h:
-
-/usr/include/c++/13.2.1/bits/sstream.tcc:
-
-/usr/include/c++/13.2.1/ext/aligned_buffer.h:
-
-/usr/include/c++/13.2.1/string_view:
-
-/usr/include/c++/13.2.1/bits/std_abs.h:
-
-/usr/include/c++/13.2.1/tr1/ell_integral.tcc:
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/types/vector.hpp:
 
 /run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/log.hpp:
 
-/usr/include/bits/libc-header-start.h:
-
 /usr/include/c++/13.2.1/bits/std_mutex.h:
 
-/usr/include/c++/13.2.1/bits/stl_construct.h:
+/usr/include/bits/libc-header-start.h:
 
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/motor.hpp:
+/usr/include/c++/13.2.1/bits/memoryfwd.h:
 
-/usr/include/c++/13.2.1/bits/stl_heap.h:
+/usr/include/bits/local_lim.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avx512bf16vlintrin.h:
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/object/componentholder.hpp:
 
-/usr/include/c++/13.2.1/bits/stl_iterator.h:
+/usr/include/c++/13.2.1/string_view:
+
+/usr/include/c++/13.2.1/ext/aligned_buffer.h:
+
+/usr/include/bits/signum-generic.h:
+
+/usr/include/c++/13.2.1/tr1/beta_function.tcc:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/xsavesintrin.h:
+
+/usr/include/linux/const.h:
+
+/run/media/jay/New\ Volume1/starspeed23/src/zlib.hpp:
+
+/run/media/jay/New\ Volume1/starspeed23/src/starspeed/scenes/login.hpp:
+
+/usr/include/bits/mathcalls-narrow.h:
+
+/usr/include/math.h:
+
+/usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/gthr-default.h:
+
+/usr/include/oneapi/tbb/parallel_for.h:
+
+/usr/include/signal.h:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/json.hpp:
+
+/usr/include/bits/atomic_wide_counter.h:
+
+/usr/include/bits/posix_opt.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/wmmintrin.h:
+
+/usr/include/bits/pthread_stack_min-dynamic.h:
+
+/usr/include/c++/13.2.1/bits/range_access.h:
+
+/usr/include/c++/13.2.1/bits/regex_error.h:
+
+/usr/include/c++/13.2.1/bits/move.h:
+
+/usr/include/c++/13.2.1/utility:
+
+/usr/include/oneapi/tbb/detail/_task.h:
+
+/usr/include/c++/13.2.1/bits/node_handle.h:
+
+/usr/include/bits/types/cookie_io_functions_t.h:
+
+/usr/include/tbb/parallel_reduce.h:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/openssl/configuration.h:
+
+/usr/include/bits/time64.h:
+
+/usr/include/tbb/parallel_for.h:
+
+/usr/include/bits/stdlib-float.h:
+
+/usr/local/include/SDL3/SDL_joystick.h:
+
+/usr/include/c++/13.2.1/bits/forward_list.h:
+
+/usr/include/bits/struct_mutex.h:
+
+/run/media/jay/New\ Volume1/starspeed23/src/starspeed/achievements.hpp:
+
+/usr/include/bits/thread-shared-types.h:
+
+/usr/include/bits/errno.h:
+
+/usr/include/oneapi/tbb/version.h:
+
+/usr/include/bits/timex.h:
+
+/usr/include/oneapi/tbb/detail/_task_handle.h:
+
+/usr/include/bits/types/FILE.h:
+
+/usr/include/c++/13.2.1/bits/stl_tree.h:
+
+/usr/include/linux/posix_types.h:
+
+/usr/include/c++/13.2.1/backward/auto_ptr.h:
+
+/usr/include/c++/13.2.1/random:
+
+/usr/include/bits/types/__locale_t.h:
+
+/usr/include/c++/13.2.1/ostream:
+
+/usr/include/bits/mathcalls.h:
+
+/usr/include/bits/types/clock_t.h:
 
 /usr/include/c++/13.2.1/bits/stl_iterator_base_types.h:
 
@@ -6790,15 +6757,17 @@ CMakeFiles/StarSpeed23.dir/src/tinyfiledialogs.cpp.o: /run/media/jay/New\ Volume
 
 /usr/include/c++/13.2.1/bits/stl_tempbuf.h:
 
+/usr/local/include/SDL3/SDL_pen.h:
+
 /usr/include/c++/13.2.1/bits/stl_vector.h:
 
 /usr/include/c++/13.2.1/cstddef:
 
 /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_messagebox.h:
 
-/usr/include/sched.h:
-
 /usr/include/c++/13.2.1/bits/postypes.h:
+
+/usr/include/sched.h:
 
 /usr/include/c++/13.2.1/bits/streambuf.tcc:
 
@@ -6838,19 +6807,27 @@ CMakeFiles/StarSpeed23.dir/src/tinyfiledialogs.cpp.o: /run/media/jay/New\ Volume
 
 /usr/include/c++/13.2.1/climits:
 
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/emmintrin.h:
+
+/usr/include/c++/13.2.1/cmath:
+
 /usr/include/c++/13.2.1/codecvt:
 
 /usr/include/c++/13.2.1/cstdint:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/xsavecintrin.h:
+/usr/include/c++/13.2.1/cstdio:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/fmaintrin.h:
-
-/usr/include/c++/13.2.1/cstdlib:
+/usr/include/c++/13.2.1/ctime:
 
 /usr/include/c++/13.2.1/cwchar:
 
 /usr/include/sys/types.h:
+
+/usr/include/c++/13.2.1/unordered_set:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/event.hpp:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avx512cdintrin.h:
 
 /usr/include/c++/13.2.1/cwctype:
 
@@ -6886,6 +6863,8 @@ CMakeFiles/StarSpeed23.dir/src/tinyfiledialogs.cpp.o: /run/media/jay/New\ Volume
 
 /usr/include/oneapi/tbb/parallel_reduce.h:
 
+/usr/local/include/SDL3/SDL_assert.h:
+
 /usr/include/c++/13.2.1/ext/type_traits.h:
 
 /usr/include/c++/13.2.1/bits/regex.tcc:
@@ -6899,12 +6878,6 @@ CMakeFiles/StarSpeed23.dir/src/tinyfiledialogs.cpp.o: /run/media/jay/New\ Volume
 /usr/include/c++/13.2.1/fstream:
 
 /usr/include/c++/13.2.1/string:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/clzerointrin.h:
-
-/usr/include/c++/13.2.1/bits/hashtable_policy.h:
-
-/usr/include/c++/13.2.1/iomanip:
 
 /usr/include/c++/13.2.1/iosfwd:
 
@@ -6922,9 +6895,9 @@ CMakeFiles/StarSpeed23.dir/src/tinyfiledialogs.cpp.o: /run/media/jay/New\ Volume
 
 /usr/include/c++/13.2.1/map:
 
-/run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/types/color.hpp:
-
 /usr/include/c++/13.2.1/bits/ranges_util.h:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/types/color.hpp:
 
 /usr/include/c++/13.2.1/memory:
 
@@ -6947,6 +6920,12 @@ CMakeFiles/StarSpeed23.dir/src/tinyfiledialogs.cpp.o: /run/media/jay/New\ Volume
 /usr/include/c++/13.2.1/bits/fs_ops.h:
 
 /usr/include/c++/13.2.1/numeric:
+
+/run/media/jay/New\ Volume1/starspeed23/src/starspeed/scenes/fight_end.hpp:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avx5124vnniwintrin.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avx512ifmaintrin.h:
 
 /usr/include/bits/types/mbstate_t.h:
 
@@ -6976,6 +6955,12 @@ CMakeFiles/StarSpeed23.dir/src/tinyfiledialogs.cpp.o: /run/media/jay/New\ Volume
 
 /usr/include/c++/13.2.1/pstl/numeric_fwd.h:
 
+/usr/include/bits/sigstack.h:
+
+/usr/include/c++/13.2.1/pstl/memory_impl.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avx512vnniintrin.h:
+
 /run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/discord.hpp:
 
 /usr/include/bits/types/__mbstate_t.h:
@@ -6999,6 +6984,10 @@ CMakeFiles/StarSpeed23.dir/src/tinyfiledialogs.cpp.o: /run/media/jay/New\ Volume
 /usr/include/c++/13.2.1/bits/fs_dir.h:
 
 /usr/include/unistd.h:
+
+/usr/include/c++/13.2.1/pstl/utils.h:
+
+/usr/include/c++/13.2.1/stop_token:
 
 /usr/include/oneapi/tbb/task.h:
 
@@ -7032,6 +7021,10 @@ CMakeFiles/StarSpeed23.dir/src/tinyfiledialogs.cpp.o: /run/media/jay/New\ Volume
 
 /usr/include/c++/13.2.1/tr1/hypergeometric.tcc:
 
+/usr/include/c++/13.2.1/tr1/legendre_function.tcc:
+
+/usr/include/c++/13.2.1/tr1/poly_hermite.tcc:
+
 /usr/include/bits/pthreadtypes.h:
 
 /usr/include/c++/13.2.1/pstl/glue_numeric_impl.h:
@@ -7042,6 +7035,8 @@ CMakeFiles/StarSpeed23.dir/src/tinyfiledialogs.cpp.o: /run/media/jay/New\ Volume
 
 /usr/include/c++/13.2.1/typeinfo:
 
+/usr/local/include/SDL3/SDL.h:
+
 /usr/include/c++/13.2.1/valarray:
 
 /usr/include/c++/13.2.1/version:
@@ -7049,6 +7044,8 @@ CMakeFiles/StarSpeed23.dir/src/tinyfiledialogs.cpp.o: /run/media/jay/New\ Volume
 /run/media/jay/New\ Volume1/starspeed23/src/starspeed/objects/ships/player.hpp:
 
 /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++allocator.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avx512vbmivlintrin.h:
 
 /usr/include/c++/13.2.1/x86_64-pc-linux-gnu/bits/c++config.h:
 
@@ -7066,6 +7063,18 @@ CMakeFiles/StarSpeed23.dir/src/tinyfiledialogs.cpp.o: /run/media/jay/New\ Volume
 
 /usr/include/features-time64.h:
 
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/types/scale.hpp:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avx512bitalgintrin.h:
+
+/usr/include/sys/socket.h:
+
+/usr/local/include/SDL3/SDL_events.h:
+
+/usr/include/limits.h:
+
+/usr/local/include/SDL3/SDL_oldnames.h:
+
 /usr/include/linux/kernel.h:
 
 /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/begin_code.h:
@@ -7080,23 +7089,33 @@ CMakeFiles/StarSpeed23.dir/src/tinyfiledialogs.cpp.o: /run/media/jay/New\ Volume
 
 /usr/include/linux/stddef.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avx5124fmapsintrin.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avx512vlintrin.h:
 
-/usr/include/locale.h:
+/usr/include/linux/sysinfo.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/serializeintrin.h:
 
 /usr/include/oneapi/tbb/blocked_range.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/hresetintrin.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avx512vbmi2intrin.h:
 
-/usr/include/oneapi/tbb/cache_aligned_allocator.h:
+/usr/local/include/SDL3/SDL_locale.h:
 
 /usr/include/c++/13.2.1/bits/charconv.h:
 
 /usr/include/oneapi/tbb/detail/_config.h:
 
+/run/media/jay/New\ Volume1/starspeed23/src/starspeed/objects/music_handler.hpp:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/movdirintrin.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/gfniintrin.h:
+
 /usr/include/oneapi/tbb/detail/_exception.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/stddef.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avxintrin.h:
 
 /usr/include/c++/13.2.1/functional:
 
@@ -7130,7 +7149,15 @@ CMakeFiles/StarSpeed23.dir/src/tinyfiledialogs.cpp.o: /run/media/jay/New\ Volume
 
 /usr/include/oneapi/tbb/task_group.h:
 
+/usr/local/include/SDL3/SDL_begin_code.h:
+
 /usr/include/pthread.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avx512ifmavlintrin.h:
+
+/usr/include/bits/floatn.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/cldemoteintrin.h:
 
 /run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/makros.hpp:
 
@@ -7141,6 +7168,18 @@ CMakeFiles/StarSpeed23.dir/src/tinyfiledialogs.cpp.o: /run/media/jay/New\ Volume
 /usr/include/string.h:
 
 /usr/include/sys/cdefs.h:
+
+/usr/include/c++/13.2.1/bits/std_function.h:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/openssl/e_os2.h:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/openssl/opensslv.h:
+
+/usr/include/asm-generic/errno.h:
+
+/usr/include/sys/single_threaded.h:
+
+/usr/include/sys/syscall.h:
 
 /usr/include/sys/time.h:
 
@@ -7171,3 +7210,85 @@ CMakeFiles/StarSpeed23.dir/src/tinyfiledialogs.cpp.o: /run/media/jay/New\ Volume
 /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/amxcomplexintrin.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/amxint8intrin.h:
+
+/usr/include/locale.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avx5124fmapsintrin.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avx512bf16intrin.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avx512bwintrin.h:
+
+/usr/local/include/SDL3/SDL_platform.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avx512dqintrin.h:
+
+/usr/include/bits/pthreadtypes-arch.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avx512erintrin.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avx512fintrin.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/ia32intrin.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avx512fp16vlintrin.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avx512vlbwintrin.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avx512pfintrin.h:
+
+/usr/local/include/SDL3/SDL_audio.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avx512vbmi2vlintrin.h:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_mixer.h:
+
+/usr/include/c++/13.2.1/thread:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avx512vldqintrin.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avx512vnnivlintrin.h:
+
+/usr/local/include/SDL3/SDL_blendmode.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avx512vp2intersectintrin.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avx512vp2intersectvlintrin.h:
+
+/usr/include/c++/13.2.1/initializer_list:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avxvnniint8intrin.h:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/curl/easy.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/avxvnniintrin.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/bmi2intrin.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/cetintrin.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/clwbintrin.h:
+
+/usr/include/c++/13.2.1/bits/hashtable_policy.h:
+
+/usr/include/c++/13.2.1/iomanip:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/clzerointrin.h:
+
+/usr/include/oneapi/tbb/cache_aligned_allocator.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/hresetintrin.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/enqcmdintrin.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/xsavecintrin.h:
+
+/usr/include/c++/13.2.1/cstdlib:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/fmaintrin.h:
+
+/run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_scancode.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/fxsrintrin.h:

@@ -255,10 +255,10 @@ StarSpeed23: CMakeFiles/StarSpeed23.dir/build.make
 StarSpeed23: /run/media/jay/New\ Volume1/starspeed23/libs/linux/discord_game_sdk.so
 StarSpeed23: /run/media/jay/New\ Volume1/starspeed23/libs/linux/libFuchsLib.a
 StarSpeed23: /run/media/jay/New\ Volume1/starspeed23/libs/linux/libMotor.a
-StarSpeed23: /run/media/jay/New\ Volume1/starspeed23/libs/linux/libSDL2-2.0.so
-StarSpeed23: /run/media/jay/New\ Volume1/starspeed23/libs/linux/libSDL2_image-2.0.so
-StarSpeed23: /run/media/jay/New\ Volume1/starspeed23/libs/linux/libSDL2_mixer-2.0.so
-StarSpeed23: /run/media/jay/New\ Volume1/starspeed23/libs/linux/libSDL2_ttf-2.0.so
+StarSpeed23: /run/media/jay/New\ Volume1/starspeed23/libs/linux/libSDL3.so
+StarSpeed23: /run/media/jay/New\ Volume1/starspeed23/libs/linux/libSDL3_image.so
+StarSpeed23: /run/media/jay/New\ Volume1/starspeed23/libs/linux/libSDL3_mixer.so
+StarSpeed23: /run/media/jay/New\ Volume1/starspeed23/libs/linux/libSDL3_ttf.so
 StarSpeed23: /run/media/jay/New\ Volume1/starspeed23/libs/linux/libcrypto.so
 StarSpeed23: /run/media/jay/New\ Volume1/starspeed23/libs/linux/libcurl.so
 StarSpeed23: /run/media/jay/New\ Volume1/starspeed23/libs/linux/libdiscord_game_sdk.so

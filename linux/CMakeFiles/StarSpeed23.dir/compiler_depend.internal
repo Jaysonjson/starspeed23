@@ -47,56 +47,8 @@ CMakeFiles/StarSpeed23.dir/src/achievements.cpp.o
  /run/media/jay/New Volume1/starspeed23/libs/includes/openssl/opensslconf.h
  /run/media/jay/New Volume1/starspeed23/libs/includes/openssl/opensslv.h
  /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_assert.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_atomic.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_audio.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_blendmode.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_clipboard.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_config.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_cpuinfo.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_endian.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_error.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_events.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_filesystem.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_gamecontroller.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_gesture.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_haptic.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_hidapi.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_hints.h
  /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_image.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_joystick.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_keyboard.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_keycode.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_loadso.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_locale.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_log.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_main.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_messagebox.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_metal.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_misc.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_mouse.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_mutex.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_pixels.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_platform.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_power.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_quit.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_rect.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_render.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_rwops.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_scancode.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_sensor.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_shape.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_stdinc.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_surface.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_system.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_thread.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_timer.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_touch.h
  /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_ttf.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_version.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_video.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/begin_code.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/close_code.h
  /run/media/jay/New Volume1/starspeed23/src/mine.hpp
  /run/media/jay/New Volume1/starspeed23/src/starspeed/achievements.hpp
  /run/media/jay/New Volume1/starspeed23/src/starspeed/profile.hpp
@@ -635,6 +587,59 @@ CMakeFiles/StarSpeed23.dir/src/achievements.cpp.o
  /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/xsaveoptintrin.h
  /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/xsavesintrin.h
  /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/xtestintrin.h
+ /usr/local/include/SDL3/SDL.h
+ /usr/local/include/SDL3/SDL_assert.h
+ /usr/local/include/SDL3/SDL_atomic.h
+ /usr/local/include/SDL3/SDL_audio.h
+ /usr/local/include/SDL3/SDL_begin_code.h
+ /usr/local/include/SDL3/SDL_bits.h
+ /usr/local/include/SDL3/SDL_blendmode.h
+ /usr/local/include/SDL3/SDL_clipboard.h
+ /usr/local/include/SDL3/SDL_close_code.h
+ /usr/local/include/SDL3/SDL_cpuinfo.h
+ /usr/local/include/SDL3/SDL_endian.h
+ /usr/local/include/SDL3/SDL_error.h
+ /usr/local/include/SDL3/SDL_events.h
+ /usr/local/include/SDL3/SDL_filesystem.h
+ /usr/local/include/SDL3/SDL_gamepad.h
+ /usr/local/include/SDL3/SDL_guid.h
+ /usr/local/include/SDL3/SDL_haptic.h
+ /usr/local/include/SDL3/SDL_hidapi.h
+ /usr/local/include/SDL3/SDL_hints.h
+ /usr/local/include/SDL3/SDL_init.h
+ /usr/local/include/SDL3/SDL_joystick.h
+ /usr/local/include/SDL3/SDL_keyboard.h
+ /usr/local/include/SDL3/SDL_keycode.h
+ /usr/local/include/SDL3/SDL_loadso.h
+ /usr/local/include/SDL3/SDL_locale.h
+ /usr/local/include/SDL3/SDL_log.h
+ /usr/local/include/SDL3/SDL_messagebox.h
+ /usr/local/include/SDL3/SDL_metal.h
+ /usr/local/include/SDL3/SDL_misc.h
+ /usr/local/include/SDL3/SDL_mouse.h
+ /usr/local/include/SDL3/SDL_mutex.h
+ /usr/local/include/SDL3/SDL_oldnames.h
+ /usr/local/include/SDL3/SDL_pen.h
+ /usr/local/include/SDL3/SDL_pixels.h
+ /usr/local/include/SDL3/SDL_platform.h
+ /usr/local/include/SDL3/SDL_platform_defines.h
+ /usr/local/include/SDL3/SDL_power.h
+ /usr/local/include/SDL3/SDL_properties.h
+ /usr/local/include/SDL3/SDL_quit.h
+ /usr/local/include/SDL3/SDL_rect.h
+ /usr/local/include/SDL3/SDL_render.h
+ /usr/local/include/SDL3/SDL_rwops.h
+ /usr/local/include/SDL3/SDL_scancode.h
+ /usr/local/include/SDL3/SDL_sensor.h
+ /usr/local/include/SDL3/SDL_stdinc.h
+ /usr/local/include/SDL3/SDL_surface.h
+ /usr/local/include/SDL3/SDL_system.h
+ /usr/local/include/SDL3/SDL_thread.h
+ /usr/local/include/SDL3/SDL_timer.h
+ /usr/local/include/SDL3/SDL_touch.h
+ /usr/local/include/SDL3/SDL_version.h
+ /usr/local/include/SDL3/SDL_video.h
+ /usr/local/include/SDL3/SDL_video_capture.h
 
 CMakeFiles/StarSpeed23.dir/src/discord.cpp.o
  /run/media/jay/New Volume1/starspeed23/src/discord.cpp
@@ -696,55 +701,7 @@ CMakeFiles/StarSpeed23.dir/src/discord.cpp.o
  /run/media/jay/New Volume1/starspeed23/libs/includes/motor/types/scale.hpp
  /run/media/jay/New Volume1/starspeed23/libs/includes/motor/types/vector.hpp
  /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_assert.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_atomic.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_audio.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_blendmode.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_clipboard.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_config.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_cpuinfo.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_endian.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_error.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_events.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_filesystem.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_gamecontroller.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_gesture.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_haptic.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_hidapi.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_hints.h
  /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_image.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_joystick.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_keyboard.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_keycode.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_loadso.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_locale.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_log.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_main.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_messagebox.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_metal.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_misc.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_mouse.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_mutex.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_pixels.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_platform.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_power.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_quit.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_rect.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_render.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_rwops.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_scancode.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_sensor.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_shape.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_stdinc.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_surface.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_system.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_thread.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_timer.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_touch.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_version.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_video.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/begin_code.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/close_code.h
  /run/media/jay/New Volume1/starspeed23/src/starspeed/discord.hpp
  /usr/include/alloca.h
  /usr/include/asm-generic/bitsperlong.h
@@ -1318,6 +1275,59 @@ CMakeFiles/StarSpeed23.dir/src/discord.cpp.o
  /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/xsaveoptintrin.h
  /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/xsavesintrin.h
  /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/xtestintrin.h
+ /usr/local/include/SDL3/SDL.h
+ /usr/local/include/SDL3/SDL_assert.h
+ /usr/local/include/SDL3/SDL_atomic.h
+ /usr/local/include/SDL3/SDL_audio.h
+ /usr/local/include/SDL3/SDL_begin_code.h
+ /usr/local/include/SDL3/SDL_bits.h
+ /usr/local/include/SDL3/SDL_blendmode.h
+ /usr/local/include/SDL3/SDL_clipboard.h
+ /usr/local/include/SDL3/SDL_close_code.h
+ /usr/local/include/SDL3/SDL_cpuinfo.h
+ /usr/local/include/SDL3/SDL_endian.h
+ /usr/local/include/SDL3/SDL_error.h
+ /usr/local/include/SDL3/SDL_events.h
+ /usr/local/include/SDL3/SDL_filesystem.h
+ /usr/local/include/SDL3/SDL_gamepad.h
+ /usr/local/include/SDL3/SDL_guid.h
+ /usr/local/include/SDL3/SDL_haptic.h
+ /usr/local/include/SDL3/SDL_hidapi.h
+ /usr/local/include/SDL3/SDL_hints.h
+ /usr/local/include/SDL3/SDL_init.h
+ /usr/local/include/SDL3/SDL_joystick.h
+ /usr/local/include/SDL3/SDL_keyboard.h
+ /usr/local/include/SDL3/SDL_keycode.h
+ /usr/local/include/SDL3/SDL_loadso.h
+ /usr/local/include/SDL3/SDL_locale.h
+ /usr/local/include/SDL3/SDL_log.h
+ /usr/local/include/SDL3/SDL_messagebox.h
+ /usr/local/include/SDL3/SDL_metal.h
+ /usr/local/include/SDL3/SDL_misc.h
+ /usr/local/include/SDL3/SDL_mouse.h
+ /usr/local/include/SDL3/SDL_mutex.h
+ /usr/local/include/SDL3/SDL_oldnames.h
+ /usr/local/include/SDL3/SDL_pen.h
+ /usr/local/include/SDL3/SDL_pixels.h
+ /usr/local/include/SDL3/SDL_platform.h
+ /usr/local/include/SDL3/SDL_platform_defines.h
+ /usr/local/include/SDL3/SDL_power.h
+ /usr/local/include/SDL3/SDL_properties.h
+ /usr/local/include/SDL3/SDL_quit.h
+ /usr/local/include/SDL3/SDL_rect.h
+ /usr/local/include/SDL3/SDL_render.h
+ /usr/local/include/SDL3/SDL_rwops.h
+ /usr/local/include/SDL3/SDL_scancode.h
+ /usr/local/include/SDL3/SDL_sensor.h
+ /usr/local/include/SDL3/SDL_stdinc.h
+ /usr/local/include/SDL3/SDL_surface.h
+ /usr/local/include/SDL3/SDL_system.h
+ /usr/local/include/SDL3/SDL_thread.h
+ /usr/local/include/SDL3/SDL_timer.h
+ /usr/local/include/SDL3/SDL_touch.h
+ /usr/local/include/SDL3/SDL_version.h
+ /usr/local/include/SDL3/SDL_video.h
+ /usr/local/include/SDL3/SDL_video_capture.h
 
 CMakeFiles/StarSpeed23.dir/src/main.cpp.o
  /run/media/jay/New Volume1/starspeed23/src/main.cpp
@@ -1405,57 +1415,9 @@ CMakeFiles/StarSpeed23.dir/src/main.cpp.o
  /run/media/jay/New Volume1/starspeed23/libs/includes/openssl/opensslconf.h
  /run/media/jay/New Volume1/starspeed23/libs/includes/openssl/opensslv.h
  /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_assert.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_atomic.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_audio.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_blendmode.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_clipboard.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_config.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_cpuinfo.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_endian.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_error.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_events.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_filesystem.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_gamecontroller.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_gesture.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_haptic.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_hidapi.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_hints.h
  /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_image.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_joystick.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_keyboard.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_keycode.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_loadso.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_locale.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_log.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_main.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_messagebox.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_metal.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_misc.h
  /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_mixer.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_mouse.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_mutex.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_pixels.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_platform.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_power.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_quit.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_rect.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_render.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_rwops.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_scancode.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_sensor.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_shape.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_stdinc.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_surface.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_system.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_thread.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_timer.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_touch.h
  /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_ttf.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_version.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/SDL_video.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/begin_code.h
- /run/media/jay/New Volume1/starspeed23/libs/includes/sdl/close_code.h
  /run/media/jay/New Volume1/starspeed23/src/mine.hpp
  /run/media/jay/New Volume1/starspeed23/src/starspeed/achievements.hpp
  /run/media/jay/New Volume1/starspeed23/src/starspeed/components/down_movement.hpp
@@ -2089,6 +2051,59 @@ CMakeFiles/StarSpeed23.dir/src/main.cpp.o
  /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/xsaveoptintrin.h
  /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/xsavesintrin.h
  /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/xtestintrin.h
+ /usr/local/include/SDL3/SDL.h
+ /usr/local/include/SDL3/SDL_assert.h
+ /usr/local/include/SDL3/SDL_atomic.h
+ /usr/local/include/SDL3/SDL_audio.h
+ /usr/local/include/SDL3/SDL_begin_code.h
+ /usr/local/include/SDL3/SDL_bits.h
+ /usr/local/include/SDL3/SDL_blendmode.h
+ /usr/local/include/SDL3/SDL_clipboard.h
+ /usr/local/include/SDL3/SDL_close_code.h
+ /usr/local/include/SDL3/SDL_cpuinfo.h
+ /usr/local/include/SDL3/SDL_endian.h
+ /usr/local/include/SDL3/SDL_error.h
+ /usr/local/include/SDL3/SDL_events.h
+ /usr/local/include/SDL3/SDL_filesystem.h
+ /usr/local/include/SDL3/SDL_gamepad.h
+ /usr/local/include/SDL3/SDL_guid.h
+ /usr/local/include/SDL3/SDL_haptic.h
+ /usr/local/include/SDL3/SDL_hidapi.h
+ /usr/local/include/SDL3/SDL_hints.h
+ /usr/local/include/SDL3/SDL_init.h
+ /usr/local/include/SDL3/SDL_joystick.h
+ /usr/local/include/SDL3/SDL_keyboard.h
+ /usr/local/include/SDL3/SDL_keycode.h
+ /usr/local/include/SDL3/SDL_loadso.h
+ /usr/local/include/SDL3/SDL_locale.h
+ /usr/local/include/SDL3/SDL_log.h
+ /usr/local/include/SDL3/SDL_messagebox.h
+ /usr/local/include/SDL3/SDL_metal.h
+ /usr/local/include/SDL3/SDL_misc.h
+ /usr/local/include/SDL3/SDL_mouse.h
+ /usr/local/include/SDL3/SDL_mutex.h
+ /usr/local/include/SDL3/SDL_oldnames.h
+ /usr/local/include/SDL3/SDL_pen.h
+ /usr/local/include/SDL3/SDL_pixels.h
+ /usr/local/include/SDL3/SDL_platform.h
+ /usr/local/include/SDL3/SDL_platform_defines.h
+ /usr/local/include/SDL3/SDL_power.h
+ /usr/local/include/SDL3/SDL_properties.h
+ /usr/local/include/SDL3/SDL_quit.h
+ /usr/local/include/SDL3/SDL_rect.h
+ /usr/local/include/SDL3/SDL_render.h
+ /usr/local/include/SDL3/SDL_rwops.h
+ /usr/local/include/SDL3/SDL_scancode.h
+ /usr/local/include/SDL3/SDL_sensor.h
+ /usr/local/include/SDL3/SDL_stdinc.h
+ /usr/local/include/SDL3/SDL_surface.h
+ /usr/local/include/SDL3/SDL_system.h
+ /usr/local/include/SDL3/SDL_thread.h
+ /usr/local/include/SDL3/SDL_timer.h
+ /usr/local/include/SDL3/SDL_touch.h
+ /usr/local/include/SDL3/SDL_version.h
+ /usr/local/include/SDL3/SDL_video.h
+ /usr/local/include/SDL3/SDL_video_capture.h
 
 CMakeFiles/StarSpeed23.dir/src/mine.cpp.o
  /run/media/jay/New Volume1/starspeed23/src/mine.cpp

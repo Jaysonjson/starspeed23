@@ -167,22 +167,134 @@ CMakeFiles/StarSpeed23.dir/src/sceneswitcher.cpp.o: \
  /run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/object/gameobject.hpp \
  /run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/interfaces/component.hpp \
  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL.h \
- /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_main.h \
- /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_stdinc.h \
- /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_config.h \
- /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_platform.h \
- /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/begin_code.h \
- /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/close_code.h \
- /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_assert.h \
- /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_atomic.h \
- /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_audio.h \
- /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_error.h \
- /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_endian.h \
- /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_mutex.h \
- /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_thread.h \
- /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_rwops.h \
- /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_clipboard.h \
- /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_cpuinfo.h \
+ /usr/local/include/SDL3/SDL_stdinc.h \
+ /usr/local/include/SDL3/SDL_platform_defines.h \
+ /usr/local/include/SDL3/SDL_begin_code.h \
+ /usr/local/include/SDL3/SDL_close_code.h \
+ /usr/local/include/SDL3/SDL_assert.h \
+ /usr/local/include/SDL3/SDL_atomic.h /usr/local/include/SDL3/SDL_audio.h \
+ /usr/local/include/SDL3/SDL_endian.h /usr/local/include/SDL3/SDL_error.h \
+ /usr/local/include/SDL3/SDL_mutex.h \
+ /usr/local/include/SDL3/SDL_properties.h \
+ /usr/local/include/SDL3/SDL_rwops.h /usr/local/include/SDL3/SDL_thread.h \
+ /usr/local/include/SDL3/SDL_bits.h \
+ /usr/local/include/SDL3/SDL_blendmode.h \
+ /usr/local/include/SDL3/SDL_clipboard.h \
+ /usr/local/include/SDL3/SDL_cpuinfo.h \
+ /usr/local/include/SDL3/SDL_events.h \
+ /usr/local/include/SDL3/SDL_gamepad.h \
+ /usr/local/include/SDL3/SDL_joystick.h \
+ /usr/local/include/SDL3/SDL_guid.h /usr/local/include/SDL3/SDL_sensor.h \
+ /usr/local/include/SDL3/SDL_keyboard.h \
+ /usr/local/include/SDL3/SDL_keycode.h \
+ /usr/local/include/SDL3/SDL_scancode.h \
+ /usr/local/include/SDL3/SDL_video.h /usr/local/include/SDL3/SDL_pixels.h \
+ /usr/local/include/SDL3/SDL_rect.h /usr/local/include/SDL3/SDL_surface.h \
+ /usr/local/include/SDL3/SDL_mouse.h /usr/local/include/SDL3/SDL_pen.h \
+ /usr/local/include/SDL3/SDL_error.h /usr/local/include/SDL3/SDL_guid.h \
+ /usr/local/include/SDL3/SDL_stdinc.h /usr/local/include/SDL3/SDL_quit.h \
+ /usr/local/include/SDL3/SDL_touch.h \
+ /usr/local/include/SDL3/SDL_filesystem.h \
+ /usr/local/include/SDL3/SDL_haptic.h \
+ /usr/local/include/SDL3/SDL_hidapi.h /usr/local/include/SDL3/SDL_hints.h \
+ /usr/local/include/SDL3/SDL_init.h /usr/local/include/SDL3/SDL_loadso.h \
+ /usr/local/include/SDL3/SDL_locale.h /usr/local/include/SDL3/SDL_log.h \
+ /usr/local/include/SDL3/SDL_messagebox.h \
+ /usr/local/include/SDL3/SDL_metal.h /usr/local/include/SDL3/SDL_misc.h \
+ /usr/local/include/SDL3/SDL_platform.h \
+ /usr/local/include/SDL3/SDL_power.h /usr/local/include/SDL3/SDL_render.h \
+ /usr/local/include/SDL3/SDL_system.h /usr/local/include/SDL3/SDL_timer.h \
+ /usr/local/include/SDL3/SDL_version.h \
+ /usr/local/include/SDL3/SDL_video_capture.h \
+ /usr/local/include/SDL3/SDL_oldnames.h \
+ /run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/event.hpp \
+ /usr/include/c++/13.2.1/functional \
+ /usr/include/c++/13.2.1/bits/std_function.h \
+ /usr/include/c++/13.2.1/unordered_map \
+ /usr/include/c++/13.2.1/bits/unordered_map.h \
+ /usr/include/c++/13.2.1/bits/hashtable.h \
+ /usr/include/c++/13.2.1/bits/hashtable_policy.h \
+ /usr/include/c++/13.2.1/ext/aligned_buffer.h \
+ /usr/include/c++/13.2.1/bits/enable_special_members.h \
+ /usr/include/c++/13.2.1/bits/node_handle.h \
+ /usr/include/c++/13.2.1/bits/erase_if.h /usr/include/c++/13.2.1/array \
+ /usr/include/c++/13.2.1/bits/stl_algo.h \
+ /usr/include/c++/13.2.1/bits/algorithmfwd.h \
+ /usr/include/c++/13.2.1/bits/stl_heap.h \
+ /usr/include/c++/13.2.1/bits/uniform_int_dist.h \
+ /usr/include/c++/13.2.1/bits/stl_tempbuf.h \
+ /usr/include/c++/13.2.1/bits/move_only_function.h \
+ /usr/include/c++/13.2.1/bits/mofunc_impl.h \
+ /run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/log.hpp \
+ /run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/makros.hpp \
+ /usr/include/c++/13.2.1/algorithm \
+ /usr/include/c++/13.2.1/bits/ranges_algo.h \
+ /usr/include/c++/13.2.1/optional \
+ /usr/include/c++/13.2.1/bits/ranges_algobase.h \
+ /usr/include/c++/13.2.1/pstl/glue_algorithm_defs.h \
+ /usr/include/c++/13.2.1/pstl/execution_defs.h \
+ /usr/include/c++/13.2.1/numeric \
+ /usr/include/c++/13.2.1/bits/stl_numeric.h \
+ /usr/include/c++/13.2.1/limits \
+ /usr/include/c++/13.2.1/pstl/glue_numeric_defs.h \
+ /usr/include/c++/13.2.1/future /usr/include/c++/13.2.1/mutex \
+ /usr/include/c++/13.2.1/bits/chrono.h /usr/include/c++/13.2.1/ratio \
+ /usr/include/c++/13.2.1/ctime \
+ /usr/include/c++/13.2.1/bits/parse_numbers.h \
+ /usr/include/c++/13.2.1/bits/std_mutex.h \
+ /usr/include/c++/13.2.1/bits/unique_lock.h \
+ /usr/include/c++/13.2.1/condition_variable \
+ /usr/include/c++/13.2.1/bits/shared_ptr.h \
+ /usr/include/c++/13.2.1/bits/shared_ptr_base.h \
+ /usr/include/c++/13.2.1/bits/allocated_ptr.h \
+ /usr/include/c++/13.2.1/bits/unique_ptr.h \
+ /usr/include/c++/13.2.1/ext/concurrence.h \
+ /usr/include/c++/13.2.1/bits/align.h /usr/include/c++/13.2.1/stop_token \
+ /usr/include/c++/13.2.1/atomic \
+ /usr/include/c++/13.2.1/bits/atomic_base.h \
+ /usr/include/c++/13.2.1/bits/atomic_lockfree_defines.h \
+ /usr/include/c++/13.2.1/bits/atomic_wait.h \
+ /usr/include/c++/13.2.1/climits \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/limits.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/syslimits.h \
+ /usr/include/limits.h /usr/include/bits/posix1_lim.h \
+ /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
+ /usr/include/bits/uio_lim.h /usr/include/unistd.h \
+ /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
+ /usr/include/bits/confname.h /usr/include/bits/getopt_posix.h \
+ /usr/include/bits/getopt_core.h /usr/include/bits/unistd_ext.h \
+ /usr/include/linux/close_range.h /usr/include/syscall.h \
+ /usr/include/sys/syscall.h /usr/include/asm/unistd.h \
+ /usr/include/asm/unistd_64.h /usr/include/bits/syscall.h \
+ /usr/include/c++/13.2.1/bits/std_thread.h \
+ /usr/include/c++/13.2.1/semaphore \
+ /usr/include/c++/13.2.1/bits/semaphore_base.h \
+ /usr/include/c++/13.2.1/bits/atomic_timed_wait.h \
+ /usr/include/c++/13.2.1/bits/this_thread_sleep.h /usr/include/sys/time.h \
+ /usr/include/semaphore.h /usr/include/bits/semaphore.h \
+ /usr/include/c++/13.2.1/bits/atomic_futex.h \
+ /usr/include/c++/13.2.1/execution \
+ /usr/include/c++/13.2.1/pstl/glue_execution_defs.h \
+ /usr/include/c++/13.2.1/pstl/algorithm_impl.h \
+ /usr/include/c++/13.2.1/iterator \
+ /usr/include/c++/13.2.1/bits/stream_iterator.h \
+ /usr/include/c++/13.2.1/utility \
+ /usr/include/c++/13.2.1/bits/stl_relops.h \
+ /usr/include/c++/13.2.1/pstl/execution_impl.h \
+ /usr/include/c++/13.2.1/pstl/memory_impl.h \
+ /usr/include/c++/13.2.1/pstl/unseq_backend_simd.h \
+ /usr/include/c++/13.2.1/pstl/utils.h \
+ /usr/include/c++/13.2.1/pstl/parallel_backend_utils.h \
+ /usr/include/c++/13.2.1/pstl/parallel_backend.h \
+ /usr/include/c++/13.2.1/pstl/parallel_backend_tbb.h \
+ /usr/include/tbb/blocked_range.h /usr/include/oneapi/tbb/blocked_range.h \
+ /usr/include/oneapi/tbb/detail/_range_common.h \
+ /usr/include/oneapi/tbb/detail/_config.h /usr/include/c++/13.2.1/version \
+ /usr/include/oneapi/tbb/detail/_export.h \
+ /usr/include/oneapi/tbb/detail/_utils.h \
+ /usr/include/oneapi/tbb/detail/_assert.h \
+ /usr/include/oneapi/tbb/detail/_machine.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/immintrin.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/x86gprintrin.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/ia32intrin.h \
@@ -278,126 +390,7 @@ CMakeFiles/StarSpeed23.dir/src/sceneswitcher.cpp.o: \
  /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/prfchwintrin.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/keylockerintrin.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/amxfp16intrin.h \
- /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_events.h \
- /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_video.h \
- /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_pixels.h \
- /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_rect.h \
- /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_surface.h \
- /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_blendmode.h \
- /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_keyboard.h \
- /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_keycode.h \
- /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_scancode.h \
- /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_mouse.h \
- /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_joystick.h \
- /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_gamecontroller.h \
- /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_sensor.h \
- /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_quit.h \
- /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_gesture.h \
- /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_touch.h \
- /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_filesystem.h \
- /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_haptic.h \
- /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_hidapi.h \
- /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_hints.h \
- /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_loadso.h \
- /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_log.h \
- /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_messagebox.h \
- /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_metal.h \
- /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_power.h \
- /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_render.h \
- /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_shape.h \
- /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_system.h \
- /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_timer.h \
- /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_version.h \
- /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_locale.h \
- /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_misc.h \
- /run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/event.hpp \
- /usr/include/c++/13.2.1/functional \
- /usr/include/c++/13.2.1/bits/std_function.h \
- /usr/include/c++/13.2.1/unordered_map \
- /usr/include/c++/13.2.1/bits/unordered_map.h \
- /usr/include/c++/13.2.1/bits/hashtable.h \
- /usr/include/c++/13.2.1/bits/hashtable_policy.h \
- /usr/include/c++/13.2.1/ext/aligned_buffer.h \
- /usr/include/c++/13.2.1/bits/enable_special_members.h \
- /usr/include/c++/13.2.1/bits/node_handle.h \
- /usr/include/c++/13.2.1/bits/erase_if.h /usr/include/c++/13.2.1/array \
- /usr/include/c++/13.2.1/bits/stl_algo.h \
- /usr/include/c++/13.2.1/bits/algorithmfwd.h \
- /usr/include/c++/13.2.1/bits/stl_heap.h \
- /usr/include/c++/13.2.1/bits/uniform_int_dist.h \
- /usr/include/c++/13.2.1/bits/stl_tempbuf.h \
- /usr/include/c++/13.2.1/bits/move_only_function.h \
- /usr/include/c++/13.2.1/bits/mofunc_impl.h \
- /run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/log.hpp \
- /run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/makros.hpp \
- /usr/include/c++/13.2.1/algorithm \
- /usr/include/c++/13.2.1/bits/ranges_algo.h \
- /usr/include/c++/13.2.1/optional \
- /usr/include/c++/13.2.1/bits/ranges_algobase.h \
- /usr/include/c++/13.2.1/pstl/glue_algorithm_defs.h \
- /usr/include/c++/13.2.1/pstl/execution_defs.h \
- /usr/include/c++/13.2.1/numeric \
- /usr/include/c++/13.2.1/bits/stl_numeric.h \
- /usr/include/c++/13.2.1/limits \
- /usr/include/c++/13.2.1/pstl/glue_numeric_defs.h \
- /usr/include/c++/13.2.1/future /usr/include/c++/13.2.1/mutex \
- /usr/include/c++/13.2.1/bits/chrono.h /usr/include/c++/13.2.1/ratio \
- /usr/include/c++/13.2.1/ctime \
- /usr/include/c++/13.2.1/bits/parse_numbers.h \
- /usr/include/c++/13.2.1/bits/std_mutex.h \
- /usr/include/c++/13.2.1/bits/unique_lock.h \
- /usr/include/c++/13.2.1/condition_variable \
- /usr/include/c++/13.2.1/bits/shared_ptr.h \
- /usr/include/c++/13.2.1/bits/shared_ptr_base.h \
- /usr/include/c++/13.2.1/bits/allocated_ptr.h \
- /usr/include/c++/13.2.1/bits/unique_ptr.h \
- /usr/include/c++/13.2.1/ext/concurrence.h \
- /usr/include/c++/13.2.1/bits/align.h /usr/include/c++/13.2.1/stop_token \
- /usr/include/c++/13.2.1/atomic \
- /usr/include/c++/13.2.1/bits/atomic_base.h \
- /usr/include/c++/13.2.1/bits/atomic_lockfree_defines.h \
- /usr/include/c++/13.2.1/bits/atomic_wait.h \
- /usr/include/c++/13.2.1/climits \
- /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/limits.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include/syslimits.h \
- /usr/include/limits.h /usr/include/bits/posix1_lim.h \
- /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
- /usr/include/bits/uio_lim.h /usr/include/unistd.h \
- /usr/include/bits/posix_opt.h /usr/include/bits/environments.h \
- /usr/include/bits/confname.h /usr/include/bits/getopt_posix.h \
- /usr/include/bits/getopt_core.h /usr/include/bits/unistd_ext.h \
- /usr/include/linux/close_range.h /usr/include/syscall.h \
- /usr/include/sys/syscall.h /usr/include/asm/unistd.h \
- /usr/include/asm/unistd_64.h /usr/include/bits/syscall.h \
- /usr/include/c++/13.2.1/bits/std_thread.h \
- /usr/include/c++/13.2.1/semaphore \
- /usr/include/c++/13.2.1/bits/semaphore_base.h \
- /usr/include/c++/13.2.1/bits/atomic_timed_wait.h \
- /usr/include/c++/13.2.1/bits/this_thread_sleep.h /usr/include/sys/time.h \
- /usr/include/semaphore.h /usr/include/bits/semaphore.h \
- /usr/include/c++/13.2.1/bits/atomic_futex.h \
- /usr/include/c++/13.2.1/execution \
- /usr/include/c++/13.2.1/pstl/glue_execution_defs.h \
- /usr/include/c++/13.2.1/pstl/algorithm_impl.h \
- /usr/include/c++/13.2.1/iterator \
- /usr/include/c++/13.2.1/bits/stream_iterator.h \
- /usr/include/c++/13.2.1/utility \
- /usr/include/c++/13.2.1/bits/stl_relops.h \
- /usr/include/c++/13.2.1/pstl/execution_impl.h \
- /usr/include/c++/13.2.1/pstl/memory_impl.h \
- /usr/include/c++/13.2.1/pstl/unseq_backend_simd.h \
- /usr/include/c++/13.2.1/pstl/utils.h \
- /usr/include/c++/13.2.1/pstl/parallel_backend_utils.h \
- /usr/include/c++/13.2.1/pstl/parallel_backend.h \
- /usr/include/c++/13.2.1/pstl/parallel_backend_tbb.h \
- /usr/include/tbb/blocked_range.h /usr/include/oneapi/tbb/blocked_range.h \
- /usr/include/oneapi/tbb/detail/_range_common.h \
- /usr/include/oneapi/tbb/detail/_config.h /usr/include/c++/13.2.1/version \
- /usr/include/oneapi/tbb/detail/_export.h \
- /usr/include/oneapi/tbb/detail/_utils.h \
- /usr/include/oneapi/tbb/detail/_assert.h \
- /usr/include/oneapi/tbb/detail/_machine.h /usr/include/c++/13.2.1/thread \
+ /usr/include/c++/13.2.1/thread \
  /usr/include/oneapi/tbb/detail/_namespace_injection.h \
  /usr/include/oneapi/tbb/version.h \
  /usr/include/oneapi/tbb/detail/_config.h /usr/include/tbb/parallel_for.h \
@@ -521,7 +514,7 @@ CMakeFiles/StarSpeed23.dir/src/sceneswitcher.cpp.o: \
  /run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/components/sprite.hpp \
  /run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/content/texture.hpp \
  /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL_image.h \
- /run/media/jay/New\ Volume1/starspeed23/libs/includes/sdl/SDL.h \
+ /usr/local/include/SDL3/SDL.h \
  /run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/content/content.hpp \
  /run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/motor.hpp \
  /run/media/jay/New\ Volume1/starspeed23/libs/includes/motor/getriebe.hpp \
