@@ -1,3 +1,3 @@
-/run/media/jay/New Volume/starspeed23/linux/CMakeFiles/StarSpeed23.dir
-/run/media/jay/New Volume/starspeed23/linux/CMakeFiles/edit_cache.dir
-/run/media/jay/New Volume/starspeed23/linux/CMakeFiles/rebuild_cache.dir
+/run/media/jay/New Volume1/starspeed23/linux/CMakeFiles/StarSpeed23.dir
+/run/media/jay/New Volume1/starspeed23/linux/CMakeFiles/edit_cache.dir
+/run/media/jay/New Volume1/starspeed23/linux/CMakeFiles/rebuild_cache.dir

@@ -32,7 +32,7 @@ namespace StarSpeed {
             spawnCounter += 0.1f * delta;
             starCounter += 0.1f * delta;
 
-            if (8 < starCounter) {
+            if (4 < starCounter) {
                 starCounter = 0;
                 std::random_device rd;
                 std::mt19937 mt(rd());

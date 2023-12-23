@@ -131,13 +131,22 @@ namespace StarSpeed {
             addComponent<Motor::SpriteComponent>(Tex::CIRCLE_GLOW);
             getComponent<Motor::SpriteComponent>(1)->blendMode_ = SDL_BLENDMODE_ADD;
             getComponent<Motor::SpriteComponent>(1)->useCustomScale_ = true;
-            getComponent<Motor::SpriteComponent>(1)->customScale_.set(size + 4);
+            getComponent<Motor::SpriteComponent>(1)->customScale_.set(size / 2);
             getComponent<Motor::SpriteComponent>(1)->useCustomColor_ = true;
-            getComponent<Motor::SpriteComponent>(1)->customColor_.set(0, 0, 0, 50);
+            getComponent<Motor::SpriteComponent>(1)->customColor_.set(255, 0, 0, 50);
+
+            addComponent<Motor::SpriteComponent>(Tex::CIRCLE_GLOW);
+            getComponent<Motor::SpriteComponent>(2)->blendMode_ = SDL_BLENDMODE_ADD;
+            getComponent<Motor::SpriteComponent>(2)->useCustomScale_ = true;
+            getComponent<Motor::SpriteComponent>(2)->customScale_.set(size * 2);
+            getComponent<Motor::SpriteComponent>(2)->useCustomColor_ = true;
+            getComponent<Motor::SpriteComponent>(2)->customColor_.set(255, 0, 0, 10);
 
             addComponent<Motor::RevolutionComponent>()->speed_ = rev(mt);
 
             getComponent<Motor::SpriteComponent>()->useSizeCenter();
+            getComponent<Motor::SpriteComponent>(1)->useSizeCenter();
+            getComponent<Motor::SpriteComponent>(2)->useSizeCenter();
         }
         void render() override {
             Motor::GameObject::render();

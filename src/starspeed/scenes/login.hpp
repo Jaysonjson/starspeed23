@@ -483,7 +483,9 @@ namespace StarSpeed {
 		void init(Motor::Game* game) override {
 			ACHIEVEMENT_UNLOCK_HEADER->trigger = false;
 			Motor::Scene::init(game);
-			SDL_SetRenderDrawColor(getriebe.sdl_renderer(), 0, 0, 0, 255);
+			//SDL_SetRenderDrawColor(getriebe.sdl_renderer(), 31, 31, 45, 255);
+            SDL_SetRenderDrawColor(getriebe.sdl_renderer(), 0,0,0, 255);
+
 
 			std::random_device rd;
 			std::mt19937 mt(rd());

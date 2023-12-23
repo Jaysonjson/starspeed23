@@ -12,7 +12,10 @@ namespace StarSpeed {
         "Theres a bee inside me",
         "Toppings in Burgers are COLOR{\"color\":[144,36,75,255],\"text\":\" MIDDLINGS \"}COLOR !",
         "Blackadder likes men!",
-        "Make sure to bully COLOR{\"color\":[144,36,75,255],\"text\":\" Derpy \"}COLOR !"
+        "Make sure to bully COLOR{\"color\":[144,36,75,255],\"text\":\" Derpy \"}COLOR !",
+        "SWD = Special Waffle Dalek!",
+        "Jayson broke it",
+        "It is not Space Invaders!"
     };
 
 

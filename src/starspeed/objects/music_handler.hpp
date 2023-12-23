@@ -8,6 +8,15 @@
 #include "starspeed/profile.hpp"
 
 namespace StarSpeed {
+
+    constexpr std::string AMYTHICAL = "Amythical";
+
+    struct MusicEntry {
+        Motor::Music* music_ = nullptr;
+        std::string author_ = "";
+        std::string title_ = "";
+    };
+
     class MusicHandler : public Motor::GameObject {
     public:
         std::thread* musicCheckThread;

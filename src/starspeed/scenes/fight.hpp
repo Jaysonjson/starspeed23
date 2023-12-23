@@ -86,6 +86,7 @@ namespace StarSpeed {
 
 			FuelBar* FUEL_BAR = new FuelBar();
 			FUEL_BAR->addToCurrentScene();
+			FUEL_BAR->addToCurrentScene();
 
 
 			PlayerShip* PLAYER_SHIP = new PlayerShip();
@@ -95,7 +96,19 @@ namespace StarSpeed {
 	
 
 			getCamera().setTarget(PLAYER_SHIP);
-			getCamera().enableX = false;
+            getCamera().enableX = false;
+
+            std::random_device rd;
+            std::mt19937 mt(rd());
+            std::uniform_real_distribution<double> dist_x(32, 1400);
+            std::uniform_real_distribution<double> dist_y(0, 1080);
+
+            for (int i = 0; i < 150; i++) {
+                Star* STAR = new Star();
+                STAR->transform()->position.set(dist_x(mt), dist_y(mt));
+                STAR->addComponent<DownMovementComponent>();
+                STAR->addToCurrentScene(false);
+            }
 
 			EnemySpawner* ENEMY_SPAWNER = new EnemySpawner();
 			ENEMY_SPAWNER->PLAYER = PLAYER_SHIP;
