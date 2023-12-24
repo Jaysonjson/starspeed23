@@ -1,21 +1,21 @@
-"C:\Users\jayso\AppData\Local\Programs\CLion Nova\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Release "-DCMAKE_MAKE_PROGRAM=C:/Users/jayso/AppData/Local/Programs/CLion Nova/bin/ninja/win/x64/ninja.exe" -G Ninja -S H:\starspeed23 -B H:\starspeed23\cmake-build-release
--- The C compiler identification is MSVC 19.37.32824.0
--- The CXX compiler identification is MSVC 19.37.32824.0
+"C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Release "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2023.2.2/bin/ninja/win/x64/ninja.exe" -G Ninja -S H:\starspeed23 -B H:\starspeed23\cmake-build-release
+-- The C compiler identification is MSVC 19.38.33133.0
+-- The CXX compiler identification is MSVC 19.38.33133.0
 -- Detecting C compiler ABI info
 -- Detecting C compiler ABI info - done
--- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/cl.exe - skipped
+-- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/cl.exe - skipped
 -- Detecting C compile features
 -- Detecting C compile features - done
 -- Detecting CXX compiler ABI info
 -- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.37.32822/bin/Hostx64/x64/cl.exe - skipped
+-- Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/cl.exe - skipped
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
 Build: Release
 RELEASE
 OS: Windows
 Building for 64-Bit
-Using Libs: H:/starspeed23/libs/windows_release/FuchsLib.lib;H:/starspeed23/libs/windows_release/Motor.lib;H:/starspeed23/libs/windows_release/SDL2.lib;H:/starspeed23/libs/windows_release/SDL2_image.lib;H:/starspeed23/libs/windows_release/SDL2_mixer.lib;H:/starspeed23/libs/windows_release/SDL2_ttf.lib;H:/starspeed23/libs/windows_release/libcrypto.lib;H:/starspeed23/libs/windows_release/libcurl_a.lib;H:/starspeed23/libs/windows_release/libssl.lib;H:/starspeed23/libs/windows_release/zlib.lib
--- Configuring done (2.5s)
+Using Libs: H:/starspeed23/libs/windows_release/FuchsLib.lib;H:/starspeed23/libs/windows_release/Motor.lib;H:/starspeed23/libs/windows_release/SDL3.lib;H:/starspeed23/libs/windows_release/SDL3_image.lib;H:/starspeed23/libs/windows_release/SDL3_mixer.lib;H:/starspeed23/libs/windows_release/SDL3_ttf.lib;H:/starspeed23/libs/windows_release/libcrypto.lib;H:/starspeed23/libs/windows_release/libcurl_a.lib;H:/starspeed23/libs/windows_release/libssl.lib;H:/starspeed23/libs/windows_release/zlib.lib
+-- Configuring done (1.8s)
 -- Generating done (0.0s)
 -- Build files have been written to: H:/starspeed23/cmake-build-release

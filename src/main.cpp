@@ -49,7 +49,7 @@ int main() {
 	StarSpeed::addAchievements();
     //SDL_Surface* icon = IMG_Load(Motor::ResourceLocation(resourcePackMod, "app/icon.png").getPath().c_str());
     SDL_Surface* icon = IMG_Load(Motor::ResourceLocation(resourcePackMod, "/app/icon.png").getPath().c_str());
-	SDL_SetWindowIcon(getriebe.sdl_window(), icon);
+    SDL_SetWindowIcon(getriebe.sdl_window(), icon);
 
 	getriebe.getGame()->forceSetScene(new StarSpeed::SplashScene());
 
